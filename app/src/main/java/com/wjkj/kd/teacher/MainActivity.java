@@ -1,14 +1,15 @@
 package com.wjkj.kd.teacher;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     private WebView webView;
+    private WebSettings webSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,15 +20,11 @@ public class MainActivity extends ActionBarActivity {
 
     private void setViews() {
         webView = (WebView)findViewById(R.id.webView);
+        webSettings = webView.getSettings();
+        webSettings.setAllowFileAccess(true);
+        //设置支持缩放
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("http://120.25.248.31/px-rest/kd/index.html");
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-
 }
