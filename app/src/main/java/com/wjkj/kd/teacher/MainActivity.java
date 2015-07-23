@@ -1,30 +1,167 @@
 package com.wjkj.kd.teacher;
 
-import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Base64;
+import android.util.Log;
+import android.view.View;
+import android.webkit.ValueCallback;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.RadioGroup;
+
+import com.baidu.android.pushservice.PushManager;
+import com.baidu.mobstat.StatService;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
+    private static final String IMAGE_FILE_LOCATION = "file:///sdcard/temp.jpg";
+    private static final int CROP_A_PICTURE = 10;
+    private Uri imageUri = Uri.parse(IMAGE_FILE_LOCATION);
+    private static final int RESULT_PICK_PHOTO_NORMAL = 1;
     private WebView webView;
     private WebSettings webSettings;
+    private RadioGroup radioGroup;
+    public static String URL = "http://wapbaike.baidu.com/view/4850574.htm?sublemmaid=" +
+            "15923552&adapt=1&fr=aladdin&target=_blank";
+    private ValueCallback<Uri> myUploadMsg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        StatService.setAppChannel(this, "null", false);
         setViews();
+        //启动推送服务
+        PushManager.startWork(this, "", "8e2cd393b4cbd65f1c9da9826594a9cd");
+        StatService.bindJSInterface(this, webView);
     }
 
     private void setViews() {
         webView = (WebView)findViewById(R.id.webView);
+        radioGroup = (RadioGroup)findViewById(R.id.first_page_radiogroup);
+        setWebs();
+    }
+
+    private void setWebs() {
         webSettings = webView.getSettings();
         webSettings.setAllowFileAccess(true);
-        //����֧������
+
         webSettings.setBuiltInZoomControls(true);
         webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("http://120.25.248.31/px-rest/kd/index.html");
+        webSettings.setDomStorageEnabled(true);
+
+        webSettings.setDatabaseEnabled(true);
+
+        webSettings.setUseWideViewPort(true);
+        webView.setWebViewClient(new MyWebViewClient());
+        webView.setWebChromeClient(new MyWebChromeClient());
+        webSettings.setDomStorageEnabled(true);
+        // Set cache size to 8 mb by default. should be more than enough
+        webSettings.setAppCacheMaxSize(1024 * 1024 * 8);
+        // This next one is crazy. It's the DEFAULT location for your app's cache
+        // But it didn't work for me without this line.
+        // UPDATE: no hardcoded path. Thanks to Kevin Hawkins
+        String appCachePath = getApplicationContext().getCacheDir().getAbsolutePath();
+        webSettings.setAppCachePath(appCachePath);
+        webSettings.setAllowFileAccess(true);
+        webSettings.setAppCacheEnabled(true);
+        webView.addJavascriptInterface(new JavaScriptCall(),"JavaScriptCall");
+
+
+    }
+
+    class JavaScriptCall{
+        //进入选择图片页面
+        public void selectHeadPic(){
+            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+            intent.setType("image/*");
+            startActivityForResult(intent, RESULT_PICK_PHOTO_NORMAL);
+        }
+    }
+
+    private void cropImageUri(String path) {
+        File file = new File(path);
+        Intent intent = new Intent("com.android.camera.action.CROP");
+        Uri uri = Uri.fromFile(file);
+        intent.setDataAndType(uri, "image/*");
+        intent.putExtra("crop", "true");
+        intent.putExtra("aspectX", 2);
+        intent.putExtra("aspectY", 3);
+        intent.putExtra("outputX", 400);
+        intent.putExtra("outputY", 600);
+        // 设置为true直接返回bitmap
+        intent.putExtra("return-data", false);
+        intent.putExtra("output", imageUri);
+        intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
+        startActivityForResult(intent, CROP_A_PICTURE);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+              if(requestCode==RESULT_PICK_PHOTO_NORMAL&&resultCode==RESULT_OK){
+                  Uri uri = data.getData();
+                  cropImageUri(uri.getPath());
+
+              }
+              if(requestCode==CROP_A_PICTURE&&resultCode==RESULT_OK){
+                  ByteArrayOutputStream out = new ByteArrayOutputStream();
+                  Uri uri = data.getData();
+                  Bitmap bitmap =  BitmapFactory.decodeFile(uri.getPath());
+                  bitmap.compress(Bitmap.CompressFormat.PNG,100,out);
+                  byte [] bytes = out.toByteArray();
+                  String pictureBytes = Base64.encodeToString(bytes,Base64.DEFAULT);
+                  webView.loadUrl("javascript:returnHeadPicPicture('" + pictureBytes + "')");
+
+              }
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.radioButton1:
+
+                webView.loadUrl("javascript:menu_dohome()");
+                break;
+            case R.id.radioButton2:
+                break;
+            case R.id.radioButton3:
+                break;
+            case R.id.radioButton4:
+                break;
+        }
+    }
+
+    class MyWebViewClient extends WebViewClient{
+
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            if(url.contains("baidu.com")){
+                Intent intent = new Intent(MainActivity.this,LoadUrlActivity.class);
+                startActivity(intent);
+            }
+
+            return true;
+        }
+
+    }
+
+    private class MyWebChromeClient extends WebChromeClient {
+
+        public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String capture) {
+
+            Log.i("TAG","看看uploadMsg是什么"+uploadMsg+"    看看acceptType是"+acceptType+"    capture 是"+capture);
+
+            myUploadMsg = uploadMsg;
+        }
     }
 }
