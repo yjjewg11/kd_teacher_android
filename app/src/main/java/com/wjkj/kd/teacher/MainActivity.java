@@ -15,6 +15,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.RadioGroup;
 
+import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
 import com.baidu.mobstat.StatService;
 
@@ -29,8 +30,9 @@ public class MainActivity extends BaseActivity {
     private Uri imageUri = Uri.parse(IMAGE_FILE_LOCATION);
     private static final int RESULT_PICK_PHOTO_NORMAL = 1;
     private WebView webView;
-    private WebSettings webSettings;
+    public static String JESSIONID ;
     private RadioGroup radioGroup;
+    public static String HTTPURL = "http://120.25.248.31/px-rest/kd/index.html";
     public static String URL = "http://wapbaike.baidu.com/view/4850574.htm?sublemmaid=" +
             "15923552&adapt=1&fr=aladdin&target=_blank";
     private ValueCallback<Uri> myUploadMsg;
@@ -39,26 +41,34 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        StatService.setAppChannel(this, "null", false);
+
+
         setViews();
-        //启动推送服务
-        PushManager.startWork(this, "", "8e2cd393b4cbd65f1c9da9826594a9cd");
+        StatService.setAppKey("4311ed70ee");
+        StatService.setAppChannel(this, "null", false);
+        //启动推送服
+        PushManager.startWork(this,
+                PushConstants.LOGIN_TYPE_API_KEY,
+                "El4au0Glwr7Xt8sPgZFg2UP7");
         StatService.bindJSInterface(this, webView);
     }
 
+
     private void setViews() {
-        webView = (WebView)findViewById(R.id.webView);
+        webView = (WebView)findViewById(R.id.mainWebView);
         radioGroup = (RadioGroup)findViewById(R.id.first_page_radiogroup);
+        Log.i("TAG","初始化正常");
         setWebs();
     }
 
     private void setWebs() {
-        webSettings = webView.getSettings();
+        Log.i("TAG","初始化第二次正常");
+        WebSettings webSettings = webView.getSettings();
         webSettings.setAllowFileAccess(true);
 
         webSettings.setBuiltInZoomControls(true);
         webSettings.setJavaScriptEnabled(true);
-        webView.loadUrl("http://120.25.248.31/px-rest/kd/index.html");
+        webView.loadUrl(HTTPURL);
         webSettings.setDomStorageEnabled(true);
 
         webSettings.setDatabaseEnabled(true);
@@ -76,17 +86,25 @@ public class MainActivity extends BaseActivity {
         webSettings.setAppCachePath(appCachePath);
         webSettings.setAllowFileAccess(true);
         webSettings.setAppCacheEnabled(true);
-        webView.addJavascriptInterface(new JavaScriptCall(),"JavaScriptCall");
+        JavaScriptCall javaScriptCall = new JavaScriptCallSon();
+        webView.addJavascriptInterface(javaScriptCall,"JavaScriptCall");
 
 
     }
 
-    class JavaScriptCall{
+    //此类用于和js交互
+    class JavaScriptCallSon implements JavaScriptCall{
         //进入选择图片页面
         public void selectHeadPic(){
             Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
             intent.setType("image/*");
             startActivityForResult(intent, RESULT_PICK_PHOTO_NORMAL);
+        }
+
+        //js调用此方法将JessionId传过来将其保存
+        public void getJessionId(String jessionID){
+            JESSIONID = jessionID;
+
         }
     }
 
@@ -120,7 +138,7 @@ public class MainActivity extends BaseActivity {
                   bitmap.compress(Bitmap.CompressFormat.PNG,100,out);
                   byte [] bytes = out.toByteArray();
                   String pictureBytes = Base64.encodeToString(bytes,Base64.DEFAULT);
-                  webView.loadUrl("javascript:returnHeadPicPicture('" + pictureBytes + "')");
+                  webView.loadUrl("javascript:jsessionToPhone('" + pictureBytes + "')");
 
               }
     }

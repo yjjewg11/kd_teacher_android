@@ -5,18 +5,19 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="16"
         android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="问界互动家园"
+
         android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         <!-- 百度统计 -->
         <meta-data android:name="BaiduMobAd_STAT_ID" android:value="4311ed70ee" />
         <!-- 渠道商编号 -->
-        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="1110" />
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="Kd_Teacher" />
         <!-- 是否开启错误日志统计，默认为false -->
         <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true" />
         <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
@@ -35,6 +36,7 @@
 
         <activity
             android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:label="问界互动家园" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,19 +44,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".LoadUrlActivity"
-            android:label="@string/title_activity_load_url" >
-        </activity>
 
 
-        <receiver android:name="com.wjkj.kd.teacher.receiver.MyPushMessageReceiver">
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver">
             <intent-filter> <!-- 接收 push 消息 -->
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
                 <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
                 <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
-                <!-- 以下四项为可选的 action 声明，可大大提高 service 存活率和消息到达速度 -->
                 <action android:name="android.intent.action.MEDIA_MOUNTED" />
                 <action android:name="android.intent.action.USER_PRESENT" />
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
@@ -62,8 +59,10 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver" android:process=": bdservice_v1" >
-            <intent-filter> <action android:name="com.baidu.android.pushservice.action.METHOD" />
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
                 <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
             </intent-filter>
             <intent-filter>
@@ -71,8 +70,21 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
+
+        <receiver android:name="com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
         <service android:name="com.baidu.android.pushservice.PushService" android:exported="true"  android:process=":bdservice_v1" >
-            <intent-filter > <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            <intent-filter >
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
             </intent-filter>
         </service> <!-- 注意：在 4.4 (包含)之后的版本需加上如下所示的 service -->
         <service android:name="com.baidu.android.pushservice.CommandService" android:exported="true" >

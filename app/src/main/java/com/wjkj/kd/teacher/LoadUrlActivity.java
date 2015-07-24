@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebView;
 
-
 public class LoadUrlActivity extends Activity {
 
     private WebView webview;
