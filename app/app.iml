@@ -89,6 +89,7 @@
     <orderEntry type="library" exported="" name="pushservice-4.5.1.8" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.0.0" level="project" />
     <orderEntry type="library" exported="" name="android_api_3.7.0" level="project" />
+    <orderEntry type="library" exported="" name="thinkandroid-1.1-bin" level="project" />
   </component>
 </module>
 

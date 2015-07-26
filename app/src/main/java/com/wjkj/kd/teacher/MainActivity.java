@@ -1,5 +1,6 @@
 package com.wjkj.kd.teacher;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -18,6 +19,14 @@ import android.widget.RadioGroup;
 import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
 import com.baidu.mobstat.StatService;
+import com.ta.util.http.AsyncHttpClient;
+import com.ta.util.http.AsyncHttpResponseHandler;
+import com.ta.util.http.RequestParams;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.HttpUtils;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -32,6 +41,7 @@ public class MainActivity extends BaseActivity {
     private WebView webView;
     public static String JESSIONID ;
     private RadioGroup radioGroup;
+    public static Context instance;
     public static String HTTPURL = "http://120.25.248.31/px-rest/kd/index.html";
     public static String URL = "http://wapbaike.baidu.com/view/4850574.htm?sublemmaid=" +
             "15923552&adapt=1&fr=aladdin&target=_blank";
@@ -41,7 +51,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        instance = this;
 
         setViews();
         StatService.setAppKey("4311ed70ee");
@@ -104,8 +114,44 @@ public class MainActivity extends BaseActivity {
         //js调用此方法将JessionId传过来将其保存
         public void getJessionId(String jessionID){
             JESSIONID = jessionID;
+            //调用pushMessageToServer方法将渠道号和编号传到服务器
+            pushMessageToServer();
 
         }
+
+
+    }
+
+    //此方法调用网络请求传递参数
+    private void pushMessageToServer() {
+        //TODO
+        String url = "http://localhost:8080/px-moblie/rest/pushMsgDevice/save.json"
+                +"?JSESSIONID="+JESSIONID;
+        AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
+        RequestParams requestParams = new RequestParams();
+        requestParams.put("device_id", MyPushMessageReceiver.CHANNL_ID);
+        requestParams.put("device_type","android");
+        requestParams.put("status","0");
+        asyncHttpClient.post(url,requestParams,new AsyncHttpResponseHandler(){
+
+
+            @Override
+            public void onSuccess(String content) {
+
+                try {
+                    JSONObject jsonObject = new JSONObject(content);
+                    HttpUtils.pullJson(jsonObject);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable error) {
+
+            }
+        });
+
     }
 
     private void cropImageUri(String path) {
@@ -176,9 +222,6 @@ public class MainActivity extends BaseActivity {
     private class MyWebChromeClient extends WebChromeClient {
 
         public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String capture) {
-
-            Log.i("TAG","看看uploadMsg是什么"+uploadMsg+"    看看acceptType是"+acceptType+"    capture 是"+capture);
-
             myUploadMsg = uploadMsg;
         }
     }
