@@ -9,7 +9,7 @@
         android:targetSdkVersion="21" />
 
     <application
-        android:name="com.ta.TAApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="问界互动家园"
@@ -33,11 +33,12 @@
         <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="true" />
 
 
-        <meta-data android:name="api_key" android:value="El4au0Glwr7Xt8sPgZFg2UP7"/>
+        <meta-data android:name="api_key" android:value="4QTEeP8BGFVCrb21fYplColm"/>
 
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
             android:label="问界互动家园" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -106,6 +107,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -120,5 +122,6 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
 
 </manifest>

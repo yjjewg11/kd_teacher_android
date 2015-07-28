@@ -8,7 +8,7 @@ public class HttpUtils {
     public static void pullJson(JSONObject jsonObject) throws JSONException {
         JSONObject json = jsonObject.getJSONObject("ResMsg");
         if("success".equals(json.getString("status"))){
-
+                 ToastUtils.showMessage("上传成功");
             //指明当成功上传之后该如何做
         }else{
             //失败则显示原因

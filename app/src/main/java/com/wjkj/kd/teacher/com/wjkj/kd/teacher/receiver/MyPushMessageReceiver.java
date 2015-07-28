@@ -1,14 +1,21 @@
 package com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver;
 
 import android.annotation.TargetApi;
-import android.app.Notification;
+import android.app.ActivityManager;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
+import android.support.v4.app.NotificationCompat;
 import android.text.TextUtils;
 import android.util.Log;
 
 import com.baidu.android.pushservice.PushMessageReceiver;
+import com.wjkj.kd.teacher.MainActivity;
+import com.wjkj.kd.teacher.MyApplication;
 import com.wjkj.kd.teacher.R;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.Util;
 
@@ -100,14 +107,32 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
         }
 
         // Demo更新界面展示代码，应用请在这里加入自己的处理逻辑
-        NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        Notification.Builder builder = new Notification.Builder(context);
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
         builder.setSmallIcon(R.drawable.ic_launcher)
                .setContentText(message)
                .setContentText(customContentString);
-        Notification notification = builder.build();
-        notificationManager.notify(ID,notification);
+        Intent resultIntent = new Intent(MyApplication.instance, MainActivity.class);
 
+// The stack builder object will contain an artificial back stack for the
+// started Activity.
+// This ensures that navigating backward from the Activity leads out of
+// your application to the Home screen.
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(MyApplication.instance);
+// Adds the back stack for the Intent (but not the Intent itself)
+        stackBuilder.addParentStack(MainActivity.class);
+// Adds the Intent that starts the Activity to the top of the stack
+        stackBuilder.addNextIntent(resultIntent);
+        PendingIntent resultPendingIntent =
+                stackBuilder.getPendingIntent(
+                        0,
+                        PendingIntent.FLAG_UPDATE_CURRENT
+                );
+        builder.setContentIntent(resultPendingIntent);
+//        PendingIntent contextIntent = PendingIntent.getActivity(MyApplication.instance, 0, intent, 0);
+//        builder.setContentIntent(contextIntent);
+        NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.notify(ID,builder.build());
         updateContent(context, messageString);
     }
 
@@ -130,6 +155,7 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
                 + description + "\" customContent=" + customContentString;
         Log.d(TAG, notifyString);
 
+        Log.i("tag","onNotificationClicked");
         // 自定义内容获取方式，mykey和myvalue对应通知推送时自定义内容中设置的键和值
         if (!TextUtils.isEmpty(customContentString)) {
             JSONObject customJson = null;
@@ -146,7 +172,36 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
         }
 
         // Demo更新界面展示代码，应用请在这里加入自己的处理逻辑
-        updateContent(context, notifyString);
+        Log.i("info","查看通知是否已经被点击");
+
+        ActivityManager am = (ActivityManager)
+                context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningTaskInfo> list = am.getRunningTasks(100);
+        for(ActivityManager.RunningTaskInfo task : list){
+            if(task.baseActivity.getPackageName().equals("com.wjkj.kd.teacher")
+                    &&task.topActivity.getPackageName().equals("com.wjkj.kd.teacher")){
+                    context.startActivity(new Intent(context,MainActivity.class));
+            }else{
+                try {
+                    Log.i("info", "查看点击之后是否已经启动应用程序");
+                    Intent intent = new Intent();
+                    intent.setComponent(new ComponentName("com.wjkj.kd.teacher", "com.wjkj.kd.teacher.MainActivity"));
+                    intent.setAction(Intent.ACTION_VIEW);
+                    context.startActivity(intent);
+                    Log.i("info", "应用程序启动程序已经执行");
+                }catch (Exception e){
+
+                    e.printStackTrace();
+                }finally {
+
+                }
+            }
+
+            Log.i("TAG",""+task.baseActivity.getPackageName());
+        }
+
+
+//        updateContent(context, notifyString);
     }
 
     /**
@@ -165,13 +220,12 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
     @Override
     public void onNotificationArrived(Context context, String title,
                                       String description, String customContentString) {
-
         Log.i("TAG","通知已经能够到了这里了");
+        Log.i("tag","onNotificationArrived");
         String notifyString = "onNotificationArrived  title=\"" + title
                 + "\" description=\"" + description + "\" customContent="
                 + customContentString;
         Log.d(TAG, notifyString);
-
         // 自定义内容获取方式，mykey和myvalue对应通知推送时自定义内容中设置的键和值
         if (!TextUtils.isEmpty(customContentString)) {
             JSONObject customJson = null;
@@ -190,6 +244,23 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
 
         // Demo更新界面展示代码，应用请在这里加入自己的处理逻辑
         // 你可以參考 onNotificationClicked中的提示从自定义内容获取具体值
+
+
+//        Notification.Builder builder = new Notification.Builder(context);
+//        builder.setContentTitle(title)
+//                .setSmallIcon(R.drawable.ic_launcher)
+//                .setContentText(customContentString);
+//        Intent intent = new Intent();
+//        intent.setComponent(new ComponentName("com.wjkj.kd.teacher","com.wjkj.kd.teacher.MainActivity"));
+//        intent.setAction(Intent.ACTION_VIEW);
+//        Intent[] intents = new Intent[]{intent};
+//        NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+//        PendingIntent pendingIntent = PendingIntent.getActivities(context,110,intents,PendingIntent.FLAG_UPDATE_CURRENT);
+//        builder.setContentIntent(pendingIntent);
+//        manager.notify(1,builder.build());
+
+
+
         updateContent(context, notifyString);
     }
 
@@ -239,7 +310,6 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
                 + " sucessTags=" + sucessTags + " failTags=" + failTags
                 + " requestId=" + requestId;
         Log.d(TAG, responseString);
-
         // Demo更新界面展示代码，应用请在这里加入自己的处理逻辑
         updateContent(context, responseString);
     }
@@ -303,9 +373,9 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
         logText += content;
 
         Util.logStringCache = logText;
-//
+
 //        Intent intent = new Intent();
-//        intent.setClass(context.getApplicationContext(), PushDemoActivity.class);
+//        intent.setClass(context.getApplicationContext(), MainActivity.class);
 //        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //        context.getApplicationContext().startActivity(intent);
     }
