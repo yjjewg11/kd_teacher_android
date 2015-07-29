@@ -6,23 +6,24 @@ import android.webkit.WebView;
 
 public class LoadUrlActivity extends Activity {
 
-    private WebView webview;
+    private WebView webview2;
+    public static String URLL = "http://wapbaike.baidu.com/view/4850574.htm?sublemmaid=" +
+            "15923552&adapt=1&fr=aladdin&target=_blank";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load_url);
-
         setViews();
     }
     private void setViews() {
-        webview = (WebView)findViewById(R.id.webView2);
-        webview.loadUrl(MainActivity.URL);
-        webview.getSettings().setJavaScriptEnabled(true);
+        webview2 = (WebView)findViewById(R.id.webView2);
+        webview2.loadUrl(URLL);
+        webview2.getSettings().setJavaScriptEnabled(true);
     }
 
     @Override
     public void onBackPressed() {
-        finish();
+        LoadUrlActivity.this.finish();
     }
 }

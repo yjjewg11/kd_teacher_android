@@ -31,9 +31,7 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
     public static final String TAG = MyPushMessageReceiver.class
             .getSimpleName();
     private static final int ID = 100;
-
     public static String CHANNL_ID  = null ;
-
     /**
      * 调用PushManager.startWork后，sdk将对push
      * server发起绑定请求，这个过程是异步的。绑定请求的结果通过onBind返回。 如果您需要用单播推送，需要把这里获取的channel
@@ -170,10 +168,8 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
                 e.printStackTrace();
             }
         }
-
         // Demo更新界面展示代码，应用请在这里加入自己的处理逻辑
         Log.i("info","查看通知是否已经被点击");
-
         ActivityManager am = (ActivityManager)
                 context.getSystemService(Context.ACTIVITY_SERVICE);
         List<ActivityManager.RunningTaskInfo> list = am.getRunningTasks(100);
@@ -222,6 +218,8 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
                                       String description, String customContentString) {
         Log.i("TAG","通知已经能够到了这里了");
         Log.i("tag","onNotificationArrived");
+        onNotificationClicked(context, title,
+                description,customContentString);
         String notifyString = "onNotificationArrived  title=\"" + title
                 + "\" description=\"" + description + "\" customContent="
                 + customContentString;

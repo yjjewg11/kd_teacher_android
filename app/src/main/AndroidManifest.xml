@@ -37,6 +37,7 @@
 
         <activity
             android:name=".MainActivity"
+
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:label="问界互动家园" >
