@@ -12,6 +12,7 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
@@ -27,6 +28,7 @@ import com.baidu.mobstat.StatService;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.Menu;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.BitmapUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.HttpUtils;
@@ -38,14 +40,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
-
-
 public class MainActivity extends BaseActivity {
     private static final String IMAGE_FILE_LOCATION = "file:///sdcard/temp.jpg";
     private static final int CROP_A_PICTURE = 10;
     private static final int CHOOSE_PICTURE_ONLY = 20;
     private Uri imageUri = Uri.parse(IMAGE_FILE_LOCATION);
     private static final int RESULT_PICK_PHOTO_NORMAL = 1;
+    public static int PUSH_STATE = 0;
+    public static final String CANCLE_USER = "javascript:G_jsCallBack.userinfo_logout()";
     public static AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
     public WebView webView;
     public static String JESSIONID ;
@@ -59,11 +61,14 @@ public class MainActivity extends BaseActivity {
     private String tureth = "true";
     private TextView tv_permit;
     private ProgressBar progressBar;
+    private Menu menu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_mymain);
         instance = this;
+        menu = new Menu(this);
         setViews();
         StatService.bindJSInterface(this, webView);
 
@@ -346,7 +351,7 @@ public class MainActivity extends BaseActivity {
                 //点击此按钮注销用户，并返回到登陆页面
                 //回调javaScript方法
 
-                webView.loadUrl("javascript:G_jsCallBack.userinfo_logout()");
+                webView.loadUrl(CANCLE_USER);
                 break;
         }
     }
@@ -369,5 +374,13 @@ public class MainActivity extends BaseActivity {
         public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String capture) {
             myUploadMsg = uploadMsg;
         }
+    }
+
+    public static MotionEvent motionEvent ;
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        motionEvent = event;
+        return true;
+
     }
 }

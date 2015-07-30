@@ -182,6 +182,7 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
                     Log.i("info", "查看点击之后是否已经启动应用程序");
                     Intent intent = new Intent();
                     intent.setComponent(new ComponentName("com.wjkj.kd.teacher", "com.wjkj.kd.teacher.MainActivity"));
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
                     intent.setAction(Intent.ACTION_VIEW);
                     context.startActivity(intent);
                     Log.i("info", "应用程序启动程序已经执行");

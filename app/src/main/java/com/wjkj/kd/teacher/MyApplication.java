@@ -1,5 +1,6 @@
 package com.wjkj.kd.teacher;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
@@ -7,9 +8,13 @@ import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
 import com.baidu.mobstat.StatService;
 
+import java.util.ArrayList;
+
 
 public class MyApplication extends Application{
     public static Context instance;
+    //此集合用于存储activity对象
+    public static ArrayList<Activity> list = new ArrayList();
     @Override
     public void onCreate() {
         super.onCreate();
@@ -21,5 +26,6 @@ public class MyApplication extends Application{
         PushManager.startWork(this,
                 PushConstants.LOGIN_TYPE_API_KEY,
                 "4QTEeP8BGFVCrb21fYplColm");
+
     }
 }
