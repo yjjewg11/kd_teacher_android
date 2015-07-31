@@ -10,6 +10,11 @@ import com.wjkj.kd.teacher.MainActivity;
 import com.wjkj.kd.teacher.MyApplication;
 import com.wjkj.kd.teacher.R;
 import com.wjkj.kd.teacher.VersionActivity;
+
+import org.json.JSONException;
+
+import java.io.UnsupportedEncodingException;
+
 public class Menu {
     Button[] btnArray = new Button[7];
     Activity activity;
@@ -77,6 +82,7 @@ public class Menu {
                     for(Activity activity : MyApplication.list){
                         activity.finish();
                     }
+
                     System.exit(0);
 
                     break;
@@ -96,11 +102,23 @@ public class Menu {
 
     }
 
-    private void changePushState() {
+    private void changePushState(){
         if(MainActivity.PUSH_STATE==0){
             MainActivity.PUSH_STATE = 1;
+            pushMessage();
         }else{
             MainActivity.PUSH_STATE = 0;
+            pushMessage();
+        }
+    }
+
+    public void  pushMessage(){
+        try {
+            MainActivity.instance.pushMessageToServer();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
     }
 }

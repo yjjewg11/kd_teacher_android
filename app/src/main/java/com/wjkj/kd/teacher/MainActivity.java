@@ -31,16 +31,26 @@ import com.loopj.android.http.RequestParams;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.Menu;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.BitmapUtils;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ExUtil;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.HttpUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ParseUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ToastUtils;
 
 import org.apache.http.Header;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.message.BasicHeader;
+import org.apache.http.protocol.HTTP;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.io.UnsupportedEncodingException;
+
 public class MainActivity extends BaseActivity {
+
+    private static final String APPLICATION_JSON = "application/json";
+    private static final String CONTENT_TYPE_TEXT_JSON = "text/json";
+
     private static final String IMAGE_FILE_LOCATION = "file:///sdcard/temp.jpg";
     private static final int CROP_A_PICTURE = 10;
     private static final int CHOOSE_PICTURE_ONLY = 20;
@@ -55,8 +65,14 @@ public class MainActivity extends BaseActivity {
     public static MainActivity instance;
     public static String URL = "http://wapbaike.baidu.com/view/4850574.htm?sublemmaid=" +
             "15923552&adapt=1&fr=aladdin&target=_blank";
-    public static String PUSHHTTP = "http://120.25.248.31/px-rest/";
-    public static String HTTPURL = "http://120.25.248.31/px-rest/kd/index.html";
+//    public static String ServerURL = "http://120.25.248.31/px-rest/";
+//    public static String ServerURL = "http://kd.wenjienet.com/px-rest/";
+    public static String ServerURL = "http://192.168.0.101:8080/px-rest/";
+//    public static String ServerURL = "http://192.168.0.110:8080/px-rest/";
+    public static String InterfaceURL = ServerURL+"rest/";
+    public static String HTTPURL = ServerURL+"kd/index.html"
+//            "http://120.25.248.31/px-rest/kd/index.html"
+            ;
     private ValueCallback<Uri> myUploadMsg;
     private String tureth = "true";
     private TextView tv_permit;
@@ -70,7 +86,9 @@ public class MainActivity extends BaseActivity {
         instance = this;
         menu = new Menu(this);
         setViews();
+
         StatService.bindJSInterface(this, webView);
+
 
     }
 
@@ -94,7 +112,7 @@ public class MainActivity extends BaseActivity {
                 public void run() {
                     f = true;
                 }
-            },5000);
+            }, 5000);
         }else{
             finish();
         }
@@ -168,7 +186,7 @@ public class MainActivity extends BaseActivity {
 
         //调用此方法取消提示
         @JavascriptInterface
-        public void onShowDialog(){
+        public void hideLoadingDialog(){
             tv_permit.setVisibility(View.GONE);
             progressBar.setVisibility(View.GONE);
         }
@@ -176,37 +194,58 @@ public class MainActivity extends BaseActivity {
         //js调用此方法将JessionId传过来将其保存
         @JavascriptInterface
         public void jsessionToPhone(String jessionID){
-
             JESSIONID = jessionID;
-            Log.i("TAG","jsessionId==="+MyPushMessageReceiver.CHANNL_ID );
+            Log.i("TAG", "jsessionId===" + jessionID);
+
             //调用pushMessageToServer方法将渠道号和编号传到服务器
-            pushMessageToServer();
+            try {
+//                if(JESSIONID!=null)
+//                pushMessageToServer();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         //此方法选择图片并压缩，不需裁剪
     }
     //此方法调用网络请求传递参数
-    private void pushMessageToServer() {
-        //TODO
-        String url =PUSHHTTP+ "pushMsgDevice/save.json"
-                +"?JSESSIONID="+JESSIONID;
+    public void pushMessageToServer() throws UnsupportedEncodingException, JSONException {
 
+        //TODO
+        MyPushMessageReceiver.f = false;
+        String url =InterfaceURL+ "pushMsgDevice/save.json";
+//                +"?JSESSIONID="+JESSIONID;
+        JSONObject jSONObject=new JSONObject();
+        jSONObject.put("device_id",MyPushMessageReceiver.CHANNL_ID);
+        jSONObject.put("device_type","android");
+        jSONObject.put("status",PUSH_STATE);
+        StringEntity se = new StringEntity(jSONObject.toString(), HTTP.UTF_8);
+//        se.setContentType(APPLICATION_JSON + HTTP.CHARSET_PARAM +HTTP.UTF_8);
+        se.setContentEncoding(HTTP.UTF_8);
         RequestParams requestParams = new RequestParams();
-        requestParams.put("device_id", MyPushMessageReceiver.CHANNL_ID);
-        requestParams.put("device_type","android");
-        requestParams.put("status","0");
-        asyncHttpClient.post(url,requestParams,new AsyncHttpResponseHandler(){
+        requestParams.put("JSESSIONID",JESSIONID);
+//        requestParams.put("device_id", MyPushMessageReceiver.CHANNL_ID);
+//        Log.i("TAG","打印渠道号码"+MyPushMessageReceiver.CHANNL_ID);
+//        requestParams.put("device_type","android");
+//        requestParams.put("status","0");
+//        asyncHttpClient.post()
+        String contentType = APPLICATION_JSON + HTTP.CHARSET_PARAM +HTTP.UTF_8;
+        Header[] headers;
+        headers = new BasicHeader[]{
+                new BasicHeader("Cookie","JSESSIONID="+JESSIONID+";")
+        };
+
+        asyncHttpClient.post(this,url,headers,se,contentType,new AsyncHttpResponseHandler(){
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 try {
-                    Log.i("TAG","打印一下网络传过来的数组"+bytes);
+                    Log.i("TAG","打印一下网络传过来的数组"+bytes.toString());
                     String shuzu = new String(bytes);
                     JSONObject jsonObject = new JSONObject(shuzu);
                     HttpUtils.pullJson(jsonObject);
                 } catch (JSONException e) {
-                    e.printStackTrace();
+                    ExUtil.e(e);
                 }
             }
-
             @Override
             public void onFailure(int i, Header[] headers, byte[] bytes, Throwable throwable) {
 
@@ -238,6 +277,14 @@ public class MainActivity extends BaseActivity {
             e.printStackTrace();
         }
     }
+
+    @Override
+    protected void onDestroy() {
+
+        MyPushMessageReceiver.f = true;
+        super.onDestroy();
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         Cursor cursor = null;
@@ -277,7 +324,7 @@ public class MainActivity extends BaseActivity {
                       Log.i("TAG", "返回了图片信息");
                       webView.loadUrl("javascript:G_jsCallBack.selectHeadPic_callback('" + pictureBytes + "')");
                   }catch (Exception e){
-                      e.printStackTrace();
+                      ExUtil.e(e);
                   }finally {
                       BitmapUtils.recyleBitmap(bitmap);
                   }

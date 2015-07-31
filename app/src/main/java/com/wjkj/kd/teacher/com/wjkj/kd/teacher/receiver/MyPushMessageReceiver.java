@@ -17,6 +17,7 @@ import com.baidu.android.pushservice.PushMessageReceiver;
 import com.wjkj.kd.teacher.MainActivity;
 import com.wjkj.kd.teacher.MyApplication;
 import com.wjkj.kd.teacher.R;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ExUtil;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.Util;
 
 import org.json.JSONException;
@@ -31,7 +32,8 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
     public static final String TAG = MyPushMessageReceiver.class
             .getSimpleName();
     private static final int ID = 100;
-    public static String CHANNL_ID  = null ;
+    public static String CHANNL_ID  = null;
+    public  static boolean f = true;
     /**
      * 调用PushManager.startWork后，sdk将对push
      * server发起绑定请求，这个过程是异步的。绑定请求的结果通过onBind返回。 如果您需要用单播推送，需要把这里获取的channel
@@ -58,11 +60,19 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
                 + appid + " userId=" + userId + " channelId=" + channelId
                 + " requestId=" + requestId;
         Log.d(TAG, responseString);
-
         if (errorCode == 0) {
             // 绑定成功
             CHANNL_ID = channelId;
-            Log.i("TAG","看看是否绑定成功");
+            Log.i("TAG打印渠道编号在接收器中CHANNL_ID",""+CHANNL_ID);
+//            try {
+//                if(f){}
+////                MainActivity.instance.pushMessageToServer();
+//            } catch (UnsupportedEncodingException e) {
+//                ExUtil.e(e);
+//            } catch (JSONException e) {
+//               ExUtil.e(e);
+//            }
+            Log.i("TAG", "看看是否绑定成功");
         }
 
 
@@ -100,7 +110,7 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
                 }
             } catch (JSONException e) {
                 // TODO Auto-generated catch block
-                e.printStackTrace();
+                ExUtil.e(e);
             }
         }
 
@@ -165,7 +175,7 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
                 }
             } catch (JSONException e) {
                 // TODO Auto-generated catch block
-                e.printStackTrace();
+               ExUtil.e(e);
             }
         }
         // Demo更新界面展示代码，应用请在这里加入自己的处理逻辑
@@ -176,7 +186,9 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
         for(ActivityManager.RunningTaskInfo task : list){
             if(task.baseActivity.getPackageName().equals("com.wjkj.kd.teacher")
                     &&task.topActivity.getPackageName().equals("com.wjkj.kd.teacher")){
-                    context.startActivity(new Intent(context,MainActivity.class));
+                Intent intent = new Intent(context,MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+                context.startActivity(intent);
             }else{
                 try {
                     Log.i("info", "查看点击之后是否已经启动应用程序");
@@ -188,7 +200,7 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
                     Log.i("info", "应用程序启动程序已经执行");
                 }catch (Exception e){
 
-                    e.printStackTrace();
+                    ExUtil.e(e);
                 }finally {
 
                 }

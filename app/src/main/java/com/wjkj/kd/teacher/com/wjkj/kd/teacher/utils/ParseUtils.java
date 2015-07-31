@@ -28,7 +28,7 @@ public class ParseUtils {
 
 
         }catch (Exception e){
-            e.printStackTrace();
+            ExUtil.e(e);
         }finally {
             try {
                 if(out!=null)

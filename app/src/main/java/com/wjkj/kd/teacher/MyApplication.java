@@ -7,6 +7,7 @@ import android.content.Context;
 import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
 import com.baidu.mobstat.StatService;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.MyAsyncTask;
 
 import java.util.ArrayList;
 
@@ -25,7 +26,8 @@ public class MyApplication extends Application{
 //        启动推送服务
         PushManager.startWork(this,
                 PushConstants.LOGIN_TYPE_API_KEY,
-                "4QTEeP8BGFVCrb21fYplColm");
+                "El4au0Glwr7Xt8sPgZFg2UP7");
+        new MyAsyncTask().execute();
 
     }
 }

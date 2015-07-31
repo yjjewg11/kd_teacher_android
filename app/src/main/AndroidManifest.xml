@@ -75,7 +75,7 @@
             android:value="true" />
         <meta-data
             android:name="api_key"
-            android:value="4QTEeP8BGFVCrb21fYplColm" />
+            android:value="El4au0Glwr7Xt8sPgZFg2UP7" />
 
         <activity
             android:name=".MainActivity"
