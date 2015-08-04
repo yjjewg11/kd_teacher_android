@@ -19,21 +19,15 @@
                 android:textColor="#bbbfff"
                 android:layout_height="60dp"
                 android:gravity="center_horizontal"
-                android:text="推送设置" />
+                android:text="推送开关" />
             <Button
                 android:id="@+id/btn_version"
                 android:layout_width="match_parent"
                 android:textColor="#bbbfff"
                 android:gravity="center_horizontal"
                 android:layout_height="60dp"
-                android:text="版本信息" />
-            <Button
-                android:id="@+id/btn_cancle"
-                android:layout_width="match_parent"
-                android:textColor="#bbbfff"
-                android:gravity="center_horizontal"
-                android:layout_height="60dp"
-                android:text="注销" />
+                android:text="收藏" />
+
 
             <Button
                 android:id="@+id/btn_alter_message"
@@ -56,6 +50,14 @@
                 android:gravity="center_horizontal"
                 android:layout_height="60dp"
                 android:text="设置" />
+
+            <Button
+                android:id="@+id/btn_cancle"
+                android:layout_width="match_parent"
+                android:textColor="#bbbfff"
+                android:gravity="center_horizontal"
+                android:layout_height="60dp"
+                android:text="注销" />
             <Button
                 android:id="@+id/btn_finish"
                 android:layout_width="match_parent"

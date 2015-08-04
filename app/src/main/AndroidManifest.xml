@@ -4,6 +4,16 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <supports-screens
+        android:largeScreens="false"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:anyDensity="true"
+
+        />
+
+
+
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="21" />
@@ -38,6 +48,7 @@
         android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/icon"
+
         android:label="问界互动家园"
         android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
 

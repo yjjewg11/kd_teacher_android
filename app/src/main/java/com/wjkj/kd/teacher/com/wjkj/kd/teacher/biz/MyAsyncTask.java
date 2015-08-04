@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.wjkj.kd.teacher.MainActivity;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ExUtil;
 
 import org.json.JSONException;
 
@@ -21,8 +22,10 @@ public class MyAsyncTask extends AsyncTask<Void,Void,Boolean>{
         while(isnull){
             try {
                 Thread.sleep(5000);
-            } catch (Exception e) {
+            } catch (NullPointerException e) {
                 e.printStackTrace();
+            } catch (InterruptedException e) {
+                ExUtil.e(e);
             }
             currentTime =System.currentTimeMillis()-beginTime;
             if(currentTime>120000) break;
@@ -32,16 +35,15 @@ public class MyAsyncTask extends AsyncTask<Void,Void,Boolean>{
                 isnull = false;
             }
         }
-
         if(currentTime>120000){return false;}
         return true;
-
     }
-
     @Override
     protected void onPostExecute(Boolean aBoolean) {
         if(aBoolean){
             try {
+                if(MainActivity.instance==null){return;}
+
                 Log.i("TAG","不知道这个什么时候执行");
                 MainActivity.instance.pushMessageToServer();
             } catch (UnsupportedEncodingException e) {
@@ -49,7 +51,8 @@ public class MyAsyncTask extends AsyncTask<Void,Void,Boolean>{
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+        }else{
+            MainActivity.instance.myAsyncTask.cancel(true);
         }
-
     }
 }

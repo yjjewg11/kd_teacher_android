@@ -14,50 +14,58 @@
     <RadioGroup
         android:id="@+id/first_page_radiogroup"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true">
-
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <RadioButton
-            android:layout_width="99dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/zhuye1"
-            android:checked="true"
 
+            android:background="@drawable/seclectfirstpage"
             android:onClick="onClick"
             android:gravity="center_horizontal"
-            android:textSize="18sp"
+            android:textSize="15sp"
+            android:layout_weight="1"
             android:button="@null"
-            android:id="@+id/radioButton1" />
+            android:id="@+id/radioButton1"
+            android:checked="true" />
+
         <RadioButton
-            android:layout_width="wrap_content"
+            android:background="@drawable/seclecttongxin"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="通讯录"
+
             android:onClick="onClick"
-            android:textSize="18sp"
             android:gravity="center_horizontal"
+            android:textSize="15sp"
             android:layout_weight="1"
             android:button="@null"
             android:id="@+id/radioButton2" />
+
+
         <RadioButton
-            android:layout_width="wrap_content"
+            android:background="@drawable/seclectmessge"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="消息"
+
             android:onClick="onClick"
             android:gravity="center_horizontal"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:layout_weight="1"
             android:button="@null"
             android:id="@+id/radioButton3" />
         <RadioButton
-            android:layout_width="wrap_content"
+            android:background="@drawable/seclectsettings"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="设置"
+
             android:onClick="onClick"
             android:gravity="center_horizontal"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:layout_weight="1"
             android:button="@null"
             android:id="@+id/radioButton4" />
@@ -78,5 +86,6 @@
         android:id="@+id/progressBar"
         android:layout_above="@+id/textView"
         android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

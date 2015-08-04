@@ -1,7 +1,9 @@
 package com.wjkj.kd.teacher;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -11,24 +13,27 @@ import android.os.Handler;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
+import android.webkit.WebStorage;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.baidu.android.pushservice.PushConstants;
+import com.baidu.android.pushservice.PushManager;
 import com.baidu.mobstat.StatService;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.Menu;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.MyAsyncTask;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.BitmapUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ExUtil;
@@ -45,9 +50,11 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
+import java.util.Date;
 
 public class MainActivity extends BaseActivity {
 
+    public static Date dateBegin = new Date();
     private static final String APPLICATION_JSON = "application/json";
     private static final String CONTENT_TYPE_TEXT_JSON = "text/json";
 
@@ -57,34 +64,47 @@ public class MainActivity extends BaseActivity {
     private Uri imageUri = Uri.parse(IMAGE_FILE_LOCATION);
     private static final int RESULT_PICK_PHOTO_NORMAL = 1;
     public static int PUSH_STATE = 0;
-    public static final String CANCLE_USER = "javascript:G_jsCallBack.userinfo_logout()";
+    public static final String CANCLE_USER = "javascript:G_jsCallBack.user_info_logout()";
     public static AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
     public WebView webView;
     public static String JESSIONID ;
     private RadioGroup radioGroup;
     public static MainActivity instance;
+    public MyAsyncTask myAsyncTask;
     public static String URL = "http://wapbaike.baidu.com/view/4850574.htm?sublemmaid=" +
             "15923552&adapt=1&fr=aladdin&target=_blank";
 //    public static String ServerURL = "http://120.25.248.31/px-rest/";
+    //正式环境
 //    public static String ServerURL = "http://kd.wenjienet.com/px-rest/";
-    public static String ServerURL = "http://192.168.0.101:8080/px-rest/";
-//    public static String ServerURL = "http://192.168.0.110:8080/px-rest/";
+
+    //调试用
+    public static String ServerURL = "http://192.168.0.107:8080/px-rest/";
     public static String InterfaceURL = ServerURL+"rest/";
-    public static String HTTPURL = ServerURL+"kd/index.html"
+    public static String HTTPURL = ServerURL+"kd/index.html";
+
+
+
+    public static String appCachePath = MyApplication.instance.getCacheDir().getAbsolutePath();
 //            "http://120.25.248.31/px-rest/kd/index.html"
             ;
     private ValueCallback<Uri> myUploadMsg;
+
     private String tureth = "true";
     private TextView tv_permit;
     private ProgressBar progressBar;
     private Menu menu;
+    public Handler handler =  new Handler();
+    public WebSettings webSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mymain);
         instance = this;
+
         menu = new Menu(this);
+
         setViews();
 
         StatService.bindJSInterface(this, webView);
@@ -92,7 +112,19 @@ public class MainActivity extends BaseActivity {
 
     }
 
+    public void hideText(){
 
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                tv_permit.setVisibility(View.GONE);
+                progressBar.setVisibility(View.GONE);
+            }
+        });
+
+        handler.sendEmptyMessage(1);
+
+    }
     private void setViews() {
         tv_permit = (TextView)findViewById(R.id.textView);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
@@ -100,10 +132,16 @@ public class MainActivity extends BaseActivity {
         radioGroup = (RadioGroup)findViewById(R.id.first_page_radiogroup);
         setWebs();
     }
-
     boolean f = true;
     @Override
     public void onBackPressed() {
+
+        if(tv_permit.getVisibility()==View.VISIBLE&&progressBar.getVisibility()==View.VISIBLE){
+            finishAll();
+        }
+        webView.loadUrl("javascript:G_jsCallBack.QueuedoBackFN()");
+    }
+    private void finishAll() {
         if(f){
             ToastUtils.showMessage("再按一次退出程序");
             f = false;
@@ -114,43 +152,62 @@ public class MainActivity extends BaseActivity {
                 }
             }, 5000);
         }else{
-            finish();
-        }
+            myAsyncTask.cancel(true);
+            for(Activity activity : MyApplication.list){
+                activity.finish();
+            }
 
+            //过两天清理一次
+           long time =  (new Date().getTime())-dateBegin.getTime();
+            if((time/3600/24)>=2){
+                clear();
+                dateBegin.setTime(new Date().getTime());
+            }
+        }
     }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        boolean t = true;
-        if(keyCode==KeyEvent.KEYCODE_BACK&&webView.canGoBack()){
-            webView.goBack();
-
-        }else{
-            onBackPressed();
-        }
-        return onKeyLongPress(keyCode, event);
-    }
+//    @Override
+//    public boolean onKeyDown(int keyCode, KeyEvent event) {
+//        boolean t = true;
+//        if(keyCode==KeyEvent.KEYCODE_BACK&&webView.canGoBack()){
+//            webView.goBack();
+//
+//        }else{
+//            onBackPressed();
+//        }
+//        return onKeyLongPress(keyCode, event);
+//    }
 
     private void setWebs() {
-        WebSettings webSettings = webView.getSettings();
+        webSettings = webView.getSettings();
         webSettings.setAllowFileAccess(true);
+        //支持缩放
         webSettings.setBuiltInZoomControls(true);
         webSettings.setJavaScriptEnabled(true);
+        // 开启 DOM storage API 功能
         webSettings.setDomStorageEnabled(true);
+        //开启缓存数据库功能
         webSettings.setDatabaseEnabled(true);
         webSettings.setUseWideViewPort(true);
+        //设置缓存模式
+
+        //设置缓存路径
+        webSettings.setAppCachePath(appCachePath+"/clear");
+        //允许访问文件
+        webSettings.setAllowFileAccess(true);
+        //开启缓存功能
+        webSettings.setAppCacheEnabled(true);
+        webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
         webView.setWebViewClient(new MyWebViewClient());
         webView.setWebChromeClient(new MyWebChromeClient());
         webSettings.setDomStorageEnabled(true);
-        // Set cache size to 8 mb by default. should be more than enough
-        webSettings.setAppCacheMaxSize(1024 * 1024 * 8);
+        // Set cache size to 2 mb by default. should be more than enough
+        webSettings.setAppCacheMaxSize(1024 * 1024 * 2);
         // This next one is crazy. It's the DEFAULT location for your app's cache
         // But it didn't work for me without this line.
         // UPDATE: no hardcoded path. Thanks to Kevin Hawkins
-        String appCachePath = getApplicationContext().getCacheDir().getAbsolutePath();
-        webSettings.setAppCachePath(appCachePath);
-        webSettings.setAllowFileAccess(true);
-        webSettings.setAppCacheEnabled(true);
+
+
         webView.addJavascriptInterface(new JavaScriptCallSon(),"JavaScriptCall");
         webView.loadUrl(
                 HTTPURL
@@ -163,7 +220,12 @@ public class MainActivity extends BaseActivity {
         //此方法选择可裁剪的图片
         @JavascriptInterface
         public void selectHeadPic(){
-            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+            Intent intent = null;
+            if(android.os.Build.VERSION.SDK_INT>=android.os.Build.VERSION_CODES.KITKAT) {
+                intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+            }else{
+                intent = new Intent(Intent.ACTION_GET_CONTENT);
+            }
             intent.setType("image/*");
             intent.addCategory(Intent.CATEGORY_OPENABLE);
             startActivityForResult(intent, RESULT_PICK_PHOTO_NORMAL);
@@ -184,12 +246,10 @@ public class MainActivity extends BaseActivity {
         }
 
 
+
+
         //调用此方法取消提示
-        @JavascriptInterface
-        public void hideLoadingDialog(){
-            tv_permit.setVisibility(View.GONE);
-            progressBar.setVisibility(View.GONE);
-        }
+
 
         //js调用此方法将JessionId传过来将其保存
         @JavascriptInterface
@@ -206,6 +266,28 @@ public class MainActivity extends BaseActivity {
             }
         }
         //此方法选择图片并压缩，不需裁剪
+
+
+        @JavascriptInterface
+        public void hideLoadingDialog(){
+
+            try {
+                hideText();
+
+            }catch (Exception e){
+                e.printStackTrace();
+                throw new RuntimeException(e);
+
+            }
+        }
+
+        //此方法在js回退到底之后调用来退出程序
+        @JavascriptInterface
+        public void finishProject(){
+
+          finishAll();
+        }
+
     }
     //此方法调用网络请求传递参数
     public void pushMessageToServer() throws UnsupportedEncodingException, JSONException {
@@ -238,7 +320,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 try {
-                    Log.i("TAG","打印一下网络传过来的数组"+bytes.toString());
+
                     String shuzu = new String(bytes);
                     JSONObject jsonObject = new JSONObject(shuzu);
                     HttpUtils.pullJson(jsonObject);
@@ -248,10 +330,10 @@ public class MainActivity extends BaseActivity {
             }
             @Override
             public void onFailure(int i, Header[] headers, byte[] bytes, Throwable throwable) {
-
                 ToastUtils.showMessage("网络连接处上传失败");
             }
         });
+
     }
     private void cropImageUri(String path) {
         try {
@@ -271,11 +353,21 @@ public class MainActivity extends BaseActivity {
             intent.putExtra("output", imageUri);
             intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
             startActivityForResult(intent, CROP_A_PICTURE);
-            Log.i("TAG","图片裁剪程序已正常启动");
+
         }catch (Exception e){
-            Log.i("TAG","裁剪图片出错了");
+
             e.printStackTrace();
         }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        PushManager.startWork(this,
+                PushConstants.LOGIN_TYPE_API_KEY,
+                "El4au0Glwr7Xt8sPgZFg2UP7");
+        myAsyncTask = new MyAsyncTask();
+        this.myAsyncTask.execute();
     }
 
     @Override
@@ -390,9 +482,10 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.radioButton2:
                 break;
+
             case R.id.radioButton3:
                 //即使消息
-                webView.loadUrl("javascript:G_jsCallBack.queryMyTimely_myList（）");
+                webView.loadUrl("javascript:G_jsCallBack.queryMyTimely_myList()");
                 break;
             case R.id.radioButton4:
                 //点击此按钮注销用户，并返回到登陆页面
@@ -407,6 +500,8 @@ public class MainActivity extends BaseActivity {
 
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
+
+            Log.i("info","打印url"+url.toString());
 
             if(url.contains("baidu.com")){
 //                Intent intent = new Intent(MainActivity.this,LoadUrlActivity.class);
@@ -429,5 +524,29 @@ public class MainActivity extends BaseActivity {
         motionEvent = event;
         return true;
 
+    }
+
+//    @Override
+//    protected void onStop() {
+//        PushManager.stopWork(this);
+//        super.onStop();
+//    }
+
+
+    public void clear() {
+        WebStorage webStorage = WebStorage.getInstance();
+        webStorage.deleteAllData();
+        MainActivity.instance.webView.clearCache(true);
+        MainActivity.instance.webView.clearFormData();
+        MainActivity.instance.webView.clearHistory();
+        MainActivity.instance.webView.clearSslPreferences();
+        MainActivity.instance.webView.clearMatches();
+    }
+
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        Log.i("info","看看方法横竖品几次");
+        super.onConfigurationChanged(newConfig);
     }
 }

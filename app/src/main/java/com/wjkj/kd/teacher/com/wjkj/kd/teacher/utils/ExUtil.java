@@ -70,8 +70,9 @@ public class ExUtil {
             throw new RuntimeException("方法不存在异常");
 //方法不存在异常
         }else{
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
     }
 }
+
