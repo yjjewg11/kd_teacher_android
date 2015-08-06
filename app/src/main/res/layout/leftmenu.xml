@@ -18,8 +18,10 @@
                 android:layout_width="match_parent"
                 android:textColor="#bbbfff"
                 android:layout_height="60dp"
+                android:text="推送消息"
+                android:checked="true"
                 android:gravity="center_horizontal"
-                android:text="推送开关" />
+                 />
             <Button
                 android:id="@+id/btn_version"
                 android:layout_width="match_parent"

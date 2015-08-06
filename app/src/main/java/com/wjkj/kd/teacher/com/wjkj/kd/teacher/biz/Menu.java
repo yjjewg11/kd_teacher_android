@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import com.umeng.analytics.MobclickAgent;
 import com.wjkj.kd.teacher.MainActivity;
 import com.wjkj.kd.teacher.MyApplication;
 import com.wjkj.kd.teacher.R;
@@ -19,6 +20,7 @@ import java.io.File;
 import java.io.UnsupportedEncodingException;
 
 public class Menu {
+
     Button[] btnArray = new Button[7];
     Activity activity;
     SlidingMenu slidingMenu;
@@ -33,6 +35,7 @@ public class Menu {
         slidingMenu.attachToActivity(activity, SlidingMenu.SLIDING_CONTENT);
         int screenWidth = activity.getResources().getDisplayMetrics().widthPixels;
         slidingMenu.setBehindOffset(screenWidth * 3 / 8);
+
         btnArray[0] = (Button) activity
                 .findViewById(R.id.push_message);
         btnArray[1] = (Button) activity
@@ -44,10 +47,12 @@ public class Menu {
         btnArray[4] = (Button) activity.findViewById(R.id.btn_alter_message);
         btnArray[5] = (Button) activity.findViewById(R.id.btn_alter_password);
         btnArray[6] = (Button) activity.findViewById(R.id.btn_leftmenu_setting);
+
         MyListener myListener = new MyListener();
         for (Button btn : btnArray) {
             btn.setOnClickListener(myListener);
         }
+
     }
 
     public void showMenu() {
@@ -64,49 +69,54 @@ public class Menu {
 //			if (v.getId()==R.id.btn_leftmenu_allTopic)
 //			{index=0;}
 
-            switch (v.getId()) {
-                case R.id.push_message:
-                    //调用一个方法将消息推送设置状态改变
-                    changePushState();
-                    break;
-                case R.id.btn_version:
-                    //启动一个界面观察此程序的版本号
-                    Intent intent = new Intent(activity,VersionActivity.class);
-                    activity.startActivity(intent);
-                    break;
-                case R.id.btn_cancle:
-                    //调用js接口注销当前用户
-                    Log.i("TAG","注销用户");
-                   if(activity instanceof MainActivity){
-                       MainActivity mainActivity = (MainActivity)activity;
-                       mainActivity.webView.loadUrl(MainActivity.CANCLE_USER);
-                       Log.i("TAG","注销方法已执行");
-                       slidingMenu.toggle();
-                   }
+            try {
+                switch (v.getId()) {
+                    case R.id.push_message:
+                        //调用一个方法将消息推送设置状态改变
+                        changePushState();
+                        break;
+                    case R.id.btn_version:
+                        //启动一个界面观察此程序的版本号
+                        Intent intent = new Intent(activity, VersionActivity.class);
+                        activity.startActivity(intent);
+                        break;
+                    case R.id.btn_cancle:
+                        //调用js接口注销当前用户
+                        Log.i("TAG", "注销用户");
+                        if (activity instanceof MainActivity) {
+                            MainActivity mainActivity = (MainActivity) activity;
+                            mainActivity.webView.loadUrl(MainActivity.CANCLE_USER);
+                            Log.i("TAG", "注销方法已执行");
 
-                    break;
-                case R.id.btn_finish:
-                    //退出当前程序
-                    for(Activity activity : MyApplication.list){
-                        activity.finish();
-                    }
+                        }
 
-                    MainActivity.instance.myAsyncTask.cancel(true);
+                        break;
+                    case R.id.btn_finish:
+                        //退出当前程序
+                        MobclickAgent.onKillProcess(MainActivity.instance);
+                        for (Activity activity : MyApplication.list) {
+                            if(activity!=null)
+                            activity.finish();
+                        }
 
-                    System.exit(0);
+                        MainActivity.instance.myAsyncTask.cancel(true);
 
-                    break;
-                case R.id.btn_alter_message:
-                    //调用js接口修改联系人信息
-                    MainActivity.instance.webView.loadUrl("javascript:G_jsCallBack.user_info_update()");
-                    break;
-                case R.id.btn_alter_password:
-                   //调用js接口修联系人密码
-                    MainActivity.instance.webView.loadUrl("javascript:G_jsCallBack.user_info_updatepassword()");
-                    break;
-                case R.id.btn_leftmenu_setting:
-                    //一个设置界面
-                    //点击清楚缓存数据
+
+
+                        System.exit(0);
+
+                        break;
+                    case R.id.btn_alter_message:
+                        //调用js接口修改联系人信息
+                        MainActivity.instance.webView.loadUrl("javascript:G_jsCallBack.user_info_update()");
+                        break;
+                    case R.id.btn_alter_password:
+                        //调用js接口修联系人密码
+                        MainActivity.instance.webView.loadUrl("javascript:G_jsCallBack.user_info_updatepassword()");
+                        break;
+                    case R.id.btn_leftmenu_setting:
+                        //一个设置界面
+                        //点击清楚缓存数据
 //
 
 //                    if(totalSize>2){
@@ -115,7 +125,7 @@ public class Menu {
 
 //                    MainActivity.instance.webView.
 
-                    //此方法执行清理
+                        //此方法执行清理
 //                    File file = new File(MainActivity.instance.appCachePath+"/clear");
 //                    Log.i("TAG", "打印一下文件的绝对路径" + file.getAbsolutePath());
 //                    long size =  file.length();
@@ -127,7 +137,7 @@ public class Menu {
 //                    Log.i("TAG","打印数据隐藏"+file.isHidden());
 //                    Log.i("TAG","打印能不能读"+file.canRead());
 //                    Log.i("TAG","打印能不能写"+file.canWrite());
-                      MainActivity.instance.clear();
+                        MainActivity.instance.clear();
 //                    MainActivity.instance.webView.c
 //                    long f = file.getTotalSpace();
 //                    long f2 = file.getUsableSpace();
@@ -135,9 +145,10 @@ public class Menu {
 //                    Log.i("TAG", "打印文件的大小getTotalSpace==" + f + "   getUsableSpace===" + f2 + "    getFreeSpace====" + f3);
 
 
-
-
-                    break;
+                        break;
+                }
+            }finally {
+                slidingMenu.toggle();
             }
 
         }

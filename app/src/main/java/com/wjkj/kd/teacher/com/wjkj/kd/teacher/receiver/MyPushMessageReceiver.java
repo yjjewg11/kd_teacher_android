@@ -13,6 +13,7 @@ import android.support.v4.app.NotificationCompat;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.baidu.android.feedback.FeedbackManager;
 import com.baidu.android.pushservice.PushMessageReceiver;
 import com.wjkj.kd.teacher.MainActivity;
 import com.wjkj.kd.teacher.MyApplication;
@@ -62,8 +63,15 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
         Log.d(TAG, responseString);
         if (errorCode == 0) {
             // 绑定成功
-            CHANNL_ID = channelId;
-            Log.i("TAG打印渠道编号在接收器中CHANNL_ID",""+CHANNL_ID);
+            try {
+                CHANNL_ID = channelId;
+                Log.i("TAG打印渠道编号在接收器中CHANNL_ID", "" + CHANNL_ID);
+                FeedbackManager fm = FeedbackManager.getInstance(context);
+                fm.setupPush(userId, channelId);
+            }catch (Exception e){
+                Log.i("TAG","程序出错率");
+                ExUtil.e(e);
+            }
 //            try {
 //                if(f){}
 ////                MainActivity.instance.pushMessageToServer();

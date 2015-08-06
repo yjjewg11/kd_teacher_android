@@ -1,2 +1,3 @@
 include ':app'
-include ':slidingMenuLibrary2'
+
+include ':slidingMenuLibrary'

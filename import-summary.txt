@@ -27,10 +27,10 @@ Moved Files:
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => slidingMenuLibrary2\src\main\AndroidManifest.xml
-* assets\ => slidingMenuLibrary2\src\main\assets
-* res\ => slidingMenuLibrary2\src\main\res\
-* src\ => slidingMenuLibrary2\src\main\java\
+* AndroidManifest.xml => slidingMenuLibrary\src\main\AndroidManifest.xml
+* assets\ => slidingMenuLibrary\src\main\assets
+* res\ => slidingMenuLibrary\src\main\res\
+* src\ => slidingMenuLibrary\src\main\java\
 
 Missing Android Support Repository:
 -----------------------------------

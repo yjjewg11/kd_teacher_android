@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -26,17 +27,25 @@ import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.baidu.android.feedback.FeedbackManager;
 import com.baidu.android.pushservice.PushConstants;
 import com.baidu.android.pushservice.PushManager;
 import com.baidu.mobstat.StatService;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
+import com.umeng.analytics.MobclickAgent;
+import com.umeng.fb.FeedbackAgent;
+import com.umeng.fb.push.FeedbackPush;
+import com.umeng.message.PushAgent;
+import com.umeng.message.UmengRegistrar;
+import com.umeng.update.UmengUpdateAgent;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.Menu;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.MyAsyncTask;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.BitmapUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ExUtil;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.GloableUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.HttpUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ParseUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ToastUtils;
@@ -75,15 +84,17 @@ public class MainActivity extends BaseActivity {
             "15923552&adapt=1&fr=aladdin&target=_blank";
 //    public static String ServerURL = "http://120.25.248.31/px-rest/";
     //正式环境
-//    public static String ServerURL = "http://kd.wenjienet.com/px-rest/";
+    public static String ServerURL = "http://kd.wenjienet.com/px-rest/";
 
-    //调试用
-    public static String ServerURL = "http://192.168.0.107:8080/px-rest/";
+    //调试用，胡溪斌的地址
+//    public static String ServerURL = "http://192.168.0.107:8080/px-rest/";
     public static String InterfaceURL = ServerURL+"rest/";
-    public static String HTTPURL = ServerURL+"kd/index.html";
-
-
-
+    public static String HTTPURL =
+//            "http://www.baidu.com";
+//              "http://www.sina.com";
+            ServerURL
+//            "http://kd.wenjienet.com/px-rest/"
+              +"kd/index.html";
     public static String appCachePath = MyApplication.instance.getCacheDir().getAbsolutePath();
 //            "http://120.25.248.31/px-rest/kd/index.html"
             ;
@@ -95,22 +106,65 @@ public class MainActivity extends BaseActivity {
     private Menu menu;
     public Handler handler =  new Handler();
     public WebSettings webSettings;
+    public String myurl;
+    private FeedbackAgent fb;
+    public FeedbackAgent agent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mymain);
+        Log.i("TA", "看看main这里有没有执行");
+        agent = new FeedbackAgent(this);
         instance = this;
+try {
+    menu = new Menu(this);
+}catch (Exception e){
+    e.printStackTrace();
+    throw new RuntimeException(e);
 
-        menu = new Menu(this);
-
+}
         setViews();
 
         StatService.bindJSInterface(this, webView);
+        Log.i("TAG", "初始化完毕");
+
+        initfankui();
+        initPushMessage();
+        initUpdateApk();
+
+        Log.i("TAG","初始化已经全部整完了");
+
+
 
 
     }
+
+    private void initUpdateApk() {
+        UmengUpdateAgent.update(this);
+    }
+
+    private void initPushMessage() {
+        PushAgent mPushAgent = PushAgent.getInstance(this);
+        mPushAgent.enable();
+        String device_token = UmengRegistrar.getRegistrationId(this);
+        Log.i("TAG","打印一下device_token    ===="+device_token);
+    }
+
+    private void initfankui() {
+        fb = new FeedbackAgent(this);
+        fb.setWelcomeInfo();
+        fb.setWelcomeInfo("Welcome to use umeng feedback app");
+        FeedbackPush.getInstance(this).init(true);
+        agent.sync();
+
+        agent.openFeedbackPush();
+
+        FeedbackPush.getInstance(this).init(true);
+    }
+
 
     public void hideText(){
 
@@ -153,16 +207,20 @@ public class MainActivity extends BaseActivity {
             }, 5000);
         }else{
             myAsyncTask.cancel(true);
+            MobclickAgent.onKillProcess(MainActivity.instance);
             for(Activity activity : MyApplication.list){
+                if(activity!=null)
                 activity.finish();
             }
 
-            //过两天清理一次
-           long time =  (new Date().getTime())-dateBegin.getTime();
-            if((time/3600/24)>=2){
-                clear();
-                dateBegin.setTime(new Date().getTime());
-            }
+
+
+//            //过两天清理一次
+//           long time =  (new Date().getTime())-dateBegin.getTime();
+//            if((time/3600/24)>=2){
+//                clear();
+//                dateBegin.setTime(new Date().getTime());
+//            }
         }
     }
 
@@ -192,7 +250,7 @@ public class MainActivity extends BaseActivity {
         //设置缓存模式
 
         //设置缓存路径
-        webSettings.setAppCachePath(appCachePath+"/clear");
+//        webSettings.setAppCachePath(appCachePath+"/clear");
         //允许访问文件
         webSettings.setAllowFileAccess(true);
         //开启缓存功能
@@ -207,13 +265,17 @@ public class MainActivity extends BaseActivity {
         // But it didn't work for me without this line.
         // UPDATE: no hardcoded path. Thanks to Kevin Hawkins
 
+        webView.loadData("text/html", "utf-8","utf-8");
 
         webView.addJavascriptInterface(new JavaScriptCallSon(),"JavaScriptCall");
         webView.loadUrl(
                 HTTPURL
+//                "http://www.baidu.com"
 //                "http://192.168.0.110:8080/px-rest/kd/"
         );
+        Log.i("TAG","webView已登录");
     }
+
     //此类用于和js交互
     class JavaScriptCallSon implements JavaScriptCall{
         //进入选择图片页面
@@ -273,7 +335,13 @@ public class MainActivity extends BaseActivity {
 
             try {
                 hideText();
-
+                //页面加载完之后添加图片监听事件
+//                handler.postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        addImageClickListner();
+//                    }
+//                },3000);
             }catch (Exception e){
                 e.printStackTrace();
                 throw new RuntimeException(e);
@@ -287,6 +355,13 @@ public class MainActivity extends BaseActivity {
 
           finishAll();
         }
+
+        @JavascriptInterface
+        public void getPicUrlFromJs(String url){
+            Log.i("TAG","打印从网络点击图片获取的url"+url);
+            myurl = url;
+        }
+
 
     }
     //此方法调用网络请求传递参数
@@ -368,6 +443,9 @@ public class MainActivity extends BaseActivity {
                 "El4au0Glwr7Xt8sPgZFg2UP7");
         myAsyncTask = new MyAsyncTask();
         this.myAsyncTask.execute();
+        //注册反馈
+        FeedbackManager fm = FeedbackManager.getInstance(this);
+        fm.register(GloableUtils.WENJIE_BAIDU_API_KEY);
     }
 
     @Override
@@ -481,8 +559,15 @@ public class MainActivity extends BaseActivity {
                 webView.loadUrl("javascript:menu_dohome()");
                 break;
             case R.id.radioButton2:
-                break;
 
+             //通讯录点击按钮
+            //获取屏幕高度与宽度
+            DisplayMetrics dm = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(dm);
+
+                Log.i("TAG", "打印屏幕的宽" + dm.widthPixels);
+                Log.i("TAG","打印屏幕的高"+dm.heightPixels);
+                break;
             case R.id.radioButton3:
                 //即使消息
                 webView.loadUrl("javascript:G_jsCallBack.queryMyTimely_myList()");
@@ -511,12 +596,33 @@ public class MainActivity extends BaseActivity {
             return true;
         }
     }
+        // 注入js函数监听
+        private void addImageClickListner() {
+            Log.i("TAG","遍历添加已完毕");
+                  // 这段js函数的功能就是，遍历所有的img几点，并添加onclick函数，函数的功能是在图片点击的时候调用本地java接口并传递url过去
+                   webView.loadUrl("javascript:(function(){" +
+                           "var objs = document.getElementsByTagName(\"img\"); " +
+                                   "for(var i=0;i<objs.length;i++)  " +
+                           "{"
+                          + "    objs[i].onclick=function()  " +
+                          "    {  "
+                           + "        window.JavaScriptCall.getPicUrlFromJs(this.src);  " +
+                          "    }  " +
+                          "}" +
+                         "})()");
+               }
 
-    private class MyWebChromeClient extends WebChromeClient {
-        public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String capture) {
-            myUploadMsg = uploadMsg;
-        }
-    }
+
+
+
+
+
+     class MyWebChromeClient extends WebChromeClient {
+         public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String capture) {
+             myUploadMsg = uploadMsg;
+         }
+
+     }
 
     public static MotionEvent motionEvent ;
     @Override
@@ -550,3 +656,4 @@ public class MainActivity extends BaseActivity {
         super.onConfigurationChanged(newConfig);
     }
 }
+

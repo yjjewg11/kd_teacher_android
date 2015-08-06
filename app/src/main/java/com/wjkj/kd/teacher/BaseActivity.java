@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.baidu.mobstat.StatService;
+import com.umeng.analytics.MobclickAgent;
+import com.umeng.message.PushAgent;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.Menu;
 
 public class BaseActivity extends Activity implements View.OnClickListener
@@ -17,6 +19,7 @@ public class BaseActivity extends Activity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         MyApplication.list.add(this);
+        PushAgent.getInstance(this).onAppStart();
     }
 
 
@@ -31,12 +34,22 @@ public class BaseActivity extends Activity implements View.OnClickListener
         super.onResume();
         StatService.onResume(this);
 
+
+            MobclickAgent.onResume(this);
+
+
+
+
+
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        StatService.onPause (this);
+        StatService.onPause(this);
+
+        MobclickAgent.onPause(this);
     }
 //
 //    @Override
