@@ -43,6 +43,7 @@ import com.umeng.update.UmengUpdateAgent;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.Menu;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.MyAsyncTask;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.AnimationUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.BitmapUtils;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ExUtil;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.GloableUtils;
@@ -73,7 +74,7 @@ public class MainActivity extends BaseActivity {
     private Uri imageUri = Uri.parse(IMAGE_FILE_LOCATION);
     private static final int RESULT_PICK_PHOTO_NORMAL = 1;
     public static int PUSH_STATE = 0;
-    public static final String CANCLE_USER = "javascript:G_jsCallBack.user_info_logout()";
+    public static final String CANCLE_USER = "javascript:G_jsCallBack.userinfo_logout()";
     public static AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
     public WebView webView;
     public static String JESSIONID ;
@@ -88,6 +89,11 @@ public class MainActivity extends BaseActivity {
 
     //调试用，胡溪斌的地址
 //    public static String ServerURL = "http://192.168.0.107:8080/px-rest/";
+
+    //刘老大，调试用
+
+//    public static String ServerURL = "http://192.168.0.108:8080/px-rest/";
+
     public static String InterfaceURL = ServerURL+"rest/";
     public static String HTTPURL =
 //            "http://www.baidu.com";
@@ -109,6 +115,8 @@ public class MainActivity extends BaseActivity {
     public String myurl;
     private FeedbackAgent fb;
     public FeedbackAgent agent;
+    private int screenHeight;
+    private int screenWidth;
 
 
     @Override
@@ -150,7 +158,7 @@ try {
         PushAgent mPushAgent = PushAgent.getInstance(this);
         mPushAgent.enable();
         String device_token = UmengRegistrar.getRegistrationId(this);
-        Log.i("TAG","打印一下device_token    ===="+device_token);
+        Log.i("TAG", "打印一下device_token    ====" + device_token);
     }
 
     private void initfankui() {
@@ -166,6 +174,8 @@ try {
     }
 
 
+
+
     public void hideText(){
 
         handler.post(new Runnable() {
@@ -173,19 +183,32 @@ try {
             public void run() {
                 tv_permit.setVisibility(View.GONE);
                 progressBar.setVisibility(View.GONE);
+                AnimationUtils.startMyAnimation(0, 0, 100, 0, radioGroup);
             }
         });
-
         handler.sendEmptyMessage(1);
-
     }
+
+
     private void setViews() {
         tv_permit = (TextView)findViewById(R.id.textView);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         webView = (WebView)findViewById(R.id.mainWebView);
         radioGroup = (RadioGroup)findViewById(R.id.first_page_radiogroup);
+        AnimationUtils.hideRadio(radioGroup);
+        getWidthAndHeight();
         setWebs();
     }
+
+    private void getWidthAndHeight() {
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+       getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+
+       screenWidth =  displayMetrics.widthPixels;
+        screenHeight = displayMetrics.heightPixels;
+        Log.i("TAG","打印屏幕的宽和高"+screenWidth+"     ==="+screenHeight);
+    }
+
     boolean f = true;
     @Override
     public void onBackPressed() {
@@ -260,7 +283,7 @@ try {
         webView.setWebChromeClient(new MyWebChromeClient());
         webSettings.setDomStorageEnabled(true);
         // Set cache size to 2 mb by default. should be more than enough
-        webSettings.setAppCacheMaxSize(1024 * 1024 * 2);
+        webSettings.setAppCacheMaxSize(1024 * 1024 * 1);
         // This next one is crazy. It's the DEFAULT location for your app's cache
         // But it didn't work for me without this line.
         // UPDATE: no hardcoded path. Thanks to Kevin Hawkins
@@ -319,15 +342,11 @@ try {
             JESSIONID = jessionID;
             Log.i("TAG", "jsessionId===" + jessionID);
 
+
             //调用pushMessageToServer方法将渠道号和编号传到服务器
-            try {
-//                if(JESSIONID!=null)
-//                pushMessageToServer();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
         //此方法选择图片并压缩，不需裁剪
+
 
 
         @JavascriptInterface
@@ -508,7 +527,9 @@ try {
                      String base = ParseUtils.getBase64FromBitmap(bitmap);
                      base = "data:image/png;base64," + base;
                      Log.i("if", "打印bsdfs" + base);
-                     webView.loadUrl("javascript:G_jsCallBack.ajax_uploadByphone('" + base + "')");
+                     //选择无裁剪图片成功后上传base64字符串
+                     //TODO
+                     webView.loadUrl("javascript:G_jsCallBack.selectPic_callback('" + base + "')");
 
                  }finally {
                      BitmapUtils.recyleBitmap(bitmap);
@@ -626,11 +647,41 @@ try {
 
     public static MotionEvent motionEvent ;
     @Override
+
+
+    //触摸事件
     public boolean onTouchEvent(MotionEvent event) {
-        motionEvent = event;
+        Log.i("TAG","事件已经能够执行了");
+        float downY = 0;
+        float upY = 0;
+        switch (event.getAction()){
+            //按下的时候
+            case MotionEvent.ACTION_DOWN:
+                downY = event.getY();
+                Log.i("TAG","按下事件已经触发");
+                break;
+             //抬起的时候
+            case MotionEvent.ACTION_UP:
+                upY = event.getY();
+                Log.i("TAG","抬起事件已经触发");
+                break;
+
+            case MotionEvent.ACTION_MOVE:break;
+        }
+        //往下滑隐藏控件
+        if(downY>screenHeight*0.75&&upY-downY>=0){
+            AnimationUtils.startMyAnimation(0,0,65,0,radioGroup);
+        }
+        //往上滑显示控件
+        if(downY>screenHeight*0.8&&upY-downY<=0){
+            AnimationUtils.startMyAnimation(0,0,0,65,radioGroup);
+        }
+
         return true;
 
     }
+
+
 
 //    @Override
 //    protected void onStop() {

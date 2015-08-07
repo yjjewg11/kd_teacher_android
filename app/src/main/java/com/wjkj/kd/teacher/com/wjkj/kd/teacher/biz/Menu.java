@@ -12,6 +12,7 @@ import com.umeng.analytics.MobclickAgent;
 import com.wjkj.kd.teacher.MainActivity;
 import com.wjkj.kd.teacher.MyApplication;
 import com.wjkj.kd.teacher.R;
+import com.wjkj.kd.teacher.SettingActivity;
 import com.wjkj.kd.teacher.VersionActivity;
 
 import org.json.JSONException;
@@ -144,7 +145,9 @@ public class Menu {
 //                    long f3 = file.getFreeSpace();
 //                    Log.i("TAG", "打印文件的大小getTotalSpace==" + f + "   getUsableSpace===" + f2 + "    getFreeSpace====" + f3);
 
+//                       启动设置页面
 
+                        MainActivity.instance.startActivity(new Intent(MainActivity.instance, SettingActivity.class));
                         break;
                 }
             }finally {
