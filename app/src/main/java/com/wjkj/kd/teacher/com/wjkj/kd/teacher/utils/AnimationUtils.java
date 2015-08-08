@@ -11,7 +11,6 @@ public class AnimationUtils {
         Animation animation = new TranslateAnimation(fromx,tox,fromy,toy);
         animation.setDuration(1000);
         animation.setFillAfter(true);
-
         view.startAnimation(animation);
     }
 
