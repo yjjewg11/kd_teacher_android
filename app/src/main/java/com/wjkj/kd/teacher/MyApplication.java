@@ -56,4 +56,6 @@ public class MyApplication extends Application{
                 .build();
         ImageLoader.getInstance().init(configuration);
     }
+
+
 }

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <string-array name="umeng_fb_contact_key_array">
+        <item>@string/umeng_fb_contact_key_email</item>
+        <item>@string/umeng_fb_contact_key_qq</item>s
+        <item>@string/umeng_fb_contact_key_phone</item>
+        <item>@string/umeng_fb_contact_key_other</item>
+    </string-array>
+    <string-array name="umeng_fb_contact_type_array">
+        <item>@string/umeng_fb_contact_email</item>
+        <item>@string/umeng_fb_contact_qq</item>
+        <item>@string/umeng_fb_contact_phone</item>
+        <item>@string/umeng_fb_contact_other</item>
+    </string-array>
+    <string-array name="umeng_fb_tabs_title">
+        <item>Feedback</item>
+        <item>FAQ</item>
+    </string-array>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/tb_munion_strings.xml -->
+    <eat-comment/>
+    <color name="tb_munion_item_force">#e3e3e3</color>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="umeng_fb_audo_dialog_bg">#F4F0745F</color>
+    <color name="umeng_fb_background">#F6F6F6</color>
+    <color name="umeng_fb_gray">#FFD8D8D8</color>
+    <color name="umeng_fb_lightblue">#FF0FB0A8</color>
+    <color name="umeng_fb_line">#DCDCDC</color>
+    <color name="umeng_fb_secondary_text_light">#8A000000</color>
+    <color name="umeng_fb_tab_bg_pressed">#6633B5E5</color>
+    <color name="umeng_fb_white">#FFFFFF</color>
+    <declare-styleable name="SlidingMenu"><attr name="mode"><enum name="left" value="0"/><enum name="right" value="1"/></attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr name="touchModeBehind"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="fadeEnabled"/><attr format="float" name="fadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="home_tab_bar_height">48dp</dimen>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="umeng_fb_item_content_size">14sp</dimen>
+    <dimen name="umeng_fb_item_height">48dp</dimen>
+    <dimen name="umeng_fb_item_line_height">0.8dp</dimen>
+    <dimen name="umeng_fb_item_time_size">12sp</dimen>
+    <dimen name="umeng_fb_normal_size">13dp</dimen>
+    <dimen name="umeng_fb_record_btn_text_size">20sp</dimen>
+    <dimen name="umeng_fb_spinner_padding_left">12dp</dimen>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/slidingMenuLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <item name="selected_view" type="id"/>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_update_string.xml -->
+    <eat-comment/>
+    <string name="UMAppUpdate">应用更新</string>
+    <string name="UMBreak_Network">未联网</string>
+    <string name="UMDialog_InstallAPK">最新版本已下载，是否安装？</string>
+    <string name="UMGprsCondition">（提示：非WIFI环境）</string>
+    <string name="UMIgnore">忽略该版</string>
+    <string name="UMNewVersion">最新版本: </string>
+    <string name="UMNotNow">以后再说</string>
+    <string name="UMTargetSize">新版本大小:</string>
+    <string name="UMToast_IsUpdating">正在更新中....</string>
+    <string name="UMUpdateContent">更新内容</string>
+    <string name="UMUpdateNow">立即更新</string>
+    <string name="UMUpdateSize">仅需要下载:</string>
+    <string name="UMUpdateTitle">发现新版本</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/message/2.4.1/res/values/values.xml -->
+    <eat-comment/>
+    <string name="app_name">UmengMessage</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_strings.xml -->
+    <eat-comment/>
+    <string name="bd_fb_feedback">用户反馈</string>
+    <string name="bd_fb_hint_text">%s好！欢迎您给我们提出宝贵的建议。</string>
+    <string name="bd_fb_hint_text_default_name">您</string>
+    <string name="bd_fb_input_content">输入内容</string>
+    <string name="bd_fb_net_fail_toast">请检查网络</string>
+    <string name="bd_fb_send">发送</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/tb_munion_strings.xml -->
+    <eat-comment/>
+    <string name="tb_munion_tip_download_prefix">正在下载:</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_first_page">FirstPageActivity</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_common_strings.xml -->
+    <eat-comment/>
+    <string name="umeng_common_action_cancel">取消</string>
+    <string name="umeng_common_action_continue">继续</string>
+    <string name="umeng_common_action_info_exist">正在下载中.</string>
+    <string name="umeng_common_action_pause">暂停</string>
+    <string name="umeng_common_download_failed">下载失败</string>
+    <string name="umeng_common_download_finish">下载完成，请点击安装</string>
+    <string name="umeng_common_download_notification_prefix">正在下载: </string>
+    <string name="umeng_common_icon">图片</string>
+    <string name="umeng_common_info_interrupt">下载出错啦，请检查网络后继续。</string>
+    <string name="umeng_common_network_break_alert">请连接网络后再尝试！</string>
+    <string name="umeng_common_patch_finish">更新完成，请点击安装</string>
+    <string name="umeng_common_pause_notification_prefix">暂停: </string>
+    <string name="umeng_common_silent_download_finish">新版本已经准备好，请点击安装</string>
+    <string name="umeng_common_start_download_notification">正在下载应用</string>
+    <string name="umeng_common_start_patch_notification">正在更新安装包</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="umeng_fb_back">Back</string>
+    <string name="umeng_fb_change_contact_title">Change contact Info</string>
+    <string name="umeng_fb_contact_email">Email</string>
+    <string name="umeng_fb_contact_info">Contact Info</string>
+    <string name="umeng_fb_contact_info_hint">Email, MSN, Gtalk, or whatever we can find you.</string>
+    <string name="umeng_fb_contact_key_email">email</string>
+    <string name="umeng_fb_contact_key_other">plain</string>
+    <string name="umeng_fb_contact_key_phone">phone</string>
+    <string name="umeng_fb_contact_key_qq">qq</string>
+    <string name="umeng_fb_contact_other">Other</string>
+    <string name="umeng_fb_contact_phone">Phone</string>
+    <string name="umeng_fb_contact_qq">QQ</string>
+    <string name="umeng_fb_contact_save">Save</string>
+    <string name="umeng_fb_count_down">Count down</string>
+    <string name="umeng_fb_feedback">Feedback</string>
+    <string name="umeng_fb_no_record_permission">No permission of record</string>
+    <string name="umeng_fb_notification_content_formatter_multiple_msg">You received %d new replies from the app developer.</string>
+    <string name="umeng_fb_notification_content_formatter_single_msg">New reply: %s</string>
+    <string name="umeng_fb_notification_ticker_text">Got new reply</string>
+    <string name="umeng_fb_please_select_picture">Please select a picture</string>
+    <string name="umeng_fb_press_speech">Hold to Talk</string>
+    <string name="umeng_fb_questions_anwser">A:</string>
+    <string name="umeng_fb_questions_question">Q:</string>
+    <string name="umeng_fb_record_fail">Record fail</string>
+    <string name="umeng_fb_record_time_short">Message too short</string>
+    <string name="umeng_fb_release_cancel">Release to cancel</string>
+    <string name="umeng_fb_release_send">Release to Send</string>
+    <string name="umeng_fb_reply_content_default">Your precious feedback are appriciated.</string>
+    <string name="umeng_fb_send">Send</string>
+    <string name="umeng_fb_send_fail">Send fail</string>
+    <string name="umeng_fb_sending">Sending…</string>
+    <string name="umeng_fb_slide_up_cancel">Slide up to cancel</string>
+    <string name="umeng_fb_time_minutes_ago">%d minutes ago</string>
+    <string name="umeng_fb_time_pre_year_format">yy/MM/dd HH:mm:ss</string>
+    <string name="umeng_fb_time_right_now">Just now</string>
+    <string name="umeng_fb_time_this_year_format">MM/dd HH:mm:ss</string>
+    <string name="umeng_fb_title">Feedback</string>
+    <string name="umeng_fb_write_contact_title">Write contact Info</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="MyLineStyle" parent="AppTheme">
+        <item name="android:background">#bbbbbb</item>
+
+    </style>
+    <style name="MyTextViewStyle" parent="AppTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+
+    </style>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_styles.xml -->
+    <eat-comment/>
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="umeng_fb_image_dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/umeng_fb_dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/umeng_fb_dialog_exit_anim</item>
+    </style>
+    <style name="umeng_fb_speech_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground"> @android:color/transparent </item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

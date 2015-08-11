@@ -1,35 +1,84 @@
 package com.wjkj.kd.teacher;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ExUtil;
+
+import org.json.JSONException;
+
+import java.io.UnsupportedEncodingException;
 
 public class SettingActivity extends BaseActivity {
+
+    private ImageView imageBack,imagePush,imageAbout,imageSugesstion;
+    private TextView textFinish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+        setViews();
+        setListeners();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_setting, menu);
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    //给图片按钮添加监听事件
+    private void setListeners() {
+        ImageView[] imageViews = new ImageView[]{imageAbout,imageBack,imagePush,imageSugesstion};
+        for(ImageView imageView :imageViews){
+            imageView.setOnClickListener(this);
         }
+        textFinish.setOnClickListener(this);
+    }
 
-        return super.onOptionsItemSelected(item);
+    private void setViews() {
+        imageBack = (ImageView)findViewById(R.id.imageView8);
+        imagePush = (ImageView)findViewById(R.id.imageView2);
+        imageAbout = (ImageView)findViewById(R.id.imageView9);
+        imageSugesstion = (ImageView)findViewById(R.id.imageView10);
+        textFinish = (TextView)findViewById(R.id.textView21);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            //推送消息/表示默认开启状态
+            case R.id.imageView2:changPushState();break;
+            //回退
+            case R.id.imageView8: finish();  break;
+            //关于我们
+            case R.id.imageView9: startActivity(new Intent(this,AboutUsActivity.class)); break;
+            //意见反馈
+            case R.id.imageView10: MainActivity.instance.agent.startFeedbackActivity();  break;
+            //结束程序
+            case R.id.textView21:
+                for(Activity activity:MyApplication.list){
+                    activity.finish();
+                    System.exit(0);
+                }
+                break;
+        }
+    }
+
+    private void changPushState() {
+        try {
+            if (MainActivity.PUSH_STATE == 0) {
+                MainActivity.PUSH_STATE = 1;
+                MainActivity.instance.pushMessageToServer();
+            }else{
+                MainActivity.PUSH_STATE=0;
+                MainActivity.instance.pushMessageToServer();
+            }
+        }catch (NullPointerException e){
+            ExUtil.e(e);
+        } catch (JSONException e) {
+           ExUtil.e(e);
+        } catch (UnsupportedEncodingException e) {
+           ExUtil.e(e);
+        }
     }
 }

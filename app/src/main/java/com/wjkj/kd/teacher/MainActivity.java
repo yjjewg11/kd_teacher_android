@@ -40,6 +40,7 @@ import com.umeng.fb.push.FeedbackPush;
 import com.umeng.message.PushAgent;
 import com.umeng.message.UmengRegistrar;
 import com.umeng.update.UmengUpdateAgent;
+import com.umeng.update.UpdateConfig;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.Menu;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.MyAsyncTask;
 import com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
@@ -115,8 +116,8 @@ public class MainActivity extends BaseActivity {
     public String myurl;
     private FeedbackAgent fb;
     public FeedbackAgent agent;
-    private int screenHeight;
-    private int screenWidth;
+    public int screenHeight;
+    public int screenWidth;
 
 
     @Override
@@ -152,6 +153,8 @@ try {
 
     private void initUpdateApk() {
         UmengUpdateAgent.update(this);
+        UmengUpdateAgent.setUpdateCheckConfig(false);
+        UpdateConfig.setDebug(true);
     }
 
     private void initPushMessage() {
@@ -176,7 +179,7 @@ try {
 
 
 
-    public void hideText(){
+    public void hideText() {
 
         handler.post(new Runnable() {
             @Override
@@ -191,12 +194,15 @@ try {
 
 
     private void setViews() {
+        Log.i("TAG","进入加载页面");
         tv_permit = (TextView)findViewById(R.id.textView);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         webView = (WebView)findViewById(R.id.mainWebView);
+        Log.i("TAG","应该是webView的加载出了问题");
         radioGroup = (RadioGroup)findViewById(R.id.first_page_radiogroup);
         AnimationUtils.hideRadio(radioGroup);
         getWidthAndHeight();
+
         setWebs();
     }
 
@@ -206,7 +212,7 @@ try {
 
        screenWidth =  displayMetrics.widthPixels;
         screenHeight = displayMetrics.heightPixels;
-        Log.i("TAG","打印屏幕的宽和高"+screenWidth+"     ==="+screenHeight);
+        Log.i("TAG", "打印屏幕的宽和高"+screenWidth+"     ==="+screenHeight);
     }
 
     boolean f = true;
@@ -279,7 +285,7 @@ try {
         //开启缓存功能
         webSettings.setAppCacheEnabled(true);
         webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
-        webView.setWebViewClient(new MyWebViewClient());
+
         webView.setWebChromeClient(new MyWebChromeClient());
         webSettings.setDomStorageEnabled(true);
         // Set cache size to 2 mb by default. should be more than enough
@@ -290,7 +296,10 @@ try {
 
         webView.loadData("text/html", "utf-8","utf-8");
 
-        webView.addJavascriptInterface(new JavaScriptCallSon(),"JavaScriptCall");
+        webView.addJavascriptInterface(new JavaScriptCallSon(), "JavaScriptCall");
+        Log.i("TAG", "打印网页对象应该加载成功");
+        webView.setWebViewClient(new MyWebViewClient());
+        Log.i("TAG","网页已经加载成功");
         webView.loadUrl(
                 HTTPURL
 //                "http://www.baidu.com"
@@ -379,6 +388,12 @@ try {
         public void getPicUrlFromJs(String url){
             Log.i("TAG","打印从网络点击图片获取的url"+url);
             myurl = url;
+        }
+
+        //js调用此方法拨打电话
+        @JavascriptInterface
+        public void callPhone(String tel){
+            MainActivity.this.startActivity(new Intent(Intent.ACTION_CALL,Uri.parse("tel:"+tel)));
         }
 
 
@@ -607,7 +622,11 @@ try {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
-            Log.i("info","打印url"+url.toString());
+            Log.i("TAG","打印url地址"+url.toString());
+            if (url.startsWith("mailto:") || url.startsWith("geo:") ||url.startsWith("tel:")) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
 
             if(url.contains("baidu.com")){
 //                Intent intent = new Intent(MainActivity.this,LoadUrlActivity.class);
@@ -631,6 +650,17 @@ try {
                           "    }  " +
                           "}" +
                          "})()");
+
+                  webView.loadUrl("javascript:(function(){" +
+                          "" +"var phone = document.getElementById(" +
+                                  //TODO需要传入的标签id
+                                  "" +
+                                  "); "+
+                                "phone.onclick=function()  "+
+                              "  {" +
+                                 "    window.JavaScriptCall.callPhone()"+
+
+                          "})");
                }
 
 
@@ -646,38 +676,33 @@ try {
      }
 
     public static MotionEvent motionEvent ;
+
+    float x,y;
     @Override
-
-
     //触摸事件
     public boolean onTouchEvent(MotionEvent event) {
-        Log.i("TAG","事件已经能够执行了");
-        float downY = 0;
-        float upY = 0;
-        switch (event.getAction()){
-            //按下的时候
-            case MotionEvent.ACTION_DOWN:
-                downY = event.getY();
-                Log.i("TAG","按下事件已经触发");
-                break;
-             //抬起的时候
-            case MotionEvent.ACTION_UP:
-                upY = event.getY();
-                Log.i("TAG","抬起事件已经触发");
-                break;
 
-            case MotionEvent.ACTION_MOVE:break;
-        }
-        //往下滑隐藏控件
-        if(downY>screenHeight*0.75&&upY-downY>=0){
-            AnimationUtils.startMyAnimation(0,0,65,0,radioGroup);
-        }
-        //往上滑显示控件
-        if(downY>screenHeight*0.8&&upY-downY<=0){
-            AnimationUtils.startMyAnimation(0,0,0,65,radioGroup);
-        }
+//        switch(event.getAction()){
+//            case MotionEvent.ACTION_DOWN:
+//                //按下之后记录坐标
+//                x = event.getX();
+//                y = event.getY();
+//                Log.i("TAG","打印按下事件");
+//                break;
+//            case MotionEvent.ACTION_MOVE:
+//                Log.i("TAG","打印移动事件");
+//                break;
+//            case MotionEvent.ACTION_UP:
+//                //抬起时触发事件
+//                Log.i("TAG","打印抬起事件"+"kuan ==   "+event.getX());
+//                if(x>screenWidth-150&&(x-event.getX()>200)){
+//                //启动设置界面
+//                    startActivity(new Intent(this,SettingActivity.class));
+//            }
+//                break;
+//        }
 
-        return true;
+        return false;
 
     }
 
