@@ -155,26 +155,30 @@ uses-permission#android.permission.CALL_PHONE
 ADDED from AndroidManifest.xml:75:5
 	android:name
 		ADDED from AndroidManifest.xml:75:22
+uses-permission#ANDROID.PERMISSION.CALL_PRIVILEGED
+ADDED from AndroidManifest.xml:76:5
+	android:name
+		ADDED from AndroidManifest.xml:76:22
 application
-ADDED from AndroidManifest.xml:77:5
+ADDED from AndroidManifest.xml:78:5
 MERGED from com.umeng:fb:5.4.0:11:5
 MERGED from com.umeng:message:2.4.1:11:5
 MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from com.android.support:support-v4:22.2.1:22:5
 	android:label
-		ADDED from AndroidManifest.xml:81:9
+		ADDED from AndroidManifest.xml:82:9
 		REJECTED from com.umeng:message:2.4.1:13:9
 	android:allowBackup
-		ADDED from AndroidManifest.xml:79:9
-	android:icon
 		ADDED from AndroidManifest.xml:80:9
+	android:icon
+		ADDED from AndroidManifest.xml:81:9
 	android:theme
-		ADDED from AndroidManifest.xml:82:9
-	tools:replace
 		ADDED from AndroidManifest.xml:83:9
+	tools:replace
+		ADDED from AndroidManifest.xml:84:9
 	android:name
-		ADDED from AndroidManifest.xml:78:9
+		ADDED from AndroidManifest.xml:79:9
 meta-data#BaiduMobAd_STAT_ID
 ADDED from AndroidManifest.xml:86:9
 	android:name
@@ -235,6 +239,8 @@ ADDED from AndroidManifest.xml:121:9
 		ADDED from AndroidManifest.xml:121:19
 activity#com.wjkj.kd.teacher.MainActivity
 ADDED from AndroidManifest.xml:122:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:126:13
 	android:label
 		ADDED from AndroidManifest.xml:125:13
 	android:configChanges
@@ -242,332 +248,258 @@ ADDED from AndroidManifest.xml:122:9
 	android:name
 		ADDED from AndroidManifest.xml:123:13
 	android:launchMode
-		ADDED from AndroidManifest.xml:126:13
+		ADDED from AndroidManifest.xml:127:13
 activity#com.wjkj.kd.teacher.BaseActivity
-ADDED from AndroidManifest.xml:128:9
+ADDED from AndroidManifest.xml:129:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:130:13
 	android:name
-		ADDED from AndroidManifest.xml:128:19
-receiver#com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyFeedbackReceiver
-ADDED from AndroidManifest.xml:130:9
+		ADDED from AndroidManifest.xml:129:19
+receiver#com.wjkj.kd.teacher.receiver.MyFeedbackReceiver
+ADDED from AndroidManifest.xml:131:9
 	android:name
-		ADDED from AndroidManifest.xml:130:19
+		ADDED from AndroidManifest.xml:131:19
 intent-filter#com.baidu.android.pushservice.action.FB_MESSAGE
-ADDED from AndroidManifest.xml:131:13
+ADDED from AndroidManifest.xml:132:13
 action#com.baidu.android.pushservice.action.FB_MESSAGE
-ADDED from AndroidManifest.xml:132:17
+ADDED from AndroidManifest.xml:133:17
 	android:name
-		ADDED from AndroidManifest.xml:132:25
-receiver#com.baidu.android.pushservice.PushServiceReceiver
-ADDED from AndroidManifest.xml:135:9
-	android:name
-		ADDED from AndroidManifest.xml:135:19
-intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BOOT_COMPLETED+android.intent.action.MEDIA_MOUNTED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.baidu.android.pushservice.action.media.CLICK+com.baidu.android.pushservice.action.notification.SHOW
-ADDED from AndroidManifest.xml:136:13
-action#android.intent.action.BOOT_COMPLETED
-ADDED from AndroidManifest.xml:137:17
-	android:name
-		ADDED from AndroidManifest.xml:137:25
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from AndroidManifest.xml:138:17
-	android:name
-		ADDED from AndroidManifest.xml:138:25
-action#com.baidu.android.pushservice.action.notification.SHOW
-ADDED from AndroidManifest.xml:139:17
-	android:name
-		ADDED from AndroidManifest.xml:139:25
-action#com.baidu.android.pushservice.action.media.CLICK
-ADDED from AndroidManifest.xml:140:17
-	android:name
-		ADDED from AndroidManifest.xml:140:25
-action#android.intent.action.MEDIA_MOUNTED
-ADDED from AndroidManifest.xml:141:17
-	android:name
-		ADDED from AndroidManifest.xml:141:25
-action#android.intent.action.USER_PRESENT
-ADDED from AndroidManifest.xml:142:17
-	android:name
-		ADDED from AndroidManifest.xml:142:25
-action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from AndroidManifest.xml:143:17
-	android:name
-		ADDED from AndroidManifest.xml:143:25
-action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from AndroidManifest.xml:144:17
-	android:name
-		ADDED from AndroidManifest.xml:144:25
-receiver#com.baidu.android.pushservice.RegistrationReceiver
-ADDED from AndroidManifest.xml:147:9
-	android:process
-		ADDED from AndroidManifest.xml:149:13
-	android:name
-		ADDED from AndroidManifest.xml:148:13
-intent-filter#com.baidu.android.pushservice.action.BIND_SYNC+com.baidu.android.pushservice.action.METHOD
-ADDED from AndroidManifest.xml:150:13
-action#com.baidu.android.pushservice.action.METHOD
-ADDED from AndroidManifest.xml:151:17
-	android:name
-		ADDED from AndroidManifest.xml:151:25
-action#com.baidu.android.pushservice.action.BIND_SYNC
-ADDED from AndroidManifest.xml:152:17
-	android:name
-		ADDED from AndroidManifest.xml:152:25
-intent-filter#android.intent.action.PACKAGE_REMOVED
-ADDED from AndroidManifest.xml:154:13
-action#android.intent.action.PACKAGE_REMOVED
-ADDED from AndroidManifest.xml:155:17
-	android:name
-		ADDED from AndroidManifest.xml:155:25
-data
-ADDED from AndroidManifest.xml:157:17
-	android:scheme
-		ADDED from AndroidManifest.xml:157:23
-receiver#com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver
-ADDED from AndroidManifest.xml:160:9
-	android:name
-		ADDED from AndroidManifest.xml:160:19
-intent-filter#com.baidu.android.pushservice.action.MESSAGE+com.baidu.android.pushservice.action.RECEIVE+com.baidu.android.pushservice.action.notification.CLICK
-ADDED from AndroidManifest.xml:161:13
-action#com.baidu.android.pushservice.action.MESSAGE
-ADDED from AndroidManifest.xml:164:17
-	android:name
-		ADDED from AndroidManifest.xml:164:25
-action#com.baidu.android.pushservice.action.RECEIVE
-ADDED from AndroidManifest.xml:166:17
-	android:name
-		ADDED from AndroidManifest.xml:166:25
-action#com.baidu.android.pushservice.action.notification.CLICK
-ADDED from AndroidManifest.xml:167:17
-	android:name
-		ADDED from AndroidManifest.xml:167:25
-service#com.baidu.android.pushservice.PushService
-ADDED from AndroidManifest.xml:171:9
-	android:process
-		ADDED from AndroidManifest.xml:174:13
-	android:exported
-		ADDED from AndroidManifest.xml:173:13
-	android:name
-		ADDED from AndroidManifest.xml:172:13
-intent-filter#com.baidu.android.pushservice.action.PUSH_SERVICE
-ADDED from AndroidManifest.xml:175:13
-action#com.baidu.android.pushservice.action.PUSH_SERVICE
-ADDED from AndroidManifest.xml:176:17
-	android:name
-		ADDED from AndroidManifest.xml:176:25
-service#com.baidu.android.pushservice.CommandService
-ADDED from AndroidManifest.xml:179:9
-	android:exported
-		ADDED from AndroidManifest.xml:181:13
-	android:name
-		ADDED from AndroidManifest.xml:180:13
+		ADDED from AndroidManifest.xml:133:25
 activity#com.wjkj.kd.teacher.VersionActivity
-ADDED from AndroidManifest.xml:184:9
+ADDED from AndroidManifest.xml:192:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:194:13
 	android:label
-		ADDED from AndroidManifest.xml:186:13
-	android:name
-		ADDED from AndroidManifest.xml:185:13
-activity#com.wjkj.kd.teacher.SettingActivity
-ADDED from AndroidManifest.xml:188:9
-	android:label
-		ADDED from AndroidManifest.xml:190:13
-	android:name
-		ADDED from AndroidManifest.xml:189:13
-receiver#com.umeng.message.NotificationProxyBroadcastReceiver
-ADDED from AndroidManifest.xml:193:9
-	android:exported
 		ADDED from AndroidManifest.xml:195:13
 	android:name
-		ADDED from AndroidManifest.xml:194:13
-receiver#com.umeng.message.SystemReceiver
-ADDED from AndroidManifest.xml:199:9
-	android:process
-		ADDED from AndroidManifest.xml:201:13
-	android:name
+		ADDED from AndroidManifest.xml:193:13
+activity#com.wjkj.kd.teacher.SettingActivity
+ADDED from AndroidManifest.xml:197:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:199:13
+	android:label
 		ADDED from AndroidManifest.xml:200:13
-intent-filter#android.intent.action.BOOT_COMPLETED
-ADDED from AndroidManifest.xml:202:13
-intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from AndroidManifest.xml:205:13
-receiver#com.umeng.message.MessageReceiver
-ADDED from AndroidManifest.xml:216:9
-	android:process
-		ADDED from AndroidManifest.xml:218:13
 	android:name
-		ADDED from AndroidManifest.xml:217:13
-intent-filter#org.agoo.android.intent.action.RECEIVE
-ADDED from AndroidManifest.xml:219:13
-action#org.agoo.android.intent.action.RECEIVE
-ADDED from AndroidManifest.xml:220:17
-	android:name
-		ADDED from AndroidManifest.xml:220:25
-receiver#com.umeng.message.ElectionReceiver
-ADDED from AndroidManifest.xml:225:9
-	android:process
-		ADDED from AndroidManifest.xml:227:13
-	android:name
-		ADDED from AndroidManifest.xml:226:13
-intent-filter#org.agoo.android.intent.action.ELECTION_RESULT_V4+umeng
-ADDED from AndroidManifest.xml:228:13
-action#org.agoo.android.intent.action.ELECTION_RESULT_V4
-ADDED from AndroidManifest.xml:229:17
-	android:name
-		ADDED from AndroidManifest.xml:229:25
-category#umeng
-ADDED from AndroidManifest.xml:231:17
-	android:name
-		ADDED from AndroidManifest.xml:231:27
-receiver#com.umeng.message.RegistrationReceiver
-ADDED from AndroidManifest.xml:237:9
+		ADDED from AndroidManifest.xml:198:13
+receiver#com.umeng.message.NotificationProxyBroadcastReceiver
+ADDED from AndroidManifest.xml:203:9
 	android:exported
-		ADDED from AndroidManifest.xml:239:13
+		ADDED from AndroidManifest.xml:205:13
 	android:name
-		ADDED from AndroidManifest.xml:238:13
-intent-filter#com.wjkj.kd.teacher.intent.action.COMMAND
-ADDED from AndroidManifest.xml:240:13
-action#com.wjkj.kd.teacher.intent.action.COMMAND
+		ADDED from AndroidManifest.xml:204:13
+receiver#com.umeng.message.SystemReceiver
+ADDED from AndroidManifest.xml:209:9
+	android:process
+		ADDED from AndroidManifest.xml:211:13
+	android:name
+		ADDED from AndroidManifest.xml:210:13
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:212:13
+action#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:213:17
+	android:name
+		ADDED from AndroidManifest.xml:213:25
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:215:13
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:216:17
+	android:name
+		ADDED from AndroidManifest.xml:216:25
+intent-filter#android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:218:13
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:219:17
+	android:name
+		ADDED from AndroidManifest.xml:219:25
+data
+ADDED from AndroidManifest.xml:221:17
+	android:scheme
+		ADDED from AndroidManifest.xml:221:23
+receiver#com.umeng.message.MessageReceiver
+ADDED from AndroidManifest.xml:226:9
+	android:process
+		ADDED from AndroidManifest.xml:228:13
+	android:name
+		ADDED from AndroidManifest.xml:227:13
+intent-filter#org.agoo.android.intent.action.RECEIVE
+ADDED from AndroidManifest.xml:229:13
+action#org.agoo.android.intent.action.RECEIVE
+ADDED from AndroidManifest.xml:230:17
+	android:name
+		ADDED from AndroidManifest.xml:230:25
+receiver#com.umeng.message.ElectionReceiver
+ADDED from AndroidManifest.xml:235:9
+	android:process
+		ADDED from AndroidManifest.xml:237:13
+	android:name
+		ADDED from AndroidManifest.xml:236:13
+intent-filter#org.agoo.android.intent.action.ELECTION_RESULT_V4+umeng
+ADDED from AndroidManifest.xml:238:13
+action#org.agoo.android.intent.action.ELECTION_RESULT_V4
+ADDED from AndroidManifest.xml:239:17
+	android:name
+		ADDED from AndroidManifest.xml:239:25
+category#umeng
 ADDED from AndroidManifest.xml:241:17
 	android:name
-		ADDED from AndroidManifest.xml:241:25
+		ADDED from AndroidManifest.xml:241:27
+receiver#com.umeng.message.RegistrationReceiver
+ADDED from AndroidManifest.xml:247:9
+	android:exported
+		ADDED from AndroidManifest.xml:249:13
+	android:name
+		ADDED from AndroidManifest.xml:248:13
+intent-filter#com.wjkj.kd.teacher.intent.action.COMMAND
+ADDED from AndroidManifest.xml:250:13
+action#com.wjkj.kd.teacher.intent.action.COMMAND
+ADDED from AndroidManifest.xml:251:17
+	android:name
+		ADDED from AndroidManifest.xml:251:25
 receiver#com.umeng.message.UmengMessageBootReceiver
-ADDED from AndroidManifest.xml:244:9
+ADDED from AndroidManifest.xml:254:9
 	android:name
-		ADDED from AndroidManifest.xml:244:19
+		ADDED from AndroidManifest.xml:254:19
 service#com.umeng.message.UmengService
-ADDED from AndroidManifest.xml:252:9
+ADDED from AndroidManifest.xml:262:9
 	android:label
-		ADDED from AndroidManifest.xml:255:13
+		ADDED from AndroidManifest.xml:265:13
 	android:process
-		ADDED from AndroidManifest.xml:256:13
+		ADDED from AndroidManifest.xml:266:13
 	android:exported
-		ADDED from AndroidManifest.xml:254:13
+		ADDED from AndroidManifest.xml:264:13
 	android:name
-		ADDED from AndroidManifest.xml:253:13
+		ADDED from AndroidManifest.xml:263:13
 intent-filter#com.wjkj.kd.teacher.intent.action.START
-ADDED from AndroidManifest.xml:257:13
+ADDED from AndroidManifest.xml:267:13
 action#com.wjkj.kd.teacher.intent.action.START
-ADDED from AndroidManifest.xml:258:17
+ADDED from AndroidManifest.xml:268:17
 	android:name
-		ADDED from AndroidManifest.xml:258:25
+		ADDED from AndroidManifest.xml:268:25
 intent-filter#com.wjkj.kd.teacher.intent.action.COCKROACH
-ADDED from AndroidManifest.xml:260:13
+ADDED from AndroidManifest.xml:270:13
 action#com.wjkj.kd.teacher.intent.action.COCKROACH
-ADDED from AndroidManifest.xml:261:17
+ADDED from AndroidManifest.xml:271:17
 	android:name
-		ADDED from AndroidManifest.xml:261:25
+		ADDED from AndroidManifest.xml:271:25
 intent-filter#org.agoo.android.intent.action.PING_V4+umeng
-ADDED from AndroidManifest.xml:263:13
+ADDED from AndroidManifest.xml:273:13
 action#org.agoo.android.intent.action.PING_V4
-ADDED from AndroidManifest.xml:264:17
+ADDED from AndroidManifest.xml:274:17
 	android:name
-		ADDED from AndroidManifest.xml:264:25
+		ADDED from AndroidManifest.xml:274:25
 service#com.umeng.message.UmengIntentService
-ADDED from AndroidManifest.xml:271:9
+ADDED from AndroidManifest.xml:281:9
 	android:process
-		ADDED from AndroidManifest.xml:273:13
+		ADDED from AndroidManifest.xml:283:13
 	android:name
-		ADDED from AndroidManifest.xml:272:13
+		ADDED from AndroidManifest.xml:282:13
 service#com.umeng.message.UmengMessageIntentReceiverService
-ADDED from AndroidManifest.xml:276:9
+ADDED from AndroidManifest.xml:286:9
 	android:process
-		ADDED from AndroidManifest.xml:279:13
+		ADDED from AndroidManifest.xml:289:13
 	android:exported
-		ADDED from AndroidManifest.xml:278:13
+		ADDED from AndroidManifest.xml:288:13
 	android:name
-		ADDED from AndroidManifest.xml:277:13
+		ADDED from AndroidManifest.xml:287:13
 intent-filter#org.android.agoo.client.MessageReceiverService
-ADDED from AndroidManifest.xml:280:13
+ADDED from AndroidManifest.xml:290:13
 action#org.android.agoo.client.MessageReceiverService
-ADDED from AndroidManifest.xml:281:17
+ADDED from AndroidManifest.xml:291:17
 	android:name
-		ADDED from AndroidManifest.xml:281:25
+		ADDED from AndroidManifest.xml:291:25
 intent-filter#org.android.agoo.client.ElectionReceiverService
-ADDED from AndroidManifest.xml:283:13
+ADDED from AndroidManifest.xml:293:13
 action#org.android.agoo.client.ElectionReceiverService
-ADDED from AndroidManifest.xml:284:17
+ADDED from AndroidManifest.xml:294:17
 	android:name
-		ADDED from AndroidManifest.xml:284:25
+		ADDED from AndroidManifest.xml:294:25
 service#com.umeng.message.UmengMessageCallbackHandlerService
-ADDED from AndroidManifest.xml:289:9
+ADDED from AndroidManifest.xml:299:9
 	android:exported
-		ADDED from AndroidManifest.xml:291:13
+		ADDED from AndroidManifest.xml:301:13
 	android:name
-		ADDED from AndroidManifest.xml:290:13
+		ADDED from AndroidManifest.xml:300:13
 intent-filter#com.umeng.messge.registercallback.action
-ADDED from AndroidManifest.xml:292:13
+ADDED from AndroidManifest.xml:302:13
 action#com.umeng.messge.registercallback.action
-ADDED from AndroidManifest.xml:293:17
+ADDED from AndroidManifest.xml:303:17
 	android:name
-		ADDED from AndroidManifest.xml:293:25
+		ADDED from AndroidManifest.xml:303:25
 intent-filter#com.umeng.message.unregistercallback.action
-ADDED from AndroidManifest.xml:295:13
+ADDED from AndroidManifest.xml:305:13
 action#com.umeng.message.unregistercallback.action
-ADDED from AndroidManifest.xml:296:17
+ADDED from AndroidManifest.xml:306:17
 	android:name
-		ADDED from AndroidManifest.xml:296:25
+		ADDED from AndroidManifest.xml:306:25
 intent-filter#com.umeng.message.message.handler.action
-ADDED from AndroidManifest.xml:298:13
+ADDED from AndroidManifest.xml:308:13
 action#com.umeng.message.message.handler.action
-ADDED from AndroidManifest.xml:299:17
+ADDED from AndroidManifest.xml:309:17
 	android:name
-		ADDED from AndroidManifest.xml:299:25
+		ADDED from AndroidManifest.xml:309:25
 intent-filter#com.umeng.message.autoupdate.handler.action
-ADDED from AndroidManifest.xml:301:13
+ADDED from AndroidManifest.xml:311:13
 action#com.umeng.message.autoupdate.handler.action
-ADDED from AndroidManifest.xml:302:17
+ADDED from AndroidManifest.xml:312:17
 	android:name
-		ADDED from AndroidManifest.xml:302:25
+		ADDED from AndroidManifest.xml:312:25
 service#com.umeng.message.UmengDownloadResourceService
-ADDED from AndroidManifest.xml:307:9
+ADDED from AndroidManifest.xml:317:9
 	android:name
-		ADDED from AndroidManifest.xml:307:18
+		ADDED from AndroidManifest.xml:317:18
 service#com.umeng.update.net.DownloadingService
-ADDED from AndroidManifest.xml:311:9
-	android:process
-		ADDED from AndroidManifest.xml:313:13
-	android:name
-		ADDED from AndroidManifest.xml:312:13
-activity#com.umeng.update.UpdateDialogActivity
-ADDED from AndroidManifest.xml:316:9
-	android:theme
-		ADDED from AndroidManifest.xml:318:13
-	android:name
-		ADDED from AndroidManifest.xml:317:13
-meta-data#UMENG_APPKEY
 ADDED from AndroidManifest.xml:321:9
+	android:process
+		ADDED from AndroidManifest.xml:323:13
 	android:name
 		ADDED from AndroidManifest.xml:322:13
-	android:value
-		ADDED from AndroidManifest.xml:323:13
-meta-data#UMENG_CHANNEL
-ADDED from AndroidManifest.xml:324:9
-	android:name
-		ADDED from AndroidManifest.xml:325:13
-	android:value
-		ADDED from AndroidManifest.xml:326:13
-meta-data#UMENG_MESSAGE_SECRET
-ADDED from AndroidManifest.xml:327:9
-	android:name
+activity#com.umeng.update.UpdateDialogActivity
+ADDED from AndroidManifest.xml:326:9
+	android:theme
 		ADDED from AndroidManifest.xml:328:13
+	android:name
+		ADDED from AndroidManifest.xml:327:13
+meta-data#UMENG_APPKEY
+ADDED from AndroidManifest.xml:331:9
+	android:name
+		ADDED from AndroidManifest.xml:332:13
 	android:value
-		ADDED from AndroidManifest.xml:329:13
-activity#com.wjkj.kd.teacher.com.wjkj.kd.teacher.FirstPageActivity
-ADDED from AndroidManifest.xml:332:9
-	android:label
-		ADDED from AndroidManifest.xml:334:13
-	android:name
 		ADDED from AndroidManifest.xml:333:13
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:335:13
-action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:336:17
+meta-data#UMENG_CHANNEL
+ADDED from AndroidManifest.xml:334:9
 	android:name
-		ADDED from AndroidManifest.xml:336:25
-category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:338:17
+		ADDED from AndroidManifest.xml:335:13
+	android:value
+		ADDED from AndroidManifest.xml:336:13
+meta-data#UMENG_MESSAGE_SECRET
+ADDED from AndroidManifest.xml:337:9
 	android:name
-		ADDED from AndroidManifest.xml:338:27
-activity#com.wjkj.kd.teacher.AboutUsActivity
-ADDED from AndroidManifest.xml:341:9
+		ADDED from AndroidManifest.xml:338:13
+	android:value
+		ADDED from AndroidManifest.xml:339:13
+activity#com.wjkj.kd.teacher.FirstPageActivity
+ADDED from AndroidManifest.xml:342:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:344:13
 	android:label
-		ADDED from AndroidManifest.xml:343:13
+		ADDED from AndroidManifest.xml:345:13
 	android:name
-		ADDED from AndroidManifest.xml:342:13
+		ADDED from AndroidManifest.xml:343:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:346:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:347:17
+	android:name
+		ADDED from AndroidManifest.xml:347:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:349:17
+	android:name
+		ADDED from AndroidManifest.xml:349:27
+activity#com.wjkj.kd.teacher.AboutUsActivity
+ADDED from AndroidManifest.xml:352:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:353:13
+	android:label
+		ADDED from AndroidManifest.xml:355:13
+	android:name
+		ADDED from AndroidManifest.xml:354:13

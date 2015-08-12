@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.wjkj.kd.teacher.com.wjkj.kd.teacher.utils.ExUtil;
+import com.umeng.update.UmengUpdateAgent;
+import com.wjkj.kd.teacher.utils.ExUtil;
+import com.wjkj.kd.teacher.utils.GloableUtils;
 
 import org.json.JSONException;
 
@@ -16,7 +18,8 @@ import java.io.UnsupportedEncodingException;
 public class SettingActivity extends BaseActivity {
 
     private ImageView imageBack,imagePush,imageAbout,imageSugesstion;
-    private TextView textFinish;
+    private TextView textFinish,tvUpdate;
+    private ImageView imageUpdate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +31,12 @@ public class SettingActivity extends BaseActivity {
 
     //给图片按钮添加监听事件
     private void setListeners() {
-        ImageView[] imageViews = new ImageView[]{imageAbout,imageBack,imagePush,imageSugesstion};
+        ImageView[] imageViews = new ImageView[]{imageAbout,imageBack,imagePush,imageSugesstion,imageUpdate};
         for(ImageView imageView :imageViews){
             imageView.setOnClickListener(this);
         }
         textFinish.setOnClickListener(this);
+
     }
 
     private void setViews() {
@@ -40,7 +44,9 @@ public class SettingActivity extends BaseActivity {
         imagePush = (ImageView)findViewById(R.id.imageView2);
         imageAbout = (ImageView)findViewById(R.id.imageView9);
         imageSugesstion = (ImageView)findViewById(R.id.imageView10);
+        imageUpdate = (ImageView)findViewById(R.id.imageView4);
         textFinish = (TextView)findViewById(R.id.textView21);
+
     }
 
     @Override
@@ -61,17 +67,19 @@ public class SettingActivity extends BaseActivity {
                     System.exit(0);
                 }
                 break;
+            //手动更新
+            case R.id.imageView4: UmengUpdateAgent.forceUpdate(MainActivity.instance); break;
         }
     }
 
     private void changPushState() {
         try {
-            if (MainActivity.PUSH_STATE == 0) {
-                MainActivity.PUSH_STATE = 1;
-                MainActivity.instance.pushMessageToServer();
+            if (GloableUtils.PUSH_STATE == 0) {
+                GloableUtils.PUSH_STATE = 1;
+                MainActivity.instance.pushMessage.pushMessageToServer();
             }else{
-                MainActivity.PUSH_STATE=0;
-                MainActivity.instance.pushMessageToServer();
+                GloableUtils.PUSH_STATE=0;
+                MainActivity.instance.pushMessage.pushMessageToServer();
             }
         }catch (NullPointerException e){
             ExUtil.e(e);

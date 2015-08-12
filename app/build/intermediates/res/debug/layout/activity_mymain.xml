@@ -11,63 +11,73 @@
         android:id="@+id/mainWebView"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_above="@+id/first_page_radiogroup" />
+        android:layout_above="@+id/textView11" />
+
     <RadioGroup
-        android:background="#000000"
+        android:background="#ffffff"
         android:id="@+id/first_page_radiogroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentBottom="true">
 
         <RadioButton
+
             android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/seclectfirstpage"
+            android:drawableTop="@drawable/seclectfirstpage"
+            android:textSize="12sp"
+            android:text="主页"
+            android:textColor="@drawable/selectcolor"
             android:onClick="onClick"
             android:gravity="center"
-
-            android:layout_weight="1"
             android:button="@null"
             android:id="@+id/radioButton1"
             android:checked="true" />
 
         <RadioButton
-            android:background="@drawable/seclecttongxin"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
 
+            android:drawableTop="@drawable/seclecttongxin"
+            android:textSize="12sp"
+            android:text="通讯录"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/selectcolor"
             android:onClick="onClick"
             android:gravity="center"
-            android:textSize="15sp"
-            android:layout_weight="1"
+
             android:button="@null"
             android:id="@+id/radioButton2" />
 
 
         <RadioButton
-            android:background="@drawable/seclectmessge"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
 
+            android:drawableTop="@drawable/seclectmessge"
+            android:textSize="12sp"
+            android:text="消息"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/selectcolor"
             android:onClick="onClick"
             android:gravity="center"
-            android:textSize="15sp"
-            android:layout_weight="1"
+
             android:button="@null"
             android:id="@+id/radioButton3" />
         <RadioButton
-            android:background="@drawable/seclectsettings"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
 
+            android:textColor="@drawable/selectcolor"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/seclectsettings"
+            android:textSize="12sp"
+            android:text="设置"
             android:onClick="onClick"
             android:gravity="center"
-            android:textSize="15sp"
-            android:layout_weight="1"
+
             android:button="@null"
             android:id="@+id/radioButton4" />
     </RadioGroup>
@@ -87,6 +97,37 @@
         android:id="@+id/progressBar"
         android:layout_above="@+id/textView"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView11"
+        android:layout_above="@+id/first_page_radiogroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#ffffff"
+        android:id="@+id/textView14"
+        android:layout_above="@+id/textView11" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#bbbbbb"
+        android:id="@+id/textView16"
+        android:layout_above="@+id/textView14"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>

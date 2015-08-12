@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.wjkj.kd.teacher.com.wjkj.kd.teacher.biz.Menu;
+import com.wjkj.kd.teacher.biz.Menu;
 
 
 public class VersionActivity extends BaseActivity {

@@ -97,7 +97,11 @@
     <string name="umeng_common_download_failed">下载失败</string>
     <string name="umeng_common_download_finish">下载完成，请点击安装</string>
     <string name="umeng_common_download_notification_prefix">正在下载: </string>
-    <string name="umeng_common_icon">图片</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="umeng_common_icon">中文图片</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_common_strings.xml -->
+    <eat-comment/>
     <string name="umeng_common_info_interrupt">下载出错啦，请检查网络后继续。</string>
     <string name="umeng_common_network_break_alert">请连接网络后再尝试！</string>
     <string name="umeng_common_patch_finish">更新完成，请点击安装</string>

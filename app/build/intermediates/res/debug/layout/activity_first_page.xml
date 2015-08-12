@@ -1,14 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.wjkj.kd.teacher.com.wjkj.kd.teacher.FirstPageActivity">
+    android:background="@drawable/startpage"
+    tools:context="com.wjkj.kd.teacher.FirstPageActivity">
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/imageView"
-        android:src="@drawable/startpage"
-        />
+
 </RelativeLayout>
 <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/layout/activity_first_page.xml -->

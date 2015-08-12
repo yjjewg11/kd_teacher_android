@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView8"
-            android:src="@drawable/youjiantou2x"
+            android:src="@drawable/zuojiantou2x"
             android:layout_marginLeft="32dp"
             android:layout_marginBottom="24dp"
             style="@style/MyTextViewStyle"
@@ -186,7 +186,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="退出"
+            android:text="版本更新"
             android:layout_marginLeft="30dp"
             style="@style/MyTextViewStyle"
             android:id="@+id/textView21"
@@ -194,7 +194,50 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:src="@drawable/youjiantou2x"
+            android:layout_marginRight="32dp"
+            android:layout_alignTop="@+id/textView21"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="32dp" />
+
     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r6"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="退出"
+            android:layout_marginLeft="30dp"
+            style="@style/MyTextViewStyle"
+            android:id="@+id/textView22"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bbbbbb"
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_update"
+        android:layout_below="@+id/r6"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

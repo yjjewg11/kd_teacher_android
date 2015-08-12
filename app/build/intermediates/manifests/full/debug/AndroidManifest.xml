@@ -72,6 +72,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="WRITE_APN_SETTINGS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="ANDROID.PERMISSION.CALL_PRIVILEGED" />
 
     <application
         android:name="com.wjkj.kd.teacher.MyApplication"
@@ -121,19 +122,23 @@
             android:name="com.wjkj.kd.teacher.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="问界互动家园"
-            android:launchMode="singleTask" >
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.wjkj.kd.teacher.BaseActivity" />
+        <activity
+            android:name="com.wjkj.kd.teacher.BaseActivity"
+            android:screenOrientation="portrait" />
 
-        <receiver android:name="com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyFeedbackReceiver" >
+        <receiver android:name="com.wjkj.kd.teacher.receiver.MyFeedbackReceiver" >
             <intent-filter>
  <!-- 接收 feedback 消息 -->
                 <action android:name="com.baidu.android.pushservice.action.FB_MESSAGE" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver" >
-            <intent-filter>
- <!-- 接收 push 消息 -->
+
+        <!--
+         <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver" >
+             <intent-filter> 接收 push 消息
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
                 <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
@@ -144,6 +149,8 @@
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
             </intent-filter>
         </receiver>
+
+
         <receiver
             android:name="com.baidu.android.pushservice.RegistrationReceiver"
             android:process=":bdservice_v1" >
@@ -157,16 +164,18 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.wjkj.kd.teacher.com.wjkj.kd.teacher.receiver.MyPushMessageReceiver" >
+
+        <receiver android:name=".com.wjkj.kd.teacher.receiver.MyPushMessageReceiver" >
             <intent-filter>
 
-                <!-- 接收push消息 -->
+
                 <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
-                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+
                 <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
                 <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
             </intent-filter>
         </receiver>
+
 
         <service
             android:name="com.baidu.android.pushservice.PushService"
@@ -176,19 +185,21 @@
                 <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
             </intent-filter>
         </service>
- <!-- 注意：在 4.4 (包含)之后的版本需加上如下所示的 service -->
         <service
             android:name="com.baidu.android.pushservice.CommandService"
             android:exported="true" >
         </service>
+        -->
 
         <activity
             android:name="com.wjkj.kd.teacher.VersionActivity"
-            android:label="VersionActivity" >
+            android:label="VersionActivity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.wjkj.kd.teacher.SettingActivity"
-            android:label="SettingActivity" >
+            android:label="SettingActivity"
+            android:screenOrientation="portrait" >
         </activity>
 
         <receiver
@@ -324,15 +335,16 @@
             android:value="55c1960867e58ec39000267d" />
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="Channel ID" />
+            android:value="wenjiehudongjiayuanlaoshiban" />
         <meta-data
             android:name="UMENG_MESSAGE_SECRET"
             android:value="cb11ae97f0e8c2b2e704b05ab700b7b8" >
         </meta-data>
 
         <activity
-            android:name="com.wjkj.kd.teacher.com.wjkj.kd.teacher.FirstPageActivity"
-            android:label="@string/title_activity_first_page" >
+            android:name="com.wjkj.kd.teacher.FirstPageActivity"
+            android:label="问界互动家园(老师版)"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -341,7 +353,8 @@
         </activity>
         <activity
             android:name="com.wjkj.kd.teacher.AboutUsActivity"
-            android:label="@string/title_activity_about_us" >
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

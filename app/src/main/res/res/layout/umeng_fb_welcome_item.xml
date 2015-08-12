@@ -23,7 +23,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="@string/umeng_fb_reply_content_default"
+            android:text="填上你的反馈信息，是对我们的支持"
             android:textSize="@dimen/umeng_fb_item_content_size" />
 
         <View

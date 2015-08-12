@@ -5,4 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_about_us">AboutUsActivity</string>
 
+    <string name="umeng_common_icon">中文图片</string>
+
+
 </resources>
