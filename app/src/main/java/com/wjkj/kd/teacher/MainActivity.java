@@ -2,6 +2,8 @@ package com.wjkj.kd.teacher;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.Notification;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
@@ -20,20 +22,23 @@ import android.webkit.ValueCallback;
 import android.webkit.WebSettings;
 import android.webkit.WebStorage;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+
 import com.loopj.android.http.AsyncHttpClient;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.fb.FeedbackAgent;
 import com.umeng.fb.push.FeedbackPush;
 import com.umeng.message.PushAgent;
+import com.umeng.message.UmengMessageHandler;
 import com.umeng.message.UmengRegistrar;
+import com.umeng.message.entity.UMessage;
 import com.umeng.update.UmengUpdateAgent;
 import com.umeng.update.UpdateConfig;
 import com.wjkj.kd.teacher.biz.Menu;
 import com.wjkj.kd.teacher.biz.MyAsyncTask;
+import com.wjkj.kd.teacher.biz.MyOwnWebViewClient;
 import com.wjkj.kd.teacher.biz.MyWebChromeClient;
 import com.wjkj.kd.teacher.biz.PushMessage;
 import com.wjkj.kd.teacher.interfaces.JavaScriptCall;
@@ -44,6 +49,8 @@ import com.wjkj.kd.teacher.utils.ExUtil;
 import com.wjkj.kd.teacher.utils.GloableUtils;
 import com.wjkj.kd.teacher.utils.ParseUtils;
 import com.wjkj.kd.teacher.utils.ToastUtils;
+import com.wjkj.kd.teacher.views.MyRadioButton;
+
 import java.io.File;
 
 public class MainActivity extends BaseActivity {
@@ -67,28 +74,44 @@ public class MainActivity extends BaseActivity {
     public String device_token;
     public PushMessage pushMessage;
     private TextView tv_line;
+    private MyRadioButton radionbtown;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+        //获得屏幕的尺寸
+        getWidthSize();
+
         setContentView(R.layout.activity_mymain);
         setViews();
         pushMessage = new PushMessage(asyncHttpClient);
         agent = new FeedbackAgent(this);
         instance = this;
-try {
-    menu = new Menu(this);
-}catch (Exception e){
-    e.printStackTrace();
-    throw new RuntimeException(e);
-}
-
+        try {
+              menu = new Menu(this);
+        }catch (Exception e){
+              e.printStackTrace();
+               throw new RuntimeException(e);
+        }
 //        StatService.bindJSInterface(this, webView);
         initfankui();
         initPushMessage();
         initUpdateApk();
+    }
+
+    private void getWidthSize() {
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        int width = displayMetrics.widthPixels;
+        Log.i("TAG", "打印屏幕的尺寸大小" + width);
+        if(width<=480){
+                 MyRadioButton.widthSize = 90;
+        }else if(width<=720){
+                 MyRadioButton.widthSize = 120;
+        }
     }
 
     //初始化友盟更新
@@ -102,9 +125,32 @@ try {
     //友盟推送
     private void initPushMessage() {
         PushAgent mPushAgent = PushAgent.getInstance(this);
+        ownNotification(mPushAgent);
         mPushAgent.enable();
         device_token = UmengRegistrar.getRegistrationId(this);
 
+    }
+
+    //当通知来临时，点亮图标
+    private void ownNotification(PushAgent mPushAgent) {
+        UmengMessageHandler umengMessageHandler = new UmengMessageHandler(){
+            @Override
+            public Notification getNotification(Context context, UMessage uMessage) {
+                Log.i("TAG","消息来了，被点亮了");
+                MyRadioButton.isMessage = true;
+                if(radionbtown!=null)
+                radionbtown.canvasAgain();
+                return super.getNotification(context, uMessage);
+            }
+
+            @Override
+            public void dealWithNotificationMessage(Context context, UMessage uMessage) {
+                Log.i("TAG","消息来了");
+                super.dealWithNotificationMessage(context, uMessage);
+            }
+        };
+
+        mPushAgent.setMessageHandler(umengMessageHandler);
     }
 
     //友盟反馈
@@ -144,6 +190,7 @@ try {
         webView = (WebView)findViewById(R.id.mainWebView);
         Log.i("TAG","应该是webView的加载出了问题");
         radioGroup = (RadioGroup)findViewById(R.id.first_page_radiogroup);
+        radionbtown = (MyRadioButton)findViewById(R.id.radioButton3);
         tv_line = (TextView)findViewById(R.id.textView16);
         tv_line.setVisibility(View.GONE);
         AnimationUtils.hideRadio(radioGroup);
@@ -169,6 +216,7 @@ try {
             finishAll();
         }
         webView.loadUrl("javascript:G_jsCallBack.QueuedoBackFN()");
+//        super.onBackPressed();
     }
     private void finishAll() {
         if (f) {
@@ -226,28 +274,7 @@ try {
 
         webView.setWebChromeClient(new MyWebChromeClient());
 
-        webView.setWebViewClient(new WebViewClient(){
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-
-//                if (url.startsWith("mailto:") || url.startsWith("geo:") ||url.startsWith("tel:")) {
-//                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-//                    MyApplication.instance.startActivity(intent);
-//                }
-
-                Log.i("TAG", "打印这个方法有没有执行" + url.toString());
-                if(url.contains("tel:")){
-                    int num = url.indexOf(":");
-                    String tel = url.substring(num);
-                    Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse(url.toString()));
-                    MainActivity.instance.startActivity(intent);
-                }else if (url.contains("baidu.com")){
-                    view.loadUrl(GloableUtils.URL);
-                }
-                return true;
-            }
-
-        });
+        webView.setWebViewClient(new MyOwnWebViewClient());
 
 
         webView.loadUrl(
@@ -494,18 +521,25 @@ try {
 
              //通讯录点击按钮
             //获取屏幕高度与宽度
-            DisplayMetrics dm = new DisplayMetrics();
-            getWindowManager().getDefaultDisplay().getMetrics(dm);
+//            DisplayMetrics dm = new DisplayMetrics();
+//            getWindowManager().getDefaultDisplay().getMetrics(dm);
+                webView.loadUrl("javascript:G_jsCallBack.QueueTeacher()");
                 break;
             case R.id.radioButton3:
                 //即使消息
+                //来了消息之后，图标一直点亮，不重复绘制，
+                //当点击消息按钮之后图标消失，需要重新绘制。
+                //每次消息来了时，用布尔值判断，true则点亮，false则消失，
+                //每次点亮之后都设置为false，下次判断，如果是消失，则发送广播修改值，
+                MyRadioButton.isMessage = false;
+                radionbtown.canvasAgain();
                 webView.loadUrl("javascript:G_jsCallBack.queryMyTimely_myList()");
                 break;
             case R.id.radioButton4:
                 //点击此按钮注销用户，并返回到登陆页面
                 //回调javaScript方法
-
-                webView.loadUrl(GloableUtils.CANCLE_USER);
+                //设置按钮。点击之后启动设置页面
+                startActivity(new Intent(this,SettingActivity.class));
                 break;
         }
     }

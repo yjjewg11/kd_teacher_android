@@ -30,8 +30,14 @@ public class MyApplication extends Application{
 //        StatService.setAppChannel(this, "null", false);
 //        El4au0Glwr7Xt8sPgZFg2UP7
 //        启动推送服务
+        //自定义通知
+//        notifacation();
+
         configImagerLoader();
+
     }
+
+
 
     private void configImagerLoader() {
 

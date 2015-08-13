@@ -52,7 +52,7 @@
             android:id="@+id/radioButton2" />
 
 
-        <RadioButton
+        <com.wjkj.kd.teacher.views.MyRadioButton
 
             android:drawableTop="@drawable/seclectmessge"
             android:textSize="12sp"
@@ -77,7 +77,6 @@
             android:text="设置"
             android:onClick="onClick"
             android:gravity="center"
-
             android:button="@null"
             android:id="@+id/radioButton4" />
     </RadioGroup>

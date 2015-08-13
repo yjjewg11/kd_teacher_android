@@ -1,0 +1,9 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutus"
+    tools:context="com.wjkj.kd.teacher.AboutUsActivity">
+
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/layout/activity_about_us.xml -->

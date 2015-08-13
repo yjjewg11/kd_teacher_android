@@ -354,6 +354,10 @@
             android:name=".AboutUsActivity"
             android:label="@string/title_activity_about_us" >
         </activity>
+        <activity
+            android:name=".LoadUrlActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_about_us"/>
     </application>
 
 </manifest>
