@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.umeng.update.UmengUpdateAgent;
+import com.wjkj.kd.teacher.biz.DealWithPushMessage;
 import com.wjkj.kd.teacher.utils.ExUtil;
 import com.wjkj.kd.teacher.utils.GloableUtils;
 
@@ -75,10 +76,10 @@ public class SettingActivity extends BaseActivity {
         try {
             if (GloableUtils.PUSH_STATE == 0) {
                 GloableUtils.PUSH_STATE = 1;
-                MainActivity.instance.pushMessage.pushMessageToServer();
+                DealWithPushMessage.dealPushMessage();
             }else{
                 GloableUtils.PUSH_STATE=0;
-                MainActivity.instance.pushMessage.pushMessageToServer();
+                DealWithPushMessage.dealPushMessage();
             }
         }catch (NullPointerException e){
             ExUtil.e(e);

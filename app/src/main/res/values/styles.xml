@@ -9,6 +9,10 @@
 
     <style name="MyLineStyle" parent="AppTheme">
         <item name="android:background">#bbbbbb</item>
+    </style>
+
+    <style name="leftmenutextcolor" parent="AppTheme">
+        <item name="android:textColor">#ffffff</item>
 
     </style>
 </resources>

@@ -2,8 +2,6 @@ package com.wjkj.kd.teacher.utils;
 
 import android.util.Log;
 
-import com.wjkj.kd.teacher.MainActivity;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -16,7 +14,7 @@ public class HttpUtils {
             Log.i("TAG","打印返回成功之后的信息      "+json.getString("message"));
             //指明当成功上传之后该如何做
             //推送消息的渠道首次上传成功后，下次就不需要再上传了，所以关闭异步任务
-            MainActivity.instance.myAsyncTask.cancel(true);
+//            MainActivity.instance.myAsyncTask.cancel(true);
         }else{
             //失败则显示原因
 //            ToastUtils.showMessage(json.getString("message"));

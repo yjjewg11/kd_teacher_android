@@ -3,140 +3,73 @@ package com.wjkj.kd.teacher.biz;
 import android.app.Activity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.wjkj.kd.teacher.MainActivity;
-import com.wjkj.kd.teacher.MyApplication;
 import com.wjkj.kd.teacher.R;
-import com.wjkj.kd.teacher.utils.GloableUtils;
-
-import org.json.JSONException;
-
-import java.io.File;
-import java.io.UnsupportedEncodingException;
 
 public class Menu {
 
-    Button[] btnArray = new Button[3];
     Activity activity;
     SlidingMenu slidingMenu;
-    public Button btPush;
+
     public Menu(Activity activity) {
         super();
+        RelativeLayout[] relativeLayouts = new RelativeLayout[3];
         this.activity = activity;
         slidingMenu = new SlidingMenu(activity);
         slidingMenu.setMenu(R.layout.leftmenu);
-        RelativeLayout relativeLayout = (RelativeLayout)View.inflate(MyApplication.instance,R.layout.leftmenu,null);
-        btPush = (Button)relativeLayout.findViewById(R.id.btn_alter_message);
         slidingMenu.attachToActivity(activity, SlidingMenu.SLIDING_CONTENT);
         int screenWidth = activity.getResources().getDisplayMetrics().widthPixels;
         slidingMenu.setBehindOffset(screenWidth * 3 / 8);
-//        btnArray[0] = (Button) activity
-//                .findViewById(R.id.btn_cancle);
-        //收藏按钮
-        btnArray[0] = (Button) activity
-                .findViewById(R.id.btn_version);
-        btnArray[1] = (Button) activity.findViewById(R.id.btn_alter_message);
-        btnArray[2] = (Button) activity.findViewById(R.id.btn_alter_password);
+        View rlInflate = slidingMenu.getMenu();
+ //        收藏按钮
+        relativeLayouts[0] = (RelativeLayout)rlInflate.findViewById(R.id.rl_gaiming);
+        relativeLayouts[1] = (RelativeLayout)rlInflate.findViewById(R.id.rl_gaimi);
+        relativeLayouts[2] = (RelativeLayout)rlInflate.findViewById(R.id.rl_shoucang);
+        RelativeLayout rl2 = (RelativeLayout) rlInflate.findViewById(R.id.rl_gaiming);
+        Log.i("TAG","查看监听事件是否已经添加");
         MyListener myListener = new MyListener();
-        for (Button btn : btnArray) {
-            btn.setOnClickListener(myListener);
+        for (RelativeLayout rl : relativeLayouts) {
+            rl.setOnClickListener(myListener);
+            Log.i("TAG","看看是否已经添加监听");
         }
     }
+    //控件点击事件无任何作用：
+       //1.
+
+
+
     public void showMenu() {
         slidingMenu.showMenu();
     }
     class MyListener implements View.OnClickListener {
-
         @Override
         public void onClick(View v) {
-
             //如果R.id.*报错
+
+            Log.i("TAG","监听事件已经添加完毕，看看点击是否响应");
             //用if
 //			if (v.getId()==R.id.btn_leftmenu_allTopic)
 //			{index=0;}
-
             try {
                 switch (v.getId()) {
-//                    case R.id.push_message:
-//                        //调用一个方法将消息推送设置状态改变
-//                        changePushState();
-//                        break;
-                    case R.id.btn_version:
-                        //收藏东西
-                        //启动一个界面观察此程序的版本号
-//                        Intent intent = new Intent(activity, VersionActivity.class);
-//                        activity.startActivity(intent);
+
+                    case R.id.rl_shoucang:
+
                         break;
-//                    case R.id.btn_cancle:
-//                        //调用js接口注销当前用户
-//                        Log.i("TAG", "注销用户");
-//                        if (activity instanceof MainActivity) {
-//                            MainActivity mainActivity = (MainActivity) activity;
-//                            mainActivity.webView.loadUrl(GloableUtils.CANCLE_USER);
-//                            Log.i("TAG", "注销方法已执行");
-//                        }
-//
-//                        break;
-//                    case R.id.btn_finish:
-//                        //退出当前程序
-//                        MobclickAgent.onKillProcess(MainActivity.instance);
-//                        for (Activity activity : MyApplication.list) {
-//                            if(activity!=null)
-//                            activity.finish();
-//                        }
-//
-//                        MainActivity.instance.myAsyncTask.cancel(true);
-//
-//
-//
-//                        System.exit(0);
-//
-//                        break;
-                    case R.id.btn_alter_message:
+                    case R.id.rl_gaiming:
                         //调用js接口修改联系人信息
+                        Log.i("TAG","修改信息方法已经执行");
                         MainActivity.instance.webView.loadUrl("javascript:G_jsCallBack.user_info_update()");
                         break;
-                    case R.id.btn_alter_password:
+                    case R.id.rl_gaimi:
                         //调用js接口修联系人密码
+                        Log.i("TAG","修改密码方法已经执行");
                         MainActivity.instance.webView.loadUrl("javascript:G_jsCallBack.user_info_updatepassword()");
                         break;
 
-                        //一个设置界面
-                        //点击清楚缓存数据
-//
-
-//                    if(totalSize>2){
-
-//                    }
-
-//                    MainActivity.instance.webView.
-
-                        //此方法执行清理
-//                    File file = new File(MainActivity.instance.appCachePath+"/clear");
-//                    Log.i("TAG", "打印一下文件的绝对路径" + file.getAbsolutePath());
-//                    long size =  file.length();
-//                    file.isDirectory();
-//                    Log.i("TAG", "打印一下是否是目录" + file.isDirectory());
-//                    Log.i("TAG", "打印一下是否是文件" + file.isFile());
-//                    Log.i("TAG", "打印一下文件的长度" + size);
-//                    Log.i("TAG","打印目录是否存在"+file.exists());
-//                    Log.i("TAG","打印数据隐藏"+file.isHidden());
-//                    Log.i("TAG","打印能不能读"+file.canRead());
-//                    Log.i("TAG","打印能不能写"+file.canWrite());
-//                    MainActivity.instance.clear();
-//                    MainActivity.instance.webView.c
-//                    long f = file.getTotalSpace();
-//                    long f2 = file.getUsableSpace();
-//                    long f3 = file.getFreeSpace();
-//                    Log.i("TAG", "打印文件的大小getTotalSpace==" + f + "   getUsableSpace===" + f2 + "    getFreeSpace====" + f3);
-
-//                       启动设置页面
-
-//                        MainActivity.instance.startActivity(new Intent(MainActivity.instance, SettingActivity.class));
-//                        break;
                 }
             }finally {
                 slidingMenu.toggle();
@@ -150,43 +83,16 @@ public class Menu {
 
 
 
-    //点击清楚缓存数据
-    private void clearCookie() {
-        try {
-            File file = new File(GloableUtils.appCachePath,"clear");
-            Log.i("TAG","打印此文件的路径"+file.getAbsolutePath());
 
 
-                long f = file.getTotalSpace();
-                long f2 = file.getUsableSpace();
-                long f3 = file.getFreeSpace();
-                Log.i("TAG", "打印文件的大小getTotalSpace==" + f + "   getUsableSpace===" + f2 + "    getFreeSpace====" + f3);
 
-        }catch (Exception e){
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
-    }
-
-    private void changePushState(){
-        if(GloableUtils.PUSH_STATE==0){
-            GloableUtils.PUSH_STATE = 1;
-            btPush.setText("推送已打开");
-        }else{
-            GloableUtils.PUSH_STATE = 0;
-            btPush.setText("推送已关闭");
-        }
-
-        pushMessage();
-    }
-
-    public void  pushMessage(){
-        try {
-            MainActivity.instance.pushMessage.pushMessageToServer();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
+//    public void  pushMessage(){
+//        try {
+//            MainActivity.instance.pushMessage.pushMessageToServer();
+//        } catch (UnsupportedEncodingException e) {
+//            e.printStackTrace();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }

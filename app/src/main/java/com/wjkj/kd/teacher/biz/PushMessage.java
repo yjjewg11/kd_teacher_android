@@ -1,24 +1,25 @@
 package com.wjkj.kd.teacher.biz;
 
 import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.wjkj.kd.teacher.MainActivity;
+import com.wjkj.kd.teacher.dao.AbstractDao;
+import com.wjkj.kd.teacher.handle.AbstractHandle;
 import com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
 import com.wjkj.kd.teacher.utils.ExUtil;
 import com.wjkj.kd.teacher.utils.GloableUtils;
 import com.wjkj.kd.teacher.utils.HttpUtils;
+import com.wjkj.kd.teacher.utils.ParseUtils;
 
 import org.apache.http.Header;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.message.BasicHeader;
 import org.apache.http.protocol.HTTP;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
 
-public class PushMessage {
+public class PushMessage extends AbstractDao{
 
     private AsyncHttpClient asyncHttpClient;
     public PushMessage(AsyncHttpClient asyncHttpClient){
@@ -40,18 +41,17 @@ public class PushMessage {
         RequestParams requestParams = new RequestParams();
         requestParams.put("JSESSIONID",GloableUtils.JESSIONID);
         String contentType = GloableUtils.APPLICATION_JSON + HTTP.CHARSET_PARAM +HTTP.UTF_8;
-        Header[] headers;
-        headers = new BasicHeader[]{
-                new BasicHeader("Cookie","JSESSIONID="+GloableUtils.JESSIONID+";")
-        };
+        Header[] headers=this.getHttpHeader();
+//        headers = new BasicHeader[]{
+//                new BasicHeader("Cookie","JSESSIONID="+GloableUtils.JESSIONID+";")
+//        };
 
-        asyncHttpClient.post(MainActivity.instance,url,headers,se,contentType,new AsyncHttpResponseHandler(){
+        asyncHttpClient.post(MainActivity.instance,url,headers,se,contentType,new AbstractHandle(){
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 try {
 
-                    String shuzu = new String(bytes);
-                    JSONObject jsonObject = new JSONObject(shuzu);
+                    JSONObject jsonObject = ParseUtils.getJSONObject(bytes);
                     HttpUtils.pullJson(jsonObject);
                 } catch (JSONException e) {
                     ExUtil.e(e);
@@ -59,7 +59,9 @@ public class PushMessage {
             }
             @Override
             public void onFailure(int i, Header[] headers, byte[] bytes, Throwable throwable) {
+                super.onFailure(i,headers,bytes,throwable);
 //                ToastUtils.showMessage("网络连接处上传失败");
+
             }
         });
 

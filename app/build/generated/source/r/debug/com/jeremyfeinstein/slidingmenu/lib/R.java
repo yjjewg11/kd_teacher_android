@@ -28,16 +28,16 @@ public final class R {
 		public static final int activity_vertical_margin = 0x7f050001;
 	}
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f02000e;
+		public static final int ic_launcher = 0x7f020010;
 	}
 	public static final class id {
-		public static final int action_settings = 0x7f0a007b;
+		public static final int action_settings = 0x7f0a0088;
 		public static final int fullscreen = 0x7f0a0003;
 		public static final int left = 0x7f0a0001;
 		public static final int margin = 0x7f0a0004;
 		public static final int right = 0x7f0a0002;
 		public static final int selected_view = 0x7f0a0000;
-		public static final int slidingmenumain = 0x7f0a0041;
+		public static final int slidingmenumain = 0x7f0a004e;
 	}
 	public static final class layout {
 		public static final int activity_main = 0x7f030003;

@@ -1,10 +1,9 @@
 package com.wjkj.kd.teacher;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebView;
 
-public class LoadUrlActivity extends Activity {
+public class LoadUrlActivity extends BaseActivity {
 
     private WebView webview2;
     public static String URLL = "http://wapbaike.baidu.com/view/4850574.htm?sublemmaid=" +

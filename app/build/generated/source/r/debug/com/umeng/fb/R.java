@@ -39,58 +39,58 @@ public final class R {
 		public static final int umeng_fb_spinner_padding_left = 0x7f050009;
 	}
 	public static final class drawable {
-		public static final int umeng_fb_action_replay = 0x7f020023;
-		public static final int umeng_fb_arrow_right = 0x7f020024;
-		public static final int umeng_fb_audio_dialog_cancel = 0x7f020025;
-		public static final int umeng_fb_audio_dialog_content = 0x7f020026;
-		public static final int umeng_fb_audio_play_01 = 0x7f020027;
-		public static final int umeng_fb_audio_play_02 = 0x7f020028;
-		public static final int umeng_fb_audio_play_03 = 0x7f020029;
-		public static final int umeng_fb_audio_play_bg = 0x7f02002a;
-		public static final int umeng_fb_help_tab_bg = 0x7f02002b;
-		public static final int umeng_fb_keyboard = 0x7f02002c;
-		public static final int umeng_fb_plus = 0x7f02002d;
-		public static final int umeng_fb_record = 0x7f02002e;
-		public static final int umeng_fb_round_white_bg = 0x7f02002f;
+		public static final int umeng_fb_action_replay = 0x7f020026;
+		public static final int umeng_fb_arrow_right = 0x7f020027;
+		public static final int umeng_fb_audio_dialog_cancel = 0x7f020028;
+		public static final int umeng_fb_audio_dialog_content = 0x7f020029;
+		public static final int umeng_fb_audio_play_01 = 0x7f02002a;
+		public static final int umeng_fb_audio_play_02 = 0x7f02002b;
+		public static final int umeng_fb_audio_play_03 = 0x7f02002c;
+		public static final int umeng_fb_audio_play_bg = 0x7f02002d;
+		public static final int umeng_fb_help_tab_bg = 0x7f02002e;
+		public static final int umeng_fb_keyboard = 0x7f02002f;
+		public static final int umeng_fb_plus = 0x7f020030;
+		public static final int umeng_fb_record = 0x7f020031;
+		public static final int umeng_fb_round_white_bg = 0x7f020032;
 	}
 	public static final class id {
-		public static final int action_settings = 0x7f0a007b;
-		public static final int fb_reply_item_view_line = 0x7f0a0067;
-		public static final int fb_reply_item_view_tag = 0x7f0a0066;
-		public static final int umeng_fb_action_collapse = 0x7f0a0057;
-		public static final int umeng_fb_audio_dialog_count_down_tag_tv = 0x7f0a0055;
-		public static final int umeng_fb_audio_dialog_count_down_tv = 0x7f0a0053;
-		public static final int umeng_fb_audio_dialog_count_tv = 0x7f0a0054;
-		public static final int umeng_fb_audio_dialog_layout = 0x7f0a0052;
-		public static final int umeng_fb_contact_spinner = 0x7f0a0061;
-		public static final int umeng_fb_contact_title = 0x7f0a0056;
-		public static final int umeng_fb_container = 0x7f0a004f;
-		public static final int umeng_fb_help_pager = 0x7f0a0051;
-		public static final int umeng_fb_help_tabs = 0x7f0a0050;
-		public static final int umeng_fb_image_detail_imageview = 0x7f0a005d;
-		public static final int umeng_fb_input_layout = 0x7f0a005e;
-		public static final int umeng_fb_keyboard_tag_btn = 0x7f0a0068;
-		public static final int umeng_fb_plus_btn = 0x7f0a0065;
-		public static final int umeng_fb_question = 0x7f0a005c;
-		public static final int umeng_fb_record_btn = 0x7f0a0069;
-		public static final int umeng_fb_record_tag_btn = 0x7f0a0064;
-		public static final int umeng_fb_reply_audio_duration = 0x7f0a006d;
-		public static final int umeng_fb_reply_audio_layout = 0x7f0a006b;
-		public static final int umeng_fb_reply_audio_play_anim = 0x7f0a006c;
-		public static final int umeng_fb_reply_content = 0x7f0a0070;
-		public static final int umeng_fb_reply_content_layout = 0x7f0a006a;
-		public static final int umeng_fb_reply_date = 0x7f0a006e;
-		public static final int umeng_fb_reply_image = 0x7f0a0071;
-		public static final int umeng_fb_reply_item_view_line = 0x7f0a0060;
-		public static final int umeng_fb_reply_item_view_tag = 0x7f0a005f;
-		public static final int umeng_fb_reply_list = 0x7f0a005b;
-		public static final int umeng_fb_resend = 0x7f0a006f;
-		public static final int umeng_fb_send_btn = 0x7f0a0062;
-		public static final int umeng_fb_send_content = 0x7f0a0063;
-		public static final int umeng_fb_send_layout = 0x7f0a0059;
-		public static final int umeng_fb_spinnerTarget = 0x7f0a0058;
-		public static final int umeng_fb_swipe_container = 0x7f0a005a;
-		public static final int umeng_fb_welcome_info = 0x7f0a0072;
+		public static final int action_settings = 0x7f0a0088;
+		public static final int fb_reply_item_view_line = 0x7f0a0074;
+		public static final int fb_reply_item_view_tag = 0x7f0a0073;
+		public static final int umeng_fb_action_collapse = 0x7f0a0064;
+		public static final int umeng_fb_audio_dialog_count_down_tag_tv = 0x7f0a0062;
+		public static final int umeng_fb_audio_dialog_count_down_tv = 0x7f0a0060;
+		public static final int umeng_fb_audio_dialog_count_tv = 0x7f0a0061;
+		public static final int umeng_fb_audio_dialog_layout = 0x7f0a005f;
+		public static final int umeng_fb_contact_spinner = 0x7f0a006e;
+		public static final int umeng_fb_contact_title = 0x7f0a0063;
+		public static final int umeng_fb_container = 0x7f0a005c;
+		public static final int umeng_fb_help_pager = 0x7f0a005e;
+		public static final int umeng_fb_help_tabs = 0x7f0a005d;
+		public static final int umeng_fb_image_detail_imageview = 0x7f0a006a;
+		public static final int umeng_fb_input_layout = 0x7f0a006b;
+		public static final int umeng_fb_keyboard_tag_btn = 0x7f0a0075;
+		public static final int umeng_fb_plus_btn = 0x7f0a0072;
+		public static final int umeng_fb_question = 0x7f0a0069;
+		public static final int umeng_fb_record_btn = 0x7f0a0076;
+		public static final int umeng_fb_record_tag_btn = 0x7f0a0071;
+		public static final int umeng_fb_reply_audio_duration = 0x7f0a007a;
+		public static final int umeng_fb_reply_audio_layout = 0x7f0a0078;
+		public static final int umeng_fb_reply_audio_play_anim = 0x7f0a0079;
+		public static final int umeng_fb_reply_content = 0x7f0a007d;
+		public static final int umeng_fb_reply_content_layout = 0x7f0a0077;
+		public static final int umeng_fb_reply_date = 0x7f0a007b;
+		public static final int umeng_fb_reply_image = 0x7f0a007e;
+		public static final int umeng_fb_reply_item_view_line = 0x7f0a006d;
+		public static final int umeng_fb_reply_item_view_tag = 0x7f0a006c;
+		public static final int umeng_fb_reply_list = 0x7f0a0068;
+		public static final int umeng_fb_resend = 0x7f0a007c;
+		public static final int umeng_fb_send_btn = 0x7f0a006f;
+		public static final int umeng_fb_send_content = 0x7f0a0070;
+		public static final int umeng_fb_send_layout = 0x7f0a0066;
+		public static final int umeng_fb_spinnerTarget = 0x7f0a0065;
+		public static final int umeng_fb_swipe_container = 0x7f0a0067;
+		public static final int umeng_fb_welcome_info = 0x7f0a007f;
 	}
 	public static final class layout {
 		public static final int activity_main = 0x7f030003;
@@ -157,7 +157,7 @@ public final class R {
 		public static final int umeng_fb_write_contact_title = 0x7f080023;
 	}
 	public static final class style {
-		public static final int umeng_fb_image_dialog_anim = 0x7f060005;
-		public static final int umeng_fb_speech_dialog_style = 0x7f060006;
+		public static final int umeng_fb_image_dialog_anim = 0x7f060006;
+		public static final int umeng_fb_speech_dialog_style = 0x7f060007;
 	}
 }

@@ -1,18 +1,13 @@
 package com.wjkj.kd.teacher;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
-import android.app.Notification;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -20,7 +15,6 @@ import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebSettings;
-import android.webkit.WebStorage;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
 import android.widget.RadioGroup;
@@ -33,14 +27,15 @@ import com.umeng.fb.push.FeedbackPush;
 import com.umeng.message.PushAgent;
 import com.umeng.message.UmengMessageHandler;
 import com.umeng.message.UmengRegistrar;
-import com.umeng.message.entity.UMessage;
 import com.umeng.update.UmengUpdateAgent;
 import com.umeng.update.UpdateConfig;
+import com.wjkj.kd.teacher.biz.DealWithPushMessage;
 import com.wjkj.kd.teacher.biz.Menu;
 import com.wjkj.kd.teacher.biz.MyAsyncTask;
 import com.wjkj.kd.teacher.biz.MyOwnWebViewClient;
 import com.wjkj.kd.teacher.biz.MyWebChromeClient;
 import com.wjkj.kd.teacher.biz.PushMessage;
+import com.wjkj.kd.teacher.handle.MyUmengMessageHandle;
 import com.wjkj.kd.teacher.interfaces.JavaScriptCall;
 import com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
 import com.wjkj.kd.teacher.utils.AnimationUtils;
@@ -51,7 +46,9 @@ import com.wjkj.kd.teacher.utils.ParseUtils;
 import com.wjkj.kd.teacher.utils.ToastUtils;
 import com.wjkj.kd.teacher.views.MyRadioButton;
 
-import java.io.File;
+import org.json.JSONException;
+
+import java.io.UnsupportedEncodingException;
 
 public class MainActivity extends BaseActivity {
     public static AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
@@ -74,7 +71,7 @@ public class MainActivity extends BaseActivity {
     public String device_token;
     public PushMessage pushMessage;
     private TextView tv_line;
-    private MyRadioButton radionbtown;
+    public MyRadioButton radionbtown;
 
 
     @Override
@@ -87,68 +84,53 @@ public class MainActivity extends BaseActivity {
 
         setContentView(R.layout.activity_mymain);
         setViews();
-        pushMessage = new PushMessage(asyncHttpClient);
+
         agent = new FeedbackAgent(this);
         instance = this;
         try {
               menu = new Menu(this);
-        }catch (Exception e){
-              e.printStackTrace();
-               throw new RuntimeException(e);
-        }
-//        StatService.bindJSInterface(this, webView);
         initfankui();
-        initPushMessage();
         initUpdateApk();
+        initPushMessage();
+        }catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void getWidthSize() {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int width = displayMetrics.widthPixels;
-        Log.i("TAG", "打印屏幕的尺寸大小" + width);
         if(width<=480){
                  MyRadioButton.widthSize = 90;
         }else if(width<=720){
                  MyRadioButton.widthSize = 120;
         }
     }
-
     //初始化友盟更新
     private void initUpdateApk() {
         UmengUpdateAgent.setUpdateCheckConfig(false);
         UmengUpdateAgent.setDefault();
         UmengUpdateAgent.update(this);
-
         UpdateConfig.setDebug(true);
     }
     //友盟推送
-    private void initPushMessage() {
+    private void initPushMessage() throws UnsupportedEncodingException, JSONException {
         PushAgent mPushAgent = PushAgent.getInstance(this);
         ownNotification(mPushAgent);
         mPushAgent.enable();
         device_token = UmengRegistrar.getRegistrationId(this);
-
+        DealWithPushMessage.dealPushMessage();
     }
 
     //当通知来临时，点亮图标
     private void ownNotification(PushAgent mPushAgent) {
-        UmengMessageHandler umengMessageHandler = new UmengMessageHandler(){
-            @Override
-            public Notification getNotification(Context context, UMessage uMessage) {
-                Log.i("TAG","消息来了，被点亮了");
-                MyRadioButton.isMessage = true;
-                if(radionbtown!=null)
-                radionbtown.canvasAgain();
-                return super.getNotification(context, uMessage);
-            }
 
-            @Override
-            public void dealWithNotificationMessage(Context context, UMessage uMessage) {
-                Log.i("TAG","消息来了");
-                super.dealWithNotificationMessage(context, uMessage);
-            }
-        };
+        //通知来临时，加上自己的业务处理逻辑
+        UmengMessageHandler umengMessageHandler = new MyUmengMessageHandle();
 
         mPushAgent.setMessageHandler(umengMessageHandler);
     }
@@ -323,10 +305,10 @@ public class MainActivity extends BaseActivity {
 
         //js调用此方法将JessionId传过来将其保存
         @JavascriptInterface
-        public void jsessionToPhone(String jessionID){
+        public void jsessionToPhone(String jessionID) throws UnsupportedEncodingException, JSONException {
             GloableUtils.JESSIONID = jessionID;
-            Log.i("TAG", "jsessionId===" + jessionID);
-
+            //当jessionid和设备号都不为空时来推送消息
+            DealWithPushMessage.dealPushMessage();
 
             //调用pushMessageToServer方法将渠道号和编号传到服务器
         }
@@ -367,30 +349,7 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    private void cropImageUri(String path) {
-        try {
-            File file = new File(path);
-            Intent intent = new Intent("com.android.camera.action.CROP");
-            Uri uri = Uri.fromFile(file);
-            intent.setDataAndType(uri, "image/*");
-            intent.putExtra("crop", "true");
-//            intent.putExtra("aspectX", 1);
-            intent.putExtra("aspectY", 1);
-            intent.putExtra("outputX", 198);
-            intent.putExtra("outputY", 198);
-            intent.putExtra("scale","true");
-            intent.putExtra("circleCrop","true");
-            // 设置为true直接返回bitmap
-            intent.putExtra("return-data", false);
-            intent.putExtra("output", GloableUtils.imageUri);
-            intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
-            startActivityForResult(intent, GloableUtils.CROP_A_PICTURE);
 
-        }catch (Exception e){
-
-            e.printStackTrace();
-        }
-    }
 
     @Override
     protected void onStart() {
@@ -398,8 +357,8 @@ public class MainActivity extends BaseActivity {
 //        PushManager.startWork(this,
 //                PushConstants.LOGIN_TYPE_API_KEY,
 //                "El4au0Glwr7Xt8sPgZFg2UP7");
-        myAsyncTask = new MyAsyncTask();
-        this.myAsyncTask.execute();
+//        myAsyncTask = new MyAsyncTask();
+//        this.myAsyncTask.execute();
         //注册反馈
 //        FeedbackManager fm = FeedbackManager.getInstance(this);
 //        fm.register(GloableUtils.WENJIE_BAIDU_API_KEY);
@@ -420,7 +379,7 @@ public class MainActivity extends BaseActivity {
                 String filePath = null;
                 Uri uri = data.getData();
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
-                    filePath = getPath(uri);
+                    filePath = BitmapUtils.getPath(uri);
                 } else {
                     String[] cloums = {MediaStore.Images.Media.DATA};
                     cursor = getContentResolver().query(uri, cloums, null, null, null);
@@ -428,7 +387,7 @@ public class MainActivity extends BaseActivity {
                     filePath = cursor.getString(0);
                 }
                 Log.i("TAG", "打印一下文件的路径" + filePath);
-                cropImageUri(filePath);
+                BitmapUtils.cropImageUri(filePath);
             }
         }finally{
 
@@ -460,7 +419,7 @@ public class MainActivity extends BaseActivity {
                  Bitmap bitmap = null;
                  try {
                      Uri uri = data.getData();
-                     String storagePath = getPath(uri);
+                     String storagePath = BitmapUtils.getPath(uri);
                      bitmap = BitmapUtils.compressPictureFromFile(storagePath);
                      String base = ParseUtils.getBase64FromBitmap(bitmap);
                      base = "data:image/png;base64," + base;
@@ -477,39 +436,7 @@ public class MainActivity extends BaseActivity {
 
 
 
-    @TargetApi(Build.VERSION_CODES.KITKAT)
-    private String getPath(Uri uri) {
-        String myPath = null;
-        Cursor cursor = null;
-        try {
-            if (DocumentsContract.isDocumentUri(this, uri)) {
-                String wholeID = DocumentsContract.getDocumentId(uri);
-                String id = wholeID.split(":")[1];
-                String[] column = {MediaStore.Images.Media.DATA};
-                String sel = MediaStore.Images.Media._ID + "=?";
-                cursor = getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, column,
-                        sel, new String[]{id}, null);
-                int columnIndex = cursor.getColumnIndex(column[0]);
-                if (cursor.moveToFirst()) {
-                    myPath = cursor.getString(columnIndex);
-                }
-
-            } else {
-                String[] projection = {MediaStore.Images.Media.DATA};
-                cursor = getContentResolver().query(uri, projection, null, null, null);
-                int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-                cursor.moveToFirst();
-                myPath = cursor.getString(column_index);
-            }
-        }finally {
-            if(cursor!=null)
-            cursor.close();
-            System.gc();
-        }
-
-        return myPath;
-    }
-
+    //获取图片路径的地址
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -571,15 +498,15 @@ public class MainActivity extends BaseActivity {
 //
 //                          "})");
 //               }
-    public void clear() {
-        WebStorage webStorage = WebStorage.getInstance();
-        webStorage.deleteAllData();
-        MainActivity.instance.webView.clearCache(true);
-        MainActivity.instance.webView.clearFormData();
-        MainActivity.instance.webView.clearHistory();
-        MainActivity.instance.webView.clearSslPreferences();
-        MainActivity.instance.webView.clearMatches();
-    }
+//    public void clear() {
+//        WebStorage webStorage = WebStorage.getInstance();
+//        webStorage.deleteAllData();
+//        MainActivity.instance.webView.clearCache(true);
+//        MainActivity.instance.webView.clearFormData();
+//        MainActivity.instance.webView.clearHistory();
+//        MainActivity.instance.webView.clearSslPreferences();
+//        MainActivity.instance.webView.clearMatches();
+//    }
 
 
     @Override

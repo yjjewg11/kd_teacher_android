@@ -4,6 +4,9 @@ import android.graphics.Bitmap;
 import android.util.Base64;
 import android.util.Log;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
@@ -38,5 +41,11 @@ public class ParseUtils {
             }
         }
         return pictureBytes;
+    }
+
+    public static JSONObject getJSONObject(byte[] bytes) throws JSONException {
+        String shuzu = new String(bytes);
+
+        return new JSONObject(shuzu);
     }
 }

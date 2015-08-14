@@ -10,7 +10,7 @@ import com.umeng.analytics.MobclickAgent;
 import com.umeng.message.PushAgent;
 import com.wjkj.kd.teacher.biz.Menu;
 
-public class BaseActivity extends Activity implements View.OnClickListener
+public abstract class BaseActivity extends Activity implements View.OnClickListener
 
 {
     private Menu menu;

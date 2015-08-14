@@ -1,11 +1,10 @@
 package com.wjkj.kd.teacher;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class FirstPageActivity extends Activity {
+public class FirstPageActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

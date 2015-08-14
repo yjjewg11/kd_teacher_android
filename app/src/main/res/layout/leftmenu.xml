@@ -6,7 +6,10 @@
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,43 +20,34 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/btn_alter_password"
-        android:layout_width="match_parent"
-        android:textColor="#bbbfff"
-        android:layout_height="60dp"
-        android:drawableRight="@drawable/youjiantou2x"
-        android:paddingRight="15dp"
-        android:gravity="center"
-
-        android:background="@null"
-        android:text="改密"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:id="@+id/btn_alter_message"
-        android:layout_width="match_parent"
-        android:textColor="#bbbfff"
-        android:gravity="center"
-        android:drawableRight="@drawable/youjiantou2x"
-        android:background="@null"
-        android:paddingRight="15dp"
-        android:layout_height="60dp"
-        android:text="改名"
-        android:layout_above="@+id/btn_alter_password"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
         android:background="#bbbbbb"
         android:textAppearance="?android:attr/textAppearanceMedium"
-
         android:id="@+id/textView18"
-        android:layout_above="@+id/btn_version"
+
+        android:layout_below="@+id/rl_shoucang"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bbbbbb"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView25"
+
+        android:layout_above="@+id/rl_shoucang"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bbbbbb"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView26"
+
+        android:layout_below="@+id/rl_gaimi"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -63,51 +57,187 @@
         android:background="#bbbbbb"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView22"
-        android:layout_below="@+id/btn_alter_message"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#bbbbbb"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textView23"
-        android:layout_below="@+id/btn_alter_password"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:id="@+id/btn_version"
-        android:layout_width="match_parent"
-        android:textColor="#bbbfff"
-        android:drawableRight="@drawable/youjiantou2x"
-        android:gravity="center"
-        android:paddingRight="15dp"
-        android:background="@null"
-        android:layout_height="60dp"
-        android:text="收藏"
-        android:layout_above="@+id/btn_alter_message"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView24"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="44dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:id="@+id/rl_shoucang"
+        android:layout_below="@+id/textView22"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/textView18" />
+        android:layout_marginTop="84dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="收藏"
+            android:id="@+id/textView29"
+            android:layout_marginRight="44dp"
+            android:layout_marginEnd="44dp"
+            android:layout_alignTop="@+id/imageView12"
+            android:layout_toLeftOf="@+id/imageView12"
+            android:layout_toStartOf="@+id/imageView12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView12"
+            android:paddingRight="15dp"
+            android:src="@drawable/youjiantou2x"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignBottom="@+id/imageView13"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:src="@drawable/shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView13"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView29"
+            android:layout_toStartOf="@+id/textView29" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/button"
+            android:layout_alignTop="@+id/textView29"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_gaimi"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="改密"
+            android:id="@+id/textView28"
+            android:layout_marginRight="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_alignBaseline="@+id/button4"
+            android:layout_alignBottom="@+id/button4"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:paddingRight="15dp"
+            android:src="@drawable/youjiantou2x"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:src="@drawable/gaimi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView28"
+            android:layout_toStartOf="@+id/textView28" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/button2"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/button4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gaiming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView26"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:src="@drawable/gaiming"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView23"
+            android:layout_toStartOf="@+id/textView23" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="改名"
+            android:id="@+id/textView23"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_alignTop="@+id/imageView6"
+            android:layout_toLeftOf="@+id/imageView6"
+            android:layout_toStartOf="@+id/imageView6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:src="@drawable/youjiantou2x"
+            android:layout_marginRight="37dp"
+            android:layout_marginEnd="37dp"
+            android:layout_alignBottom="@+id/imageView5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/button3"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/button5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
 
 
 </RelativeLayout>

@@ -14,7 +14,7 @@ public class ExUtil {
             throw new RuntimeException("json解析异常");
 //json解析异常
         }else if(e instanceof NullPointerException){
-            e.printStackTrace();
+
             throw new RuntimeException("空指针异常");
 
 //空指针异常
