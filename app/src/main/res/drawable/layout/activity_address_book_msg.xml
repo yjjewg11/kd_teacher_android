@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wj.kindergarten.ui.addressbook.scroll.MyScrollView
+            android:id="@+id/msv_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_ico"
+            android:background="@color/main_bg"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/layout_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+        </com.wj.kindergarten.ui.addressbook.scroll.MyScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/color_cccccc" />
+
+        <LinearLayout
+            android:id="@+id/layout_ico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

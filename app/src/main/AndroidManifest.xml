@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.wjkj.kd.teacher"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="5"
+    android:versionName="0.0.133" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -72,16 +72,17 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="WRITE_APN_SETTINGS" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="ANDROID.PERMISSION.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="ANDROID.PERMISSION.CALL_PRIVILEGED" />
 
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
-        android:icon="@drawable/icon"
-        android:label="问界互动家园(老师版)"
+        android:icon="@drawable/laoshi_72"
+        android:label="问界互动家园"
         android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
         tools:replace="name,icon,label,theme" >
+
         <!-- 百度统计 -->
         <meta-data
             android:name="BaiduMobAd_STAT_ID"
@@ -123,11 +124,13 @@
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="问界互动家园"
-            android:screenOrientation="portrait"
-            android:launchMode="singleTask" >
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name=".BaseActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BaseActivity"
+            android:screenOrientation="portrait" />
+
         <receiver android:name=".receiver.MyFeedbackReceiver" >
             <intent-filter> <!-- 接收 feedback 消息 -->
                 <action android:name="com.baidu.android.pushservice.action.FB_MESSAGE" />
@@ -191,13 +194,13 @@
 
         <activity
             android:name=".VersionActivity"
-            android:screenOrientation="portrait"
-            android:label="VersionActivity" >
+            android:label="VersionActivity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".SettingActivity"
-            android:screenOrientation="portrait"
-            android:label="SettingActivity" >
+            android:label="SettingActivity"
+            android:screenOrientation="portrait" >
         </activity>
 
         <receiver
@@ -341,8 +344,8 @@
 
         <activity
             android:name=".FirstPageActivity"
-            android:screenOrientation="portrait"
-            android:label="问界互动家园(老师版)" >
+            android:label="问界互动家园"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -350,14 +353,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:screenOrientation="portrait"
             android:name=".AboutUsActivity"
-            android:label="@string/title_activity_about_us" >
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".LoadUrlActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_about_us"/>
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.PushStateActivity"
+            android:label="@string/title_activity_push_state" >
+        </activity>
+        <activity
+            android:name=".views.CustomFankuiActivity"
+            android:label="@string/title_activity_custom_fankui" >
+        </activity>
     </application>
 
 </manifest>

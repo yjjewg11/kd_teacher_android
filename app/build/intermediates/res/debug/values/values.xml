@@ -31,12 +31,19 @@
     <color name="umeng_fb_secondary_text_light">#8A000000</color>
     <color name="umeng_fb_tab_bg_pressed">#6633B5E5</color>
     <color name="umeng_fb_white">#FFFFFF</color>
+    <declare-styleable name="Preference"><attr format="string" name="title"/><attr format="boolean" name="enabled"/><attr format="boolean" name="persistent"/><attr format="string" name="titleCondensed"/><attr format="string" name="alphabeticShortcut"/><attr format="string" name="numericShortcut"/><attr format="boolean" name="checkable"/><attr format="boolean" name="selectable"/><attr format="boolean" name="orderingFromXml"/><attr format="string" name="key"/><attr format="string" name="summary"/><attr format="integer" name="order"/><attr format="reference" name="widgetLayout"/><attr format="string" name="dependency"/><attr format="reference|string|integer|boolean|float" name="defaultValue"/><attr format="boolean" name="shouldDisableView"/><attr format="string" name="summaryOn"/><attr format="string" name="summaryOff"/></declare-styleable>
     <declare-styleable name="SlidingMenu"><attr name="mode"><enum name="left" value="0"/><enum name="right" value="1"/></attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr name="touchModeBehind"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="fadeEnabled"/><attr format="float" name="fadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable>
     <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="home_tab_bar_height">48dp</dimen>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/meimidmovablecheckboxMovableCheckboxActivity/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="list_item_height">51.0dip</dimen>
+    <dimen name="preference_icon_width">50.0dip</dimen>
+    <dimen name="preference_margin">19.0dip</dimen>
+    <dimen name="preference_widget_icon_width">48.0dip</dimen>
     <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="umeng_fb_item_content_size">14sp</dimen>
@@ -78,6 +85,9 @@
     <string name="bd_fb_input_content">输入内容</string>
     <string name="bd_fb_net_fail_toast">请检查网络</string>
     <string name="bd_fb_send">发送</string>
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/meimidmovablecheckboxMovableCheckboxActivity/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="hello">Hello World, MovableCheckboxActivity!</string>
     <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="hello_world">Hello world!</string>
@@ -87,7 +97,9 @@
     <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_custom_fankui">CustomFankuiActivity</string>
     <string name="title_activity_first_page">FirstPageActivity</string>
+    <string name="title_activity_push_state">PushStateActivity</string>
     <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_common_strings.xml -->
     <eat-comment/>
     <string name="umeng_common_action_cancel">取消</string>
@@ -167,7 +179,7 @@
         <item name="android:background">#bbbbbb</item>
     </style>
     <style name="MyTextViewStyle" parent="AppTheme">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">#000000</item>
 
     </style>

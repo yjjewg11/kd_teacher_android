@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:drawableLeft="@drawable/mine_pre_text"
+        android:drawablePadding="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:text="备注"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text" />
+
+    <EditText
+        android:id="@+id/child_remark"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:background="@drawable/login_edit_bg1"
+        android:gravity="start"
+        android:padding="@dimen/small_padding"
+        android:text="" />
+
+</LinearLayout>

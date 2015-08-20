@@ -239,15 +239,6 @@
             android:layout_alignParentStart="true" />
     </RelativeLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="点一点"
-        android:id="@+id/bt_click"
-        android:layout_below="@+id/rl_gaiming"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="98dp" />
-
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/layout/leftmenu.xml -->

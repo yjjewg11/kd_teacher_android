@@ -25,6 +25,7 @@ public class MyApplication extends Application{
     public void onCreate() {
         super.onCreate();
         instance = this;
+        list.clear();
 //        StatService.setAppKey(GloableUtils.WENJIE_BAIDU_API_KEY);
 //        AnalyticsConfig.setAppkey("55c1960867e58ec39000267d");
 //        StatService.setAppChannel(this, "null", false);

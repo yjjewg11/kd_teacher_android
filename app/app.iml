@@ -108,5 +108,6 @@
     <orderEntry type="library" exported="" name="umeng-update-v2.6.0.1" level="project" />
     <orderEntry type="library" exported="" name="android-async-http-1.4.6" level="project" />
     <orderEntry type="module" module-name="slidingMenuLibrary" exported="" />
+    <orderEntry type="module" module-name="meimidmovablecheckboxMovableCheckboxActivity" exported="" />
   </component>
 </module>

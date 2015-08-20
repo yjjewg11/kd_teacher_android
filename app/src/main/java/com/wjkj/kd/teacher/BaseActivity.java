@@ -15,11 +15,13 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
 {
     private Menu menu;
 
+    public static Activity instance;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         MyApplication.list.add(this);
         PushAgent.getInstance(this).onAppStart();
+        instance = this;
     }
 
 
@@ -52,4 +54,9 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
         MobclickAgent.onPause(this);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

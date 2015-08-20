@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wjkj.kd.teacher"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="5"
+    android:versionName="0.0.133" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -77,8 +77,8 @@
     <application
         android:name="com.wjkj.kd.teacher.MyApplication"
         android:allowBackup="true"
-        android:icon="@drawable/icon"
-        android:label="问界互动家园(老师版)"
+        android:icon="@drawable/laoshi_72"
+        android:label="问界互动家园"
         android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
 
         <!-- 百度统计 -->
@@ -343,7 +343,7 @@
 
         <activity
             android:name="com.wjkj.kd.teacher.FirstPageActivity"
-            android:label="问界互动家园(老师版)"
+            android:label="问界互动家园"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -360,6 +360,14 @@
             android:name="com.wjkj.kd.teacher.LoadUrlActivity"
             android:label="@string/title_activity_about_us"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wjkj.kd.teacher.views.PushStateActivity"
+            android:label="@string/title_activity_push_state" >
+        </activity>
+        <activity
+            android:name="com.wjkj.kd.teacher.views.CustomFankuiActivity"
+            android:label="@string/title_activity_custom_fankui" >
+        </activity>
     </application>
 
 </manifest>

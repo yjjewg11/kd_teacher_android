@@ -12,12 +12,16 @@ import android.provider.MediaStore;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpClient;
@@ -44,6 +48,7 @@ import com.wjkj.kd.teacher.utils.ExUtil;
 import com.wjkj.kd.teacher.utils.GloableUtils;
 import com.wjkj.kd.teacher.utils.ParseUtils;
 import com.wjkj.kd.teacher.utils.ToastUtils;
+import com.wjkj.kd.teacher.views.CustomFankuiActivity;
 import com.wjkj.kd.teacher.views.MyRadioButton;
 
 import org.json.JSONException;
@@ -64,7 +69,6 @@ public class MainActivity extends BaseActivity {
     public static Handler handler =  new Handler();
     public WebSettings webSettings;
     public String myurl;
-    private FeedbackAgent fb;
     public FeedbackAgent agent;
     public int screenHeight;
     public int screenWidth;
@@ -72,6 +76,8 @@ public class MainActivity extends BaseActivity {
     public PushMessage pushMessage;
     private TextView tv_line;
     public MyRadioButton radionbtown;
+    private ImageView imageLoading;
+    private RelativeLayout animationRl;
 
 
     @Override
@@ -88,7 +94,8 @@ public class MainActivity extends BaseActivity {
         agent = new FeedbackAgent(this);
         instance = this;
         try {
-              menu = new Menu(this);
+            //禁用侧滑菜单
+//              menu = new Menu(this);
         initfankui();
         initUpdateApk();
         initPushMessage();
@@ -97,23 +104,25 @@ public class MainActivity extends BaseActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
     }
-
     private void getWidthSize() {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int width = displayMetrics.widthPixels;
+        Log.i("TAG","打印屏幕的宽度"+width);
         if(width<=480){
                  MyRadioButton.widthSize = 90;
         }else if(width<=720){
                  MyRadioButton.widthSize = 120;
+        }else if(width<=1080){
+                 MyRadioButton.widthSize = 160;
         }
     }
     //初始化友盟更新
     private void initUpdateApk() {
         UmengUpdateAgent.setUpdateCheckConfig(false);
         UmengUpdateAgent.setDefault();
+        //设置自动更新监听
         UmengUpdateAgent.update(this);
         UpdateConfig.setDebug(true);
     }
@@ -137,10 +146,11 @@ public class MainActivity extends BaseActivity {
 
     //友盟反馈
     private void initfankui() {
-        fb = new FeedbackAgent(this);
-        fb.setWelcomeInfo();
-        fb.setWelcomeInfo("欢饮来到反馈中心，您宝贵的意见是对我们最大的支持");
-        FeedbackPush.getInstance(this).init(true);
+        agent = new FeedbackAgent(this);
+        agent.setWelcomeInfo();
+        agent.setWelcomeInfo("欢饮来到反馈中心，您宝贵的意见是对我们最大的支持");
+
+        FeedbackPush.getInstance(this).init(CustomFankuiActivity.class,true);
         agent.sync();
 
         agent.openFeedbackPush();
@@ -157,20 +167,26 @@ public class MainActivity extends BaseActivity {
             @Override
             public void run() {
                 tv_permit.setVisibility(View.GONE);
-                progressBar.setVisibility(View.GONE);
+                animationRl.setVisibility(View.GONE);
                 AnimationUtils.startMyAnimation(0, 0, 100, 0, radioGroup);
-                tv_line.setVisibility(View.VISIBLE);
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        tv_line.setVisibility(View.VISIBLE);
+                    }
+                }, 1000);
+
             }
         });
         handler.sendEmptyMessage(1);
     }
-
     private void setViews() {
-        Log.i("TAG","进入加载页面");
         tv_permit = (TextView)findViewById(R.id.textView);
-        progressBar = (ProgressBar)findViewById(R.id.progressBar);
+        imageLoading = (ImageView)findViewById(R.id.imageloading);
+        imageLoading.setVisibility(View.VISIBLE);
+        imageLoading.startAnimation(getDialogAnimation());
+        animationRl = (RelativeLayout)findViewById(R.id.animation_rl);
         webView = (WebView)findViewById(R.id.mainWebView);
-        Log.i("TAG","应该是webView的加载出了问题");
         radioGroup = (RadioGroup)findViewById(R.id.first_page_radiogroup);
         radionbtown = (MyRadioButton)findViewById(R.id.radioButton3);
         tv_line = (TextView)findViewById(R.id.textView16);
@@ -179,6 +195,14 @@ public class MainActivity extends BaseActivity {
         getWidthAndHeight();
         //设置webview的一些参数
         setWebs();
+    }
+
+    private RotateAnimation getDialogAnimation() {
+        RotateAnimation animation = new RotateAnimation(0f,358.0f,RotateAnimation.RELATIVE_TO_SELF,0.5f,RotateAnimation.RELATIVE_TO_SELF,0.5f);
+        animation.setDuration(400);
+        animation.setInterpolator(new LinearInterpolator());
+        animation.setRepeatCount(-1);
+        return animation;
     }
 
     private void getWidthAndHeight() {
@@ -211,12 +235,15 @@ public class MainActivity extends BaseActivity {
                 }
             }, 5000);
         } else {
-            myAsyncTask.cancel(true);
+            Log.i("TAG","此退出已执行");
+//            myAsyncTask.cancel(true);
             MobclickAgent.onKillProcess(MainActivity.instance);
             for (Activity activity : MyApplication.list) {
                 if (activity != null)
                     activity.finish();
             }
+            System.exit(0);
+
         }
     }
 

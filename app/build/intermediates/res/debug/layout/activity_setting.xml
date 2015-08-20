@@ -16,10 +16,10 @@
 
 
     <RelativeLayout
-        android:background="#FF3366"
-        android:id="@+id/rl_finish"
+        android:background="#0F90D2"
+        android:id="@+id/rl_seting_finish"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true">
 
@@ -29,16 +29,18 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="设置"
             android:id="@+id/textView8"
-            android:textSize="24sp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
             style="@style/MyTextViewStyle"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/imageView8"
 
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_setting_back"
             android:src="@drawable/zuojiantou2x"
             android:layout_marginLeft="27dp"
             style="@style/MyTextViewStyle"
@@ -66,8 +68,7 @@
         android:id="@+id/textView13"
         android:layout_below="@+id/r3_aboutus"
         android:layout_centerHorizontal="true" />
-
-            <TextView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
@@ -100,32 +101,12 @@
 
     </ScrollView>
 
-    <RelativeLayout
-        android:id="@+id/r6_cacle"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_below="@+id/textView27"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="注销"
-            android:layout_marginLeft="30dp"
-            style="@style/MyTextViewStyle"
-            android:id="@+id/tv_cancle"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/r5_update"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/textView26"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -158,7 +139,7 @@
     <RelativeLayout
         android:id="@+id/r4_fankui"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/textView25"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -190,7 +171,7 @@
     <RelativeLayout
         android:id="@+id/r3_aboutus"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -220,7 +201,7 @@
     <RelativeLayout
         android:id="@+id/r2_push"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/textView9"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -246,6 +227,92 @@
             android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
+
+    <RelativeLayout
+    android:id="@+id/r2_gaiming"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@+id/textView27"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextViewStyle"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="修改名字"
+        android:id="@+id/textView11"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:layout_marginRight="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/youjiantou2x"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2_gaimi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView24"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyTextViewStyle"
+            android:layout_marginLeft="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="修改密码"
+            android:id="@+id/textView16"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:layout_marginRight="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:src="@drawable/youjiantou2x"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/r6_cacle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="注销"
+            android:layout_marginLeft="30dp"
+            style="@style/MyTextViewStyle"
+            android:id="@+id/tv_cancle"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
 
     <TextView
         android:layout_width="match_parent"
@@ -285,8 +352,8 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#bbbbbb"
+        android:layout_height="20dp"
+        android:background="#dfdfdf"
         android:textAppearance="?android:attr/textAppearanceLarge"
 
         android:id="@+id/textView27"
@@ -295,6 +362,37 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView24"
+        android:background="#bbbbbb"
+        android:layout_below="@+id/r2_gaiming"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#dfdfdf"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/r2_gaimi"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#bbbbbb"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/r6_cacle"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

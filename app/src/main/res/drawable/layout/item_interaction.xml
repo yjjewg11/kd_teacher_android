@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingLeft="@dimen/normal_padding"
+    android:paddingRight="@dimen/normal_padding"
+    android:paddingTop="@dimen/small_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.wj.kindergarten.compounets.CircleImage
+            android:id="@+id/item_interaction_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_interaction_head"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:layout_toRightOf="@+id/item_interaction_head"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_interaction_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="小龙龙"
+                android:textColor="@color/black"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:id="@+id/item_interaction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginTop="@dimen/small_padding"
+                android:text="孩子们玩得多开心"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <ImageView
+                android:id="@+id/item_interaction_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/default_pic"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding">
+
+        <TextView
+            android:id="@+id/item_interaction_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="十分钟前"
+            android:textColor="@color/hint_gray"
+            android:textSize="@dimen/small_text" />
+
+        <ImageView
+            android:id="@+id/item_interaction_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:layout_toLeftOf="@+id/item_interaction_reply"
+            android:src="@drawable/interaction_zan_off" />
+
+        <ImageView
+            android:id="@+id/item_interaction_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/interaction_reply" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_interaction_mine_zan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:drawableLeft="@drawable/interaction_mine_zan"
+        android:drawablePadding="@dimen/small_padding"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="某某某等9人觉得很赞"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text" />
+
+    <LinearLayout
+        android:id="@+id/item_interaction_reply_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/item_interaction_i_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:background="@drawable/login_edit_bg1"
+        android:editable="false"
+        android:hint="我来说一句..."
+        android:padding="@dimen/small_padding"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text" />
+</LinearLayout>

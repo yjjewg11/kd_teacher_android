@@ -6,6 +6,8 @@
     <string name="title_activity_about_us">AboutUsActivity</string>
 
     <string name="umeng_common_icon">中文图片</string>
+    <string name="title_activity_push_state">PushStateActivity</string>
+    <string name="title_activity_custom_fankui">CustomFankuiActivity</string>
 
 
 </resources>

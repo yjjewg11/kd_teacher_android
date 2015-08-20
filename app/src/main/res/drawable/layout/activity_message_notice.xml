@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal" />
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_40"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/setting_item_click_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="新消息"
+            android:textSize="@dimen/normal_text" />
+
+        <com.wj.kindergarten.ui.mine.CheckSwitchButton
+            android:id="@+id/switch_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:enabled="true" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_40"
+        android:background="@drawable/setting_item_click_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="声音"
+            android:textSize="@dimen/normal_text" />
+
+        <com.wj.kindergarten.ui.mine.CheckSwitchButton
+            android:id="@+id/switch_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:enabled="true" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_40"
+        android:background="@drawable/setting_item_click_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="震动"
+            android:textSize="@dimen/normal_text" />
+
+        <com.wj.kindergarten.ui.mine.CheckSwitchButton
+            android:id="@+id/switch_button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_padding"
+            android:enabled="true" />
+    </RelativeLayout>
+</LinearLayout>
