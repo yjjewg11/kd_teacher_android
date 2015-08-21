@@ -109,7 +109,7 @@ public class MainActivity extends BaseActivity {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         int width = displayMetrics.widthPixels;
-        Log.i("TAG","打印屏幕的宽度"+width);
+        Log.i("TAG", "打印屏幕的宽度" + width);
         if(width<=480){
                  MyRadioButton.widthSize = 90;
         }else if(width<=720){
@@ -310,18 +310,19 @@ public class MainActivity extends BaseActivity {
             startActivityForResult(intent, GloableUtils.RESULT_PICK_PHOTO_NORMAL);
         }
 
-        //此方法不需要裁剪
+        //此方法不需要裁剪,进行多张图片选择，不启动自带应用，第三方组件
         @JavascriptInterface
         public void selectImgPic(){
-            Intent intent = null;
-            if(android.os.Build.VERSION.SDK_INT>=android.os.Build.VERSION_CODES.KITKAT) {
-                intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-            }else{
-                intent = new Intent(Intent.ACTION_GET_CONTENT);
-            }
-            intent.setType("image/*");
-            intent.addCategory(Intent.CATEGORY_OPENABLE);
-            startActivityForResult(intent, GloableUtils.CHOOSE_PICTURE_ONLY);
+//            Intent intent = null;
+//            if(android.os.Build.VERSION.SDK_INT>=android.os.Build.VERSION_CODES.KITKAT) {
+//                intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+//            }else{
+//                intent = new Intent(Intent.ACTION_GET_CONTENT);
+//            }
+//            intent.setType("image/*");
+//            intent.addCategory(Intent.CATEGORY_OPENABLE);
+//            startActivityForResult(intent, GloableUtils.CHOOSE_PICTURE_ONLY);
+            startanotherApplication();
         }
 
 
@@ -376,6 +377,10 @@ public class MainActivity extends BaseActivity {
 
     }
 
+    private void startanotherApplication() {
+//        Main
+//        startActivity(new Intent(this,));
+    }
 
 
     @Override
@@ -493,11 +498,11 @@ public class MainActivity extends BaseActivity {
                 //点击此按钮注销用户，并返回到登陆页面
                 //回调javaScript方法
                 //设置按钮。点击之后启动设置页面
+
                 startActivity(new Intent(this,SettingActivity.class));
                 break;
         }
     }
-
 
         // 注入js函数监听
 //        private void addImageClickListner() {

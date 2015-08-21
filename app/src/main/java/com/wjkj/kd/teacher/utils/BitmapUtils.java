@@ -54,7 +54,7 @@ public class BitmapUtils {
         String myPath = null;
         Cursor cursor = null;
         try {
-            if (DocumentsContract.isDocumentUri(MainActivity.instance, uri)) {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT&&DocumentsContract.isDocumentUri(MainActivity.instance, uri)) {
                 String wholeID = DocumentsContract.getDocumentId(uri);
                 String id = wholeID.split(":")[1];
                 String[] column = {MediaStore.Images.Media.DATA};
@@ -65,7 +65,6 @@ public class BitmapUtils {
                 if (cursor.moveToFirst()) {
                     myPath = cursor.getString(columnIndex);
                 }
-
             } else {
                 String[] projection = {MediaStore.Images.Media.DATA};
                 cursor = contentResolver.query(uri, projection, null, null, null);
@@ -78,7 +77,6 @@ public class BitmapUtils {
                 cursor.close();
             System.gc();
         }
-
         return myPath;
     }
 

@@ -127,6 +127,11 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
+
+        <!--<activity android:name=".views.ImageDirActivity"/>-->
+        <!--<activity android:name=".views.ImagesActivity"/>-->
+        <!--<activity android:name=".views.PreviewActivity"/>-->
+
         <activity
             android:name=".BaseActivity"
             android:screenOrientation="portrait" />
@@ -369,6 +374,8 @@
             android:name=".views.CustomFankuiActivity"
             android:label="@string/title_activity_custom_fankui" >
         </activity>
+
+
     </application>
 
 </manifest>

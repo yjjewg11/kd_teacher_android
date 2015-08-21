@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.nostra13.universalimageloader.core.ImageLoader;
 import com.wjkj.kd.teacher.biz.Menu;
 
 
@@ -21,7 +20,7 @@ public class VersionActivity extends BaseActivity {
         setContentView(R.layout.activity_version);
         menu = new Menu(this);
         ivservison = (ImageView)findViewById(R.id.imageView_servison);
-        ImageLoader.getInstance().displayImage(MainActivity.instance.myurl,ivservison);
+//        ImageLoader.getInstance().displayImage(MainActivity.instance.myurl,ivservison);
 
     }
 

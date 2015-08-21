@@ -77,6 +77,7 @@
     <application
         android:name="com.wjkj.kd.teacher.MyApplication"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@drawable/laoshi_72"
         android:label="问界互动家园"
         android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
@@ -125,6 +126,11 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
+
+        <!-- <activity android:name=".views.ImageDirActivity"/> -->
+        <!-- <activity android:name=".views.ImagesActivity"/> -->
+        <!-- <activity android:name=".views.PreviewActivity"/> -->
+
         <activity
             android:name="com.wjkj.kd.teacher.BaseActivity"
             android:screenOrientation="portrait" />
