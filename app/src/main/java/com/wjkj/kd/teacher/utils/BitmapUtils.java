@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.util.Log;
 
 import com.wjkj.kd.teacher.MainActivity;
 
@@ -19,22 +20,45 @@ public class BitmapUtils {
 
 
     //根据图片的路径名获取bitmap对象并返回。
-    public static Bitmap compressPictureFromFile(String pathName){
-        Bitmap bitmap = null;
+    public static Bitmap compressPictureFromFile(String pathName,Bitmap bitmap){
+//        Bitmap bitmap = null;
         try {
             BitmapFactory.Options options = new BitmapFactory.Options();
-            bitmap = BitmapFactory.decodeFile(pathName, options);
+            BitmapFactory.decodeFile(pathName, options);
             options.inJustDecodeBounds = true;
-            int width = bitmap.getWidth();
-            int height = bitmap.getHeight();
-            options.inSampleSize = 3;
+//            int width = bitmap.getWidth();
+//            int height = bitmap.getHeight();
+//            Log.i("TAG: width=", ""+width);
+//            Log.i("TAG: height=", ""+height);
+            Log.i("TAG","outwidth=="+options.outWidth);
+            int scale = 1;
+            while (options.outWidth / scale >= MainActivity.instance.width || options.outHeight / scale >= MainActivity.instance.height) {
+                scale *= 4;
+            }
+            options.inSampleSize = scale;
             options.inJustDecodeBounds = false;
-            return BitmapFactory.decodeFile(pathName, options);
+            bitmap  = BitmapFactory.decodeFile(pathName, options);
+            return bitmap;
         }finally {
-            if(bitmap!=null)
-            recyleBitmap(bitmap);
+            if(bitmap!=null);
+//            recyleBitmap(bitmap);
         }
     }
+
+    private static void getImageScale(String imagePath,int width,int height) {
+        BitmapFactory.Options option = new BitmapFactory.Options();
+        // set inJustDecodeBounds to true, allowing the caller to query the bitmap info without having to allocate the
+        // memory for its pixels.
+        option.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(imagePath, option);
+
+        int scale = 1;
+        while (option.outWidth / scale >= width || option.outHeight / scale >= height) {
+            scale *= 2;
+        }
+        option.inSampleSize = scale;
+    }
+
 
 
     //此方法用于释放bitmap

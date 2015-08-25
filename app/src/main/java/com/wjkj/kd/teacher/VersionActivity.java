@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.wjkj.kd.teacher.biz.Menu;
+//import com.wjkj.kd.teacher.biz.Menu;
 
 
 public class VersionActivity extends BaseActivity {
 
-    private Menu menu;
+//    private Menu menu;
 
     public ImageView ivservison;
 
@@ -18,7 +18,7 @@ public class VersionActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_version);
-        menu = new Menu(this);
+//        menu = new Menu(this);
         ivservison = (ImageView)findViewById(R.id.imageView_servison);
 //        ImageLoader.getInstance().displayImage(MainActivity.instance.myurl,ivservison);
 

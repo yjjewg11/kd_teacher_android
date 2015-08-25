@@ -1,6 +1,11 @@
 package com.wjkj.kd.teacher.utils;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.util.Log;
+
+import com.wjkj.kd.teacher.MyApplication;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -21,5 +26,22 @@ public class HttpUtils {
 //            ToastUtils.showMessage(json.getString("message"));
             Log.i("TAG","看看返回的json字符串"+json.getString("message"));
         }
+    }
+
+
+    //判断网络连接状态
+    public static boolean getConntectStates() {
+        ConnectivityManager c = (ConnectivityManager) MyApplication.instance.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (c == null) return false;
+        NetworkInfo[] info = c.getAllNetworkInfo();
+        if (info != null) {
+            for (int i = 0; i < info.length; i++) {
+                if (info[i].getState() == NetworkInfo.State.CONNECTED) {
+                                         Log.i("NetWorkState", "Availabel");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

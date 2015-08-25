@@ -29,7 +29,7 @@ public class MyAsyncTask extends AsyncTask<Void,Void,Boolean>{
             }
             currentTime =System.currentTimeMillis()-beginTime;
             if(currentTime>120000) break;
-            if(GloableUtils.JESSIONID==null&& GloableUtils.CHANNL_ID==null){
+            if(MainActivity.instance.JESSIONID==null&& GloableUtils.CHANNL_ID==null){
                 continue;
             }else{
                 isnull = false;

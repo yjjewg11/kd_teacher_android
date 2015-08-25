@@ -11,8 +11,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/image_choose" />
             <option value="$PROJECT_DIR$/meimidmovablecheckboxMovableCheckboxActivity" />
-            <option value="$PROJECT_DIR$/slidingMenuLibrary" />
+            <option value="$PROJECT_DIR$/multi-image-selector" />
           </set>
         </option>
       </GradleProjectSettings>

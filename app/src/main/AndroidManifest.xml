@@ -2,13 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.wjkj.kd.teacher"
-    android:versionCode="5"
-    android:versionName="0.0.133" >
-
+    android:versionCode="10"
+    android:versionName="0.0.142" >
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="21" />
-
     <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"
@@ -128,9 +126,14 @@
             android:screenOrientation="portrait" >
         </activity>
 
-        <!--<activity android:name=".views.ImageDirActivity"/>-->
-        <!--<activity android:name=".views.ImagesActivity"/>-->
-        <!--<activity android:name=".views.PreviewActivity"/>-->
+        <receiver android:name=".receiver.ListenConntectStatesReceiver" >
+            <intent-filter>
+                <action android:name="ANDROID.INTENT.ACTION.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- <activity android:name=".views.ImageDirActivity"/> -->
+        <!-- <activity android:name=".views.ImagesActivity"/> -->
+        <!-- <activity android:name=".views.PreviewActivity"/> -->
 
         <activity
             android:name=".BaseActivity"
@@ -374,8 +377,10 @@
             android:name=".views.CustomFankuiActivity"
             android:label="@string/title_activity_custom_fankui" >
         </activity>
-
-
+        <activity
+            android:name=".views.ConntectErrorActivity"
+            android:label="@string/title_activity_conntect_error" >
+        </activity>
     </application>
 
 </manifest>

@@ -16,10 +16,9 @@ public class GloableUtils {
     public static final int RESULT_PICK_PHOTO_NORMAL = 1;
     public static int PUSH_STATE = 0;
     public static final String CANCLE_USER = "javascript:G_jsCallBack.userinfo_logout()";
-    public static String JESSIONID ;
     public static String URL = "http://wapbaike.baidu.com/view/4850574.htm?sublemmaid=" +
             "15923552&adapt=1&fr=aladdin&target=_blank";
-    //    public static String ServerURL = "http://120.25.248.31/px-rest/";
+//        public static String ServerURL = "http://120.25.248.31/px-rest/";
     //正式环境
     public static String ServerURL = "http://kd.wenjienet.com/px-rest/";
 
@@ -39,4 +38,6 @@ public class GloableUtils {
                     +"kd/index.html";
     public static String appCachePath = MyApplication.instance.getCacheDir().getAbsolutePath();
 //            "http://120.25.248.31/px-rest/kd/index.html"
+
+    public static String IS_NEED_AIAIN_START_ANIMATION = "";
 }

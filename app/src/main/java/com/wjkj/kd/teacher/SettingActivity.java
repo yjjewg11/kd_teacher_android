@@ -13,11 +13,16 @@ import com.wjkj.kd.teacher.utils.ToastUtils;
 import com.wjkj.kd.teacher.views.CustomFankuiActivity;
 import com.wjkj.kd.teacher.views.PushStateActivity;
 
+import org.json.JSONException;
+
+import java.io.UnsupportedEncodingException;
+
 public class SettingActivity extends BaseActivity {
 
     private RelativeLayout rlPush,rlAboutUs,rlFankui,rlUpdate,rlCancle,rlAlertName,rlAlertPwd;
     private RelativeLayout[] relativeLayouts;
     private RelativeLayout rlSettingFinish;
+    private RelativeLayout rl_clean_cache;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,14 +51,21 @@ public class SettingActivity extends BaseActivity {
         rlAlertName = (RelativeLayout)findViewById(R.id.r2_gaiming);
         rlAlertPwd = (RelativeLayout)findViewById(R.id.r2_gaimi);
         rlSettingFinish = (RelativeLayout)findViewById(R.id.rl_seting_finish);
+        rl_clean_cache = (RelativeLayout)findViewById(R.id.r2_clean_cache);
         relativeLayouts =
                 new RelativeLayout[]{rlPush,rlAboutUs,rlFankui,rlUpdate,rlCancle
-                 ,rlAlertName,rlAlertPwd,rlSettingFinish};
+                 ,rlAlertName,rlAlertPwd,rlSettingFinish,rl_clean_cache};
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+
+            case R.id.r2_clean_cache:
+                //清楚缓存
+                MainActivity.instance.clear();
+                ToastUtils.showMessage("缓存清除成功!");
+                break;
 
             case R.id.rl_seting_finish:
                 //结束页面
@@ -74,7 +86,19 @@ public class SettingActivity extends BaseActivity {
                 MainActivity.instance.startActivity(new Intent(this, CustomFankuiActivity.class));
                 break;
             //意见反馈
-            case R.id.r6_cacle: MainActivity.instance.webView.loadUrl("javascript:G_jsCallBack.userinfo_logout()");  finish(); break;
+
+            case R.id.r6_cacle:
+                MainActivity.instance.webView.loadUrl("javascript:G_jsCallBack.userinfo_logout()");
+                try {
+                    MainActivity.instance.hideBottomAfaterCancle();
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+                finish();
+                break;
             //注销用户
 //            case R.id.r6_cacle:
 //                MainActivity.instance.webView.loadUrl(GloableUtils.CANCLE_USER);

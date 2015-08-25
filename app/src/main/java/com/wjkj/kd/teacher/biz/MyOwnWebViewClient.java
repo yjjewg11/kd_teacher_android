@@ -20,7 +20,7 @@ public  class MyOwnWebViewClient extends WebViewClient {
 //                    MyApplication.instance.startActivity(intent);
 //                }
 
-        Log.i("TAG", "打印这个方法有没有执行" + url.toString());
+        Log.i("TAG", "打印这个方法有没有执行看看url地址" + url.toString());
         if(url.contains("tel:")){
             int num = url.indexOf(":");
             String tel = url.substring(num);

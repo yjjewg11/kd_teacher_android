@@ -1,8 +1,10 @@
 package com.wjkj.kd.teacher.biz;
 
+import com.baidu.android.common.logging.Log;
 import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.RequestParams;
+import com.loopj.android.http.PersistentCookieStore;
 import com.wjkj.kd.teacher.MainActivity;
+import com.wjkj.kd.teacher.MyApplication;
 import com.wjkj.kd.teacher.dao.AbstractDao;
 import com.wjkj.kd.teacher.handle.AbstractHandle;
 import com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
@@ -13,6 +15,7 @@ import com.wjkj.kd.teacher.utils.ParseUtils;
 
 import org.apache.http.Header;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.cookie.BasicClientCookie;
 import org.apache.http.protocol.HTTP;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -20,7 +23,6 @@ import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
 
 public class PushMessage extends AbstractDao{
-
     private AsyncHttpClient asyncHttpClient;
     public PushMessage(AsyncHttpClient asyncHttpClient){
         this.asyncHttpClient = asyncHttpClient;
@@ -38,22 +40,30 @@ public class PushMessage extends AbstractDao{
         jSONObject.put("status", GloableUtils.PUSH_STATE);
         StringEntity se = new StringEntity(jSONObject.toString(), HTTP.UTF_8);
         se.setContentEncoding(HTTP.UTF_8);
-        RequestParams requestParams = new RequestParams();
-        requestParams.put("JSESSIONID",GloableUtils.JESSIONID);
-        String contentType = GloableUtils.APPLICATION_JSON + HTTP.CHARSET_PARAM +HTTP.UTF_8;
-        Header[] headers=this.getHttpHeader();
+//        RequestParams requestParams = new RequestParams();
+//        requestParams.put("JSESSIONID",MainActivity.instance.JESSIONID);
+        String contentType = GloableUtils.APPLICATION_JSON + HTTP.CHARSET_PARAM ;
+//        Header[] headers= getHttpHeader();
 //        headers = new BasicHeader[]{
-//                new BasicHeader("Cookie","JSESSIONID="+GloableUtils.JESSIONID+";")
+//                new BasicHeader("Cookie","JSESSIONID="+MainActivity.instance.JESSIONID+";")
+////                new BasicHeader("Cookie",)
 //        };
-
-        asyncHttpClient.post(MainActivity.instance,url,headers,se,contentType,new AbstractHandle(){
+        PersistentCookieStore myCookieStore = new PersistentCookieStore(MyApplication.instance);
+        BasicClientCookie newCookie = new BasicClientCookie("JSESSIONID", MainActivity.instance.JESSIONID);
+        Log.i("TAG","打印jessindio========"+MainActivity.instance.JESSIONID);
+        newCookie.setVersion(1);
+        newCookie.setDomain("kd.wenjienet.com");
+        newCookie.setPath("/");
+        myCookieStore.addCookie(newCookie);
+        asyncHttpClient.setCookieStore(myCookieStore);
+        asyncHttpClient.post(MainActivity.instance,url,se,contentType,new AbstractHandle(){
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 try {
-
+                    Log.i("TAG","打印网络连接成果"+ new String(bytes));
                     JSONObject jsonObject = ParseUtils.getJSONObject(bytes);
                     HttpUtils.pullJson(jsonObject);
-                } catch (JSONException e) {
+                }catch(JSONException e) {
                     ExUtil.e(e);
                 }
             }
@@ -61,7 +71,6 @@ public class PushMessage extends AbstractDao{
             public void onFailure(int i, Header[] headers, byte[] bytes, Throwable throwable) {
                 super.onFailure(i,headers,bytes,throwable);
 //                ToastUtils.showMessage("网络连接处上传失败");
-
             }
         });
 

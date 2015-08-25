@@ -47,7 +47,7 @@ public class PushStateActivity extends BaseActivity {
             if(ischecked) {
                 GloableUtils.PUSH_STATE=0;
             }else{
-                GloableUtils.PUSH_STATE=1;
+                GloableUtils.PUSH_STATE=2;
             }
             DealWithPushMessage.dealPushMessage();
             ToastUtils.showMessage(GloableUtils.PUSH_STATE==0? "消息通知已成功开启!":"消息通知已成功关闭");
