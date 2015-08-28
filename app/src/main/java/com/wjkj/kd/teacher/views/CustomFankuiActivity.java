@@ -45,23 +45,17 @@ public class CustomFankuiActivity extends BaseActivity {
         image = (ImageView)findViewById(R.id.iv_custom_back);
         image.setOnClickListener(this);
     }
-
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         new FeedbackFragment().refresh();
     }
-
     public void onClick(View view){
         switch (view.getId()){
-
             case R.id.buttononCLick:
                 //反馈提交
                 pushFanKui();
-
-
                 break;
-
             case R.id.iv_custom_back:
                 finish();
                 break;

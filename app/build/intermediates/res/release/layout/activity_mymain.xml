@@ -122,9 +122,7 @@
         android:layout_above="@+id/first_page_radiogroup"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-
-
-
 </RelativeLayout>
+
+
 <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/layout/activity_mymain.xml -->

@@ -1,6 +1,5 @@
 package com.wjkj.kd.teacher;
 
-import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -25,36 +24,28 @@ import android.webkit.WebSettings;
 import android.webkit.WebStorage;
 import android.webkit.WebView;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpClient;
-import com.umeng.analytics.MobclickAgent;
 import com.umeng.fb.FeedbackAgent;
-import com.umeng.fb.push.FeedbackPush;
-import com.umeng.message.PushAgent;
-import com.umeng.message.UmengMessageHandler;
-import com.umeng.message.UmengRegistrar;
-import com.umeng.update.UmengUpdateAgent;
-import com.umeng.update.UpdateConfig;
 import com.wjkj.kd.teacher.biz.DealWithPushMessage;
 import com.wjkj.kd.teacher.biz.MyAsyncTask;
 import com.wjkj.kd.teacher.biz.MyOwnWebViewClient;
 import com.wjkj.kd.teacher.biz.MyWebChromeClient;
 import com.wjkj.kd.teacher.biz.PushMessage;
-import com.wjkj.kd.teacher.handle.MyUmengMessageHandle;
+import com.wjkj.kd.teacher.biz.RegistUmengService;
+import com.wjkj.kd.teacher.biz.SettingWebParams;
 import com.wjkj.kd.teacher.interfaces.JavaScriptCall;
 import com.wjkj.kd.teacher.receiver.ListenConntectStatesReceiver;
 import com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
 import com.wjkj.kd.teacher.utils.AnimationUtils;
 import com.wjkj.kd.teacher.utils.BitmapUtils;
 import com.wjkj.kd.teacher.utils.ExUtil;
+import com.wjkj.kd.teacher.utils.FinishUtils;
 import com.wjkj.kd.teacher.utils.GloableUtils;
 import com.wjkj.kd.teacher.utils.ParseUtils;
-import com.wjkj.kd.teacher.utils.ToastUtils;
-import com.wjkj.kd.teacher.views.CustomFankuiActivity;
 import com.wjkj.kd.teacher.views.MyRadioButton;
 
 import org.json.JSONException;
@@ -69,19 +60,13 @@ public class MainActivity extends BaseActivity {
     public WebView webView;
     public RadioGroup radioGroup;
     public static MainActivity instance;
-    public MyAsyncTask myAsyncTask;
-    ;
+    public MyAsyncTask myAsyncTask;;
     public ValueCallback<Uri> myUploadMsg;
-    private String tureth = "true";
     private TextView tv_permit;
-    private ProgressBar progressBar;
-    //    private Menu menu;
     public static Handler handler;
     public WebSettings webSettings;
     public String myurl;
     public FeedbackAgent agent;
-    public int screenHeight;
-    public int screenWidth;
     public String device_token;
     public PushMessage pushMessage;
     public TextView tv_line;
@@ -92,11 +77,8 @@ public class MainActivity extends BaseActivity {
     private String picbase;
     public int width;
     public int height;
-//    private TextView tv_down_animation;
     public String JESSIONID;
     private ListenConntectStatesReceiver receiver;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -105,23 +87,22 @@ public class MainActivity extends BaseActivity {
         //获得屏幕的尺寸
 
         getWidthSize();
-
         setContentView(R.layout.activity_mymain);
+        instance = this;
         setViews();
         register();
-        agent = new FeedbackAgent(this);
-        instance = this;
         try {
-            //禁用侧滑菜单
-//              menu = new Menu(this);
-            initfankui();
-            initUpdateApk();
-            initPushMessage();
+            new RegistUmengService(this).registService();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+
+        //禁用侧滑菜单
+//              menu = new Menu(this);
+
     }
 
     private void register() {
@@ -133,7 +114,7 @@ public class MainActivity extends BaseActivity {
         //注册网络监听状态广播
         receiver = new ListenConntectStatesReceiver();
         IntentFilter confilter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
-        registerReceiver(receiver,confilter);
+        registerReceiver(receiver, confilter);
     }
 
     private void getWidthSize() {
@@ -151,46 +132,7 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    //初始化友盟更新
-    private void initUpdateApk() {
-        UmengUpdateAgent.setUpdateCheckConfig(false);
-        UmengUpdateAgent.setDefault();
-        //设置自动更新监听
-        UmengUpdateAgent.update(this);
-        UpdateConfig.setDebug(true);
-    }
 
-    //友盟推送
-    private void initPushMessage() throws UnsupportedEncodingException, JSONException {
-        PushAgent mPushAgent = PushAgent.getInstance(this);
-        ownNotification(mPushAgent);
-        mPushAgent.enable();
-        device_token = UmengRegistrar.getRegistrationId(this);
-        DealWithPushMessage.dealPushMessage();
-    }
-
-    //当通知来临时，点亮图标
-    private void ownNotification(PushAgent mPushAgent) {
-
-        //通知来临时，加上自己的业务处理逻辑
-        UmengMessageHandler umengMessageHandler = new MyUmengMessageHandle();
-
-        mPushAgent.setMessageHandler(umengMessageHandler);
-    }
-
-    //友盟反馈
-    private void initfankui() {
-        agent = new FeedbackAgent(this);
-        agent.setWelcomeInfo();
-        agent.setWelcomeInfo("欢饮来到反馈中心，您宝贵的意见是对我们最大的支持");
-
-        FeedbackPush.getInstance(this).init(CustomFankuiActivity.class, true);
-        agent.sync();
-
-        agent.openFeedbackPush();
-
-        FeedbackPush.getInstance(this).init(true);
-    }
 
 
     public void hideText() {
@@ -220,7 +162,6 @@ public class MainActivity extends BaseActivity {
         AnimationUtils.hideView(tv_line);
 //        tv_line.setVisibility(View.GONE);
         AnimationUtils.hideRadio(radioGroup);
-        getWidthAndHeight();
         //设置webview的一些参数
         setWebs();
         handler = new Handler() {
@@ -236,6 +177,14 @@ public class MainActivity extends BaseActivity {
         Log.i("TAG","handler刚刚初始化完毕,当前时间为"+System.currentTimeMillis());
     }
 
+    private void setWebs() {
+        new SettingWebParams().setWebs(webView);
+        webView.addJavascriptInterface(new JavaScriptCallSon(), "JavaScriptCall");
+        webView.setWebChromeClient(new MyWebChromeClient());
+        webView.setWebViewClient(new MyOwnWebViewClient());
+        webView.loadUrl(GloableUtils.HTTPURL);
+    }
+
     private RotateAnimation getDialogAnimation() {
         RotateAnimation animation = new RotateAnimation(0f, 358.0f, RotateAnimation.RELATIVE_TO_SELF, 0.5f, RotateAnimation.RELATIVE_TO_SELF, 0.5f);
         animation.setDuration(400);
@@ -244,97 +193,22 @@ public class MainActivity extends BaseActivity {
         return animation;
     }
 
-    private void getWidthAndHeight() {
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-
-        screenWidth = displayMetrics.widthPixels;
-        screenHeight = displayMetrics.heightPixels;
-        Log.i("TAG", "打印屏幕的宽和高" + screenWidth + "     ===" + screenHeight);
-    }
-
-    boolean f = true;
 
     @Override
     public void onBackPressed() {
-
         if (tv_permit.getVisibility() == View.VISIBLE
 //                && progressBar.getVisibility() == View.VISIBLE
                 ) {
             finishAll();
         }
         webView.loadUrl("javascript:G_jsCallBack.QueuedoBackFN()");
-//        super.onBackPressed();
     }
 
     private void finishAll() {
-        if (f) {
-            ToastUtils.showMessage("再按一次退出程序");
-            f = false;
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    f = true;
-                }
-            }, 5000);
-        } else {
-            Log.i("TAG", "此退出已执行");
-//            myAsyncTask.cancel(true);
-            MobclickAgent.onKillProcess(MainActivity.instance);
-            for (Activity activity : MyApplication.list) {
-                if (activity != null)
-                    activity.finish();
-            }
-            System.exit(0);
-
-        }
+        FinishUtils.finishProjectAgain(MyApplication.list);
     }
 
-    private void setWebs() {
 
-
-        webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setAllowFileAccess(true);
-        //支持缩放
-        webSettings.setBuiltInZoomControls(true);
-        // 开启 DOM storage API 功能
-        webSettings.setDomStorageEnabled(true);
-        //开启缓存数据库功能set
-        webSettings.setDatabaseEnabled(true);
-        webSettings.setUseWideViewPort(true);
-        //设置缓存模式
-
-        //设置缓存路径
-//        webSettings.setAppCachePath(appCachePath+"/clear");
-        //允许访问文件
-        webSettings.setAllowFileAccess(true);
-        //开启缓存功能
-        webSettings.setAppCacheEnabled(true);
-        webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setDomStorageEnabled(true);
-        // Set cache size to 2 mb by default. should be more than enough
-        webSettings.setAppCacheMaxSize(1024 * 1024 * 1);
-        // This next one is crazy. It's the DEFAULT location for your app's cache
-        // But it didn't work for me without this line.
-        // UPDATE: no hardcoded path. Thanks to Kevin Hawkins
-
-        webView.loadData("text/html", "utf-8", "utf-8");
-
-        webView.addJavascriptInterface(new JavaScriptCallSon(), "JavaScriptCall");
-
-        webView.setWebChromeClient(new MyWebChromeClient());
-
-        webView.setWebViewClient(new MyOwnWebViewClient());
-
-
-        webView.loadUrl(
-                GloableUtils.HTTPURL
-//                "http://www.baidu.com"
-//                "http://192.168.0.110:8080/px-rest/kd/"
-        );
-    }
 
     //此类用于和js交互
     class JavaScriptCallSon implements JavaScriptCall {
@@ -352,19 +226,9 @@ public class MainActivity extends BaseActivity {
             intent.addCategory(Intent.CATEGORY_OPENABLE);
             startActivityForResult(intent, GloableUtils.RESULT_PICK_PHOTO_NORMAL);
         }
-
         //此方法不需要裁剪,进行多张图片选择，不启动自带应用，第三方组件
         @JavascriptInterface
         public void selectImgPic() {
-//            Intent intent = null;
-//            if(android.os.Build.VERSION.SDK_INT>=android.os.Build.VERSION_CODES.KITKAT) {
-//                intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-//            }else{
-//                intent = new Intent(Intent.ACTION_GET_CONTENT);
-//            }
-//            intent.setType("image/*");
-//            intent.addCategory(Intent.CATEGORY_OPENABLE);
-//            startActivityForResult(intent, GloableUtils.CHOOSE_PICTURE_ONLY);
             startanotherApplication();
         }
 
@@ -414,40 +278,22 @@ public class MainActivity extends BaseActivity {
         @JavascriptInterface
         public void finishProject() {
 
-            finishAll();
+             finishAll();
         }
 
         @JavascriptInterface
         public void getPicUrlFromJs(String url) {
             myurl = url;
         }
-
-        //js调用此方法拨打电话
-//        @JavascriptInterface
-//        public void callPhone(String tel){
-//            MainActivity.this.startActivity(new Intent(Intent.ACTION_CALL,Uri.parse("tel:"+tel)));
-//        }
-
-
     }
 
     private void startanotherApplication() {
 
         startActivity(new Intent(this, me.nereo.multiimageselector.MainActivity.class));
     }
-
-
     @Override
     protected void onStart() {
         super.onStart();
-//        PushManager.startWork(this,
-//                PushConstants.LOGIN_TYPE_API_KEY,
-//                "El4au0Glwr7Xt8sPgZFg2UP7");
-//        myAsyncTask = new MyAsyncTask();
-//        this.myAsyncTask.execute();
-        //注册反馈
-//        FeedbackManager fm = FeedbackManager.getInstance(this);
-//        fm.register(GloableUtils.WENJIE_BAIDU_API_KEY);
     }
 
     @Override

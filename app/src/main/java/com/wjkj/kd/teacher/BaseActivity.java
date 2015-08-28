@@ -4,6 +4,7 @@ package com.wjkj.kd.teacher;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 
 import com.baidu.mobstat.StatService;
 import com.umeng.analytics.MobclickAgent;
@@ -18,7 +19,9 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
     public static Activity instance;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         MyApplication.list.add(this);
         PushAgent.getInstance(this).onAppStart();
         instance = this;

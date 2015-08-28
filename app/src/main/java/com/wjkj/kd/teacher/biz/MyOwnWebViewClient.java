@@ -26,8 +26,10 @@ public  class MyOwnWebViewClient extends WebViewClient {
             String tel = url.substring(num);
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url.toString()));
             MainActivity.instance.startActivity(intent);
-        }else if (url.contains("baidu.com")){
-            MainActivity.instance.startActivity(new Intent(MyApplication.instance, LoadUrlActivity.class));
+        }else{
+            Intent intent = new Intent(MyApplication.instance, LoadUrlActivity.class);
+            intent.putExtra("url",url);
+            MainActivity.instance.startActivity(intent);
         }
         return true;
     }
