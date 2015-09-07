@@ -326,7 +326,7 @@
             style="@style/MyTextViewStyle"
             android:layout_marginLeft="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="清楚缓存"
+            android:text="清除缓存"
             android:id="@+id/textView36"
             android:layout_centerVertical="true" />
 

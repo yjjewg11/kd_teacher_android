@@ -1,146 +1,115 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.wjkj.kd.teacher"
-    android:versionCode="13"
-    android:versionName="0.0.155" >
-    <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="21" />
-    <supports-screens
-        android:anyDensity="true"
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:resizeable="true"
-        android:smallScreens="true" />
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:versionCode="18" android:versionName="0.0.163" package="com.wjkj.kd.teacher">
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="21"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
-    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
-    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!-- 网络状态检测权限  根据需要添加 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="ANDROID.PERMISSION.CALL_PRIVILEGED"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- QQ、QQ空间所需权限 -->
     <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
-    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
-    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
-    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
-    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="WRITE_APN_SETTINGS" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="ANDROID.PERMISSION.CALL_PRIVILEGED" />
 
-    <application
-        android:name=".MyApplication"
-        android:allowBackup="true"
-        android:icon="@drawable/laoshi_72"
-        android:label="问界互动家园"
-        tools:replace="name,icon,label">
+    <application android:allowBackup="true" android:icon="@drawable/laoshi_72" android:label="问界互动家园" android:name=".MyApplication" tools:replace="name,icon,label">
 
         <!-- 百度统计 -->
-        <meta-data
-            android:name="BaiduMobAd_STAT_ID"
-            android:value="4311ed70ee" />
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="4311ed70ee"/>
         <!-- 渠道商编号 -->
-        <meta-data
-            android:name="BaiduMobAd_CHANNEL"
-            android:value="Kd_Teacher" />
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="Kd_Teacher"/>
         <!-- 是否开启错误日志统计，默认为false -->
-        <meta-data
-            android:name="BaiduMobAd_EXCEPTION_LOG"
-            android:value="true" />
+        <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true"/>
         <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
-        <meta-data
-            android:name="BaiduMobAd_SEND_STRATEGY"
-            android:value="APP_START" />
+        <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START"/>
         <!-- 日志仅在wifi网络下发送，默认为false -->
-        <meta-data
-            android:name="BaiduMobAd_ONLY_WIFI"
-            android:value="true" />
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="true"/>
         <!-- 是否获取基站位置信息 ,默认为true -->
-        <meta-data
-            android:name="BaiduMobAd_CELL_LOCATION"
-            android:value="true" />
+        <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true"/>
         <!-- 是否获取GPS位置信息，默认为true -->
-        <meta-data
-            android:name="BaiduMobAd_GPS_LOCATION"
-            android:value="true" />
+        <meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="true"/>
         <!-- 是否获取WIFI位置信息，默认为true -->
-        <meta-data
-            android:name="BaiduMobAd_WIFI_LOCATION"
-            android:value="true" />
-        <meta-data
-            android:name="api_key"
-            android:value="El4au0Glwr7Xt8sPgZFg2UP7" />
+        <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="true"/>
+        <meta-data android:name="api_key" android:value="El4au0Glwr7Xt8sPgZFg2UP7"/>
 
-        <activity android:name="com.umeng.fb.ConversationActivity" />
-        <activity
-            android:name=".MainActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="问界互动家园"
-            android:windowSoftInputMode="adjustResize|stateHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" >
+        <activity android:name="com.umeng.fb.ConversationActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:label="问界互动家园" android:launchMode="singleTask" android:name=".MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
         </activity>
-        <receiver android:name=".receiver.ListenConntectStatesReceiver" >
-            <intent-filter>
-                <action android:name="ANDROID.INTENT.ACTION.ACTION_POWER_DISCONNECTED" />
-            </intent-filter>
-        </receiver>
+        <!--<receiver android:name=".receiver.ListenConntectStatesReceiver" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="ANDROID.INTENT.ACTION.ACTION_POWER_DISCONNECTED" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
         <!-- <activity android:name=".views.ImageDirActivity"/> -->
         <!-- <activity android:name=".views.ImagesActivity"/> -->
         <!-- <activity android:name=".views.PreviewActivity"/> -->
 
-        <activity
-            android:name=".BaseActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name=".BaseActivity" android:screenOrientation="portrait"/>
 
-        <receiver android:name=".receiver.MyFeedbackReceiver" >
+        <receiver android:name=".receiver.MyFeedbackReceiver">
             <intent-filter> <!-- 接收 feedback 消息 -->
-                <action android:name="com.baidu.android.pushservice.action.FB_MESSAGE" />
+                <action android:name="com.baidu.android.pushservice.action.FB_MESSAGE"/>
             </intent-filter>
         </receiver>
 
@@ -199,188 +168,166 @@
         </service>
         -->
 
-        <activity
-            android:name=".VersionActivity"
-            android:label="VersionActivity"
-            android:screenOrientation="portrait" >
+        <activity android:label="VersionActivity" android:name=".VersionActivity" android:screenOrientation="portrait">
         </activity>
-        <activity
-            android:name=".SettingActivity"
-            android:label="SettingActivity"
-            android:screenOrientation="portrait" >
+        <activity android:label="SettingActivity" android:name=".SettingActivity" android:screenOrientation="portrait">
         </activity>
 
-        <receiver
-            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
-            android:exported="false" >
+        <receiver android:exported="false" android:name="com.umeng.message.NotificationProxyBroadcastReceiver">
         </receiver>
 
         <!-- 监听开机运行、网络连接变化、卸载的广播 -->
-        <receiver
-            android:name="com.umeng.message.SystemReceiver"
-            android:process=":push" >
+        <receiver android:name="com.umeng.message.SystemReceiver" android:process=":push">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
 
-                <data android:scheme="package" />
+                <data android:scheme="package"/>
             </intent-filter>
         </receiver>
 
         <!-- 监听消息到达的广播 -->
-        <receiver
-            android:name="com.umeng.message.MessageReceiver"
-            android:process=":push" >
+        <receiver android:name="com.umeng.message.MessageReceiver" android:process=":push">
             <intent-filter>
-                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
             </intent-filter>
         </receiver>
 
         <!-- 监听宿主选举的广播 -->
-        <receiver
-            android:name="com.umeng.message.ElectionReceiver"
-            android:process=":push" >
+        <receiver android:name="com.umeng.message.ElectionReceiver" android:process=":push">
             <intent-filter>
-                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4"/>
 
-                <category android:name="umeng" />
+                <category android:name="umeng"/>
             </intent-filter>
         </receiver>
 
         <!-- 监听注册的广播 -->
         <!-- 【应用包名】字符串需要替换成本应用的应用包名 -->
-        <receiver
-            android:name="com.umeng.message.RegistrationReceiver"
-            android:exported="false" >
+        <receiver android:exported="false" android:name="com.umeng.message.RegistrationReceiver">
             <intent-filter>
-                <action android:name="com.wjkj.kd.teacher.intent.action.COMMAND" />
+                <action android:name="com.wjkj.kd.teacher.intent.action.COMMAND"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="com.umeng.message.UmengMessageBootReceiver" >
+        <receiver android:name="com.umeng.message.UmengMessageBootReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
 
         <!-- Umeng的长连服务，用来建立推送的长连接的 -->
         <!-- 【应用包名】字符串需要替换成本应用的应用包名 -->
-        <service
-            android:name="com.umeng.message.UmengService"
-            android:exported="true"
-            android:label="PushService"
-            android:process=":push" >
+        <service android:exported="true" android:label="PushService" android:name="com.umeng.message.UmengService" android:process=":push">
             <intent-filter>
-                <action android:name="com.wjkj.kd.teacher.intent.action.START" />
+                <action android:name="com.wjkj.kd.teacher.intent.action.START"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="com.wjkj.kd.teacher.intent.action.COCKROACH" />
+                <action android:name="com.wjkj.kd.teacher.intent.action.COCKROACH"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="org.agoo.android.intent.action.PING_V4" />
+                <action android:name="org.agoo.android.intent.action.PING_V4"/>
 
-                <category android:name="umeng" />
+                <category android:name="umeng"/>
             </intent-filter>
         </service>
 
         <!-- Umeng的消息接收服务 -->
-        <service
-            android:name="com.umeng.message.UmengIntentService"
-            android:process=":push" />
+        <service android:name="com.umeng.message.UmengIntentService" android:process=":push"/>
 
         <!-- Umeng的消息路由服务 -->
-        <service
-            android:name="com.umeng.message.UmengMessageIntentReceiverService"
-            android:exported="true"
-            android:process=":push" >
+        <service android:exported="true" android:name="com.umeng.message.UmengMessageIntentReceiverService" android:process=":push">
             <intent-filter>
-                <action android:name="org.android.agoo.client.MessageReceiverService" />
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="org.android.agoo.client.ElectionReceiverService" />
+                <action android:name="org.android.agoo.client.ElectionReceiverService"/>
             </intent-filter>
         </service>
 
         <!-- v2.4.1添加的Service，Umeng的消息接收后的处理服务 -->
-        <service
-            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
-            android:exported="false" >
+        <service android:exported="false" android:name="com.umeng.message.UmengMessageCallbackHandlerService">
             <intent-filter>
-                <action android:name="com.umeng.messge.registercallback.action" />
+                <action android:name="com.umeng.messge.registercallback.action"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="com.umeng.message.unregistercallback.action" />
+                <action android:name="com.umeng.message.unregistercallback.action"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="com.umeng.message.message.handler.action" />
+                <action android:name="com.umeng.message.message.handler.action"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="com.umeng.message.autoupdate.handler.action" />
+                <action android:name="com.umeng.message.autoupdate.handler.action"/>
             </intent-filter>
         </service>
 
         <!-- V1.3.0添加的service，负责下载通知的资源 -->
-        <service android:name="com.umeng.message.UmengDownloadResourceService" />
+        <service android:name="com.umeng.message.UmengDownloadResourceService"/>
 
         <!-- 自动更新 -->
 
-        <service
-            android:name="com.umeng.update.net.DownloadingService"
-            android:process=":DownloadingService" >
+        <service android:name="com.umeng.update.net.DownloadingService" android:process=":DownloadingService">
         </service>
 
-        <activity
-            android:name="com.umeng.update.UpdateDialogActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        <activity android:name="com.umeng.update.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
         </activity>
 
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="55c1960867e58ec39000267d" />
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="wenjiehudongjiayuanlaoshiban" />
-        <meta-data
-            android:name="UMENG_MESSAGE_SECRET"
-            android:value="cb11ae97f0e8c2b2e704b05ab700b7b8" >
+        <meta-data android:name="UMENG_APPKEY" android:value="55c1960867e58ec39000267d"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="wenjiehudongjiayuanlaoshiban"/>
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="cb11ae97f0e8c2b2e704b05ab700b7b8">
         </meta-data>
 
-        <activity
-            android:name=".FirstPageActivity"
-            android:label="问界互动家园"
-            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
-            android:screenOrientation="portrait" >
+        <activity android:label="问界互动家园" android:name=".FirstPageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_about_us" android:name=".AboutUsActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:label="@string/title_activity_about_us" android:name=".LoadUrlActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_push_state" android:name=".views.PushStateActivity">
+        </activity>
+        <activity android:label="@string/title_activity_custom_fankui" android:name=".views.CustomFankuiActivity">
+        </activity>
+        <activity android:label="@string/title_activity_conntect_error" android:name=".views.ConntectErrorActivity">
+        </activity>
+        <activity
+            android:name=".views.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+                <data android:scheme="tencent1104813270" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutUsActivity"
-            android:label="@string/title_activity_about_us"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name=".LoadUrlActivity"
-            android:label="@string/title_activity_about_us"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".views.PushStateActivity"
-            android:label="@string/title_activity_push_state" >
-        </activity>
-        <activity
-            android:name=".views.CustomFankuiActivity"
-            android:label="@string/title_activity_custom_fankui" >
-        </activity>
-        <activity
-            android:name=".views.ConntectErrorActivity"
-            android:label="@string/title_activity_conntect_error" >
-        </activity>
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
     </application>
 
 </manifest>

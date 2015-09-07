@@ -40,4 +40,8 @@ public class GloableUtils {
 //            "http://120.25.248.31/px-rest/kd/index.html"
 
     public static String IS_NEED_AIAIN_START_ANIMATION = "";
+
+    //获取最新的网页地址的url
+
+    public static final String newUrl=InterfaceURL+"share/getKDWebUrl.json";
 }

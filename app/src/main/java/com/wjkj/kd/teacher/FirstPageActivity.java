@@ -4,9 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.wjkj.kd.teacher.utils.HttpUtils;
-import com.wjkj.kd.teacher.views.ConntectErrorActivity;
-
 public class FirstPageActivity extends BaseActivity {
 
     @Override
@@ -18,18 +15,9 @@ public class FirstPageActivity extends BaseActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                if (HttpUtils.getConntectStates()) {
                     startActivity(new Intent(FirstPageActivity.this, MainActivity.class));
                     finish();
-                } else {
-                    startActivity(new Intent(FirstPageActivity.this, ConntectErrorActivity.class));
-                }
             }
         }, 2000);
-
-
     }
-
-
-
 }

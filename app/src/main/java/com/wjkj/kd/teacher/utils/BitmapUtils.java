@@ -33,7 +33,7 @@ public class BitmapUtils {
             Log.i("TAG","outwidth=="+options.outWidth);
             int scale = 1;
             while (options.outWidth / scale >= MainActivity.instance.width || options.outHeight / scale >= MainActivity.instance.height) {
-                scale *= 4;
+                scale *= 2;
             }
             options.inSampleSize = scale;
             options.inJustDecodeBounds = false;

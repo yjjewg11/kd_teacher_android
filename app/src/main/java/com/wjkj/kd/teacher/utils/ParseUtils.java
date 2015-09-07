@@ -19,7 +19,7 @@ public class ParseUtils {
         ByteArrayOutputStream out = null;
         byte[] bytes = null;
         try {
-            int quality = 40;
+            int quality = 80;
         out = new ByteArrayOutputStream();
             do {
                 thePic.compress(Bitmap.CompressFormat.JPEG, quality, out);
@@ -27,10 +27,9 @@ public class ParseUtils {
                 quality-=10;
                 if(quality==0) break;
                 out.reset();
-            }while (bytes.length>10000);
-
+            }while (bytes.length>260*1024);
             Log.i("TAG", "打印一dfsdfsfsdf下字符串" + bytes.length);
-            Log.i("TAG","打印字节大小：==="+bytes.length/1024);
+            Log.i("TAG","打印字节大小：==="+bytes.length/1024+ "   kb");
             try {
                 if(out!=null)
                     out.close();

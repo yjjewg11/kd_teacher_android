@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values-zh/values.xml -->
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values-zh/umeng_fb_strings.xml -->
     <eat-comment/>
     <string-array name="umeng_fb_contact_key_array">
         <item>@string/umeng_fb_contact_key_email</item>
@@ -43,7 +43,7 @@
     <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values-zh/values-zh.xml -->
     <eat-comment/>
     <string name="select_mode">选择模式</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values-zh/values.xml -->
+    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values-zh/umeng_fb_strings.xml -->
     <eat-comment/>
     <string name="umeng_fb_back">返回</string>
     <string name="umeng_fb_change_contact_title">更改联系信息</string>

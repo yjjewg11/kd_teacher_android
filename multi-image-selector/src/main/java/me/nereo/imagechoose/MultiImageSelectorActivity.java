@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 import java.io.File;
@@ -42,6 +43,7 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.choose_activity_default);
 
         Intent intent = getIntent();

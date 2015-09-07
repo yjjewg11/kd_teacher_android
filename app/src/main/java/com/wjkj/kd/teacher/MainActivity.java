@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -13,6 +14,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
@@ -62,7 +64,7 @@ public class MainActivity extends BaseActivity {
     public static MainActivity instance;
     public MyAsyncTask myAsyncTask;;
     public ValueCallback<Uri> myUploadMsg;
-    private TextView tv_permit;
+    public TextView tv_permit;
     public static Handler handler;
     public WebSettings webSettings;
     public String myurl;
@@ -72,13 +74,15 @@ public class MainActivity extends BaseActivity {
     public TextView tv_line;
     public MyRadioButton radionbtown;
     private ImageView imageLoading;
-    private RelativeLayout animationRl;
+    public RelativeLayout animationRl;
     private ImageBroadcastReceiver imageBroadcastReceiver;
     private String picbase;
     public int width;
     public int height;
     public String JESSIONID;
     private ListenConntectStatesReceiver receiver;
+    private RegistUmengService registUmengService;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -92,7 +96,10 @@ public class MainActivity extends BaseActivity {
         setViews();
         register();
         try {
-            new RegistUmengService(this).registService();
+            //注册友盟的几种服务
+
+            registUmengService = new RegistUmengService(this);
+            registUmengService.registService();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (JSONException e) {
@@ -123,11 +130,11 @@ public class MainActivity extends BaseActivity {
         width = displayMetrics.widthPixels;
         height = displayMetrics.heightPixels;
         Log.i("TAG", "打印屏幕的宽度" + width);
-        if (width <= 480) {
+        if (width == 480) {
             MyRadioButton.widthSize = 90;
-        } else if (width <= 720) {
+        } else if (width == 720) {
             MyRadioButton.widthSize = 120;
-        } else if (width <= 1080) {
+        } else if (width == 1080) {
             MyRadioButton.widthSize = 160;
         }
     }
@@ -174,15 +181,40 @@ public class MainActivity extends BaseActivity {
                 }
             }
         };
-        Log.i("TAG","handler刚刚初始化完毕,当前时间为"+System.currentTimeMillis());
+        Log.i("TAG", "handler刚刚初始化完毕,当前时间为" + System.currentTimeMillis());
     }
 
+    public String webUrl = "";
     private void setWebs() {
+        getWebUrl();
+        Log.i("TAG","打印weburl的值"+webUrl);
         new SettingWebParams().setWebs(webView);
+        //取消webView滑动时边框
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.addJavascriptInterface(new JavaScriptCallSon(), "JavaScriptCall");
         webView.setWebChromeClient(new MyWebChromeClient());
         webView.setWebViewClient(new MyOwnWebViewClient());
-        webView.loadUrl(GloableUtils.HTTPURL);
+        webView.loadUrl(webUrl);
+    }
+
+    private void getWebUrl() {
+        SharedPreferences sp = getSharedPreferences("webUrl", 0);
+        SharedPreferences.Editor editor =  sp.edit();
+        //先从网络获取，如果获取到就加载这个，这个一定是最新的
+        if(!TextUtils.isEmpty(MyApplication.instance.justUrl)){
+              webUrl = MyApplication.instance.justUrl;
+              editor.putString("url",MyApplication.instance.justUrl);
+              editor.commit();
+            return;
+        }
+        //如果网络没有，则从文件获取，如果没有保存过，则使用默认加载的
+        if(!TextUtils.isEmpty(sp.getString("url",""))){
+                webUrl = sp.getString("url","");
+                return;
+        }
+        webUrl = GloableUtils.HTTPURL;
+        editor.putString("url",GloableUtils.HTTPURL);
+        editor.commit();
     }
 
     private RotateAnimation getDialogAnimation() {
@@ -231,11 +263,7 @@ public class MainActivity extends BaseActivity {
         public void selectImgPic() {
             startanotherApplication();
         }
-
-
         //调用此方法取消提示
-
-
         //js调用此方法将JessionId传过来将其保存
         @JavascriptInterface
         public void jsessionToPhone(String jessionID) throws UnsupportedEncodingException, JSONException {
@@ -285,6 +313,18 @@ public class MainActivity extends BaseActivity {
         public void getPicUrlFromJs(String url) {
             myurl = url;
         }
+
+        /*
+        * 网页回掉此接口，传递分享内容进行分享
+        * **/
+
+        @JavascriptInterface
+        public void setShareContent(String content, String pathUrl){
+            registUmengService.setShareContent(content,pathUrl);
+            //查看社会化分享
+            registUmengService.mController.openShare(MainActivity.this,false);
+        }
+
     }
 
     private void startanotherApplication() {
@@ -435,7 +475,6 @@ public class MainActivity extends BaseActivity {
                 //点击此按钮注销用户，并返回到登陆页面
                 //回调javaScript方法
                 //设置按钮。点击之后启动设置页面
-
                 startActivity(new Intent(this, SettingActivity.class));
                 break;
         }
@@ -499,14 +538,18 @@ public class MainActivity extends BaseActivity {
             for (String path : imageList) {
                 Log.i("info", "bitmap了几次0000000");
                 picbase = getImageBase(path);
-                Log.i("TAG", "打印base字符串ssssssssss" + picbase);
+
                 picbase = "data:image/png;base64," + picbase;
+
+                Log.i("TAG", "打印base字符串ssssssssss" + picbase);
                 webView.loadUrl("javascript:G_jsCallBack.selectPic_callback('" + picbase + "')");
             }
-
             animationRl.setVisibility(View.GONE);
             tv_permit.setVisibility(View.GONE);
         }
     }
+
+
+
 }
 

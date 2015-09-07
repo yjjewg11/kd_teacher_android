@@ -65,6 +65,8 @@ public class SettingActivity extends BaseActivity {
                 //清楚缓存
                 MainActivity.instance.clear();
                 ToastUtils.showMessage("缓存清除成功!");
+                MainActivity.instance.webView.loadUrl(MainActivity.instance.webUrl);
+                finish();
                 break;
 
             case R.id.rl_seting_finish:

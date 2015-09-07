@@ -33,7 +33,7 @@ public class SettingWebParams {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setDomStorageEnabled(true);
         // Set cache size to 2 mb by default. should be more than enough
-        webSettings.setAppCacheMaxSize(1024 * 1024 * 1);
+        webSettings.setAppCacheMaxSize(1024 * 1024 * 10);
         // This next one is crazy. It's the DEFAULT location for your app's cache
         // But it didn't work for me without this line.
         // UPDATE: no hardcoded path. Thanks to Kevin Hawkins

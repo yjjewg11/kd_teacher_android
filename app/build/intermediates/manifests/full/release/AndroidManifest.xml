@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wjkj.kd.teacher"
-    android:versionCode="13"
-    android:versionName="0.0.155" >
+    android:versionCode="18"
+    android:versionName="0.0.163" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -73,6 +73,17 @@
     <uses-permission android:name="WRITE_APN_SETTINGS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="ANDROID.PERMISSION.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:name="com.wjkj.kd.teacher.MyApplication"
@@ -126,12 +137,11 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" >
         </activity>
-
-        <receiver android:name="com.wjkj.kd.teacher.receiver.ListenConntectStatesReceiver" >
-            <intent-filter>
-                <action android:name="ANDROID.INTENT.ACTION.ACTION_POWER_DISCONNECTED" />
-            </intent-filter>
-        </receiver>
+        <!-- <receiver android:name=".receiver.ListenConntectStatesReceiver" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="ANDROID.INTENT.ACTION.ACTION_POWER_DISCONNECTED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
         <!-- <activity android:name=".views.ImageDirActivity"/> -->
         <!-- <activity android:name=".views.ImagesActivity"/> -->
         <!-- <activity android:name=".views.PreviewActivity"/> -->
@@ -384,6 +394,35 @@
             android:name="com.wjkj.kd.teacher.views.ConntectErrorActivity"
             android:label="@string/title_activity_conntect_error" >
         </activity>
+        <activity
+            android:name="com.wjkj.kd.teacher.views.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent1104813270" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name="me.nereo.multiimageselector.MainActivity"
             android:label="@string/app_name" >

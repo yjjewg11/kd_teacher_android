@@ -62,4 +62,4 @@
             android:background="@color/umeng_fb_line" />
 
     </RelativeLayout>
-</LinearLayout><!-- From: file:/home/ruichao/codes/umeng-fb-android/sdk/src/main/res/layout/umeng_fb_reply_item_image.xml --><!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/layout/umeng_fb_reply_item_image.xml -->
+</LinearLayout><!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/layout/umeng_fb_reply_item_image.xml -->

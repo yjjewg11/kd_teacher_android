@@ -89,7 +89,7 @@ public class CustomFankuiActivity extends BaseActivity {
     private void pushFanKui() {
         String text = editfankui.getText().toString();
         if(StringUtils.checkIsNull(text)){
-            editfankui.setError("不能发送空消息");
+            ToastUtils.showMessage("消息不能为空哦！");
             return;
         }
 

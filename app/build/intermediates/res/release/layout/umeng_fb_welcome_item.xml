@@ -23,7 +23,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="@string/umeng_fb_reply_content_default"
+            android:text="填上你的反馈信息，是对我们的支持"
             android:textSize="@dimen/umeng_fb_item_content_size" />
 
         <View
@@ -35,4 +35,4 @@
     </RelativeLayout>
 
 </LinearLayout>
-<!-- From: file:/home/ruichao/codes/umeng-fb-android/sdk/src/main/res/layout/umeng_fb_welcome_item.xml --><!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/layout/umeng_fb_welcome_item.xml -->
+<!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/layout/umeng_fb_welcome_item.xml -->

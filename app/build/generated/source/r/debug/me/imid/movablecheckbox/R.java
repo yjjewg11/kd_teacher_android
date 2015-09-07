@@ -28,34 +28,34 @@ public final class R {
 		public static final int widgetLayout = 0x7f01000c;
 	}
 	public static final class dimen {
-		public static final int list_item_height = 0x7f070006;
-		public static final int preference_icon_width = 0x7f070007;
-		public static final int preference_margin = 0x7f070008;
-		public static final int preference_widget_icon_width = 0x7f070009;
+		public static final int list_item_height = 0x7f08001a;
+		public static final int preference_icon_width = 0x7f08001b;
+		public static final int preference_margin = 0x7f08001c;
+		public static final int preference_widget_icon_width = 0x7f08001d;
 	}
 	public static final class drawable {
 		public static final int bottom = 0x7f020012;
 		public static final int btn_pressed = 0x7f020014;
 		public static final int btn_unpressed = 0x7f020016;
-		public static final int frame = 0x7f020022;
-		public static final int ic_launcher = 0x7f020027;
-		public static final int mask = 0x7f02002c;
+		public static final int frame = 0x7f020034;
+		public static final int ic_launcher = 0x7f020039;
+		public static final int mask = 0x7f02003e;
 	}
 	public static final class id {
-		public static final int checkbox = 0x7f0d0090;
-		public static final int primary = 0x7f0d008c;
-		public static final int summary = 0x7f0d008e;
-		public static final int title = 0x7f0d008d;
-		public static final int widget_frame = 0x7f0d008f;
+		public static final int checkbox = 0x7f0e00a9;
+		public static final int primary = 0x7f0e00a5;
+		public static final int summary = 0x7f0e00a7;
+		public static final int title = 0x7f0e00a6;
+		public static final int widget_frame = 0x7f0e00a8;
 	}
 	public static final class layout {
-		public static final int main = 0x7f04001e;
-		public static final int preference = 0x7f040020;
-		public static final int preference_widget_checkbox = 0x7f040021;
+		public static final int main = 0x7f040021;
+		public static final int preference = 0x7f040029;
+		public static final int preference_widget_checkbox = 0x7f04002a;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f090001;
-		public static final int hello = 0x7f09004b;
+		public static final int app_name = 0x7f0a0001;
+		public static final int hello = 0x7f0a0066;
 	}
 	public static final class styleable {
 		public static final int[] Preference = { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011 };
