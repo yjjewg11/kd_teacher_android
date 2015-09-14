@@ -29,7 +29,6 @@ public class PushMessage extends AbstractDao{
     }
     //此方法调用网络请求传递参数
     public void pushMessageToServer() throws UnsupportedEncodingException, JSONException {
-
         //TODO
         MyPushMessageReceiver.f = false;
         String url = GloableUtils.InterfaceURL+ "pushMsgDevice/save.json";

@@ -24,8 +24,11 @@ public class BitmapUtils {
 //        Bitmap bitmap = null;
         try {
             BitmapFactory.Options options = new BitmapFactory.Options();
-            BitmapFactory.decodeFile(pathName, options);
             options.inJustDecodeBounds = true;
+
+
+            BitmapFactory.decodeFile(pathName, options);
+
 //            int width = bitmap.getWidth();
 //            int height = bitmap.getHeight();
 //            Log.i("TAG: width=", ""+width);

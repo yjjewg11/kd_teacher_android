@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +25,7 @@ public class Util {
 
 
     public static String logStringCache = "";
+
 
     // 获取ApiKey
     public static String getMetaValue(Context context, String metaKey) {
@@ -79,6 +81,33 @@ public class Util {
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("log_text", text);
         editor.commit();
+    }
+
+
+
+    //遍历目录
+    public static boolean deleteDir(File dir) {
+        if (dir.isDirectory()) {
+            String[] children = dir.list();
+            //递归删除目录中的子目录下
+            for (int i=0; i<children.length; i++) {
+                boolean success = deleteDir(new File(dir, children[i]));
+                if (!success) {
+                    return false;
+                }
+            }
+        }
+        //遍历目录执行自己的操作
+        return doMything.doOwnThing(dir);
+    }
+
+    boolean isfuzhi;
+    private static DoMything doMything;
+    public static void setDoMyThing(DoMything doMyThing){
+        doMything = doMyThing;
+    }
+    public interface DoMything{
+       boolean doOwnThing(File file);
     }
 
 }

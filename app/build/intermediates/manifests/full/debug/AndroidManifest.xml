@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wjkj.kd.teacher"
-    android:versionCode="18"
+    android:versionCode="19"
     android:versionName="0.0.163" >
 
     <uses-sdk
@@ -84,6 +84,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- QQ、QQ空间所需权限 -->
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name="com.wjkj.kd.teacher.MyApplication"
@@ -150,12 +157,12 @@
             android:name="com.wjkj.kd.teacher.BaseActivity"
             android:screenOrientation="portrait" />
 
-        <receiver android:name="com.wjkj.kd.teacher.receiver.MyFeedbackReceiver" >
-            <intent-filter>
- <!-- 接收 feedback 消息 -->
-                <action android:name="com.baidu.android.pushservice.action.FB_MESSAGE" />
-            </intent-filter>
-        </receiver>
+        <!-- <receiver android:name=".receiver.MyFeedbackReceiver"> -->
+        <!-- <intent-filter> &lt;!&ndash; 接收 feedback 消息 &ndash;&gt; -->
+        <!-- <action android:name="com.baidu.android.pushservice.action.FB_MESSAGE"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
 
         <!--
          <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver" >
@@ -395,17 +402,17 @@
             android:label="@string/title_activity_conntect_error" >
         </activity>
         <activity
-            android:name="com.wjkj.kd.teacher.views.WXEntryActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
             android:name="com.umeng.socialize.view.ShareActivity"
             android:configChanges="orientation|keyboard"
             android:launchMode="singleTask"
             android:noHistory="true"
             android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.wjkj.kd.teacher.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"

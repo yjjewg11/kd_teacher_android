@@ -20,10 +20,10 @@ import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
+import android.webkit.CookieManager;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebSettings;
-import android.webkit.WebStorage;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
@@ -48,10 +48,13 @@ import com.wjkj.kd.teacher.utils.ExUtil;
 import com.wjkj.kd.teacher.utils.FinishUtils;
 import com.wjkj.kd.teacher.utils.GloableUtils;
 import com.wjkj.kd.teacher.utils.ParseUtils;
+import com.wjkj.kd.teacher.utils.ShareUtils;
+import com.wjkj.kd.teacher.utils.Util;
 import com.wjkj.kd.teacher.views.MyRadioButton;
 
 import org.json.JSONException;
 
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
@@ -62,7 +65,7 @@ public class MainActivity extends BaseActivity {
     public WebView webView;
     public RadioGroup radioGroup;
     public static MainActivity instance;
-    public MyAsyncTask myAsyncTask;;
+    public MyAsyncTask myAsyncTask;
     public ValueCallback<Uri> myUploadMsg;
     public TextView tv_permit;
     public static Handler handler;
@@ -82,6 +85,8 @@ public class MainActivity extends BaseActivity {
     public String JESSIONID;
     private ListenConntectStatesReceiver receiver;
     private RegistUmengService registUmengService;
+    public SharedPreferences sp;
+    public SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -187,19 +192,34 @@ public class MainActivity extends BaseActivity {
     public String webUrl = "";
     private void setWebs() {
         getWebUrl();
-        Log.i("TAG","打印weburl的值"+webUrl);
+        Log.i("TAG", "打印weburl的值" + webUrl);
         new SettingWebParams().setWebs(webView);
         //取消webView滑动时边框
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.addJavascriptInterface(new JavaScriptCallSon(), "JavaScriptCall");
         webView.setWebChromeClient(new MyWebChromeClient());
         webView.setWebViewClient(new MyOwnWebViewClient());
+
+        //设置cookie
         webView.loadUrl(webUrl);
+
+    }
+
+
+    private void setCookie() {
+        String cook = "JSESSIONID=OJh2-q59qg-Ij7D8KPc+McFH.undefined; SERVERID=" +
+                "256fdebb4452ae158915cd23a915b948|" +
+                "1442041243|1442037522";
+        CookieManager cookieManager = CookieManager.getInstance();
+
+        cookieManager.setCookie(webUrl, cook);
+
+//        cookieManager.
     }
 
     private void getWebUrl() {
-        SharedPreferences sp = getSharedPreferences("webUrl", 0);
-        SharedPreferences.Editor editor =  sp.edit();
+        sp = getSharedPreferences("webUrl", 0);
+        editor =  sp.edit();
         //先从网络获取，如果获取到就加载这个，这个一定是最新的
         if(!TextUtils.isEmpty(MyApplication.instance.justUrl)){
               webUrl = MyApplication.instance.justUrl;
@@ -213,7 +233,7 @@ public class MainActivity extends BaseActivity {
                 return;
         }
         webUrl = GloableUtils.HTTPURL;
-        editor.putString("url",GloableUtils.HTTPURL);
+        editor.putString("url", GloableUtils.HTTPURL);
         editor.commit();
     }
 
@@ -266,16 +286,23 @@ public class MainActivity extends BaseActivity {
         //调用此方法取消提示
         //js调用此方法将JessionId传过来将其保存
         @JavascriptInterface
-        public void jsessionToPhone(String jessionID) throws UnsupportedEncodingException, JSONException {
+        public void jsessionToPhone(String jessionID)
+                throws UnsupportedEncodingException, JSONException {
 
             JESSIONID = jessionID;
             if(JESSIONID.equals("")){
                 //如果为空，注销用户
                 hideBottomAfaterCancle();
+
             }
             //当jessionid和设备号都不为空时来推送消息
             Log.i("TAG", "jessionid随时都在发送");
-            DealWithPushMessage.dealPushMessage();
+            if(!sp.getBoolean("isSend",false)){
+                DealWithPushMessage.dealPushMessage();
+                editor.putBoolean("isSend",true);
+                editor.commit();
+            }
+
             if(GloableUtils.IS_NEED_AIAIN_START_ANIMATION.equals("false")){
                 GloableUtils.IS_NEED_AIAIN_START_ANIMATION = "";
                 return;
@@ -319,10 +346,13 @@ public class MainActivity extends BaseActivity {
         * **/
 
         @JavascriptInterface
-        public void setShareContent(String content, String pathUrl){
-            registUmengService.setShareContent(content,pathUrl);
-            //查看社会化分享
-            registUmengService.mController.openShare(MainActivity.this,false);
+        public void setShareContent(final String title,final String content, final String pathUrl, final String links){
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    ShareUtils.showShareDialog(MainActivity.this,tv_line,title,content,pathUrl,links);
+                }
+            });
         }
 
     }
@@ -450,11 +480,21 @@ public class MainActivity extends BaseActivity {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.radioButton1:
-
                 webView.loadUrl("javascript:menu_dohome()");
                 break;
             case R.id.radioButton2:
+//                registUmengService.setShareContent("你好今天有肉吃了","/storage/emulated/0/DCIM/Camera/1437468583135.jpg","http://www.baidu.com");
+////                查看社会化分享
+//                registUmengService.mController.openShare(this,false);
 
+
+                //查看自定义分享
+
+//                ShareUtils.showShareDialog(this,tv_line,"你好，这是标题,","这有什么内容",
+//                        "","http://www.baidu.com"
+//                        );
+
+//                share();
                 //通讯录点击按钮
                 //获取屏幕高度与宽度
 //            DisplayMetrics dm = new DisplayMetrics();
@@ -507,14 +547,34 @@ public class MainActivity extends BaseActivity {
 //                          "})");
 //               }
     public void clear() {
-        WebStorage webStorage = WebStorage.getInstance();
-        webStorage.deleteAllData();
+//        WebStorage webStorage = WebStorage.getInstance();
+//        webStorage.deleteAllData();
+        deleteDatabase("webview.db");
+        deleteDatabase("webviewCache.db");
         webView.clearCache(true);
-        webView.clearFormData();
         webView.clearHistory();
-        webView.clearSslPreferences();
-        webView.clearMatches();
+        Log.i("TAG", "缓存路径" + getCacheDir().toString());
+        clearCache(getCacheDir().toString());
     }
+
+    private void clearCache(String cachePath) {
+        File file = new File(cachePath);
+
+
+        //遍历所有缓存目录并进行删除。
+
+        Util.setDoMyThing(new Util.DoMything() {
+            @Override
+            public boolean doOwnThing(File file) {
+                Log.i("TAG","打印目录的名字"+file.getName());
+                return file.delete();
+            }
+        });
+        Util.deleteDir(file);
+
+
+    }
+    long allSize;
 
 
     @Override
@@ -535,6 +595,7 @@ public class MainActivity extends BaseActivity {
             tv_permit.setVisibility(View.VISIBLE);
             //得到图片地址的集合
             final List<String> imageList = (List) intent.getSerializableExtra("imageList");
+            Log.i("TAG","打印图片的地址"+imageList);
             for (String path : imageList) {
                 Log.i("info", "bitmap了几次0000000");
                 picbase = getImageBase(path);
@@ -550,6 +611,25 @@ public class MainActivity extends BaseActivity {
     }
 
 
+//
+//    private boolean setWebCookie() {
+//        Cookie sessionCookie = JlxCustomerHttpClient.getCookie();
+//        CookieSyncManager.createInstance(this);
+//        CookieManager cookieManager = CookieManager.getInstance();
+//        if (sessionCookie != null) {
+//            if (JlxApp.IS_LOGIN) {
+//                String cookieString = sessionCookie.getName() + "="
+//                        + sessionCookie.getValue() + "; domain="
+//                        + sessionCookie.getDomain();
+//                cookieManager.setCookie(webUrl,cookieString);
+//                return true;
+//            } else {
+//                cookieManager.removeSessionCookie();
+//            }
+//            CookieSyncManager.getInstance().sync();
+//        }
+//        return false;
+//    }
 
 }
 

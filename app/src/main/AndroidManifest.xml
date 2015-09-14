@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:versionCode="18" android:versionName="0.0.163" package="com.wjkj.kd.teacher">
-    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="21"/>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:versionCode="19"
+     android:versionName="0.0.163"
+    package="com.wjkj.kd.teacher">
+    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="21"/>
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -73,6 +77,14 @@
     <!-- QQ、QQ空间所需权限 -->
     <uses-permission android:name="android.permission.GET_TASKS" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application android:allowBackup="true" android:icon="@drawable/laoshi_72" android:label="问界互动家园" android:name=".MyApplication" tools:replace="name,icon,label">
 
         <!-- 百度统计 -->
@@ -107,11 +119,12 @@
 
         <activity android:name=".BaseActivity" android:screenOrientation="portrait"/>
 
-        <receiver android:name=".receiver.MyFeedbackReceiver">
-            <intent-filter> <!-- 接收 feedback 消息 -->
-                <action android:name="com.baidu.android.pushservice.action.FB_MESSAGE"/>
-            </intent-filter>
-        </receiver>
+
+        <!--<receiver android:name=".receiver.MyFeedbackReceiver">-->
+            <!--<intent-filter> &lt;!&ndash; 接收 feedback 消息 &ndash;&gt;-->
+                <!--<action android:name="com.baidu.android.pushservice.action.FB_MESSAGE"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
 
         <!--
          <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver" >
@@ -298,17 +311,18 @@
         <activity android:label="@string/title_activity_conntect_error" android:name=".views.ConntectErrorActivity">
         </activity>
         <activity
-            android:name=".views.WXEntryActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
             android:name="com.umeng.socialize.view.ShareActivity"
             android:configChanges="orientation|keyboard"
             android:launchMode="singleTask"
             android:noHistory="true"
             android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:name=".wxapi.WXEntryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
 
         <activity
             android:name="com.tencent.tauth.AuthActivity"

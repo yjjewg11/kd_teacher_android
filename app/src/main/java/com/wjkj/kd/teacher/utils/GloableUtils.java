@@ -1,10 +1,7 @@
 package com.wjkj.kd.teacher.utils;
-
-
 import android.net.Uri;
 
 import com.wjkj.kd.teacher.MyApplication;
-
 public class GloableUtils {
     public static String WENJIE_BAIDU_API_KEY = "4311ed70ee";
     public static String CHANNL_ID  = "wenjiehudongjiayuanlaoshiban";

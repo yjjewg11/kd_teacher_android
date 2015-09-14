@@ -70,7 +70,7 @@ public class ExUtil {
             throw new RuntimeException("方法不存在异常");
 //方法不存在异常
         }else{
-            throw new RuntimeException(e);
+            throw new RuntimeException("异常错误+    =="+e);
         }
 
     }

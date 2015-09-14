@@ -8,8 +8,8 @@ package me.nereo.multiimageselector;
 
 public final class R {
 	public static final class color {
-		public static final int choose_image_folder_text_color = 0x7f0b0023;
-		public static final int choose_image_text_color = 0x7f0b0024;
+		public static final int choose_image_folder_text_color = 0x7f0b003d;
+		public static final int choose_image_text_color = 0x7f0b003e;
 	}
 	public static final class dimen {
 		public static final int activity_horizontal_margin = 0x7f080003;
@@ -28,44 +28,44 @@ public final class R {
 		public static final int default_check = 0x7f020030;
 		public static final int default_check_s = 0x7f020031;
 		public static final int default_error = 0x7f020032;
-		public static final int ic_menu_back = 0x7f02003a;
-		public static final int selector_indicator = 0x7f020055;
-		public static final int text_indicator = 0x7f020067;
+		public static final int ic_menu_back = 0x7f02003e;
+		public static final int selector_indicator = 0x7f02005d;
+		public static final int text_indicator = 0x7f020075;
 	}
 	public static final class id {
-		public static final int btn_back = 0x7f0e0072;
+		public static final int btn_back = 0x7f0e0074;
 		public static final int button = 0x7f0e0004;
-		public static final int category_btn = 0x7f0e0077;
-		public static final int checkmark = 0x7f0e0080;
-		public static final int choice_mode = 0x7f0e0021;
-		public static final int clip = 0x7f0e008b;
-		public static final int commit = 0x7f0e0073;
-		public static final int cover = 0x7f0e007a;
-		public static final int footer = 0x7f0e0076;
-		public static final int grid = 0x7f0e0074;
-		public static final int image = 0x7f0e007e;
-		public static final int image_grid = 0x7f0e0071;
-		public static final int indicator = 0x7f0e007b;
-		public static final int iv_choose_area = 0x7f0e0079;
-		public static final int iv_result = 0x7f0e002c;
-		public static final int mScaleImageView = 0x7f0e0081;
-		public static final int mask = 0x7f0e007f;
-		public static final int multi = 0x7f0e0022;
-		public static final int name = 0x7f0e007c;
-		public static final int no_show = 0x7f0e0027;
-		public static final int no_show_text = 0x7f0e002a;
-		public static final int preview = 0x7f0e0078;
-		public static final int request_num = 0x7f0e0024;
-		public static final int result = 0x7f0e002b;
-		public static final int show = 0x7f0e0026;
-		public static final int show_camera = 0x7f0e0025;
-		public static final int show_text = 0x7f0e0029;
-		public static final int show_text_group = 0x7f0e0028;
-		public static final int single = 0x7f0e0023;
-		public static final int size = 0x7f0e007d;
-		public static final int timeline_area = 0x7f0e0075;
-		public static final int tv_msg = 0x7f0e008c;
-		public static final int tv_save = 0x7f0e008d;
+		public static final int category_btn = 0x7f0e0079;
+		public static final int checkmark = 0x7f0e0082;
+		public static final int choice_mode = 0x7f0e0022;
+		public static final int clip = 0x7f0e008d;
+		public static final int commit = 0x7f0e0075;
+		public static final int cover = 0x7f0e007c;
+		public static final int footer = 0x7f0e0078;
+		public static final int grid = 0x7f0e0076;
+		public static final int image = 0x7f0e0080;
+		public static final int image_grid = 0x7f0e0073;
+		public static final int indicator = 0x7f0e007d;
+		public static final int iv_choose_area = 0x7f0e007b;
+		public static final int iv_result = 0x7f0e002d;
+		public static final int mScaleImageView = 0x7f0e0083;
+		public static final int mask = 0x7f0e0081;
+		public static final int multi = 0x7f0e0023;
+		public static final int name = 0x7f0e007e;
+		public static final int no_show = 0x7f0e0028;
+		public static final int no_show_text = 0x7f0e002b;
+		public static final int preview = 0x7f0e007a;
+		public static final int request_num = 0x7f0e0025;
+		public static final int result = 0x7f0e002c;
+		public static final int show = 0x7f0e0027;
+		public static final int show_camera = 0x7f0e0026;
+		public static final int show_text = 0x7f0e002a;
+		public static final int show_text_group = 0x7f0e0029;
+		public static final int single = 0x7f0e0024;
+		public static final int size = 0x7f0e007f;
+		public static final int timeline_area = 0x7f0e0077;
+		public static final int tv_msg = 0x7f0e008e;
+		public static final int tv_save = 0x7f0e008f;
 	}
 	public static final class layout {
 		public static final int activity_main = 0x7f040009;

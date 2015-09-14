@@ -27,7 +27,7 @@ public class ParseUtils {
                 quality-=10;
                 if(quality==0) break;
                 out.reset();
-            }while (bytes.length>260*1024);
+            }while (bytes.length>200*1024);
             Log.i("TAG", "打印一dfsdfsfsdf下字符串" + bytes.length);
             Log.i("TAG","打印字节大小：==="+bytes.length/1024+ "   kb");
             try {
@@ -39,7 +39,7 @@ public class ParseUtils {
 //            builder = bytes.toString();
 //                    Base64.encodeToString(bytes, Base64.DEFAULT);
 
-        pictureBytes = Base64.encodeToString(bytes,Base64.DEFAULT);
+        pictureBytes = Base64.encodeToString(bytes,Base64.NO_WRAP);
 
 
         }catch (Exception e){

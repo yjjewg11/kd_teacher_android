@@ -63,7 +63,7 @@
             android:layout_alignParentStart="true" />
 
         <com.wjkj.kd.teacher.views.CheckSwitchButton
-            android:checked="true"
+
             android:id="@+id/bt_switchbutton"
             android:layout_width="30dp"
             android:layout_height="20dp"
@@ -81,6 +81,4 @@
         android:id="@+id/textView32"
         android:layout_below="@+id/r5_update"
         android:layout_centerHorizontal="true" />
-
-
 </RelativeLayout>

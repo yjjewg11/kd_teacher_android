@@ -188,7 +188,6 @@ public class CheckSwitchButton extends CheckBox {
      *            true to check the button, false to uncheck it
      */
     public void setChecked(boolean checked) {
-
         if (mChecked != checked) {
             mChecked = checked;
 
@@ -287,6 +286,7 @@ public class CheckSwitchButton extends CheckBox {
         invalidate();
         return isEnabled();
     }
+
 
     private final class PerformClick implements Runnable {
         public void run() {

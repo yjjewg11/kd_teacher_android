@@ -242,7 +242,7 @@
         style="@style/MyTextViewStyle"
         android:layout_marginLeft="30dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="修改名字"
+        android:text="修改资料"
         android:id="@+id/textView11"
         android:layout_centerVertical="true" />
 
@@ -286,7 +286,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-</RelativeLayout>
+    </RelativeLayout>
 
 
 
@@ -339,6 +339,18 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tv_cache"
+            android:layout_marginRight="41dp"
+            android:layout_marginEnd="41dp"
+            android:layout_alignBottom="@+id/imageView16"
+            android:layout_toLeftOf="@+id/imageView16"
+            android:layout_toStartOf="@+id/imageView16" />
 
     </RelativeLayout>
 

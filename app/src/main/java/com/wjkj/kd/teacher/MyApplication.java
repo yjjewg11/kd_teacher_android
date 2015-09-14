@@ -26,14 +26,6 @@ public class MyApplication extends Application{
         super.onCreate();
         instance = this;
         list.clear();
-//        StatService.setAppKey(GloableUtils.WENJIE_BAIDU_API_KEY);
-//        AnalyticsConfig.setAppkey("55c1960867e58ec39000267d");
-//        StatService.setAppChannel(this, "null", false);
-//        El4au0Glwr7Xt8sPgZFg2UP7
-//        启动推送服务
-        //自定义通知
-//        notifacation();
-
 //        configImagerLoader();
         //获取最新网页地址
         new AsyncHttpClient().get(this, GloableUtils.newUrl, new AsyncHttpResponseHandler() {
@@ -83,6 +75,8 @@ public class MyApplication extends Application{
 //                .build();
 //        ImageLoader.getInstance().init(configuration);
 //    }
+
+
 
 
 }

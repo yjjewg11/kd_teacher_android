@@ -4,17 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.umeng.update.UmengUpdateAgent;
 import com.umeng.update.UmengUpdateListener;
 import com.umeng.update.UpdateResponse;
 import com.umeng.update.UpdateStatus;
 import com.wjkj.kd.teacher.utils.ToastUtils;
+import com.wjkj.kd.teacher.utils.Util;
 import com.wjkj.kd.teacher.views.CustomFankuiActivity;
 import com.wjkj.kd.teacher.views.PushStateActivity;
 
 import org.json.JSONException;
 
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 
 public class SettingActivity extends BaseActivity {
@@ -23,6 +26,7 @@ public class SettingActivity extends BaseActivity {
     private RelativeLayout[] relativeLayouts;
     private RelativeLayout rlSettingFinish;
     private RelativeLayout rl_clean_cache;
+    private TextView tv_cache;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +59,25 @@ public class SettingActivity extends BaseActivity {
         relativeLayouts =
                 new RelativeLayout[]{rlPush,rlAboutUs,rlFankui,rlUpdate,rlCancle
                  ,rlAlertName,rlAlertPwd,rlSettingFinish,rl_clean_cache};
+        tv_cache = (TextView)findViewById(R.id.tv_cache);
+        showCache();
+
+    }
+
+    private double allsize = 0;
+    //动态显示缓存大小
+    private void showCache() {
+        Util.setDoMyThing(new Util.DoMything() {
+            @Override
+            public boolean doOwnThing(File file) {
+                //遍历获得所有目录的大小
+                allsize += file.length();
+                return true;
+            }
+        });
+        Util.deleteDir(new File(getCacheDir().toString()));
+        String size = String.valueOf((allsize / 1024 / 1024 ));
+        tv_cache.setText("" + size.substring(0,(size.indexOf(".")+2))+" M");
     }
 
     @Override

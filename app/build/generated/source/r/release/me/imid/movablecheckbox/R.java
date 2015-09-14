@@ -28,25 +28,25 @@ public final class R {
 		public static final int widgetLayout = 0x7f01000c;
 	}
 	public static final class dimen {
-		public static final int list_item_height = 0x7f08001a;
-		public static final int preference_icon_width = 0x7f08001b;
-		public static final int preference_margin = 0x7f08001c;
-		public static final int preference_widget_icon_width = 0x7f08001d;
+		public static final int list_item_height = 0x7f080028;
+		public static final int preference_icon_width = 0x7f080032;
+		public static final int preference_margin = 0x7f080033;
+		public static final int preference_widget_icon_width = 0x7f080034;
 	}
 	public static final class drawable {
 		public static final int bottom = 0x7f020012;
 		public static final int btn_pressed = 0x7f020014;
 		public static final int btn_unpressed = 0x7f020016;
-		public static final int frame = 0x7f020034;
-		public static final int ic_launcher = 0x7f020039;
-		public static final int mask = 0x7f02003e;
+		public static final int frame = 0x7f020035;
+		public static final int ic_launcher = 0x7f02003d;
+		public static final int mask = 0x7f020042;
 	}
 	public static final class id {
-		public static final int checkbox = 0x7f0e00a9;
-		public static final int primary = 0x7f0e00a5;
-		public static final int summary = 0x7f0e00a7;
-		public static final int title = 0x7f0e00a6;
-		public static final int widget_frame = 0x7f0e00a8;
+		public static final int checkbox = 0x7f0e00ab;
+		public static final int primary = 0x7f0e00a7;
+		public static final int summary = 0x7f0e00a9;
+		public static final int title = 0x7f0e00a8;
+		public static final int widget_frame = 0x7f0e00aa;
 	}
 	public static final class layout {
 		public static final int main = 0x7f040021;
