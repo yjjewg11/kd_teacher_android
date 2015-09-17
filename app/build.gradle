@@ -29,7 +29,7 @@ dependencies {
     compile files('libs/umeng-update-v2.6.0.1.jar')
     compile project(':meimidmovablecheckboxMovableCheckboxActivity')
     //    compile 'com.github.chrisbanes.photoview:library:+'
-    //    compile 'com.nostra13.universalimageloader:universal-image-loader:+'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile project(':image_choose')
     compile files('libs/SocialSDK_QQZone_1.jar')
     compile files('libs/SocialSDK_QQZone_2.jar')

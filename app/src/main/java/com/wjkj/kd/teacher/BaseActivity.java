@@ -40,7 +40,7 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
         StatService.onResume(this);
 
 
-            MobclickAgent.onResume(this);
+        MobclickAgent.onResume(this);
 
 
 

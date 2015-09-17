@@ -87,6 +87,7 @@ public class MainActivity extends BaseActivity {
     private RegistUmengService registUmengService;
     public SharedPreferences sp;
     public SharedPreferences.Editor editor;
+    public String httpPicUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -187,6 +188,8 @@ public class MainActivity extends BaseActivity {
             }
         };
         Log.i("TAG", "handler刚刚初始化完毕,当前时间为" + System.currentTimeMillis());
+
+
     }
 
     public String webUrl = "";
@@ -200,8 +203,11 @@ public class MainActivity extends BaseActivity {
         webView.setWebChromeClient(new MyWebChromeClient());
         webView.setWebViewClient(new MyOwnWebViewClient());
 
-        //设置cookie
+//        设置cookie
         webView.loadUrl(webUrl);
+
+//        //调试地址
+//        webView.loadUrl(GloableUtils.HTTPURL);
 
     }
 
@@ -350,6 +356,10 @@ public class MainActivity extends BaseActivity {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
+//                    Log.i("TAG","打印穿过来的标题"+title);
+//                    Log.i("TAG","打印传过来的内容"+content);
+//                    Log.i("TAG","打印闯过来的图片地址"+pathUrl);
+//                    Log.i("TAG","打印传过来的链接地址"+links);
                     ShareUtils.showShareDialog(MainActivity.this,tv_line,title,content,pathUrl,links);
                 }
             });
@@ -416,8 +426,6 @@ public class MainActivity extends BaseActivity {
 
         }
         if (requestCode == GloableUtils.CROP_A_PICTURE) {
-            Log.i("TAG", "打印问题是不是出在data身上");
-//
             Bitmap bitmap = null;
             try {
                 String path = "/mnt/sdcard/temp.jpg";
@@ -469,6 +477,7 @@ public class MainActivity extends BaseActivity {
         if (bitmap != null) {
 //          softReference.clear();
             bitmap.recycle();
+            System.gc();
         }
 
         return base;
@@ -599,10 +608,11 @@ public class MainActivity extends BaseActivity {
             for (String path : imageList) {
                 Log.i("info", "bitmap了几次0000000");
                 picbase = getImageBase(path);
-
                 picbase = "data:image/png;base64," + picbase;
+                //获得运行时内存
 
-                Log.i("TAG", "打印base字符串ssssssssss" + picbase);
+
+
                 webView.loadUrl("javascript:G_jsCallBack.selectPic_callback('" + picbase + "')");
             }
             animationRl.setVisibility(View.GONE);

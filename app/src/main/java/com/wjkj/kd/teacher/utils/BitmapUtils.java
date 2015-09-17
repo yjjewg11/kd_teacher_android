@@ -20,10 +20,11 @@ public class BitmapUtils {
 
 
     //根据图片的路径名获取bitmap对象并返回。
-    public static Bitmap compressPictureFromFile(String pathName,Bitmap bitmap){
+    public static Bitmap compressPictureFromFile(String pathName,Bitmap bitmap) {
 //        Bitmap bitmap = null;
+        BitmapFactory.Options options = null;
         try {
-            BitmapFactory.Options options = new BitmapFactory.Options();
+            options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
 
 
@@ -33,19 +34,20 @@ public class BitmapUtils {
 //            int height = bitmap.getHeight();
 //            Log.i("TAG: width=", ""+width);
 //            Log.i("TAG: height=", ""+height);
-            Log.i("TAG","outwidth=="+options.outWidth);
+            Log.i("TAG", "outwidth==" + options.outWidth);
             int scale = 1;
             while (options.outWidth / scale >= MainActivity.instance.width || options.outHeight / scale >= MainActivity.instance.height) {
                 scale *= 2;
             }
             options.inSampleSize = scale;
             options.inJustDecodeBounds = false;
-            bitmap  = BitmapFactory.decodeFile(pathName, options);
-            return bitmap;
-        }finally {
-            if(bitmap!=null);
-//            recyleBitmap(bitmap);
+        }catch (NullPointerException e){
+            e.printStackTrace();
         }
+
+
+
+        return BitmapFactory.decodeFile(pathName, options);
     }
 
     private static void getImageScale(String imagePath,int width,int height) {
@@ -124,7 +126,7 @@ public class BitmapUtils {
             intent.putExtra("circleCrop","true");
             // 设置为true直接返回bitmap
             intent.putExtra("return-data", false);
-            intent.putExtra("output", GloableUtils.imageUri);
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, GloableUtils.imageUri);
             intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
             MainActivity.instance.startActivityForResult(intent, GloableUtils.CROP_A_PICTURE);
 

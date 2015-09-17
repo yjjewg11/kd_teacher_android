@@ -1,32 +1,32 @@
 package com.wjkj.kd.teacher;
-
 import android.app.Activity;
 import android.app.Application;
 import android.util.Log;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.wjkj.kd.teacher.utils.GloableUtils;
+import com.wjkj.kd.teacher.utils.ImageLoaderUtils;
 
 import org.apache.http.Header;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-
-
 public class MyApplication extends Application{
     public static MyApplication instance;
     //此集合用于存储activity对象
     public static ArrayList<Activity> list = new ArrayList();
     public String justUrl = "";
+    private DisplayImageOptions options;
 
     @Override
     public void onCreate() {
         super.onCreate();
         instance = this;
         list.clear();
-//        configImagerLoader();
+        configImagerLoader();
         //获取最新网页地址
         new AsyncHttpClient().get(this, GloableUtils.newUrl, new AsyncHttpResponseHandler() {
             @Override
@@ -52,12 +52,25 @@ public class MyApplication extends Application{
 
 
 
-//    private void configImagerLoader() {
-//
-//        // 创建默认的ImageLoader配置参数
+    private void configImagerLoader() {
+        try{
+            String cachePath = GloableUtils.cachePath;
+            ImageLoaderUtils.initImageLoader(this, R.drawable.icon, cachePath, 10, 0);
+//            options = new DisplayImageOptions.Builder()
+//                    .showImageOnLoading(R.drawable.icon)
+//                    .showImageForEmptyUri(R.drawable.icon)
+//                    .showImageOnFail(R.drawable.icon)
+//                    .cacheInMemory(true)
+//                    .bitmapConfig(Bitmap.Config.RGB_565)
+//                    .cacheOnDisk(true)
+//                    .displayer(new RoundedBitmapDisplayer(0)).build();
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+
+        // 创建默认的ImageLoader配置参数
 //        ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(this)
 //                .memoryCacheExtraOptions(480, 800) // default = device screen dimensions
-//                .discCacheExtraOptions(480, 800, Bitmap.CompressFormat.JPEG, 75, null)
 //                .threadPoolSize(3) // default
 //                .threadPriority(Thread.NORM_PRIORITY - 1) // default
 //                .tasksProcessingOrder(QueueProcessingType.FIFO) // default
@@ -76,7 +89,7 @@ public class MyApplication extends Application{
 //        ImageLoader.getInstance().init(configuration);
 //    }
 
-
+    }
 
 
 }

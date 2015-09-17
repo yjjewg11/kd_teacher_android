@@ -116,6 +116,7 @@
     <orderEntry type="library" exported="" name="support-v4-22.2.1" level="project" />
     <orderEntry type="library" exported="" name="picasso-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="umeng-update-v2.6.0.1" level="project" />
+    <orderEntry type="library" exported="" name="universal-image-loader-1.9.3" level="project" />
     <orderEntry type="module" module-name="meimidmovablecheckboxMovableCheckboxActivity" exported="" />
     <orderEntry type="module" module-name="image_choose" exported="" />
   </component>

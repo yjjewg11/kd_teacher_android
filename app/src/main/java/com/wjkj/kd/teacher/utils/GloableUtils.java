@@ -1,7 +1,11 @@
 package com.wjkj.kd.teacher.utils;
 import android.net.Uri;
+import android.os.Environment;
 
 import com.wjkj.kd.teacher.MyApplication;
+
+import java.io.File;
+
 public class GloableUtils {
     public static String WENJIE_BAIDU_API_KEY = "4311ed70ee";
     public static String CHANNL_ID  = "wenjiehudongjiayuanlaoshiban";
@@ -20,7 +24,7 @@ public class GloableUtils {
     public static String ServerURL = "http://kd.wenjienet.com/px-rest/";
 
     //调试用，胡溪斌的地址
-//    public static String ServerURL = "http://192.168.0.107:8080/px-rest/";
+//    public static String ServerURL = "http://192.168.0.117:8080/px-rest/";
 
     //刘老大，调试用
 
@@ -41,4 +45,8 @@ public class GloableUtils {
     //获取最新的网页地址的url
 
     public static final String newUrl=InterfaceURL+"share/getKDWebUrl.json";
+
+    public static final String parentPath = Environment.getExternalStorageDirectory() +
+            File.separator + "CG" + File.separator;
+    public static final String cachePath = parentPath + "cache";
 }

@@ -3,6 +3,7 @@ package com.wjkj.kd.teacher.biz;
 import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
+import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -20,6 +21,7 @@ public  class MyOwnWebViewClient extends WebViewClient {
 //                    MyApplication.instance.startActivity(intent);
 //                }
 
+        Log.i("TAG","打印长按图片的时候有没有这个地址"+url);
         Log.i("TAG", "打印这个方法有没有执行看看url地址" + url.toString());
         if(url.contains("tel:")){
             int num = url.indexOf(":");
@@ -32,5 +34,13 @@ public  class MyOwnWebViewClient extends WebViewClient {
             MainActivity.instance.startActivity(intent);
         }
         return true;
+    }
+
+    @Override
+    public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
+
+        Log.i("TAG", "shouldInterceptRequest打印这个方法有没有执行看看url地址" + url.toString());
+        MainActivity.instance.httpPicUrl = url;
+        return super.shouldInterceptRequest(view, url);
     }
 }

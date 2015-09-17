@@ -200,7 +200,7 @@ public class ShareUtils {
         try {
             UMImage localImage = null;
             if (!TextUtils.isEmpty(pic)) {
-                localImage = new UMImage(context, pic + PIC_SCALE);
+                localImage = new UMImage(context, pic);
             } else {
                 localImage = new UMImage(context, R.drawable.ic_launcher);
             }
@@ -212,7 +212,7 @@ public class ShareUtils {
             } else if (share_media == SHARE_MEDIA.SINA) {
                 SinaShareContent sinaShareContent = new SinaShareContent(localImage);
                 sinaShareContent.setTargetUrl(url);
-                sinaShareContent.setShareContent(title + url);
+                sinaShareContent.setShareContent(title + content);
                 mController.setShareMedia(sinaShareContent);
             } else if (share_media == SHARE_MEDIA.WEIXIN) {
                 WeiXinShareContent weixinContent = new WeiXinShareContent();
