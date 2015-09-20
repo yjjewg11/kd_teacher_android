@@ -20,7 +20,7 @@ public class BitmapUtils {
 
 
     //根据图片的路径名获取bitmap对象并返回。
-    public static Bitmap compressPictureFromFile(String pathName,Bitmap bitmap) {
+    public static Bitmap compressPictureFromFile(String pathName) {
 //        Bitmap bitmap = null;
         BitmapFactory.Options options = null;
         try {

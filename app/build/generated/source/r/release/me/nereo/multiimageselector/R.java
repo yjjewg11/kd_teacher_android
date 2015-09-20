@@ -28,9 +28,9 @@ public final class R {
 		public static final int default_check = 0x7f020030;
 		public static final int default_check_s = 0x7f020031;
 		public static final int default_error = 0x7f020032;
-		public static final int ic_menu_back = 0x7f02003e;
-		public static final int selector_indicator = 0x7f02005d;
-		public static final int text_indicator = 0x7f020075;
+		public static final int ic_menu_back = 0x7f02003f;
+		public static final int selector_indicator = 0x7f020060;
+		public static final int text_indicator = 0x7f020078;
 	}
 	public static final class id {
 		public static final int btn_back = 0x7f0e0074;

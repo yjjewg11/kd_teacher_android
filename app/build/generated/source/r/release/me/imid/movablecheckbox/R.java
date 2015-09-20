@@ -37,9 +37,9 @@ public final class R {
 		public static final int bottom = 0x7f020012;
 		public static final int btn_pressed = 0x7f020014;
 		public static final int btn_unpressed = 0x7f020016;
-		public static final int frame = 0x7f020035;
-		public static final int ic_launcher = 0x7f02003d;
-		public static final int mask = 0x7f020042;
+		public static final int frame = 0x7f020036;
+		public static final int ic_launcher = 0x7f02003e;
+		public static final int mask = 0x7f020045;
 	}
 	public static final class id {
 		public static final int checkbox = 0x7f0e00ab;

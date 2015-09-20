@@ -39,19 +39,19 @@ public final class R {
 		public static final int umeng_fb_spinner_padding_left = 0x7f080042;
 	}
 	public static final class drawable {
-		public static final int umeng_fb_action_replay = 0x7f02007e;
-		public static final int umeng_fb_arrow_right = 0x7f02007f;
-		public static final int umeng_fb_audio_dialog_cancel = 0x7f020080;
-		public static final int umeng_fb_audio_dialog_content = 0x7f020081;
-		public static final int umeng_fb_audio_play_01 = 0x7f020082;
-		public static final int umeng_fb_audio_play_02 = 0x7f020083;
-		public static final int umeng_fb_audio_play_03 = 0x7f020084;
-		public static final int umeng_fb_audio_play_bg = 0x7f020085;
-		public static final int umeng_fb_help_tab_bg = 0x7f020086;
-		public static final int umeng_fb_keyboard = 0x7f020087;
-		public static final int umeng_fb_plus = 0x7f020088;
-		public static final int umeng_fb_record = 0x7f020089;
-		public static final int umeng_fb_round_white_bg = 0x7f02008a;
+		public static final int umeng_fb_action_replay = 0x7f020081;
+		public static final int umeng_fb_arrow_right = 0x7f020082;
+		public static final int umeng_fb_audio_dialog_cancel = 0x7f020083;
+		public static final int umeng_fb_audio_dialog_content = 0x7f020084;
+		public static final int umeng_fb_audio_play_01 = 0x7f020085;
+		public static final int umeng_fb_audio_play_02 = 0x7f020086;
+		public static final int umeng_fb_audio_play_03 = 0x7f020087;
+		public static final int umeng_fb_audio_play_bg = 0x7f020088;
+		public static final int umeng_fb_help_tab_bg = 0x7f020089;
+		public static final int umeng_fb_keyboard = 0x7f02008a;
+		public static final int umeng_fb_plus = 0x7f02008b;
+		public static final int umeng_fb_record = 0x7f02008c;
+		public static final int umeng_fb_round_white_bg = 0x7f02008d;
 	}
 	public static final class id {
 		public static final int action_settings = 0x7f0e017d;

@@ -109,16 +109,15 @@ public class RegistUmengService {
 //
 //    }
 
-
-
     //友盟推送
     private void initPushMessage() throws UnsupportedEncodingException, JSONException {
         PushAgent mPushAgent = PushAgent.getInstance(context);
         ownNotification(mPushAgent);
         mPushAgent.enable();
         MainActivity.instance.device_token = UmengRegistrar.getRegistrationId(context);
-        Log.i("TAG","device_token"+MainActivity.instance.device_token);
-        DealWithPushMessage.dealPushMessage();
+        Log.i("TAG", "device_token" + MainActivity.instance.device_token);
+        ((MainActivity)context).isFirstSendMessage();
+
     }
 
     //当通知来临时，点亮图标

@@ -20,7 +20,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
-import android.webkit.CookieManager;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebSettings;
@@ -212,16 +211,16 @@ public class MainActivity extends BaseActivity {
     }
 
 
-    private void setCookie() {
-        String cook = "JSESSIONID=OJh2-q59qg-Ij7D8KPc+McFH.undefined; SERVERID=" +
-                "256fdebb4452ae158915cd23a915b948|" +
-                "1442041243|1442037522";
-        CookieManager cookieManager = CookieManager.getInstance();
-
-        cookieManager.setCookie(webUrl, cook);
-
-//        cookieManager.
-    }
+//    private void setCookie() {
+//        String cook = "JSESSIONID=OJh2-q59qg-Ij7D8KPc+McFH.undefined; SERVERID=" +
+//                "256fdebb4452ae158915cd23a915b948|" +
+//                "1442041243|1442037522";
+//        CookieManager cookieManager = CookieManager.getInstance();
+//
+//        cookieManager.setCookie(webUrl, cook);
+//
+////        cookieManager.
+//    }
 
     private void getWebUrl() {
         sp = getSharedPreferences("webUrl", 0);
@@ -296,6 +295,7 @@ public class MainActivity extends BaseActivity {
                 throws UnsupportedEncodingException, JSONException {
 
             JESSIONID = jessionID;
+            Log.i("TAG","jessionId的值获取到了"+JESSIONID);
             if(JESSIONID.equals("")){
                 //如果为空，注销用户
                 hideBottomAfaterCancle();
@@ -303,11 +303,7 @@ public class MainActivity extends BaseActivity {
             }
             //当jessionid和设备号都不为空时来推送消息
             Log.i("TAG", "jessionid随时都在发送");
-            if(!sp.getBoolean("isSend",false)){
-                DealWithPushMessage.dealPushMessage();
-                editor.putBoolean("isSend",true);
-                editor.commit();
-            }
+            isFirstSendMessage();
 
             if(GloableUtils.IS_NEED_AIAIN_START_ANIMATION.equals("false")){
                 GloableUtils.IS_NEED_AIAIN_START_ANIMATION = "";
@@ -365,6 +361,14 @@ public class MainActivity extends BaseActivity {
             });
         }
 
+    }
+
+    public void isFirstSendMessage() throws UnsupportedEncodingException, JSONException {
+        if(!sp.getBoolean("isSend",false)){
+            DealWithPushMessage.dealPushMessage();
+            editor.putBoolean("isSend",true);
+            editor.commit();
+        }
     }
 
     private void startanotherApplication() {
@@ -429,7 +433,7 @@ public class MainActivity extends BaseActivity {
             Bitmap bitmap = null;
             try {
                 String path = "/mnt/sdcard/temp.jpg";
-                bitmap = BitmapUtils.compressPictureFromFile(path, bitmap);
+                bitmap = BitmapUtils.compressPictureFromFile(path);
                 String pictureBytes = ParseUtils.getBase64FromBitmap(bitmap);
                 pictureBytes =
                         "data:image/png;base64," + pictureBytes;
@@ -467,7 +471,7 @@ public class MainActivity extends BaseActivity {
 //        SoftReference<Bitmap> softReference = null;
         try {
 //            BitmapFactory.decodeFile()
-            bitmap = BitmapUtils.compressPictureFromFile(imagePath, bitmap);
+            bitmap = BitmapUtils.compressPictureFromFile(imagePath);
 //            softReference = new SoftReference<Bitmap>(bitmap);
             base = ParseUtils.getBase64FromBitmap(bitmap);
 
@@ -598,23 +602,31 @@ public class MainActivity extends BaseActivity {
 
 
         @Override
-        public void onReceive(Context context, Intent intent) {
+        public void onReceive(Context context, final Intent intent) {
             animationRl.setVisibility(View.VISIBLE);
             tv_permit.setText("图片上传中.....");
             tv_permit.setVisibility(View.VISIBLE);
             //得到图片地址的集合
-            final List<String> imageList = (List) intent.getSerializableExtra("imageList");
-            Log.i("TAG","打印图片的地址"+imageList);
-            for (String path : imageList) {
-                Log.i("info", "bitmap了几次0000000");
-                picbase = getImageBase(path);
-                picbase = "data:image/png;base64," + picbase;
-                //获得运行时内存
+            new Thread(){
+                @Override
+                public void run() {
+                    final List<String> imageList = (List) intent.getSerializableExtra("imageList");
+                    Log.i("TAG","打印图片的地址"+imageList);
+                    for (String path : imageList) {
+                        Log.i("info", "bitmap了几次0000000");
+                        picbase = getImageBase(path);
+                        picbase = "data:image/png;base64," + picbase;
+                        //获得运行时内存
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                webView.loadUrl("javascript:G_jsCallBack.selectPic_callback('" + picbase + "')");
+                            }
+                        });
 
-
-
-                webView.loadUrl("javascript:G_jsCallBack.selectPic_callback('" + picbase + "')");
-            }
+                    }
+                }
+            }.start();
             animationRl.setVisibility(View.GONE);
             tv_permit.setVisibility(View.GONE);
         }
@@ -640,6 +652,8 @@ public class MainActivity extends BaseActivity {
 //        }
 //        return false;
 //    }
+
+
 
 }
 

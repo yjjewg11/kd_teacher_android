@@ -20,6 +20,7 @@ import com.wjkj.kd.teacher.utils.ToastUtils;
 public class SettingWebParams {
 
     private WebSettings webSettings;
+    private String imgurl;
 
     //通用的webView和webSettings的设置参数
     public void setWebs(WebView webView) {
@@ -28,20 +29,30 @@ public class SettingWebParams {
             @Override
             public boolean onLongClick(View v) {
                 Log.i("TAG", "长按点击事件");
+                WebView.HitTestResult result = ((WebView) v).getHitTestResult();
+                if (result != null) {
+                    int type = result.getType();
+                    if (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
+                        imgurl = result.getExtra();
+                        Log.i("TAG", "打印" + imgurl);
+                    }else {
+                        return false;
+                    }
+                }
+
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.instance);
                 builder.setTitle("友情提示")
                         .setMessage("你确定要保存图片?")
-                        .setIcon(R.drawable.icon)
+                        .setIcon(R.drawable.logo256)
 
                         .setNegativeButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Log.i("TAG", "确认图片地址没有问题" + MainActivity.instance.httpPicUrl);
-                                if(!MainActivity.instance.httpPicUrl.endsWith(".png")) {
-                                    ToastUtils.showMessage("图片地址无效");
-                                    return;
-                                }
-                                ImageLoaderUtils.downLoadImageLoader(MainActivity.instance.httpPicUrl,
+
+                                ImageLoaderUtils.downLoadImageLoader(imgurl,
                                         new ImageLoadingListener() {
                                             @Override
                                             public void onLoadingStarted(String imageUri, View view) {

@@ -19,12 +19,19 @@ public class GloableUtils {
     public static final String CANCLE_USER = "javascript:G_jsCallBack.userinfo_logout()";
     public static String URL = "http://wapbaike.baidu.com/view/4850574.htm?sublemmaid=" +
             "15923552&adapt=1&fr=aladdin&target=_blank";
+    //另一个服务器地址
+
+//        public static String ServerURL = "http://120.24.61.97/px-rest/";
+
+    //一个服务器地址
+
 //        public static String ServerURL = "http://120.25.248.31/px-rest/";
+
     //正式环境
     public static String ServerURL = "http://kd.wenjienet.com/px-rest/";
 
     //调试用，胡溪斌的地址
-//    public static String ServerURL = "http://192.168.0.117:8080/px-rest/";
+//    public static String ServerURL = "http://192.168.0.177:8080/px-rest/";
 
     //刘老大，调试用
 
