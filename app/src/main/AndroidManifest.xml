@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
      xmlns:tools="http://schemas.android.com/tools"
-     android:versionCode="19"
-     android:versionName="0.0.170"
+     android:versionCode="20"
+     android:versionName="0.0.175"
     package="com.wjkj.kd.teacher">
     <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="21"/>
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
@@ -83,6 +83,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application android:allowBackup="true" android:icon="@drawable/laoshi_72" android:label="问界互动家园" android:name=".MyApplication" tools:replace="name,icon,label">
 

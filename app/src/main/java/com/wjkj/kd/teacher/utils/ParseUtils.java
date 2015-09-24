@@ -20,21 +20,19 @@ public class ParseUtils {
         byte[] bytes = null;
         try {
             int quality = 80;
-            int picSize = 200;
+
         out = new ByteArrayOutputStream();
             Log.i("TAG","打印最大内存"+Runtime.getRuntime().maxMemory()/1024/1024 +"  Mb");
             Log.i("TAG","打印空闲内存"+Runtime.getRuntime().freeMemory()/1024/1024 +"  Mb");
             Log.i("TAG", "打印总内存" + Runtime.getRuntime().totalMemory() / 1024 / 1024 + "  Mb");
-            if(Runtime.getRuntime().freeMemory()/1024/1024<=5){
-                picSize = 100;
-            }
+
             do {
                 thePic.compress(Bitmap.CompressFormat.JPEG, quality, out);
                 bytes = out.toByteArray();
                 quality-=10;
                 if(quality==0) break;
                 out.reset();
-            }while (bytes.length>picSize*1024);
+            }while (bytes.length / 1024 > 100);
             Log.i("TAG", "打印一dfsdfsfsdf下字符串" + bytes.length);
             Log.i("TAG","打印字节大小：==="+bytes.length/1024+ "   kb");
             try {
@@ -61,7 +59,6 @@ public class ParseUtils {
 
     public static JSONObject getJSONObject(byte[] bytes) throws JSONException {
         String shuzu = new String(bytes);
-
 
         return new JSONObject(shuzu);
     }

@@ -14,6 +14,8 @@ public class GloableUtils {
     public static final int CROP_A_PICTURE = 10;
     public static final int CHOOSE_PICTURE_ONLY = 20;
     public static Uri imageUri = Uri.parse(IMAGE_FILE_LOCATION);
+    //手机input file上传图片
+    public static final int FILECHOOSER_RESULTCODE = 100;
     public static final int RESULT_PICK_PHOTO_NORMAL = 1;
     public static int PUSH_STATE = 0;
     public static final String CANCLE_USER = "javascript:G_jsCallBack.userinfo_logout()";

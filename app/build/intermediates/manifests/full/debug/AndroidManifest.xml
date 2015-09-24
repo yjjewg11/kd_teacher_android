@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wjkj.kd.teacher"
-    android:versionCode="19"
-    android:versionName="0.0.170" >
+    android:versionCode="20"
+    android:versionName="0.0.175" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -91,6 +91,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name="com.wjkj.kd.teacher.MyApplication"

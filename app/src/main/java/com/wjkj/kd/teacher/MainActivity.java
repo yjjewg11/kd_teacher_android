@@ -55,7 +55,10 @@ import org.json.JSONException;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
+import java.lang.ref.SoftReference;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 //import com.wjkj.kd.teacher.biz.Menu;
 
@@ -249,6 +252,8 @@ public class MainActivity extends BaseActivity {
         animation.setRepeatCount(-1);
         return animation;
     }
+
+
 
 
     @Override
@@ -463,16 +468,39 @@ public class MainActivity extends BaseActivity {
                 BitmapUtils.recyleBitmap(bitmap);
             }
         }
+
+        if (requestCode == GloableUtils.FILECHOOSER_RESULTCODE) {
+            if (null == myUploadMsg)
+                return;
+            Uri result = data == null || resultCode != RESULT_OK ? null
+                    : data.getData();
+            myUploadMsg.onReceiveValue(result);
+            myUploadMsg = null;
+        }
     }
 
+    private Map<String,SoftReference<Bitmap>> map = new HashMap<>();
+    //使用框架传入bitmap并且上传
     private String getImageBase(String imagePath) {
         Bitmap bitmap = null;
         String base = null;
-//        SoftReference<Bitmap> softReference = null;
         try {
-//            BitmapFactory.decodeFile()
-            bitmap = BitmapUtils.compressPictureFromFile(imagePath);
-//            softReference = new SoftReference<Bitmap>(bitmap);
+            Log.i("TAG","打印hashMap"+map);
+            //先从缓存中查找，如果没有加载本地图片
+            if(map.containsKey(imagePath)){
+                SoftReference<Bitmap> softReference  = map.get(imagePath);
+                Log.i("TAG","dayin"+softReference.get()==null?"0":"1");
+                if(softReference.get()!=null&&!softReference.get().isRecycled()){
+                    bitmap = map.get(imagePath).get();
+                    Log.i("TAG","打印bitmap引用"+bitmap);
+                }else{
+                    bitmap = putBitmap(imagePath);
+                }
+
+            }else{
+                bitmap = putBitmap(imagePath);
+            }
+
             base = ParseUtils.getBase64FromBitmap(bitmap);
 
         } catch (NullPointerException e) {
@@ -485,6 +513,13 @@ public class MainActivity extends BaseActivity {
         }
 
         return base;
+    }
+
+    private Bitmap putBitmap(String imagePath) {
+        Bitmap bitmap;
+        bitmap = BitmapUtils.compressPictureFromFile(imagePath);
+        map.put(imagePath,new SoftReference<Bitmap>(bitmap));
+        return bitmap;
     }
 
 

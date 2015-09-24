@@ -134,6 +134,19 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="32dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="当前版本：  0.0.175"
+            android:textSize="14sp"
+            android:id="@+id/textView35"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView4"
+            android:layout_toStartOf="@+id/imageView4"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="29dp" />
+
     </RelativeLayout>
 
     <RelativeLayout

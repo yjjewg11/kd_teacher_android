@@ -19,21 +19,15 @@ import java.io.File;
 public class BitmapUtils {
 
 
-    //根据图片的路径名获取bitmap对象并返回。
+    //根据图片的路径名获取bitmap对象并将图片上传
     public static Bitmap compressPictureFromFile(String pathName) {
-//        Bitmap bitmap = null;
+
+
         BitmapFactory.Options options = null;
         try {
             options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
-
-
             BitmapFactory.decodeFile(pathName, options);
-
-//            int width = bitmap.getWidth();
-//            int height = bitmap.getHeight();
-//            Log.i("TAG: width=", ""+width);
-//            Log.i("TAG: height=", ""+height);
             Log.i("TAG", "outwidth==" + options.outWidth);
             int scale = 1;
             while (options.outWidth / scale >= MainActivity.instance.width || options.outHeight / scale >= MainActivity.instance.height) {
@@ -44,25 +38,10 @@ public class BitmapUtils {
         }catch (NullPointerException e){
             e.printStackTrace();
         }
-
-
-
         return BitmapFactory.decodeFile(pathName, options);
     }
 
-    private static void getImageScale(String imagePath,int width,int height) {
-        BitmapFactory.Options option = new BitmapFactory.Options();
-        // set inJustDecodeBounds to true, allowing the caller to query the bitmap info without having to allocate the
-        // memory for its pixels.
-        option.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(imagePath, option);
 
-        int scale = 1;
-        while (option.outWidth / scale >= width || option.outHeight / scale >= height) {
-            scale *= 2;
-        }
-        option.inSampleSize = scale;
-    }
 
 
 

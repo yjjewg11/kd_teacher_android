@@ -1,8 +1,12 @@
 package com.wjkj.kd.teacher.biz;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -12,10 +16,14 @@ import android.webkit.WebView;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.wjkj.kd.teacher.MainActivity;
-import com.wjkj.kd.teacher.R;
 import com.wjkj.kd.teacher.utils.HttpUtils;
 import com.wjkj.kd.teacher.utils.ImageLoaderUtils;
 import com.wjkj.kd.teacher.utils.ToastUtils;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class SettingWebParams {
 
@@ -39,13 +47,10 @@ public class SettingWebParams {
                         return false;
                     }
                 }
-
-
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.instance);
                 builder.setTitle("友情提示")
                         .setMessage("你确定要保存图片?")
-                        .setIcon(R.drawable.logo256)
+//                        .setIcon(R.drawable.logo128)
 
                         .setNegativeButton("确定", new DialogInterface.OnClickListener() {
                             @Override
@@ -67,16 +72,58 @@ public class SettingWebParams {
 
                                             @Override
                                             public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+//
+                                                String fileName = System.currentTimeMillis() + ".jpg";
+                                                saveImageToGallery(fileName,MainActivity.instance,loadedImage);
+//
+//                                                ToastUtils.showMessage("图片保存成功");
+//                                                MainActivity.instance.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(new File("/sdcard/Boohee/image.png"))));
 
-                                                MediaStore.Images.Media.insertImage(MainActivity.instance.getContentResolver(), loadedImage, "CG", "CG");
-
-                                                ToastUtils.showMessage("图片保存成功");
 
                                             }
 
                                             @Override
                                             public void onLoadingCancelled(String imageUri, View view) {
 
+                                            }
+
+                                            public void saveImageToGallery(String fileName, Context context, Bitmap bmp) {
+                                                // 首先保存图片
+                                                File appDir = new File(Environment.getExternalStorageDirectory(), "问界互动家园");
+                                                if (!appDir.exists()) {
+                                                    appDir.mkdir();
+
+                                                }
+                                                File file = new File(appDir, fileName);
+                                                try {
+                                                    FileOutputStream fos = new FileOutputStream(file);
+                                                    bmp.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+                                                    fos.flush();
+                                                    fos.close();
+                                                } catch (FileNotFoundException e) {
+                                                    ToastUtils.showMessage("图片保存失败");
+                                                    e.printStackTrace();
+                                                } catch (IOException e) {
+                                                    ToastUtils.showMessage("图片保存失败");
+                                                    e.printStackTrace();
+                                                }
+
+                                                // 其次把文件插入到系统图库
+                                                try {
+                                                    MediaStore.Images.Media.insertImage(context.getContentResolver(),
+                                                            file.getAbsolutePath(), fileName, null);
+                                                } catch (FileNotFoundException e) {
+                                                    ToastUtils.showMessage("图片保存失败");
+                                                    e.printStackTrace();
+                                                }
+                                                // 最后通知图库更新
+//                                                CGLog.d(Uri.fromFile(new File(file.getPath())) + "");
+                                                Intent intent = new Intent();
+                                                Log.i("TAG","打印图片的地址getAbsolutePath"+file.getAbsolutePath()+" 打印getPath "+file.getPath()+"   大一Uri.fromfile"+Uri.fromFile(new File(file.getPath())));
+                                                Log.i("TAG","打印早此用"+Uri.parse("file://"+file.getAbsolutePath()));
+                                                context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(new File(file.getPath()))));
+//        new SingleMediaScanner(mContext, new File(file.getPath()), null);
+                                                ToastUtils.showMessage("图片保存成功");
                                             }
                                         });
                             }
@@ -90,7 +137,6 @@ public class SettingWebParams {
                 return false;
             }
         });
-
 
         webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
