@@ -4,4 +4,4 @@
     android:fromXDelta="0"
     android:interpolator="@anim/shake_umeng_socialize_cycle_5"
     android:toXDelta="10" />
-<!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/anim/shake_umeng_socialize_edit_anim.xml -->
+<!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/anim/shake_umeng_socialize_edit_anim.xml -->

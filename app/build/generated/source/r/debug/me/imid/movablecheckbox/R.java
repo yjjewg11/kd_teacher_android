@@ -35,18 +35,18 @@ public final class R {
 	}
 	public static final class drawable {
 		public static final int bottom = 0x7f020012;
-		public static final int btn_pressed = 0x7f020014;
-		public static final int btn_unpressed = 0x7f020016;
-		public static final int frame = 0x7f020036;
-		public static final int ic_launcher = 0x7f02003f;
-		public static final int mask = 0x7f020046;
+		public static final int btn_pressed = 0x7f020015;
+		public static final int btn_unpressed = 0x7f020017;
+		public static final int frame = 0x7f020037;
+		public static final int ic_launcher = 0x7f020040;
+		public static final int mask = 0x7f020047;
 	}
 	public static final class id {
-		public static final int checkbox = 0x7f0e00ac;
-		public static final int primary = 0x7f0e00a8;
-		public static final int summary = 0x7f0e00aa;
-		public static final int title = 0x7f0e00a9;
-		public static final int widget_frame = 0x7f0e00ab;
+		public static final int checkbox = 0x7f0e00ad;
+		public static final int primary = 0x7f0e00a9;
+		public static final int summary = 0x7f0e00ab;
+		public static final int title = 0x7f0e00aa;
+		public static final int widget_frame = 0x7f0e00ac;
 	}
 	public static final class layout {
 		public static final int main = 0x7f040021;

@@ -1,6 +1,8 @@
 package com.wjkj.kd.teacher;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -27,6 +29,7 @@ public class SettingActivity extends BaseActivity {
     private RelativeLayout rlSettingFinish;
     private RelativeLayout rl_clean_cache;
     private TextView tv_cache;
+    private TextView tv_version_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,15 @@ public class SettingActivity extends BaseActivity {
                  ,rlAlertName,rlAlertPwd,rlSettingFinish,rl_clean_cache};
         tv_cache = (TextView)findViewById(R.id.tv_cache);
         showCache();
+
+        tv_version_name = (TextView)findViewById(R.id.tv_version_name);
+        PackageManager manager = getPackageManager();
+        try {
+            PackageInfo info = manager.getPackageInfo(getPackageName(),0);
+            tv_version_name.setText(""+info.versionName);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
 
     }
 

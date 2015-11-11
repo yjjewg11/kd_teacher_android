@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/multi-image-selector/src/main/res/values-zh/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/multi-image-selector/src/main/res/values-zh/strings.xml -->
     <eat-comment/>
     <string name="app_name">多图选择器</string>
     <string name="folder_all">所有照片</string>

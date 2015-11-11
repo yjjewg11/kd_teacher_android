@@ -17,6 +17,7 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.LruCache;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
@@ -31,6 +32,7 @@ import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.umeng.fb.FeedbackAgent;
+import com.wjkj.kd.teacher.bean.ShareContent;
 import com.wjkj.kd.teacher.biz.DealWithPushMessage;
 import com.wjkj.kd.teacher.biz.MyAsyncTask;
 import com.wjkj.kd.teacher.biz.MyOwnWebViewClient;
@@ -97,7 +99,8 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
 
         //获得屏幕的尺寸
-
+//        long max =  Runtime.getRuntime().maxMemory()/1024;
+//        map = new LruCache<>((int)(max/4));
         getWidthSize();
         setContentView(R.layout.activity_mymain);
         instance = this;
@@ -189,15 +192,12 @@ public class MainActivity extends BaseActivity {
                 }
             }
         };
-        Log.i("TAG", "handler刚刚初始化完毕,当前时间为" + System.currentTimeMillis());
-
 
     }
 
     public String webUrl = "";
     private void setWebs() {
         getWebUrl();
-        Log.i("TAG", "打印weburl的值" + webUrl);
         new SettingWebParams().setWebs(webView);
         //取消webView滑动时边框
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -263,7 +263,7 @@ public class MainActivity extends BaseActivity {
                 ) {
             finishAll();
         }
-        webView.loadUrl("javascript:G_jsCallBack.QueuedoBackFN()");
+        webView.loadUrl("javascript:G_jsCallBack.QueuedoBackFN();");
     }
 
     private void finishAll() {
@@ -276,8 +276,8 @@ public class MainActivity extends BaseActivity {
     class JavaScriptCallSon implements JavaScriptCall {
         //进入选择图片页面
         //此方法选择可裁剪的图片
-        @JavascriptInterface
-        public void selectHeadPic() {
+            @JavascriptInterface
+            public void selectHeadPic() {
             Intent intent = null;
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
                 intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
@@ -300,14 +300,12 @@ public class MainActivity extends BaseActivity {
                 throws UnsupportedEncodingException, JSONException {
 
             JESSIONID = jessionID;
-            Log.i("TAG","jessionId的值获取到了"+JESSIONID);
             if(JESSIONID.equals("")){
                 //如果为空，注销用户
                 hideBottomAfaterCancle();
 
             }
             //当jessionid和设备号都不为空时来推送消息
-            Log.i("TAG", "jessionid随时都在发送");
             isFirstSendMessage();
 
             if(GloableUtils.IS_NEED_AIAIN_START_ANIMATION.equals("false")){
@@ -321,7 +319,6 @@ public class MainActivity extends BaseActivity {
                     AnimationUtils.startMyAnimation(0,0,100,0,tv_line);
                 }
             });
-            Log.i("TAG", "jessionid已经穿古来了，当前时间为" + System.currentTimeMillis());
             //调用pushMessageToServer方法将渠道号和编号传到服务器
         }
         //此方法选择图片并压缩，不需裁剪
@@ -339,7 +336,6 @@ public class MainActivity extends BaseActivity {
         //此方法在js回退到底之后调用来退出程序
         @JavascriptInterface
         public void finishProject() {
-
              finishAll();
         }
 
@@ -357,15 +353,19 @@ public class MainActivity extends BaseActivity {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-//                    Log.i("TAG","打印穿过来的标题"+title);
-//                    Log.i("TAG","打印传过来的内容"+content);
-//                    Log.i("TAG","打印闯过来的图片地址"+pathUrl);
-//                    Log.i("TAG","打印传过来的链接地址"+links);
+
                     ShareUtils.showShareDialog(MainActivity.this,tv_line,title,content,pathUrl,links);
                 }
             });
         }
 
+        @JavascriptInterface
+        public void openNewWindowUrl(final String title,final String content, final String pathurl, final String httpurl){
+            //启动另外的界面浏览文章
+            Intent intent = new Intent(MainActivity.this,LoadUrlActivity.class);
+            intent.putExtra("shareContent",new ShareContent(title,content,pathurl,httpurl));
+            startActivity(intent);
+        }
     }
 
     public void isFirstSendMessage() throws UnsupportedEncodingException, JSONException {
@@ -399,7 +399,6 @@ public class MainActivity extends BaseActivity {
         MainActivity.handler.post(new Runnable() {
             @Override
             public void run() {
-                Log.i("TAG", "注销之后隐藏控件了");
                 AnimationUtils.hideRadioSlowy(MainActivity.instance.radioGroup, 1000);
                 AnimationUtils.hideView(MainActivity.instance.tv_line);
             }
@@ -424,7 +423,6 @@ public class MainActivity extends BaseActivity {
                     cursor.moveToFirst();
                     filePath = cursor.getString(0);
                 }
-                Log.i("TAG", "打印一下文件的路径" + filePath);
                 BitmapUtils.cropImageUri(filePath);
             }
         } finally {
@@ -442,8 +440,6 @@ public class MainActivity extends BaseActivity {
                 String pictureBytes = ParseUtils.getBase64FromBitmap(bitmap);
                 pictureBytes =
                         "data:image/png;base64," + pictureBytes;
-                Log.i("if", "打印base" + pictureBytes);
-                Log.i("TAG", "返回了图片信息");
                 webView.loadUrl("javascript:G_jsCallBack.selectHeadPic_callback('" + pictureBytes + "')");
             } catch (Exception e) {
                 ExUtil.e(e);
@@ -479,7 +475,7 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    private Map<String,SoftReference<Bitmap>> map = new HashMap<>();
+    private HashMap<String,SoftReference<Bitmap>> map = new HashMap<>();
     //使用框架传入bitmap并且上传
     private String getImageBase(String imagePath) {
         Bitmap bitmap = null;
@@ -487,27 +483,18 @@ public class MainActivity extends BaseActivity {
         try {
             Log.i("TAG","打印hashMap"+map);
             //先从缓存中查找，如果没有加载本地图片
-            if(map.containsKey(imagePath)){
-                SoftReference<Bitmap> softReference  = map.get(imagePath);
-                Log.i("TAG","dayin"+softReference.get()==null?"0":"1");
-                if(softReference.get()!=null&&!softReference.get().isRecycled()){
+            if(map.containsKey(imagePath) && map.get(imagePath)!= null
+                    && map.get(imagePath).get() != null && !map.get(imagePath).get().isRecycled()){
                     bitmap = map.get(imagePath).get();
-                    Log.i("TAG","打印bitmap引用"+bitmap);
-                }else{
-                    bitmap = putBitmap(imagePath);
-                }
-
             }else{
                 bitmap = putBitmap(imagePath);
             }
-
             base = ParseUtils.getBase64FromBitmap(bitmap);
 
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
         if (bitmap != null) {
-//          softReference.clear();
             bitmap.recycle();
             System.gc();
         }
@@ -516,7 +503,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private Bitmap putBitmap(String imagePath) {
-        Bitmap bitmap;
+        Bitmap bitmap = null;
         bitmap = BitmapUtils.compressPictureFromFile(imagePath);
         map.put(imagePath,new SoftReference<Bitmap>(bitmap));
         return bitmap;
@@ -601,7 +588,7 @@ public class MainActivity extends BaseActivity {
         deleteDatabase("webviewCache.db");
         webView.clearCache(true);
         webView.clearHistory();
-        Log.i("TAG", "缓存路径" + getCacheDir().toString());
+
         clearCache(getCacheDir().toString());
     }
 
@@ -614,7 +601,6 @@ public class MainActivity extends BaseActivity {
         Util.setDoMyThing(new Util.DoMything() {
             @Override
             public boolean doOwnThing(File file) {
-                Log.i("TAG","打印目录的名字"+file.getName());
                 return file.delete();
             }
         });
@@ -627,7 +613,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
-        Log.i("info", "看看方法横竖品几次");
+
         super.onConfigurationChanged(newConfig);
     }
 
@@ -646,9 +632,7 @@ public class MainActivity extends BaseActivity {
                 @Override
                 public void run() {
                     final List<String> imageList = (List) intent.getSerializableExtra("imageList");
-                    Log.i("TAG","打印图片的地址"+imageList);
                     for (String path : imageList) {
-                        Log.i("info", "bitmap了几次0000000");
                         picbase = getImageBase(path);
                         picbase = "data:image/png;base64," + picbase;
                         //获得运行时内存

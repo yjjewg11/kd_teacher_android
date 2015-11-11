@@ -1,7 +1,6 @@
 package com.wjkj.kd.teacher.biz;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.umeng.fb.FeedbackAgent;
 import com.umeng.fb.push.FeedbackPush;
@@ -115,7 +114,6 @@ public class RegistUmengService {
         ownNotification(mPushAgent);
         mPushAgent.enable();
         MainActivity.instance.device_token = UmengRegistrar.getRegistrationId(context);
-        Log.i("TAG", "device_token" + MainActivity.instance.device_token);
         ((MainActivity)context).isFirstSendMessage();
 
     }

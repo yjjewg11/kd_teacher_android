@@ -1,7 +1,5 @@
 package com.wjkj.kd.teacher.handle;
 
-import android.util.Log;
-
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.wjkj.kd.teacher.utils.ExUtil;
 
@@ -29,7 +27,6 @@ public abstract class AbstractHandle extends AsyncHttpResponseHandler {
 //            String shuzu = new String(responseBody);
 //            JSONObject jsonObject = new JSONObject(shuzu);
 //            HttpUtils.pullJson(jsonObject);
-            Log.i("TAG","打印错误日志");
         } catch (Exception e) {
             ExUtil.e(e);
         }

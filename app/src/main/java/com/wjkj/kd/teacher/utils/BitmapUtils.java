@@ -10,7 +10,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.util.Log;
 
 import com.wjkj.kd.teacher.MainActivity;
 
@@ -28,7 +27,6 @@ public class BitmapUtils {
             options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
             BitmapFactory.decodeFile(pathName, options);
-            Log.i("TAG", "outwidth==" + options.outWidth);
             int scale = 1;
             while (options.outWidth / scale >= MainActivity.instance.width || options.outHeight / scale >= MainActivity.instance.height) {
                 scale *= 2;

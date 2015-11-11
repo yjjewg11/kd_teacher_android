@@ -29,8 +29,11 @@ public class GloableUtils {
 
 //        public static String ServerURL = "http://120.25.248.31/px-rest/";
 
+    //测试服务器地址
+        public static final String ServerURL = "http://120.25.212.44/px-mobile/";
+
     //正式环境
-    public static String ServerURL = "http://kd.wenjienet.com/px-rest/";
+//    public static String ServerURL = "http://kd.wenjienet.com/px-rest/";
 
     //调试用，胡溪斌的地址
 //    public static String ServerURL = "http://192.168.0.177:8080/px-rest/";

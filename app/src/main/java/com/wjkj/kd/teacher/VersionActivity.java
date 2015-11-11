@@ -4,9 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-//import com.wjkj.kd.teacher.biz.Menu;
-
-
 public class VersionActivity extends BaseActivity {
 
 //    private Menu menu;

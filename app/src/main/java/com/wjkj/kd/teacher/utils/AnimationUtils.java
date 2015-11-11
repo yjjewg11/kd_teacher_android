@@ -1,7 +1,6 @@
 package com.wjkj.kd.teacher.utils;
 
 
-import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
@@ -9,7 +8,6 @@ import android.view.animation.TranslateAnimation;
 public class AnimationUtils {
 
     public static  void startMyAnimation(long fromx,long tox,long fromy,long toy,View t){
-        Log.i("TAG", "难道动画又开启了");
         againStartMyAnimation(fromx,tox,fromy,toy,t,true);
     }
 

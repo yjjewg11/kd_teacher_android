@@ -8,7 +8,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -36,13 +35,11 @@ public class SettingWebParams {
         webView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                Log.i("TAG", "长按点击事件");
                 WebView.HitTestResult result = ((WebView) v).getHitTestResult();
                 if (result != null) {
                     int type = result.getType();
                     if (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
                         imgurl = result.getExtra();
-                        Log.i("TAG", "打印" + imgurl);
                     }else {
                         return false;
                     }
@@ -55,7 +52,6 @@ public class SettingWebParams {
                         .setNegativeButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                Log.i("TAG", "确认图片地址没有问题" + MainActivity.instance.httpPicUrl);
 
                                 ImageLoaderUtils.downLoadImageLoader(imgurl,
                                         new ImageLoadingListener() {
@@ -67,7 +63,6 @@ public class SettingWebParams {
                                             @Override
                                             public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
 
-                                                Log.i("TAG", "保存图片失败");
                                             }
 
                                             @Override
@@ -119,8 +114,6 @@ public class SettingWebParams {
                                                 // 最后通知图库更新
 //                                                CGLog.d(Uri.fromFile(new File(file.getPath())) + "");
                                                 Intent intent = new Intent();
-                                                Log.i("TAG","打印图片的地址getAbsolutePath"+file.getAbsolutePath()+" 打印getPath "+file.getPath()+"   大一Uri.fromfile"+Uri.fromFile(new File(file.getPath())));
-                                                Log.i("TAG","打印早此用"+Uri.parse("file://"+file.getAbsolutePath()));
                                                 context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(new File(file.getPath()))));
 //        new SingleMediaScanner(mContext, new File(file.getPath()), null);
                                                 ToastUtils.showMessage("图片保存成功");

@@ -49,7 +49,6 @@ public class PushMessage extends AbstractDao{
 //        };
         PersistentCookieStore myCookieStore = new PersistentCookieStore(MyApplication.instance);
         BasicClientCookie newCookie = new BasicClientCookie("JSESSIONID", MainActivity.instance.JESSIONID);
-        Log.i("TAG","打印jessindio========"+MainActivity.instance.JESSIONID);
         newCookie.setVersion(1);
         newCookie.setDomain("kd.wenjienet.com");
         newCookie.setPath("/");

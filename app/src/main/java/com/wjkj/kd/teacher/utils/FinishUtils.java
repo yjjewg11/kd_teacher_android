@@ -27,7 +27,7 @@ public class FinishUtils {
                 public void run() {
                     f = true;
                 }
-            }, 5000);
+            }, 3000);
         } else {
             f = true;
             if (t instanceof List) {

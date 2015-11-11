@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_fb_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_fb_strings.xml -->
     <eat-comment/>
     <string-array name="umeng_fb_contact_key_array">
         <item>@string/umeng_fb_contact_key_email</item>
@@ -18,27 +18,27 @@
         <item>用户反馈</item>
         <item>常见问题</item>
     </string-array>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="bg_gray">#e2e2e2</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/color.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="black">#000000</color>
     <color name="blue">#191970</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="color_333333">#333333</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/color.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="color_666666">#666666</color>
     <color name="color_929292">#929292</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="color_cccccc">#cccccc</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/color.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="color_e5e5e5">#e5e5e5</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/facebook_styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/facebook_styles.xml -->
     <eat-comment/>
     <color name="com_facebook_blue">#3B5998</color>
     <color name="com_facebook_button_background_color">#415dae</color>
@@ -53,10 +53,10 @@
     <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
     <color name="com_facebook_likeview_text_color">#6a7180</color>
     <color name="com_facebook_share_button_text_color">#FFFFFF</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="green">#65e17b</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/color.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="hint_gray">#666666</color>
     <color name="line">#cccccc</color>
@@ -66,26 +66,26 @@
     <color name="normal_text_gray">#b3b3b3</color>
     <color name="often_red">#cf3020</color>
     <color name="photo_gallery_bg">#444444</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="red">#E1423C</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/color.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="tab_bg">#e5e5e5</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/tb_munion_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/tb_munion_strings.xml -->
     <eat-comment/>
     <color name="tb_munion_item_force">#e3e3e3</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/color.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="title_bg">#ff4966</color>
     <color name="title_center">#ffffff</color>
     <color name="title_click">#e56969</color>
     <color name="title_right">#ffffff</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="translate">#00000000</color>
     <color name="translucence">#506050</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_fb_color.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_fb_color.xml -->
     <eat-comment/>
     <color name="umeng_fb_audo_dialog_bg">#F4F0745F</color>
     <color name="umeng_fb_background">#F6F6F6</color>
@@ -95,7 +95,7 @@
     <color name="umeng_fb_secondary_text_light">#8A000000</color>
     <color name="umeng_fb_tab_bg_pressed">#6633B5E5</color>
     <color name="umeng_fb_white">#FFFFFF</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_colors.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_colors.xml -->
     <eat-comment/>
     <color name="umeng_socialize_color_group">#2c3035</color>
     <color name="umeng_socialize_comments_bg">#F4F4F4</color>
@@ -110,26 +110,26 @@
     <color name="umeng_socialize_text_title">#464f61</color>
     <color name="umeng_socialize_text_ucenter">#595959</color>
     <color name="umeng_socialize_ucenter_bg">#EEEEEE</color>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/color.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="white">#ffffff</color>
     <declare-styleable name="Preference"><attr format="string" name="title"/><attr format="boolean" name="enabled"/><attr format="boolean" name="persistent"/><attr format="string" name="titleCondensed"/><attr format="string" name="alphabeticShortcut"/><attr format="string" name="numericShortcut"/><attr format="boolean" name="checkable"/><attr format="boolean" name="selectable"/><attr format="boolean" name="orderingFromXml"/><attr format="string" name="key"/><attr format="string" name="summary"/><attr format="integer" name="order"/><attr format="reference" name="widgetLayout"/><attr format="string" name="dependency"/><attr format="reference|string|integer|boolean|float" name="defaultValue"/><attr format="boolean" name="shouldDisableView"/><attr format="string" name="summaryOn"/><attr format="string" name="summaryOff"/></declare-styleable>
     <declare-styleable name="com_facebook_like_view"><attr format="color" name="com_facebook_foreground_color"/><attr format="string" name="com_facebook_object_id"/><attr name="com_facebook_object_type"><enum name="unknown" value="0"/><enum name="open_graph" value="1"/><enum name="page" value="2"/></attr><attr name="com_facebook_style"><enum name="standard" value="0"/><enum name="button" value="1"/><enum name="box_count" value="2"/></attr><attr name="com_facebook_auxiliary_view_position"><enum name="bottom" value="0"/><enum name="inline" value="1"/><enum name="top" value="2"/></attr><attr name="com_facebook_horizontal_alignment"><enum name="center" value="0"/><enum name="left" value="1"/><enum name="right" value="2"/></attr></declare-styleable>
     <declare-styleable name="com_facebook_login_view"><attr format="boolean" name="com_facebook_confirm_logout"/><attr format="string" name="com_facebook_login_text"/><attr format="string" name="com_facebook_logout_text"/><attr name="com_facebook_tooltip_mode"><enum name="automatic" value="0"/><enum name="display_always" value="1"/><enum name="never_display" value="2"/></attr></declare-styleable>
     <declare-styleable name="com_facebook_profile_picture_view"><attr name="com_facebook_preset_size"><enum name="small" value="-2"/><enum name="normal" value="-3"/><enum name="large" value="-4"/></attr><attr format="boolean" name="com_facebook_is_cropped"/></declare-styleable>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/baidu_fb_dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <dimen name="alphabet_size">12dip</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="big_padding">24dp</dimen>
     <dimen name="big_text">18dp</dimen>
     <dimen name="button_conner">5dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/facebook_styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/facebook_styles.xml -->
     <eat-comment/>
     <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
     <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
@@ -150,36 +150,36 @@
     <dimen name="com_facebook_share_button_padding_top">12dp</dimen>
     <dimen name="com_facebook_share_button_text_size">16.0sp</dimen>
     <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="condition_height">38dp</dimen>
     <dimen name="course_week_bg_hw">30dp</dimen>
     <dimen name="divider_height">1px</dimen>
     <dimen name="fix_detail_photo_height">64dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="folder_cover_size">72dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="food_pic_hw">96dp</dimen>
     <dimen name="goods_item_height">108dp</dimen>
     <dimen name="head_width">78dp</dimen>
     <dimen name="head_width_big">80dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/baidu_fb_dimens.xml -->
     <eat-comment/>
     <dimen name="home_tab_bar_height">48dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="image_size">120dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="layout_height_40">40dp</dimen>
     <dimen name="layout_height_60">60dp</dimen>
     <dimen name="line_width">1px</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/meimidmovablecheckboxMovableCheckboxActivity/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/meimidmovablecheckboxMovableCheckboxActivity/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="list_item_height">51.0dip</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="margin_10">10dp</dimen>
     <dimen name="margin_15">15dp</dimen>
@@ -190,26 +190,26 @@
     <dimen name="normal_text">15dp</dimen>
     <dimen name="pic_width_big">120dp</dimen>
     <dimen name="popwindow_padding_lr">16dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/meimidmovablecheckboxMovableCheckboxActivity/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/meimidmovablecheckboxMovableCheckboxActivity/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="preference_icon_width">50.0dip</dimen>
     <dimen name="preference_margin">19.0dip</dimen>
     <dimen name="preference_widget_icon_width">48.0dip</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="small_padding">8dp</dimen>
     <dimen name="small_text">14dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="space_size">2dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="title_center">20dp</dimen>
     <dimen name="title_height">48dp</dimen>
     <dimen name="title_right">16dp</dimen>
     <dimen name="title_shadow">3dp</dimen>
     <dimen name="title_shadow_">-3dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_fb_dimens.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_fb_dimens.xml -->
     <eat-comment/>
     <dimen name="umeng_fb_item_content_size">14sp</dimen>
     <dimen name="umeng_fb_item_height">48dp</dimen>
@@ -218,11 +218,11 @@
     <dimen name="umeng_fb_normal_size">13dp</dimen>
     <dimen name="umeng_fb_record_btn_text_size">20sp</dimen>
     <dimen name="umeng_fb_spinner_padding_left">12dp</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
     <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_update_string.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_update_string.xml -->
     <eat-comment/>
     <string name="UMAppUpdate">应用更新</string>
     <string name="UMBreak_Network">未联网</string>
@@ -237,12 +237,12 @@
     <string name="UMUpdateNow">立即更新</string>
     <string name="UMUpdateSize">仅需要下载:</string>
     <string name="UMUpdateTitle">发现新版本</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="add">添加</string>
     <string name="app_name">图片选择</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/baidu_fb_strings.xml -->
     <eat-comment/>
     <string name="bd_fb_feedback">用户反馈</string>
     <string name="bd_fb_hint_text">%s好！欢迎您给我们提出宝贵的建议。</string>
@@ -250,15 +250,15 @@
     <string name="bd_fb_input_content">输入内容</string>
     <string name="bd_fb_net_fail_toast">请检查网络</string>
     <string name="bd_fb_send">发送</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="check">选择</string>
     <string name="check_dir">选择目录</string>
     <string name="check_length">已经选择%1$d张图片</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_facebook_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_facebook_strings.xml -->
     <eat-comment/>
     <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/facebook_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/facebook_strings.xml -->
     <eat-comment/>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
     <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
@@ -273,105 +273,105 @@
     <string name="com_facebook_loginview_log_out_button">Log out</string>
     <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
     <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_facebook_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_facebook_strings.xml -->
     <eat-comment/>
     <string name="com_facebook_requesterror_password_changed">Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.</string>
     <string name="com_facebook_requesterror_permissions">This app doesn’t have permission to do this. To change permissions, try logging into the app again.</string>
     <string name="com_facebook_requesterror_reconnect">Please log into this app again to reconnect your Facebook account.</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/facebook_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/facebook_strings.xml -->
     <eat-comment/>
     <string name="com_facebook_send_button_text">Send</string>
     <string name="com_facebook_share_button_text">Share</string>
     <string name="com_facebook_tooltip_default">New! You\'re in control - choose what info you want to share with apps.</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="dir_not_have_img_">本目录下没有图片</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="disable">Disable</string>
     <string name="enable">Enable</string>
     <string name="enable_camera">Enable Camera</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_flickr_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_flickr_strings.xml -->
     <eat-comment/>
     <string name="flickr_content">Flickr只支持图片分享</string>
     <string name="flickr_no_client">未安装Flickr客户端</string>
     <string name="flickr_no_content">请设置分享内容</string>
     <string name="flickr_showword">Flickr</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="folder_all">All Images</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_foursquare_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_foursquare_strings.xml -->
     <eat-comment/>
     <string name="foursquare_content">Foursquare只支持纯图片分享</string>
     <string name="foursquare_no_client">未安装Foursquare客户端</string>
     <string name="foursquare_showword">Foursquare</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="go_select">Select</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/meimidmovablecheckboxMovableCheckboxActivity/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/meimidmovablecheckboxMovableCheckboxActivity/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="hello">Hello World, MovableCheckboxActivity!</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="hello_world">Hello world!</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="hint_default_amount">default amount is 9</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_kakao_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_kakao_strings.xml -->
     <eat-comment/>
     <string name="kakao_content">Kakao Talk只支持图片、文本分享</string>
     <string name="kakao_no_client">未安装Kakao Talk客户端</string>
     <string name="kakao_no_content">请设置分享内容</string>
     <string name="kakao_showword">Kakao Talk</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_line_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_line_strings.xml -->
     <eat-comment/>
     <string name="line_content">Line只支持文本，图片</string>
     <string name="line_no_client">未安装Line客户端</string>
     <string name="line_no_content">请设置分享内容</string>
     <string name="line_showword">LINE</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_linkedin_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_linkedin_strings.xml -->
     <eat-comment/>
     <string name="linkedin_content">linked只支持纯文本分享</string>
     <string name="linkedin_no_client">未安装LinkedIn客户端</string>
     <string name="linkedin_showword">LinkedIn</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="max_select_amount">Max Selected Amount</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/messenger_button_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/messenger_button_strings.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">Send</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="mode_multi">Multi-Choice</string>
     <string name="mode_single">Single-Choice</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/multi-image-selector/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="msg_amount_limit">Select images amount is limit</string>
     <string name="msg_no_camera">No system camera found</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="not_have_img_dir">没有存在图片的目录</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_pocket_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_pocket_strings.xml -->
     <eat-comment/>
     <string name="pocket_content">pocket只支持网页链接分享</string>
     <string name="pocket_no_client">未安装pocket客户端</string>
     <string name="pocket_showword">Pocket</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="preview">预览</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="pull_to_refresh_pull_label" translatable="false">向下拉动可以刷新</string>
     <string name="pull_to_refresh_refreshing_label" translatable="false">加载中…</string>
     <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
     <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/Kd_Teacher/image_choose/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="select_mode">Select Mode</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/tb_munion_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/tb_munion_strings.xml -->
     <eat-comment/>
     <string name="tb_munion_tip_download_prefix">正在下载:</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="tip_max_size">最多只能选择%1$d张图片</string>
     <string name="title_activity_about_us">AboutUsActivity</string>
@@ -380,13 +380,13 @@
     <string name="title_activity_first_page">FirstPageActivity</string>
     <string name="title_activity_push_state">PushStateActivity</string>
     <string name="title_activity_select_pic">SelectPicActivity</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_tumblr_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_tumblr_strings.xml -->
     <eat-comment/>
     <string name="tumblr_content">Tumblr只支持文本，图片，图文分享</string>
     <string name="tumblr_no_client">未安装Tumblr客户端</string>
     <string name="tumblr_no_content">请设置分享内容</string>
     <string name="tumblr_showword">Tumblr</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_common_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_common_strings.xml -->
     <eat-comment/>
     <string name="umeng_common_action_cancel">取消</string>
     <string name="umeng_common_action_continue">继续</string>
@@ -395,10 +395,10 @@
     <string name="umeng_common_download_failed">下载失败</string>
     <string name="umeng_common_download_finish">下载完成，请点击安装</string>
     <string name="umeng_common_download_notification_prefix">正在下载: </string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="umeng_common_icon">中文图片</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_common_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_common_strings.xml -->
     <eat-comment/>
     <string name="umeng_common_info_interrupt">下载出错啦，请检查网络后继续。</string>
     <string name="umeng_common_network_break_alert">请连接网络后再尝试！</string>
@@ -407,10 +407,10 @@
     <string name="umeng_common_silent_download_finish">新版本已经准备好，请点击安装</string>
     <string name="umeng_common_start_download_notification">正在下载应用</string>
     <string name="umeng_common_start_patch_notification">正在更新安装包</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="umeng_example_home_btn_plus">社交分享</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_fb_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_fb_strings.xml -->
     <eat-comment/>
     <string name="umeng_fb_back">返回</string>
     <string name="umeng_fb_change_contact_title">更改联系信息</string>
@@ -433,11 +433,11 @@
     <string name="umeng_fb_notification_ticker_text">有新的回复</string>
     <string name="umeng_fb_please_select_picture">请选择图片</string>
     <string name="umeng_fb_press_speech">按住说话</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values/values.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/build/intermediates/exploded-aar/com.umeng/fb/5.4.0/res/values/values.xml -->
     <eat-comment/>
     <string name="umeng_fb_questions_anwser">A:</string>
     <string name="umeng_fb_questions_question">Q:</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_fb_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_fb_strings.xml -->
     <eat-comment/>
     <string name="umeng_fb_record_fail">录音失败</string>
     <string name="umeng_fb_record_time_short">录音时间太短</string>
@@ -454,7 +454,7 @@
     <string name="umeng_fb_time_this_year_format">MM/dd HH:mm:ss</string>
     <string name="umeng_fb_title">用户反馈</string>
     <string name="umeng_fb_write_contact_title">填写联系信息</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="umeng_socialize_back" translatable="false">返回</string>
     <string name="umeng_socialize_cancel_btn_str">取消</string>
@@ -463,10 +463,10 @@
     <string name="umeng_socialize_content_hint">说点啥…</string>
     <string name="umeng_socialize_friends" translatable="false">关注的好友</string>
     <string name="umeng_socialize_img_des"/>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_laiwang_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_laiwang_strings.xml -->
     <eat-comment/>
     <string name="umeng_socialize_laiwang_default_content">友盟社会化组件（SDK）让移动应用快速整合社交分享功能</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="umeng_socialize_login">登录</string>
     <string name="umeng_socialize_login_qq">QQ空间</string>
@@ -487,11 +487,11 @@
     <string name="umeng_socialize_text_comment_hint">说点什么吧…</string>
     <string name="umeng_socialize_text_douban_key">豆瓣网</string>
     <string name="umeng_socialize_text_friend_list">好友列表</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_laiwang_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_laiwang_strings.xml -->
     <eat-comment/>
     <string name="umeng_socialize_text_laiwang_dynamic_key">来往动态</string>
     <string name="umeng_socialize_text_laiwang_key">来往</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="umeng_socialize_text_loading_message">载入中,请稍候...</string>
     <string name="umeng_socialize_text_login_fail">登录失败了，请重试</string>
@@ -523,22 +523,22 @@
     <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败…</string>
     <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
     <string name="umeng_socialize_ucenter_login_title_platform" translatable="false">登录帐号</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="uncheck">取消选择</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_whatsapp_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_whatsapp_strings.xml -->
     <eat-comment/>
     <string name="whatsapp_content">有道云笔记只支持文本，图片</string>
     <string name="whatsapp_no_client">未安装有WhatsApp客户端</string>
     <string name="whatsapp_no_content">请设置分享内容</string>
     <string name="whatsapp_showword">WhatsApp</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_ynote_strings.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_ynote_strings.xml -->
     <eat-comment/>
     <string name="ynote_content">有道云笔记只支持文本，图片，图文分享</string>
     <string name="ynote_no_client">未安装有道云笔记客户端</string>
     <string name="ynote_no_content">请设置分享内容</string>
     <string name="ynote_showword">有道云笔记</string>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/baidu_fb_styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -550,7 +550,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppThemeFullNoTitle" parent="@android:style/Theme.NoTitleBar.Fullscreen"/>
     <style name="CustomWindowTitleBackground">
@@ -570,7 +570,7 @@
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/shake_umeng_socialize_style.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/shake_umeng_socialize_style.xml -->
     <eat-comment/>
     <style name="Dialog_Fullscreen">
 
@@ -585,7 +585,7 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.6</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/messenger_button_styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/messenger_button_styles.xml -->
     <eat-comment/>
     <style name="MessengerButton">
     <item name="android:clickable">true</item>
@@ -645,7 +645,7 @@
     <style name="MessengerButtonText.White.Small">
     <item name="android:drawableLeft">@drawable/messenger_bubble_small_blue</item>
   </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="MyLineStyle" parent="AppTheme">
         <item name="android:background">#bbbbbb</item>
@@ -655,13 +655,13 @@
         <item name="android:textColor">#000000</item>
 
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/shake_umeng_socialize_style.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/shake_umeng_socialize_style.xml -->
     <eat-comment/>
     <style name="Notitle_Fullscreen">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="PopWindowAnim">
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
@@ -679,14 +679,14 @@
         <item name="android:windowTitleBackgroundStyle">@null</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_style.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_style.xml -->
     <eat-comment/>
     <style name="Theme.UMDefault" parent="android:style/Theme.NoTitleBar"/>
     <style name="Theme.UMDialog" parent="android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/baidu_fb_styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/baidu_fb_styles.xml -->
     <eat-comment/>
     <style name="chat_content_date_style">
         <item name="android:minHeight">50dp</item>
@@ -698,7 +698,7 @@
         <item name="android:focusable">true</item>
         <item name="android:background">#bfbfbf</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/facebook_styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/facebook_styles.xml -->
     <eat-comment/>
     <style name="com_facebook_button" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/com_facebook_button_background</item>
@@ -731,7 +731,7 @@
         <item name="android:drawableLeft">@null</item>
         <item name="android:textColor">#4b5164</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="detail_left">
         <item name="android:gravity">center_vertical</item>
@@ -752,12 +752,12 @@
         <item name="android:textColor">@color/normal_text_gray</item>
         <item name="android:layout_alignParentRight">true</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/shake_umeng_socialize_style.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/shake_umeng_socialize_style.xml -->
     <eat-comment/>
     <style mce_bogus="1" name="lan_DialogWindowAnim" parent="android:Animation">
         <item name="android:windowExitAnimation">@anim/shake_umeng_socialize_dlg_alpha</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="leftmenutextcolor" parent="AppTheme">
         <item name="android:textColor">#ffffff</item>
@@ -778,7 +778,7 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/normal_text</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/shake_umeng_socialize_style.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/shake_umeng_socialize_style.xml -->
     <eat-comment/>
     <style name="notitleDialog">
 
@@ -807,7 +807,7 @@
         <item name="android:windowEnterAnimation">@anim/shake_umeng_socialize_scrshot_dlg</item>
         <item name="android:windowExitAnimation">@anim/shake_umeng_socialize_dlg_alpha</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/facebook_styles.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/facebook_styles.xml -->
     <eat-comment/>
     <style name="tooltip_bubble_text">
 	    <item name="android:textColor">@android:color/white</item>
@@ -817,7 +817,7 @@
 	    <item name="android:shadowRadius">0.25</item>
 	    <item name="android:shadowColor">#40000000</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_fb_style.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_fb_style.xml -->
     <eat-comment/>
     <style name="umeng_fb_image_dialog_anim">
         <item name="android:windowEnterAnimation">@anim/umeng_fb_dialog_enter_anim</item>
@@ -827,7 +827,7 @@
         <item name="android:windowBackground"> @android:color/transparent </item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
-    <!-- From: file:/C:/Users/tang/Kd_Teacher/app/src/main/res/values/umeng_socialize_style.xml -->
+    <!-- From: file:/E:/work-wenjie-project/Kd_Teacher/app/src/main/res/values/umeng_socialize_style.xml -->
     <eat-comment/>
     <style name="umeng_socialize_action_bar_item_im">
         <item name="android:layout_width">25dp</item>

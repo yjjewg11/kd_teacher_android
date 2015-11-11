@@ -3,7 +3,6 @@ package com.wjkj.kd.teacher.handle;
 
 import android.app.Notification;
 import android.content.Context;
-import android.util.Log;
 
 import com.umeng.message.UmengMessageHandler;
 import com.umeng.message.entity.UMessage;
@@ -23,7 +22,6 @@ public class MyUmengMessageHandle extends UmengMessageHandler{
 
         @Override
         public void dealWithNotificationMessage(Context context, UMessage uMessage) {
-            Log.i("TAG", "消息来了");
             super.dealWithNotificationMessage(context, uMessage);
 
     };

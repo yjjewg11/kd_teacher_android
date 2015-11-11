@@ -2,7 +2,6 @@ package com.wjkj.kd.teacher.utils;
 
 import android.graphics.Bitmap;
 import android.util.Base64;
-import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -14,7 +13,6 @@ public class ParseUtils {
 
     //此方法得到一个bitmap对象，返回一个base64字符串
     public static String getBase64FromBitmap( Bitmap thePic){
-        Log.i("TAG","如果这个方法都执行了，就不是数组的原因");
         String  pictureBytes = null;
         ByteArrayOutputStream out = null;
         byte[] bytes = null;
@@ -22,10 +20,6 @@ public class ParseUtils {
             int quality = 80;
 
         out = new ByteArrayOutputStream();
-            Log.i("TAG","打印最大内存"+Runtime.getRuntime().maxMemory()/1024/1024 +"  Mb");
-            Log.i("TAG","打印空闲内存"+Runtime.getRuntime().freeMemory()/1024/1024 +"  Mb");
-            Log.i("TAG", "打印总内存" + Runtime.getRuntime().totalMemory() / 1024 / 1024 + "  Mb");
-
             do {
                 thePic.compress(Bitmap.CompressFormat.JPEG, quality, out);
                 bytes = out.toByteArray();
@@ -33,8 +27,6 @@ public class ParseUtils {
                 if(quality==0) break;
                 out.reset();
             }while (bytes.length / 1024 > 100);
-            Log.i("TAG", "打印一dfsdfsfsdf下字符串" + bytes.length);
-            Log.i("TAG","打印字节大小：==="+bytes.length/1024+ "   kb");
             try {
                 if(out!=null)
                     out.close();
@@ -43,10 +35,10 @@ public class ParseUtils {
             }
 //            builder = bytes.toString();
 //                    Base64.encodeToString(bytes, Base64.DEFAULT);
-            if(thePic!=null){
-                thePic.recycle();
-                System.gc();
-            }
+//            if(thePic!=null){
+//                thePic.recycle();
+//                System.gc();
+//            }
 
         pictureBytes = Base64.encodeToString(bytes,Base64.NO_WRAP);
 
