@@ -1,0 +1,29 @@
+TASK com.wjkj.kd.teacher id=235
+  ACTIVITY com.wjkj.kd.teacher/.MainActivity 429b9198 pid=851
+    Local Activity 42239768 State:
+      mResumed=true mStopped=false mFinished=false
+      mLoadersStarted=true
+      mChangingConfigurations=false
+      mCurrentConfig={1 0 1.0 460mcc2mnc zh_CN ldltr sw320dp w320dp h508dp 240dpi nrml long port finger -keyb/v/h -nav/h s.155}
+    FragmentManager misc state:
+      mActivity=com.wjkj.kd.teacher.MainActivity@42239768
+      mContainer=android.app.Activity$1@425842f0
+      mCurState=5 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{42225108 V.E..... R......D 0,0-480,800}
+        android.widget.LinearLayout{425042c0 V.E..... .......D 0,0-480,800}
+          android.view.ViewStub{42201f38 G.E..... ......I. 0,0-0,0 #1020468}
+          android.widget.FrameLayout{422531c0 V.E..... .......D 0,0-480,800 #1020002 android:id/content}
+            android.widget.RelativeLayout{42502ae8 V.E..... .......D 0,0-480,800}
+              android.webkit.WebView{421eaa70 VFEDHVCL .F...... 0,0-480,721 #7f0d001a app:id/mainWebView}
+              android.widget.RadioGroup{424d3c00 V.E..... ........ 0,726-480,800 #7f0d001c app:id/first_page_radiogroup}
+                android.widget.RadioButton{424654c8 VFED..C. ........ 0,0-120,74 #7f0d001d app:id/radioButton1}
+                android.widget.RadioButton{422528a0 VFED..C. ........ 120,0-240,74 #7f0d001e app:id/radioButton2}
+                com.wjkj.kd.teacher.views.MyRadioButton{4223e4b8 VFED..C. ........ 240,0-360,74 #7f0d001f app:id/radioButton3}
+                android.widget.RadioButton{42563390 VFED..C. ........ 360,0-480,74 #7f0d0020 app:id/radioButton4}
+              android.widget.TextView{4260f890 V.ED.... ........ 122,381-357,418 #7f0d0021 app:id/textView}
+              android.widget.TextView{422316c0 V.ED.... ........ 0,723-480,726 #7f0d0022 app:id/textView11}
+              android.widget.TextView{42561ee8 V.ED.... ........ 0,721-480,723 #7f0d001b app:id/textView14}
+              android.widget.TextView{424f2388 G.ED.... ......ID 0,0-0,0 #7f0d0023 app:id/textView16}
+              android.widget.RelativeLayout{42471338 V.E..... ......ID 0,358-480,381 #7f0d0024 app:id/animation_rl}
+                android.widget.ImageView{421fb880 V.ED.... ........ 228,0-251,23 #7f0d0025 app:id/imageloading}

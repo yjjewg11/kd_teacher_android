@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <!--<com.wj.kindergarten.compounets.CircleImage
+        android:id="@+id/main_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+    <ImageView
+        android:id="@+id/main_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/main_item" />
+
+    <TextView
+        android:id="@+id/main_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text"
+        android:layout_marginTop="@dimen/small_padding"/>
+</LinearLayout>

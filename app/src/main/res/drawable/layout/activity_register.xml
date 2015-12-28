@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/condition_height"
+        android:layout_marginRight="@dimen/condition_height"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@drawable/login_edit_bg1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/loginTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="@dimen/small_padding"
+                android:drawableRight="@drawable/register_spec"
+                android:paddingLeft="@dimen/small_padding"
+                android:text="手机号码" />
+
+            <EditText
+                android:id="@+id/register_mobile"
+                style="@style/loginEditStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:hint="请输入手机号码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:background="@drawable/login_edit_bg1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/register_pwd_text"
+                style="@style/loginTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="@dimen/small_padding"
+                android:drawableRight="@drawable/register_spec"
+                android:paddingLeft="@dimen/small_padding"
+                android:text="用户密码" />
+
+            <EditText
+                android:id="@+id/register_pwd"
+                style="@style/loginEditStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="请输入用户密码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:background="@drawable/login_edit_bg1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/loginTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="@dimen/small_padding"
+                android:drawableRight="@drawable/register_spec"
+                android:paddingLeft="@dimen/small_padding"
+                android:text="确认密码" />
+
+            <EditText
+                android:id="@+id/register_pwd_double"
+                style="@style/loginEditStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="再次输入密码" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="@dimen/normal_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_toLeftOf="@+id/register_count_down"
+                android:background="@drawable/login_edit_bg1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/loginTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableRight="@drawable/register_spec"
+                    android:paddingLeft="@dimen/small_padding"
+                    android:text="验证码" />
+
+                <EditText
+                    android:id="@+id/register_sms"
+                    style="@style/loginEditStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:hint="请输入验证码" />
+            </LinearLayout>
+
+            <com.wj.kindergarten.compounets.CountDownButton
+                android:id="@+id/register_count_down"
+                style="@style/loginTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:background="@drawable/login_button_selector"
+                android:text="获取"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/register_action"
+            style="@style/loginTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="@dimen/title_height"
+            android:background="@drawable/login_button_selector"
+            android:padding="@dimen/small_padding"
+            android:text="提交"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

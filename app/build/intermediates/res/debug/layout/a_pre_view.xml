@@ -1,0 +1,6 @@
+<com.github.yanglw.selectimages.widget.HackyViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+<!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/layout/a_pre_view.xml -->

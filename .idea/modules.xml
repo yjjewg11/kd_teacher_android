@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/image_choose/image_choose.iml" filepath="$PROJECT_DIR$/image_choose/image_choose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kd_teacher_android-master.iml" filepath="$PROJECT_DIR$/kd_teacher_android-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meimidmovablecheckboxMovableCheckboxActivity/meimidmovablecheckboxMovableCheckboxActivity.iml" filepath="$PROJECT_DIR$/meimidmovablecheckboxMovableCheckboxActivity/meimidmovablecheckboxMovableCheckboxActivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />
+    </modules>
+  </component>
+</project>

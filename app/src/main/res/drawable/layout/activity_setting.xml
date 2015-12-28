@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal" />
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_40"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/setting_item_click_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="修改密码"
+            android:textSize="@dimen/normal_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/normal_padding"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_40"
+        android:background="@drawable/setting_item_click_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="推送通知"
+            android:textSize="@dimen/normal_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/normal_padding"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_40"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/setting_item_click_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="意见反馈"
+            android:textSize="@dimen/normal_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/normal_padding"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_40"
+        android:background="@drawable/setting_item_click_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="关于我们"
+            android:textSize="@dimen/normal_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/normal_padding"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_40"
+        android:background="@drawable/setting_item_click_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="检查更新"
+            android:textSize="@dimen/normal_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/normal_padding"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_40"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/setting_item_click_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding"
+            android:text="退出"
+            android:textSize="@dimen/normal_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/normal_padding"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+</LinearLayout>

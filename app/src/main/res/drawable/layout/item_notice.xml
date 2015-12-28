@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingLeft="@dimen/normal_padding"
+    android:paddingRight="@dimen/normal_padding"
+    android:paddingTop="@dimen/small_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="68dp"
+            android:layout_height="68dp">
+
+            <com.wj.kindergarten.compounets.CircleImage
+                android:id="@+id/item_notice_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/small_padding" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金太阳幼儿园"
+                android:textColor="@color/black"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:id="@+id/item_notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding"
+                android:text="7分钟前"
+                android:textColor="@color/hint_gray"
+                android:textSize="@dimen/normal_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/item_notice_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="金太阳幼儿园"
+            android:textColor="@color/hint_gray"
+            android:textSize="@dimen/small_text" />
+
+        <TextView
+            android:id="@+id/item_notice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="7分钟前"
+            android:textColor="@color/hint_gray"
+            android:textSize="@dimen/small_text" />
+    </RelativeLayout>
+</LinearLayout>

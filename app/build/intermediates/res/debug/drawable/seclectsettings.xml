@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/shezhi1bluex"/>
+    <item android:state_checked="false" android:drawable="@drawable/shezhi2_03noname"/>
+</selector><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/drawable/seclectsettings.xml -->

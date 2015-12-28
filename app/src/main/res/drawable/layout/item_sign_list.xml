@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingTop="@dimen/small_padding">
+
+    <ImageView
+        android:id="@+id/item_sign_list_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:src="@drawable/touxiang" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_sign_list_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时间："
+            android:textColor="@color/hint_gray"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+            android:id="@+id/item_sign_list_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地点："
+            android:textColor="@color/hint_gray"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+            android:id="@+id/item_sign_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打卡人："
+            android:textColor="@color/hint_gray"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+            android:id="@+id/item_sign_list_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打卡类型："
+            android:textColor="@color/hint_gray"
+            android:textSize="@dimen/normal_text" />
+    </LinearLayout>
+</LinearLayout>

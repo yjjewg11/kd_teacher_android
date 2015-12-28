@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:paddingLeft="@dimen/normal_padding"
+        android:paddingRight="@dimen/normal_padding"
+        android:text="请提出您的宝贵意见，让我们为您服务的更好！"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/normal_text" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/hint_bg_shape">
+
+        <EditText
+            android:id="@+id/et_advise"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/translate"
+            android:gravity="top"
+            android:lineSpacingExtra="5dp"
+            android:padding="7dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text" />
+    </LinearLayout>
+</LinearLayout>

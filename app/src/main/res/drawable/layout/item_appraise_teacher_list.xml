@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/small_padding"
+    android:paddingLeft="@dimen/normal_padding"
+    android:paddingRight="@dimen/normal_padding"
+    android:paddingTop="@dimen/small_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/item_appraise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/small_padding"
+            android:drawableTop="@drawable/touxiang"
+            android:gravity="center_horizontal"
+            android:text="姓名"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_appraise_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/condition_height"
+                android:drawablePadding="@dimen/small_padding"
+                android:drawableTop="@drawable/appraise_good_before"
+                android:gravity="center_horizontal"
+                android:text="满意"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/item_appraise_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/condition_height"
+                android:drawablePadding="@dimen/small_padding"
+                android:drawableTop="@drawable/appraise_n_normal"
+                android:gravity="center_horizontal"
+                android:text="一般"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/item_appraise_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/small_padding"
+                android:drawableTop="@drawable/appraise_un_before"
+                android:gravity="center_horizontal"
+                android:text="不满意"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/item_appraise_edit"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="@dimen/small_padding"
+        android:background="@drawable/login_edit_bg1"
+        android:gravity="left"
+        android:padding="@dimen/small_padding"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_gray"
+        android:textSize="@dimen/normal_text" />
+
+    <ImageView
+        android:id="@+id/item_appraise_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/small_padding"
+        android:src="@drawable/appraise_commit_yes" />
+</LinearLayout>
