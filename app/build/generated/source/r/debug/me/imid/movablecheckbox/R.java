@@ -42,11 +42,11 @@ public final class R {
 		public static final int mask = 0x7f020047;
 	}
 	public static final class id {
-		public static final int checkbox = 0x7f0d00a9;
-		public static final int primary = 0x7f0d00a5;
-		public static final int summary = 0x7f0d00a7;
-		public static final int title = 0x7f0d00a6;
-		public static final int widget_frame = 0x7f0d00a8;
+		public static final int checkbox = 0x7f0d00ab;
+		public static final int primary = 0x7f0d00a7;
+		public static final int summary = 0x7f0d00a9;
+		public static final int title = 0x7f0d00a8;
+		public static final int widget_frame = 0x7f0d00aa;
 	}
 	public static final class layout {
 		public static final int main = 0x7f04001f;

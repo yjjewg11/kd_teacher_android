@@ -13,9 +13,7 @@ public  class MyOwnWebViewClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView v, String url) {
-        if(url.contains("tel:")){
-            int num = url.indexOf(":");
-            String tel = url.substring(num);
+        if(url.startsWith("tel:")){
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url.toString()));
             MainActivity.instance.startActivity(intent);
         }else{

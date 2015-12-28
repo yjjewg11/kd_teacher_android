@@ -8,8 +8,8 @@ package me.nereo.multiimageselector;
 
 public final class R {
 	public static final class color {
-		public static final int choose_image_folder_text_color = 0x7f0a0035;
-		public static final int choose_image_text_color = 0x7f0a0036;
+		public static final int choose_image_folder_text_color = 0x7f0a0036;
+		public static final int choose_image_text_color = 0x7f0a0037;
 	}
 	public static final class dimen {
 		public static final int activity_horizontal_margin = 0x7f080003;
@@ -33,39 +33,39 @@ public final class R {
 		public static final int text_indicator = 0x7f02007a;
 	}
 	public static final class id {
-		public static final int btn_back = 0x7f0d0072;
+		public static final int btn_back = 0x7f0d0074;
 		public static final int button = 0x7f0d0004;
-		public static final int category_btn = 0x7f0d0077;
-		public static final int checkmark = 0x7f0d0080;
-		public static final int choice_mode = 0x7f0d0023;
-		public static final int clip = 0x7f0d008b;
-		public static final int commit = 0x7f0d0073;
-		public static final int cover = 0x7f0d007a;
-		public static final int footer = 0x7f0d0076;
-		public static final int grid = 0x7f0d0074;
-		public static final int image = 0x7f0d007e;
-		public static final int image_grid = 0x7f0d0071;
-		public static final int indicator = 0x7f0d007b;
-		public static final int iv_choose_area = 0x7f0d0079;
-		public static final int iv_result = 0x7f0d002e;
-		public static final int mScaleImageView = 0x7f0d0081;
-		public static final int mask = 0x7f0d007f;
-		public static final int multi = 0x7f0d0024;
-		public static final int name = 0x7f0d007c;
-		public static final int no_show = 0x7f0d0029;
-		public static final int no_show_text = 0x7f0d002c;
-		public static final int preview = 0x7f0d0078;
-		public static final int request_num = 0x7f0d0026;
-		public static final int result = 0x7f0d002d;
-		public static final int show = 0x7f0d0028;
-		public static final int show_camera = 0x7f0d0027;
-		public static final int show_text = 0x7f0d002b;
-		public static final int show_text_group = 0x7f0d002a;
-		public static final int single = 0x7f0d0025;
-		public static final int size = 0x7f0d007d;
-		public static final int timeline_area = 0x7f0d0075;
-		public static final int tv_msg = 0x7f0d008c;
-		public static final int tv_save = 0x7f0d008d;
+		public static final int category_btn = 0x7f0d0079;
+		public static final int checkmark = 0x7f0d0082;
+		public static final int choice_mode = 0x7f0d0025;
+		public static final int clip = 0x7f0d008d;
+		public static final int commit = 0x7f0d0075;
+		public static final int cover = 0x7f0d007c;
+		public static final int footer = 0x7f0d0078;
+		public static final int grid = 0x7f0d0076;
+		public static final int image = 0x7f0d0080;
+		public static final int image_grid = 0x7f0d0073;
+		public static final int indicator = 0x7f0d007d;
+		public static final int iv_choose_area = 0x7f0d007b;
+		public static final int iv_result = 0x7f0d0030;
+		public static final int mScaleImageView = 0x7f0d0083;
+		public static final int mask = 0x7f0d0081;
+		public static final int multi = 0x7f0d0026;
+		public static final int name = 0x7f0d007e;
+		public static final int no_show = 0x7f0d002b;
+		public static final int no_show_text = 0x7f0d002e;
+		public static final int preview = 0x7f0d007a;
+		public static final int request_num = 0x7f0d0028;
+		public static final int result = 0x7f0d002f;
+		public static final int show = 0x7f0d002a;
+		public static final int show_camera = 0x7f0d0029;
+		public static final int show_text = 0x7f0d002d;
+		public static final int show_text_group = 0x7f0d002c;
+		public static final int single = 0x7f0d0027;
+		public static final int size = 0x7f0d007f;
+		public static final int timeline_area = 0x7f0d0077;
+		public static final int tv_msg = 0x7f0d008e;
+		public static final int tv_save = 0x7f0d008f;
 	}
 	public static final class layout {
 		public static final int activity_main = 0x7f040009;
