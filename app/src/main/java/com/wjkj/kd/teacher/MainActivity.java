@@ -17,7 +17,6 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import android.util.LruCache;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
@@ -42,7 +41,6 @@ import com.wjkj.kd.teacher.biz.RegistUmengService;
 import com.wjkj.kd.teacher.biz.SettingWebParams;
 import com.wjkj.kd.teacher.interfaces.JavaScriptCall;
 import com.wjkj.kd.teacher.receiver.ListenConntectStatesReceiver;
-import com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
 import com.wjkj.kd.teacher.utils.AnimationUtils;
 import com.wjkj.kd.teacher.utils.BitmapUtils;
 import com.wjkj.kd.teacher.utils.ExUtil;
@@ -60,7 +58,6 @@ import java.io.UnsupportedEncodingException;
 import java.lang.ref.SoftReference;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 //import com.wjkj.kd.teacher.biz.Menu;
 
@@ -258,7 +255,9 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onBackPressed() {
-        if (tv_permit.getVisibility() == View.VISIBLE) {
+        if (tv_permit.getVisibility() == View.VISIBLE
+//                && progressBar.getVisibility() == View.VISIBLE
+                ) {
             finishAll();
         }
         webView.loadUrl("javascript:G_jsCallBack.QueuedoBackFN();");
@@ -386,7 +385,6 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
 
-        MyPushMessageReceiver.f = true;
         unregisterReceiver(imageBroadcastReceiver);
         unregisterReceiver(receiver);
         super.onDestroy();
@@ -436,7 +434,8 @@ public class MainActivity extends BaseActivity {
                 String path = "/mnt/sdcard/temp.jpg";
                 bitmap = BitmapUtils.compressPictureFromFile(path);
                 String pictureBytes = ParseUtils.getBase64FromBitmap(bitmap);
-                pictureBytes = "data:image/png;base64," + pictureBytes;
+                pictureBytes =
+                        "data:image/png;base64," + pictureBytes;
                 webView.loadUrl("javascript:G_jsCallBack.selectHeadPic_callback('" + pictureBytes + "')");
             } catch (Exception e) {
                 ExUtil.e(e);

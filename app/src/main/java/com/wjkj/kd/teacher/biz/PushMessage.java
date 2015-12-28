@@ -1,13 +1,11 @@
 package com.wjkj.kd.teacher.biz;
 
-import com.baidu.android.common.logging.Log;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.PersistentCookieStore;
 import com.wjkj.kd.teacher.MainActivity;
 import com.wjkj.kd.teacher.MyApplication;
 import com.wjkj.kd.teacher.dao.AbstractDao;
 import com.wjkj.kd.teacher.handle.AbstractHandle;
-import com.wjkj.kd.teacher.receiver.MyPushMessageReceiver;
 import com.wjkj.kd.teacher.utils.ExUtil;
 import com.wjkj.kd.teacher.utils.GloableUtils;
 import com.wjkj.kd.teacher.utils.HttpUtils;
@@ -30,7 +28,6 @@ public class PushMessage extends AbstractDao{
     //此方法调用网络请求传递参数
     public void pushMessageToServer() throws UnsupportedEncodingException, JSONException {
         //TODO
-        MyPushMessageReceiver.f = false;
         String url = GloableUtils.InterfaceURL+ "pushMsgDevice/save.json";
 //                +"?JSESSIONID="+JESSIONID;
         JSONObject jSONObject=new JSONObject();
@@ -58,7 +55,6 @@ public class PushMessage extends AbstractDao{
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 try {
-                    Log.i("TAG","打印网络连接成果"+ new String(bytes));
                     JSONObject jsonObject = ParseUtils.getJSONObject(bytes);
                     HttpUtils.pullJson(jsonObject);
                 }catch(JSONException e) {

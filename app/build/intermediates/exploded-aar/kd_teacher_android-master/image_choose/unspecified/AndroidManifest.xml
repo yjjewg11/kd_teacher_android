@@ -3,7 +3,7 @@
     package="me.nereo.multiimageselector" >
 
     <uses-sdk
-        android:minSdkVersion="12"
+        android:minSdkVersion="14"
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />

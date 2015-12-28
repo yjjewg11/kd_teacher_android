@@ -17,14 +17,10 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 uses-sdk
 ADDED from AndroidManifest.xml:6:5
-MERGED from com.umeng:fb:5.4.0:7:5
-MERGED from com.umeng:message:2.4.1:7:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
 MERGED from kd_teacher_android-master:meimidmovablecheckboxMovableCheckboxActivity:unspecified:7:5
 MERGED from kd_teacher_android-master:image_choose:unspecified:5:5
 MERGED from kd_teacher_android-master:multi-image-selector:unspecified:7:5
-MERGED from com.android.support:support-v4:22.2.1:20:5
+MERGED from com.android.support:support-v4:22.1.1:20:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:6:42
 		INJECTED from AndroidManifest.xml:0:0
@@ -169,16 +165,11 @@ ADDED from AndroidManifest.xml:85:5
 		ADDED from AndroidManifest.xml:85:22
 application
 ADDED from AndroidManifest.xml:87:5
-MERGED from com.umeng:fb:5.4.0:11:5
-MERGED from com.umeng:message:2.4.1:11:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from kd_teacher_android-master:image_choose:unspecified:12:5
 MERGED from kd_teacher_android-master:multi-image-selector:unspecified:11:5
-MERGED from com.android.support:support-v4:22.2.1:22:5
+MERGED from com.android.support:support-v4:22.1.1:22:5
 	android:label
 		ADDED from AndroidManifest.xml:87:80
-		REJECTED from com.umeng:message:2.4.1:13:9
 		REJECTED from kd_teacher_android-master:image_choose:unspecified:16:9
 	android:allowBackup
 		ADDED from AndroidManifest.xml:87:18

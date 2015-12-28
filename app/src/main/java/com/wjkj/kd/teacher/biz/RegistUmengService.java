@@ -41,8 +41,6 @@ public class RegistUmengService {
     private void initUpdateApk() {
         UmengUpdateAgent.setUpdateCheckConfig(false);
         UmengUpdateAgent.setDefault();
-        UmengUpdateAgent.setDeltaUpdate(false);
-
         //设置自动更新监听
         UmengUpdateAgent.update(MainActivity.instance);
         UpdateConfig.setDebug(true);

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 
-import com.baidu.mobstat.StatService;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.message.PushAgent;
 //import com.wjkj.kd.teacher.biz.Menu;
@@ -37,8 +36,6 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
     @Override
     protected void onResume() {
         super.onResume();
-        StatService.onResume(this);
-
 
         MobclickAgent.onResume(this);
 
@@ -52,8 +49,6 @@ public abstract class BaseActivity extends Activity implements View.OnClickListe
     @Override
     protected void onPause() {
         super.onPause();
-        StatService.onPause(this);
-
         MobclickAgent.onPause(this);
     }
 

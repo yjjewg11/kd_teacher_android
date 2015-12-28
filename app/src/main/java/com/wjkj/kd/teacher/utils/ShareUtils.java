@@ -63,6 +63,9 @@ public class ShareUtils {
             isShow = true;
             context = con;
             flag = false;
+//            if(TextUtils.isEmpty(title) || title.equals("null") || title.equals("")){
+//                title = "问界互动家园";
+//            }
             if (mController == null) {
                 mController = UMServiceFactory.getUMSocialService("com.umeng.share", RequestType.SOCIAL);
                 // 添加新浪微博SSO授权支持

@@ -21,6 +21,7 @@ public class MyWebChromeClient extends WebChromeClient {
         MainActivity.instance.startActivityForResult(
                 Intent.createChooser(intent, "完成操作需要使用"),
                 GloableUtils.FILECHOOSER_RESULTCODE);
+
     }
 
     // 3.0 + 调用这个方法

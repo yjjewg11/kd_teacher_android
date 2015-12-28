@@ -52,7 +52,7 @@ public class LoadUrlActivity extends BaseActivity {
             tv_share_content.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ShareUtils.showShareDialog(getApplicationContext(),v,content.getTitle(),content.getContent(),content.getPathurl(),content.getHttpurl());
+                    ShareUtils.showShareDialog(LoadUrlActivity.this,v,content.getTitle(),content.getContent(),content.getPathurl(),content.getHttpurl());
                 }
             });
         }

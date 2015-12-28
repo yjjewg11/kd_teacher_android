@@ -8,8 +8,8 @@ package me.nereo.multi_image_selector;
 
 public final class R {
 	public static final class color {
-		public static final int choose_image_folder_text_color = 0x7f0b003d;
-		public static final int choose_image_text_color = 0x7f0b003e;
+		public static final int choose_image_folder_text_color = 0x7f0a0035;
+		public static final int choose_image_text_color = 0x7f0a0036;
 	}
 	public static final class dimen {
 		public static final int folder_cover_size = 0x7f080000;
@@ -31,43 +31,43 @@ public final class R {
 		public static final int text_indicator = 0x7f02007a;
 	}
 	public static final class id {
-		public static final int btn_back = 0x7f0e0076;
-		public static final int category_btn = 0x7f0e007b;
-		public static final int checkmark = 0x7f0e0084;
-		public static final int clip = 0x7f0e008f;
-		public static final int commit = 0x7f0e0077;
-		public static final int cover = 0x7f0e007e;
-		public static final int footer = 0x7f0e007a;
-		public static final int grid = 0x7f0e0078;
-		public static final int image = 0x7f0e0082;
-		public static final int image_grid = 0x7f0e0075;
-		public static final int indicator = 0x7f0e007f;
-		public static final int iv_choose_area = 0x7f0e007d;
-		public static final int mScaleImageView = 0x7f0e0085;
-		public static final int mask = 0x7f0e0083;
-		public static final int name = 0x7f0e0080;
-		public static final int preview = 0x7f0e007c;
-		public static final int size = 0x7f0e0081;
-		public static final int timeline_area = 0x7f0e0079;
-		public static final int tv_msg = 0x7f0e0090;
-		public static final int tv_save = 0x7f0e0091;
+		public static final int btn_back = 0x7f0d0072;
+		public static final int category_btn = 0x7f0d0077;
+		public static final int checkmark = 0x7f0d0080;
+		public static final int clip = 0x7f0d008b;
+		public static final int commit = 0x7f0d0073;
+		public static final int cover = 0x7f0d007a;
+		public static final int footer = 0x7f0d0076;
+		public static final int grid = 0x7f0d0074;
+		public static final int image = 0x7f0d007e;
+		public static final int image_grid = 0x7f0d0071;
+		public static final int indicator = 0x7f0d007b;
+		public static final int iv_choose_area = 0x7f0d0079;
+		public static final int mScaleImageView = 0x7f0d0081;
+		public static final int mask = 0x7f0d007f;
+		public static final int name = 0x7f0d007c;
+		public static final int preview = 0x7f0d0078;
+		public static final int size = 0x7f0d007d;
+		public static final int timeline_area = 0x7f0d0075;
+		public static final int tv_msg = 0x7f0d008c;
+		public static final int tv_save = 0x7f0d008d;
 	}
 	public static final class layout {
-		public static final int choose_activity_default = 0x7f040010;
-		public static final int choose_cmp_customer_actionbar = 0x7f040011;
-		public static final int choose_fragment_multi_image = 0x7f040012;
-		public static final int choose_list_item_camera = 0x7f040013;
-		public static final int choose_list_item_folder = 0x7f040014;
-		public static final int choose_list_item_image = 0x7f040015;
-		public static final int choose_list_item_text = 0x7f040016;
-		public static final int choose_show = 0x7f040017;
-		public static final int crop_main = 0x7f04001c;
+		public static final int choose_activity_default = 0x7f04000e;
+		public static final int choose_cmp_customer_actionbar = 0x7f04000f;
+		public static final int choose_fragment_multi_image = 0x7f040010;
+		public static final int choose_list_item_camera = 0x7f040011;
+		public static final int choose_list_item_folder = 0x7f040012;
+		public static final int choose_list_item_image = 0x7f040013;
+		public static final int choose_list_item_text = 0x7f040014;
+		public static final int choose_show = 0x7f040015;
+		public static final int crop_main = 0x7f04001a;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f0a0001;
-		public static final int folder_all = 0x7f0a0005;
-		public static final int msg_amount_limit = 0x7f0a000b;
-		public static final int msg_no_camera = 0x7f0a000c;
-		public static final int preview = 0x7f0a000d;
+		public static final int app_name = 0x7f090001;
+		public static final int folder_all = 0x7f090005;
+		public static final int msg_amount_limit = 0x7f09000b;
+		public static final int msg_no_camera = 0x7f09000c;
+		public static final int preview = 0x7f09000d;
 	}
 }
