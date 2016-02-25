@@ -1059,7 +1059,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int unknown=0x7f0d0002;
         public static final int viewpager=0x7f0d0015;
         public static final int webView=0x7f0d011a;
-        public static final int webView2=0x7f0d0024;
+        public static final int web_load_html=0x7f0d0024;
         public static final int widget_frame=0x7f0d00aa;
     }
     public static final class layout {

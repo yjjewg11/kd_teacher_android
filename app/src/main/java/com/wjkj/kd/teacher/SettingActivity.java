@@ -89,7 +89,7 @@ public class SettingActivity extends BaseActivity {
         });
         Util.deleteDir(new File(getCacheDir().toString()));
         String size = String.valueOf((allsize / 1024 / 1024 ));
-        tv_cache.setText("" + size.substring(0,(size.indexOf(".")+2))+" M");
+        tv_cache.setText("" + Util.getSubString(size,0,size.indexOf("."),size.length())+" M");
     }
 
     @Override

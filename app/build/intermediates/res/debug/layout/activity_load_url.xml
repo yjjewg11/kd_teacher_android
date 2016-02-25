@@ -16,7 +16,7 @@
 
         <ImageView
             android:src="@drawable/back_arrow2x"
-            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginLeft="15dp"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -52,7 +52,7 @@
     <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/webView2"
+        android:id="@+id/web_load_html"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

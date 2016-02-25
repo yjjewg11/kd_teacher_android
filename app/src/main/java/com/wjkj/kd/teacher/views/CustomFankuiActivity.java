@@ -2,6 +2,7 @@ package com.wjkj.kd.teacher.views;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -94,7 +95,7 @@ public class CustomFankuiActivity extends BaseActivity {
         }
 
         Conversation conversation = MainActivity.instance.agent.getDefaultConversation();
-        conversation.addUserReply(""+text);
+        conversation.addUserReply(MainActivity.instance.getLoginName()+""+text);
         conversation.sync(new SyncListener() {
             @Override
             public void onReceiveDevReply(List<Reply> list) {

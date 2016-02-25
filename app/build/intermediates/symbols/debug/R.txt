@@ -807,7 +807,7 @@ int id umeng_xp_ScrollView 0x7f0d0111
 int id unknown 0x7f0d0002
 int id viewpager 0x7f0d0015
 int id webView 0x7f0d011a
-int id webView2 0x7f0d0024
+int id web_load_html 0x7f0d0024
 int id widget_frame 0x7f0d00aa
 int layout a_image_dir 0x7f040000
 int layout a_images 0x7f040001

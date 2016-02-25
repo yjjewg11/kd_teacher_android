@@ -67,6 +67,12 @@ public class LoadUrlActivity extends BaseActivity {
 
     private void initViews() {
         rl_back = (RelativeLayout)findViewById(R.id.html_rl_back);
+        rl_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         rl_share = (RelativeLayout)findViewById(R.id.html_share);
 

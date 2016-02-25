@@ -89,6 +89,11 @@ public class MainActivity extends BaseActivity {
     public SharedPreferences sp;
     public SharedPreferences.Editor editor;
     public String httpPicUrl;
+    private String loginName;
+
+    public String getLoginName() {
+        return loginName;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -362,6 +367,11 @@ public class MainActivity extends BaseActivity {
             Intent intent = new Intent(MainActivity.this,LoadUrlActivity.class);
             intent.putExtra("shareContent",new ShareContent(title,content,pathurl,httpurl));
             startActivity(intent);
+        }
+
+        @JavascriptInterface
+        public void jsessionToPhoneTel(String name){
+            loginName = name;
         }
     }
 

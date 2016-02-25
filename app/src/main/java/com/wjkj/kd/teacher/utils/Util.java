@@ -6,6 +6,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.text.TextUtils;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -26,6 +27,14 @@ public class Util {
 
     public static String logStringCache = "";
 
+
+    public static String getSubString(String str,int start,int end,int length){
+        if (TextUtils.isEmpty(str)||str.length()<=end) {
+            return str;
+        }
+        str=str.substring(start, end)+"...";
+        return str;
+    }
 
     // 获取ApiKey
     public static String getMetaValue(Context context, String metaKey) {
