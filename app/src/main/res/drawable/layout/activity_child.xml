@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/normal_padding">
+
+            <include
+                android:id="@+id/child_own"
+                layout="@layout/item_mine_list" />
+
+            <include
+                android:id="@+id/child_father"
+                layout="@layout/item_child_parent" />
+
+            <include
+                android:id="@+id/child_mother"
+                layout="@layout/item_child_parent" />
+
+            <include
+                android:id="@+id/child_ye"
+                layout="@layout/item_child_parent" />
+
+            <include
+                android:id="@+id/child_nai"
+                layout="@layout/item_child_parent" />
+
+            <include
+                android:id="@+id/child_wg"
+                layout="@layout/item_child_parent" />
+
+            <include
+                android:id="@+id/child_wp"
+                layout="@layout/item_child_parent" />
+
+            <include
+                android:id="@+id/child_school"
+                layout="@layout/item_child_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/detail_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/normal_padding"
+                    android:drawableLeft="@drawable/mine_pre_text"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:text="备注" />
+
+                <ImageView
+                    android:id="@+id/child_remark_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_padding"
+                    android:scaleType="center"
+                    android:src="@drawable/mine_edit" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/child_remark"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:layout_marginRight="@dimen/normal_padding"
+                android:background="@drawable/login_edit_bg1"
+                android:padding="@dimen/small_padding" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/normal_padding" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

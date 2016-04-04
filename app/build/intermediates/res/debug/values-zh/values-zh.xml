@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/image_choose/unspecified/res/values-zh/values-zh.xml -->
+    <eat-comment/>
+    <string name="action_settings">设置</string>
+    <string name="app_name">多图选择</string>
+    <string name="disable">否</string>
+    <string name="enable">是</string>
+    <string name="enable_camera">是否启用照相机</string>
+    <!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/multi-image-selector/unspecified/res/values-zh/values-zh.xml -->
+    <eat-comment/>
+    <string name="folder_all">所有照片</string>
+    <!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/image_choose/unspecified/res/values-zh/values-zh.xml -->
+    <eat-comment/>
+    <string name="go_select">图片选择</string>
+    <string name="hint_default_amount">默认数量为9</string>
+    <string name="max_select_amount">最大选择数量</string>
+    <string name="mode_multi">多选</string>
+    <string name="mode_single">单选</string>
+    <!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/multi-image-selector/unspecified/res/values-zh/values-zh.xml -->
+    <eat-comment/>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+    <string name="msg_no_camera">没有系统相机</string>
+    <string name="preview">预览</string>
+    <!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/image_choose/unspecified/res/values-zh/values-zh.xml -->
+    <eat-comment/>
+    <string name="select_mode">选择模式</string>
+</resources>

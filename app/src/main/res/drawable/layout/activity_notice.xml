@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/normal_padding"
+                android:text="title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:id="@+id/notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:layout_marginTop="@dimen/normal_padding"
+                android:paddingRight="@dimen/normal_padding"
+                android:text="test test"
+                android:textColor="@color/hint_gray"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/notice_org"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:layout_marginTop="@dimen/normal_padding"
+                android:gravity="right"
+                android:paddingRight="@dimen/normal_padding"
+                android:text="test"
+                android:textColor="@color/hint_gray" />
+
+            <TextView
+                android:id="@+id/notice_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:layout_marginTop="@dimen/small_padding"
+                android:gravity="right"
+                android:paddingRight="@dimen/normal_padding"
+                android:text="test"
+                android:textColor="@color/hint_gray" />
+
+            <include layout="@layout/layout_common_reply"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_my_photo"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/send_message_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+                    android:indeterminateDuration="600"
+                    android:paddingRight="5dp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_send_failure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/main_item"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_msg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_my_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_my_photo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/main_tab_mine_off" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <me.nereo.imagechoose.view.ScaleImageView
+        android:id="@+id/mScaleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/asv"/>
+
+</RelativeLayout>
+
+<!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/multi-image-selector/src/main/res/layout/choose_show.xml --><!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/multi-image-selector/unspecified/res/layout/choose_show.xml -->

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/multi-image-selector/unspecified/res/values-sw720dp/values-sw720dp.xml -->
+    <eat-comment/>
+    <dimen name="folder_cover_size">82dp</dimen>
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">3dp</dimen>
+</resources>

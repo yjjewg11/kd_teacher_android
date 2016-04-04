@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_padding"
+        android:background="@drawable/login_edit_bg1"
+        android:padding="@dimen/small_padding">
+
+        <EditText
+            android:id="@+id/interaction_send_edit"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="@android:color/transparent"
+            android:gravity="start" />
+
+        <ImageView
+            android:id="@+id/interaction_send_add"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_below="@+id/interaction_send_edit"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:src="@drawable/interaction_add_image" />
+    </RelativeLayout>
+</LinearLayout>

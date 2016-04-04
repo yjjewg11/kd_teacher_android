@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_reload_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_load_failure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/info_loading_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+            android:indeterminateDuration="600"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/info_loading_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_3"
+            android:gravity="center_horizontal"
+            android:text="@string/loading_content"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
+</RelativeLayout>

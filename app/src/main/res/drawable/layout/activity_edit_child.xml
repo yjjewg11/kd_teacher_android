@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_normal" />
+
+    <com.wj.kindergarten.compounets.CircleImage
+        android:id="@+id/child_edit_head"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/big_padding" />
+
+    <TextView
+        android:id="@+id/child_edit_head_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:text="更换头像"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:drawableLeft="@drawable/mine_pre_text"
+        android:drawablePadding="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:text="姓名"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text" />
+
+    <EditText
+        android:id="@+id/child_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:background="@drawable/login_edit_bg1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/small_padding"
+        android:text="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:drawableLeft="@drawable/mine_pre_text"
+        android:drawablePadding="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:text="昵称"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text" />
+
+    <EditText
+        android:id="@+id/child_edit_nick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:background="@drawable/login_edit_bg1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/small_padding"
+        android:text="" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/small_padding">
+
+        <RadioButton
+            android:id="@+id/child_edit_nan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/child_edit_nv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/big_padding"
+            android:text="女" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:drawableLeft="@drawable/mine_pre_text"
+        android:drawablePadding="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:text="生日"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text" />
+
+    <EditText
+        android:id="@+id/child_edit_birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:background="@drawable/login_edit_bg1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/small_padding"
+        android:text="" />
+</LinearLayout>

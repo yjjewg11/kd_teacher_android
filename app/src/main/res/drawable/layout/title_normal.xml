@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_bg_shap">
+
+        <LinearLayout
+            android:id="@+id/normal_title_left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:minWidth="32dp">
+
+            <ImageView
+                android:id="@+id/normal_title_left_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:scaleType="center"
+                android:src="@drawable/title_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/normal_title_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/title_center"
+                android:textSize="@dimen/title_center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/normal_title_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_click_selector"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <ImageView
+                android:id="@+id/normal_title_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/normal_title_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textColor="@color/title_center"
+                android:textSize="@dimen/title_right"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/normal_title_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_shadow"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/fix_detail_shadow_down"
+            android:contentDescription="" />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

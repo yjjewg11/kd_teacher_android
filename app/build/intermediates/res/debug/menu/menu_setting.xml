@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wjkj.kd.teacher.SettingActivity">
+    <item android:id="@+id/action_settings" android:title="@string/bd_fb_hint_text"
+        android:orderInCategory="100" android:showAsAction="never" />
+</menu>
+<!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/src/main/res/menu/menu_setting.xml -->

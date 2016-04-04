@@ -1,0 +1,4 @@
+include ':app', ':multi-image-selector', ':image_choose'
+//include ':slidingMenuLibrary'
+include ':meimidmovablecheckboxMovableCheckboxActivity'
+

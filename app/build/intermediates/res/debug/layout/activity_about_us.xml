@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guanyuwomen_no_version"
+    tools:context="com.wjkj.kd.teacher.AboutUsActivity">
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageViewbackrrow"
+            android:src="@drawable/back_arrow2x"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+<!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/src/main/res/layout/activity_about_us.xml -->
