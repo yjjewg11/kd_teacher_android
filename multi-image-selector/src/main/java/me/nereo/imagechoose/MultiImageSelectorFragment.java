@@ -139,6 +139,9 @@ public class MultiImageSelectorFragment extends Fragment {
 
         // 选择图片数量
         mDesireImageCount = getArguments().getInt(EXTRA_SELECT_COUNT);
+        if(mDesireImageCount == 0){
+            mDesireImageCount = 1000;
+        }
 
         // 图片选择模式
        mode = getArguments().getInt(EXTRA_SELECT_MODE);

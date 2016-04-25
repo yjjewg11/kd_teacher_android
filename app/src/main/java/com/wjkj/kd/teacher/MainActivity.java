@@ -395,7 +395,9 @@ public class MainActivity extends BaseActivity {
     }
 
     private void startanotherApplication() {
-        startActivity(new Intent(this, me.nereo.multiimageselector.MainActivity.class));
+        Intent localIntent = new Intent(this, me.nereo.multiimageselector.MainActivity.class);
+        localIntent.putExtra("maxCount", this.maxConutGlobal);
+        startActivity(localIntent);
     }
     @Override
     protected void onStart() {

@@ -19,6 +19,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 import me.nereo.imagechoose.MultiImageSelectorActivity;
+import me.nereo.imagechoose.utils.Utils;
 import song.image.crop.HDApp;
 
 
@@ -73,9 +74,15 @@ public class MainActivity extends Activity {
                 boolean showCamera = mShowCamera.getCheckedRadioButtonId() == R.id.show;
                 boolean showText = mShowText.getCheckedRadioButtonId() == R.id.show_text;
 
-                int maxNum = 9;
+                int maxNum = 0;
                 if (!TextUtils.isEmpty(mRequestNum.getText())) {
                     maxNum = Integer.valueOf(mRequestNum.getText().toString());
+                }
+                String  count = getIntent().getStringExtra("maxCount");
+                if(!Utils.stringIsNull(count)){
+                  if(Integer.valueOf(count) > 0){
+                    maxNum = Integer.valueOf(count);
+                  }
                 }
                 intent = new Intent(MainActivity.this, MultiImageSelectorActivity.class);
                 intent.putExtra(MultiImageSelectorActivity.EXTRA_SHOW_CAMERA, showCamera);// 是否显示拍摄图片

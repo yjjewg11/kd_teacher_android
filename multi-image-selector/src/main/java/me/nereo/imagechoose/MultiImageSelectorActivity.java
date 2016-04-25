@@ -61,7 +61,7 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
         windowManager.getDefaultDisplay().getMetrics(dm);
 
         Intent intent = getIntent();
-        mDefaultCount = intent.getIntExtra(EXTRA_SELECT_COUNT, 9);
+        mDefaultCount = intent.getIntExtra(EXTRA_SELECT_COUNT, 0);
         int mode = intent.getIntExtra(EXTRA_SELECT_MODE, MODE_MULTI);
         boolean isShowCamera = intent.getBooleanExtra(EXTRA_SHOW_CAMERA, true);
         boolean isShowText = intent.getBooleanExtra(EXTRA_SHOW_TEXT, true);
@@ -95,7 +95,12 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
         if(resultList == null || resultList.size()<=0){
             mSubmitButton.setText("完成");
         }else{
-            mSubmitButton.setText("完成("+resultList.size()+"/"+mDefaultCount+")");
+            if(mDefaultCount > 0){
+                mSubmitButton.setText("完成("+resultList.size()+"/"+mDefaultCount+")");
+            }else {
+                mSubmitButton.setText("完成("+resultList.size()+")");
+            }
+
         }
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,14 +145,14 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
         }
         // 有图片之后，改变按钮状态
         if(resultList.size() > 0){
-            mSubmitButton.setText("完成("+resultList.size()+"/"+mDefaultCount+")");
+            mSubmitButton.setText("完成("+resultList.size()+")");
             if(!mSubmitButton.isEnabled()){
                 mSubmitButton.setEnabled(true);
             }
         }
     }
     public void showPic(List<Image> list){
-            mSubmitButton.setText("完成("+list.size()+"/"+mDefaultCount+")");
+            mSubmitButton.setText("完成("+list.size()+")");
             if(!mSubmitButton.isEnabled()){
                 mSubmitButton.setEnabled(true);
             }
@@ -155,7 +160,7 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
     public void giveAll(){
         resultList.clear();
         if(resultList.size() > 0){
-            mSubmitButton.setText("完成("+resultList.size()+"/"+mDefaultCount+")");
+            mSubmitButton.setText("完成("+resultList.size()+")");
             if(!mSubmitButton.isEnabled()){
                 mSubmitButton.setEnabled(true);
             }
@@ -166,9 +171,9 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
     public void onImageUnselected(String path) {
         if(resultList.contains(path)){
             resultList.remove(path);
-            mSubmitButton.setText("完成("+resultList.size()+"/"+mDefaultCount+")");
+            mSubmitButton.setText("完成("+resultList.size()+")");
         }else{
-            mSubmitButton.setText("完成("+resultList.size()+"/"+mDefaultCount+")");
+            mSubmitButton.setText("完成("+resultList.size()+")");
         }
         // 当为选择图片时候的状态
         if(resultList.size() == 0){
