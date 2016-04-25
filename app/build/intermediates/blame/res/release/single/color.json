@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\release\\color\\choose_image_folder_text_color.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\color\\choose_image_folder_text_color.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\release\\color\\choose_image_text_color.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\color\\choose_image_text_color.xml"
+    }
+]
