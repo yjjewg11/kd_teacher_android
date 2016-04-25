@@ -18,7 +18,6 @@ public class ParseUtils {
         byte[] bytes = null;
         try {
             int quality = 80;
-
         out = new ByteArrayOutputStream();
             do {
                 thePic.compress(Bitmap.CompressFormat.JPEG, quality, out);
@@ -44,7 +43,8 @@ public class ParseUtils {
 
 
         }catch (Exception e){
-            ExUtil.e(e);
+            e.printStackTrace();
+            return null;
         }
         return pictureBytes;
     }

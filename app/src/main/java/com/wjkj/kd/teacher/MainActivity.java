@@ -23,6 +23,7 @@ import android.view.animation.RotateAnimation;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebSettings;
+import android.webkit.WebStorage;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
@@ -90,6 +91,9 @@ public class MainActivity extends BaseActivity {
     public SharedPreferences.Editor editor;
     public String httpPicUrl;
     private String loginName;
+    private String callbackGlobal;
+    private String maxConutGlobal;
+    private String qualityGlobal;
 
     public String getLoginName() {
         return loginName;
@@ -291,10 +295,6 @@ public class MainActivity extends BaseActivity {
             startActivityForResult(intent, GloableUtils.RESULT_PICK_PHOTO_NORMAL);
         }
         //此方法不需要裁剪,进行多张图片选择，不启动自带应用，第三方组件
-        @JavascriptInterface
-        public void selectImgPic() {
-            startanotherApplication();
-        }
         //调用此方法取消提示
         //js调用此方法将JessionId传过来将其保存
         @JavascriptInterface
@@ -355,7 +355,6 @@ public class MainActivity extends BaseActivity {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-
                     ShareUtils.showShareDialog(MainActivity.this,tv_line,title,content,pathUrl,links);
                 }
             });
@@ -373,6 +372,18 @@ public class MainActivity extends BaseActivity {
         public void jsessionToPhoneTel(String name){
             loginName = name;
         }
+        @JavascriptInterface
+        public void selectImgForCallBack(String paramString1, String paramString2, String paramString3) {
+            MainActivity.this.callbackGlobal = paramString1;
+            MainActivity.this.maxConutGlobal = paramString2;
+            MainActivity.this.qualityGlobal = paramString3;
+            MainActivity.this.startanotherApplication();
+        }
+
+        @JavascriptInterface
+        public void selectImgPic() {
+            selectImgForCallBack("", "", "");
+        }
     }
 
     public void isFirstSendMessage() throws UnsupportedEncodingException, JSONException {
@@ -384,7 +395,6 @@ public class MainActivity extends BaseActivity {
     }
 
     private void startanotherApplication() {
-
         startActivity(new Intent(this, me.nereo.multiimageselector.MainActivity.class));
     }
     @Override
@@ -594,7 +604,6 @@ public class MainActivity extends BaseActivity {
         deleteDatabase("webviewCache.db");
         webView.clearCache(true);
         webView.clearHistory();
-
         clearCache(getCacheDir().toString());
     }
 
@@ -644,8 +653,12 @@ public class MainActivity extends BaseActivity {
                         //获得运行时内存
                         handler.post(new Runnable() {
                             @Override
-                            public void run() {
-                                webView.loadUrl("javascript:G_jsCallBack.selectPic_callback('" + picbase + "')");
+                            public void run(){
+                                if (!Util.stringIsNull(MainActivity.this.callbackGlobal)){
+                                    MainActivity.this.webView.loadUrl("javascript:" + MainActivity.this.callbackGlobal + "('" + MainActivity.this.picbase + "','"+maxConutGlobal+"')");
+                                    return;
+                                }
+                                MainActivity.this.webView.loadUrl("javascript:G_jsCallBack.selectPic_callback('" + MainActivity.this.picbase + "')");
                             }
                         });
 

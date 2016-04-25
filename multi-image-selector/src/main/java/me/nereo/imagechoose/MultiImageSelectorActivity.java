@@ -1,16 +1,23 @@
 package me.nereo.imagechoose;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
+import me.nereo.imagechoose.bean.Image;
+import me.nereo.imagechoose.utils.Utils;
 import me.nereo.multi_image_selector.R;
 
 /**
@@ -39,12 +46,20 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
     private ArrayList<String> resultList = new ArrayList<>();
     private Button mSubmitButton;
     private int mDefaultCount;
+    private DisplayMetrics dm = new DisplayMetrics();
+
+    public DisplayMetrics getDm() {
+        return dm;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.choose_activity_default);
+        WindowManager windowManager = (WindowManager)getSystemService(Context.WINDOW_SERVICE);
+        windowManager.getDefaultDisplay().getMetrics(dm);
+
         Intent intent = getIntent();
         mDefaultCount = intent.getIntExtra(EXTRA_SELECT_COUNT, 9);
         int mode = intent.getIntExtra(EXTRA_SELECT_MODE, MODE_MULTI);
@@ -62,7 +77,7 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
         bundle.putStringArrayList(MultiImageSelectorFragment.EXTRA_DEFAULT_SELECTED_LIST, resultList);
 
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.image_grid, Fragment.instantiate(this, MultiImageSelectorFragment.class.getName(), bundle))
+                .add(R.id.image_grid, Fragment.instantiate(this, MultiImageSelectorFragment.class.getName(), bundle),"pic")
                 .commit();
 
         // 返回按钮
@@ -76,16 +91,28 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
 
         // 完成按钮
         mSubmitButton = (Button) findViewById(R.id.commit);
+        mSubmitButton.setEnabled(true);
         if(resultList == null || resultList.size()<=0){
             mSubmitButton.setText("完成");
-            mSubmitButton.setEnabled(false);
         }else{
             mSubmitButton.setText("完成("+resultList.size()+"/"+mDefaultCount+")");
-            mSubmitButton.setEnabled(true);
         }
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                MultiImageSelectorFragment fragment = (MultiImageSelectorFragment)
+                        getSupportFragmentManager().findFragmentByTag("pic");
+                if(fragment != null && fragment.getNewImageAdapter().getmSelectedImages().size() > 0){
+                    List<Image> list =  fragment.getNewImageAdapter().getmSelectedImages();
+                    Iterator<Image> iterator = list.iterator();
+                    while (iterator.hasNext()){
+                        String path = iterator.next().getPath();
+                        if (Utils.stringIsNull(path)) continue;
+                        resultList.add(path);
+                    }
+                }else {
+                    return;
+                }
                 if(resultList != null && resultList.size() >0){
                     // 返回已选择的图片数据
                     Intent data = new Intent();
@@ -119,6 +146,21 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
             }
         }
     }
+    public void showPic(List<Image> list){
+            mSubmitButton.setText("完成("+list.size()+"/"+mDefaultCount+")");
+            if(!mSubmitButton.isEnabled()){
+                mSubmitButton.setEnabled(true);
+            }
+    }
+    public void giveAll(){
+        resultList.clear();
+        if(resultList.size() > 0){
+            mSubmitButton.setText("完成("+resultList.size()+"/"+mDefaultCount+")");
+            if(!mSubmitButton.isEnabled()){
+                mSubmitButton.setEnabled(true);
+            }
+        }
+    }
 
     @Override
     public void onImageUnselected(String path) {
@@ -131,7 +173,7 @@ public class MultiImageSelectorActivity extends FragmentActivity implements Mult
         // 当为选择图片时候的状态
         if(resultList.size() == 0){
             mSubmitButton.setText("完成");
-            mSubmitButton.setEnabled(false);
+            mSubmitButton.setEnabled(true);
         }
     }
 

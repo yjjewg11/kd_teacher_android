@@ -7,13 +7,24 @@
 package me.nereo.multi_image_selector;
 
 public final class R {
+	public static final class attr {
+		public static final int hasStickyHeaders = 0x7f010013;
+		public static final int isDrawingListUnderStickyHeader = 0x7f010014;
+		public static final int stickyListHeadersListViewStyle = 0x7f010012;
+	}
 	public static final class color {
+		public static final int black = 0x7f0a0001;
 		public static final int choose_image_folder_text_color = 0x7f0a0036;
 		public static final int choose_image_text_color = 0x7f0a0037;
+		public static final int red = 0x7f0a001f;
+		public static final int title_bg = 0x7f0a0022;
+		public static final int white = 0x7f0a0035;
 	}
 	public static final class dimen {
 		public static final int folder_cover_size = 0x7f080000;
 		public static final int image_size = 0x7f080001;
+		public static final int margin_10 = 0x7f080029;
+		public static final int margin_15 = 0x7f08002a;
 		public static final int space_size = 0x7f080002;
 	}
 	public static final class drawable {
@@ -27,8 +38,9 @@ public final class R {
 		public static final int default_check_s = 0x7f020032;
 		public static final int default_error = 0x7f020033;
 		public static final int ic_menu_back = 0x7f020041;
-		public static final int selector_indicator = 0x7f020062;
-		public static final int text_indicator = 0x7f02007a;
+		public static final int redline = 0x7f02005c;
+		public static final int selector_indicator = 0x7f020063;
+		public static final int text_indicator = 0x7f02007b;
 	}
 	public static final class id {
 		public static final int btn_back = 0x7f0d0074;
@@ -46,6 +58,8 @@ public final class R {
 		public static final int mScaleImageView = 0x7f0d0083;
 		public static final int mask = 0x7f0d0081;
 		public static final int name = 0x7f0d007e;
+		public static final int pf_family_first_item_count = 0x7f0d00a8;
+		public static final int pf_family_first_item_time = 0x7f0d00a7;
 		public static final int preview = 0x7f0d007a;
 		public static final int size = 0x7f0d007f;
 		public static final int timeline_area = 0x7f0d0077;
@@ -62,12 +76,42 @@ public final class R {
 		public static final int choose_list_item_text = 0x7f040014;
 		public static final int choose_show = 0x7f040015;
 		public static final int crop_main = 0x7f04001a;
+		public static final int pf_family_fusion_head = 0x7f040027;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f090001;
+		public static final int choose_all = 0x7f090026;
 		public static final int folder_all = 0x7f090005;
 		public static final int msg_amount_limit = 0x7f09000b;
 		public static final int msg_no_camera = 0x7f09000c;
 		public static final int preview = 0x7f09000d;
+	}
+	public static final class styleable {
+		public static final int[] StickyListHeadersListView = { 0x0101007f, 0x010100d5, 0x010100d6, 0x010100d7, 0x010100d8, 0x010100d9, 0x010100de, 0x010100e0, 0x010100eb, 0x010100fb, 0x010100fc, 0x010100fd, 0x010100fe, 0x01010100, 0x01010101, 0x01010129, 0x0101012a, 0x0101012b, 0x01010226, 0x010102c1, 0x01010335, 0x010103a5, 0x7f010012, 0x7f010013, 0x7f010014 };
+		public static final int StickyListHeadersListView_android_cacheColorHint = 14;
+		public static final int StickyListHeadersListView_android_choiceMode = 17;
+		public static final int StickyListHeadersListView_android_clipToPadding = 8;
+		public static final int StickyListHeadersListView_android_divider = 15;
+		public static final int StickyListHeadersListView_android_dividerHeight = 16;
+		public static final int StickyListHeadersListView_android_drawSelectorOnTop = 10;
+		public static final int StickyListHeadersListView_android_fadingEdgeLength = 7;
+		public static final int StickyListHeadersListView_android_fastScrollAlwaysVisible = 20;
+		public static final int StickyListHeadersListView_android_fastScrollEnabled = 18;
+		public static final int StickyListHeadersListView_android_listSelector = 9;
+		public static final int StickyListHeadersListView_android_overScrollMode = 19;
+		public static final int StickyListHeadersListView_android_padding = 1;
+		public static final int StickyListHeadersListView_android_paddingBottom = 5;
+		public static final int StickyListHeadersListView_android_paddingLeft = 2;
+		public static final int StickyListHeadersListView_android_paddingRight = 4;
+		public static final int StickyListHeadersListView_android_paddingTop = 3;
+		public static final int StickyListHeadersListView_android_requiresFadingEdge = 21;
+		public static final int StickyListHeadersListView_android_scrollbarStyle = 0;
+		public static final int StickyListHeadersListView_android_scrollbars = 6;
+		public static final int StickyListHeadersListView_android_scrollingCache = 12;
+		public static final int StickyListHeadersListView_android_stackFromBottom = 11;
+		public static final int StickyListHeadersListView_android_transcriptMode = 13;
+		public static final int StickyListHeadersListView_hasStickyHeaders = 23;
+		public static final int StickyListHeadersListView_isDrawingListUnderStickyHeader = 24;
+		public static final int StickyListHeadersListView_stickyListHeadersListViewStyle = 22;
 	}
 }

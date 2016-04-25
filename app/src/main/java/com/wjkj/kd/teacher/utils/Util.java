@@ -59,6 +59,12 @@ public class Util {
         return apiKey;
     }
 
+    public static boolean stringIsNull(String str) {
+        if (str == null || "".equals(str) || "null".equals(str)) {
+            return true;
+        }
+        return false;
+    }
     public static List<String> getTagsList(String originalText) {
         if (originalText == null || originalText.equals("")) {
             return null;
