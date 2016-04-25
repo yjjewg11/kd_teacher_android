@@ -40,4 +40,4 @@
     <View
         android:id="@+id/umeng_socialize_full_alert_dialog_divider"
         style="@style/umeng_socialize_divider"/>
-</LinearLayout><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/layout/umeng_socialize_full_alert_dialog_item.xml -->
+</LinearLayout><!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/src/main/res/layout/umeng_socialize_full_alert_dialog_item.xml -->

@@ -4,4 +4,4 @@
     <item android:id="@+id/action_settings" android:title="@string/bd_fb_hint_text"
         android:orderInCategory="100" android:showAsAction="never" />
 </menu>
-<!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/menu/menu_version.xml -->
+<!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/src/main/res/menu/menu_version.xml -->

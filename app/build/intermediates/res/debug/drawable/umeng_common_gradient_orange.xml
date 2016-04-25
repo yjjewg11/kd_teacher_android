@@ -4,4 +4,4 @@
 	<gradient android:startColor="#FFA500" android:endColor="#E0AA6E"
 		android:type="linear" android:angle="90" />
 	<corners android:radius="8dp" />
-</shape><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/drawable/umeng_common_gradient_orange.xml -->
+</shape><!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/src/main/res/drawable/umeng_common_gradient_orange.xml -->

@@ -6,4 +6,4 @@
     android:layout_height="86dp"
     android:contentDescription="@string/app_name"
     android:scaleType="centerCrop"
-    android:adjustViewBounds="true" /><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/layout/i_main.xml -->
+    android:adjustViewBounds="true" /><!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/src/main/res/layout/i_main.xml -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/image_choose/src/main/res/values-zh/strings.xml -->
+    <!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/image_choose/src/main/res/values-zh/strings.xml -->
     <eat-comment/>
     <string name="action_settings">设置</string>
     <string name="app_name">多图选择</string>

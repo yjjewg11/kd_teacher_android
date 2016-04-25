@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/multi-image-selector/src/main/res/values-sw720dp/dimens.xml -->
+    <!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/multi-image-selector/src/main/res/values-sw720dp/dimens.xml -->
     <eat-comment/>
     <dimen name="folder_cover_size">82dp</dimen>
     <dimen name="image_size">120dp</dimen>

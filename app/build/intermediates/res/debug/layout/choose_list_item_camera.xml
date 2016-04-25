@@ -19,4 +19,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"/>
-</FrameLayout><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/multi-image-selector/src/main/res/layout/choose_list_item_camera.xml --><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/multi-image-selector/unspecified/res/layout/choose_list_item_camera.xml -->
+</FrameLayout><!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/multi-image-selector/src/main/res/layout/choose_list_item_camera.xml --><!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/multi-image-selector/unspecified/res/layout/choose_list_item_camera.xml -->

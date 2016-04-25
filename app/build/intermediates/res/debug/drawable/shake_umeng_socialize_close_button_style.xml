@@ -3,4 +3,4 @@
 	<item android:state_pressed="true" android:drawable="@drawable/shake_umeng_socialize_close_pressed" />
 	<item android:drawable="@drawable/shake_umeng_socialize_close" />
 </selector>
-<!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/drawable/shake_umeng_socialize_close_button_style.xml -->
+<!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/src/main/res/drawable/shake_umeng_socialize_close_button_style.xml -->

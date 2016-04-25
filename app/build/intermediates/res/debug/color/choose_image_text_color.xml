@@ -5,4 +5,4 @@
     <item android:color="#CDCECE" android:state_pressed="false" />
     <item android:color="#FFFFFF" android:state_pressed="true" />
     <item android:color="#CDCECE" />
-</selector><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/multi-image-selector/src/main/res/color/choose_image_text_color.xml --><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/multi-image-selector/unspecified/res/color/choose_image_text_color.xml -->
+</selector><!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/multi-image-selector/src/main/res/color/choose_image_text_color.xml --><!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/build/intermediates/exploded-aar/kd_teacher_android-master/multi-image-selector/unspecified/res/color/choose_image_text_color.xml -->

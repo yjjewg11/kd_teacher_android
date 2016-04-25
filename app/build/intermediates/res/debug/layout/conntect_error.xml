@@ -22,4 +22,4 @@
         android:id="@+id/button6"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
-</RelativeLayout><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/layout/conntect_error.xml -->
+</RelativeLayout><!-- From: file:/Users/tanghongbin/Documents/work_wenjie_project/kd_teacher_android-master/app/src/main/res/layout/conntect_error.xml -->
