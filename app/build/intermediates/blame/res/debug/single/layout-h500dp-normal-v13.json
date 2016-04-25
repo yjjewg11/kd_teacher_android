@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-h500dp-normal-v13\\share_layout.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\layout-h500dp-normal\\share_layout.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-h500dp-normal-v13\\umeng_socialize_ucenter.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\layout-h500dp-normal\\umeng_socialize_ucenter.xml"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_setting.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_setting.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_conntect_error.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_conntect_error.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_first_page.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_first_page.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_push_state.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_push_state.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_version.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_version.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_about_us.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_about_us.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_load_url.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_load_url.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_custom_fankui.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_custom_fankui.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_select_pic.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\menu\\menu_select_pic.xml"
+    }
+]
