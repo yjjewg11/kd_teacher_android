@@ -85,15 +85,13 @@ public class UploadChooseGridAdapter extends BaseAdapter implements StickyGridHe
 
     public void setItemSize(int columnWidth) {
 
-        if(mItemSize == columnWidth){
-            return;
-        }
 
-        mItemSize = columnWidth;
 
-//        mItemLayoutParams = new GridView.LayoutParams(mItemSize, mItemSize);
-
-        notifyDataSetChanged();
+//        mItemSize = columnWidth;
+//
+////        mItemLayoutParams = new GridView.LayoutParams(mItemSize, mItemSize);
+//
+//        notifyDataSetChanged();
     }
     @Override
     public long getHeaderId(int position) {

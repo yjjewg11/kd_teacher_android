@@ -1,5 +1,6 @@
 package me.nereo.imagechoose;
 
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
@@ -130,7 +131,7 @@ public class MultiImageSelectorFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.choose_fragment_multi_image, container, false);
+        return inflater.inflate(R.layout.choose_fragment_multi_image, container,false);
     }
 
     @Override
@@ -173,11 +174,11 @@ public class MultiImageSelectorFragment extends Fragment {
         mCategoryText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 if(mFolderPopupWindow == null){
+                    mGridWidth = mGridView.getWidth();
+                    mGridHeight = mGridView.getHeight();
                     createPopupFolderList(mGridWidth, mGridHeight);
                 }
-
                 if (mFolderPopupWindow.isShowing()) {
                     mFolderPopupWindow.dismiss();
                 } else {
@@ -203,99 +204,14 @@ public class MultiImageSelectorFragment extends Fragment {
         });
 
         mGridView = (StickyGridHeadersGridView) view.findViewById(R.id.grid);
-//        mGridView.setOnScrollListener(new AbsListView.OnScrollListener() {
-//            @Override
-//            public void onScrollStateChanged(AbsListView absListView, int state) {
-//
-//                final Picasso picasso = Picasso.with(getActivity());
-//                if(state == SCROLL_STATE_IDLE || state == SCROLL_STATE_TOUCH_SCROLL){
-//                    picasso.resumeTag(getActivity());
-//                }else{
-//                    picasso.pauseTag(getActivity());
-//                }
-//
-//                if(state == SCROLL_STATE_IDLE){
-//                    // 停止滑动，日期指示器消失
-//                    mTimeLineText.setVisibility(View.GONE);
-//                }else if(state == SCROLL_STATE_FLING){
-//                    mTimeLineText.setVisibility(View.VISIBLE);
-//                }
-//            }
-//
-//            @Override
-//            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-//                if(mTimeLineText.getVisibility() == View.VISIBLE) {
-//                    int index = firstVisibleItem + 1 == view.getAdapter().getCount() ? view.getAdapter().getCount() - 1 : firstVisibleItem + 1;
-//                    Image image = (Image) view.getAdapter().getItem(index);
-//                    if (image != null) {
-//                        mTimeLineText.setText(TimeUtils.formatPhotoDate(image.path));
-//                    }
-//                }
-//            }
-//        });
-
         mGridView.setAdapter(newImageAdapter);
-//        mGridView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-//            @Override @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-//            public void onGlobalLayout() {
-//
-//                final int width = mGridView.getWidth();
-//                final int height = mGridView.getHeight();
-//
-//                mGridWidth = width;
-//                mGridHeight = height;
-//
-//                final int desireSize = getResources().getDimensionPixelOffset(R.dimen.image_size);
-//                final int numCount = width / desireSize;
-//                final int columnSpace = getResources().getDimensionPixelOffset(R.dimen.space_size);
-//                int columnWidth = (width - columnSpace*(numCount-1)) / numCount;
-//                newImageAdapter.setItemSize(columnWidth);
-//
-//                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
-//                    mGridView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-//                }else{
-//                    mGridView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-//                }
-//            }
-//        });
         mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                if(newImageAdapter.isShowCamera() && newImageAdapter.isShowTxt()){
-//                    if(i == 0){
-//                        showCameraAction();
-//                    }else if(i == 1){
-//                        Toast.makeText(getActivity(),"文本",Toast.LENGTH_SHORT).show();
-//                    }else{
-//                        // 正常操作
-//                        Image image = (Image) adapterView.getAdapter().getItem(i);
-//                        selectImageFromGrid(image, mode);
-//                    }
-//                }else if(newImageAdapter.isShowTxt() || newImageAdapter.isShowCamera()){
-//                    if(newImageAdapter.isShowCamera()){
-//                        if(i == 0){
-//                            showCameraAction();
-//                            return ;
-//                        }
-//                    }
-//                    if(newImageAdapter.isShowTxt()){
-//                        if(i == 0){
-//                            Toast.makeText(getActivity(),"文本",Toast.LENGTH_SHORT).show();
-//                            return ;
-//                        }
-//                    }
-//
-//                    // 正常操作
-//                    Image image = (Image) adapterView.getAdapter().getItem(i);
-//                    selectImageFromGrid(image, mode);
-//                }else{
-                    // 正常操作
                     Image image = (Image) newImageAdapter.getItem(i);
                     selectImageFromGrid(image, mode);
-
             }
         });
-
         mFolderAdapter = new FolderAdapter(getActivity());
     }
 
@@ -325,21 +241,21 @@ public class MultiImageSelectorFragment extends Fragment {
                     public void run() {
                         mFolderPopupWindow.dismiss();
 //
-//                        if (index == 0) {
-//                            getActivity().getSupportLoaderManager().restartLoader(LOADER_ALL, null, mLoaderCallback);
-//                            mCategoryText.setText(R.string.folder_all);
-//                            if (mIsShowCamera) {
+                        if (index == 0) {
+                            getActivity().getSupportLoaderManager().restartLoader(LOADER_ALL, null, mLoaderCallback);
+                            mCategoryText.setText(R.string.folder_all);
+                            if (mIsShowCamera) {
 //                                newImageAdapter.setShowCamera(true);
-//                                if(mIsShowText && mode==MODE_MULTI){//多选的时候才显示文本
+                                if(mIsShowText && mode==MODE_MULTI){//多选的时候才显示文本
 //                                    newImageAdapter.setShowTxt(true);
-//                                }else{
+                                }else{
 //                                    newImageAdapter.setShowTxt(false);
-//                                }
-//                            }else {
+                                }
+                            }else {
 //                                newImageAdapter.setShowCamera(false);
 //                                newImageAdapter.setShowTxt(false);
-//                            }
-//                        } else {
+                            }
+                        } else {
                             Folder folder = (Folder) v.getAdapter().getItem(index);
                             if (null != folder) {
                                 newImageAdapter.setData(folder.images);
@@ -349,8 +265,7 @@ public class MultiImageSelectorFragment extends Fragment {
 //                                    newImageAdapter.setDefaultSelected(resultList);
                                 }
                             }
-//                        }
-
+                        }
                         // 滑动到最初始位置
                         mGridView.smoothScrollToPosition(0);
                     }
@@ -397,33 +312,33 @@ public class MultiImageSelectorFragment extends Fragment {
             }
         }
 
-//        mGridView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-//            @Override
-//            @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-//            public void onGlobalLayout() {
-//
-//                final int height = mGridView.getHeight();
-//
-//                final int desireSize = getResources().getDimensionPixelOffset(R.dimen.image_size);
-//                Log.d(TAG, "Desire Size = " + desireSize);
-//                final int numCount = mGridView.getWidth() / desireSize;
-//                Log.d(TAG, "Grid Size = " + mGridView.getWidth());
-//                Log.d(TAG, "num count = " + numCount);
-//                final int columnSpace = getResources().getDimensionPixelOffset(R.dimen.space_size);
-//                int columnWidth = (mGridView.getWidth() - columnSpace * (numCount - 1)) / numCount;
-//                newImageAdapter.setItemSize(columnWidth);
-//
-//                if (mFolderPopupWindow != null) {
-//                    mFolderPopupWindow.setHeight(height * 5 / 8);
-//                }
-//
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-//                    mGridView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-//                } else {
-//                    mGridView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-//                }
-//            }
-//        });
+        mGridView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+            public void onGlobalLayout() {
+
+                final int height = mGridView.getHeight();
+
+                final int desireSize = getResources().getDimensionPixelOffset(R.dimen.image_size);
+                Log.d(TAG, "Desire Size = " + desireSize);
+                final int numCount = mGridView.getWidth() / desireSize;
+                Log.d(TAG, "Grid Size = " + mGridView.getWidth());
+                Log.d(TAG, "num count = " + numCount);
+                final int columnSpace = getResources().getDimensionPixelOffset(R.dimen.space_size);
+                int columnWidth = (mGridView.getWidth() - columnSpace * (numCount - 1)) / numCount;
+                newImageAdapter.setItemSize(columnWidth);
+
+                if (mFolderPopupWindow != null) {
+                    mFolderPopupWindow.setHeight(height * 5 / 8);
+                }
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    mGridView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                } else {
+                    mGridView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                }
+            }
+        });
 
         super.onConfigurationChanged(newConfig);
 

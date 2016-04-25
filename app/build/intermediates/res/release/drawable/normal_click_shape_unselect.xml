@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <solid android:color="@color/translate" />
-</shape><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/drawable/normal_click_shape_unselect.xml -->

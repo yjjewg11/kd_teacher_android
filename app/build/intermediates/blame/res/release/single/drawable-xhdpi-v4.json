@@ -100,12 +100,12 @@
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable-xhdpi\\umeng_socialize_switchimage_unchoose.png"
     },
     {
-        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\frame.png",
-        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\unspecified\\res\\drawable-xhdpi-v4\\frame.png"
-    },
-    {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\share_webo.png",
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable-xhdpi\\share_webo.png"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\frame.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\unspecified\\res\\drawable-xhdpi-v4\\frame.png"
     },
     {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\messenger_bubble_large_white.png",

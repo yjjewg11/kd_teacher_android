@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:drawable="@drawable/tongxunlu1blue"/>
-    <item android:state_checked="false" android:drawable="@drawable/tongxunlu2noname2x"/>
-</selector><!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/drawable/seclecttongxin.xml -->

@@ -164,6 +164,10 @@
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\layout\\activity_first_page.xml"
     },
     {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\release\\layout\\choose_fragment_multi_image.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\layout\\choose_fragment_multi_image.xml"
+    },
+    {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\release\\layout\\umeng_socialize_bind_select_dialog.xml",
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\layout\\umeng_socialize_bind_select_dialog.xml"
     },

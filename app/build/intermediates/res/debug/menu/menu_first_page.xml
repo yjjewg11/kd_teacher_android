@@ -1,7 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.wjkj.kd.teacher.FirstPageActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" android:showAsAction="never" />
-</menu>
-<!-- From: file:/D:/work-wenjie-project/kd_teacher_android-master/app/src/main/res/menu/menu_first_page.xml -->

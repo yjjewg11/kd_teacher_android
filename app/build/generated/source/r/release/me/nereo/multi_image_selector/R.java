@@ -21,11 +21,12 @@ public final class R {
 		public static final int white = 0x7f0a0035;
 	}
 	public static final class dimen {
-		public static final int folder_cover_size = 0x7f080000;
-		public static final int image_size = 0x7f080001;
+		public static final int folder_cover_size = 0x7f08001d;
+		public static final int image_90 = 0x7f080023;
+		public static final int image_size = 0x7f080024;
 		public static final int margin_10 = 0x7f080029;
 		public static final int margin_15 = 0x7f08002a;
-		public static final int space_size = 0x7f080002;
+		public static final int space_size = 0x7f080037;
 	}
 	public static final class drawable {
 		public static final int action_btn = 0x7f020001;

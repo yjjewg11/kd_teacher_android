@@ -43,8 +43,8 @@ public class FolderAdapter extends BaseAdapter {
      * @param folders
      */
     public void setData(List<Folder> folders) {
-        if(folders != null && folders.size()>0){
-            mFolders = folders;
+        if(folders.size()>0){
+            mFolders.addAll(folders);
         }else{
             mFolders.clear();
         }
