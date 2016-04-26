@@ -657,7 +657,7 @@ public class MainActivity extends BaseActivity {
                             @Override
                             public void run(){
                                 if (!Util.stringIsNull(MainActivity.this.callbackGlobal)){
-                                    MainActivity.this.webView.loadUrl("javascript:" + MainActivity.this.callbackGlobal + "('" + MainActivity.this.picbase + "','"+maxConutGlobal+"')");
+                                    MainActivity.this.webView.loadUrl("javascript:" + MainActivity.this.callbackGlobal + "('" + MainActivity.this.picbase + "','"+imageList.size()+"')");
                                     return;
                                 }
                                 MainActivity.this.webView.loadUrl("javascript:G_jsCallBack.selectPic_callback('" + MainActivity.this.picbase + "')");
