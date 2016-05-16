@@ -24,6 +24,6 @@ public class MyUmengMessageHandle extends UmengMessageHandler{
         public void dealWithNotificationMessage(Context context, UMessage uMessage) {
             super.dealWithNotificationMessage(context, uMessage);
 
-    };
+    }
 
 }

@@ -114,7 +114,6 @@ public class MainActivity extends BaseActivity {
         register();
         try {
             //注册友盟的几种服务
-
             registUmengService = new RegistUmengService(this);
             registUmengService.registService();
         } catch (UnsupportedEncodingException e) {
@@ -122,8 +121,6 @@ public class MainActivity extends BaseActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-
         //禁用侧滑菜单
 //              menu = new Menu(this);
 
@@ -406,7 +403,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-
+        instance = null;
         unregisterReceiver(imageBroadcastReceiver);
         unregisterReceiver(receiver);
         super.onDestroy();
@@ -573,32 +570,6 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    // 注入js函数监听
-//        private void addImageClickListner() {
-//            Log.i("TAG","遍历添加已完毕");
-//                  // 这段js函数的功能就是，遍历所有的img几点，并添加onclick函数，函数的功能是在图片点击的时候调用本地java接口并传递url过去
-//                   webView.loadUrl("javascript:(function(){" +
-//                           "var objs = document.getElementsByTagName(\"img\"); " +
-//                                   "for(var i=0;i<objs.length;i++)  " +
-//                           "{"
-//                          + "    objs[i].onclick=function()  " +
-//                          "    {  "
-//                           + "        window.JavaScriptCall.getPicUrlFromJs(this.src);  " +
-//                          "    }  " +
-//                          "}" +
-//                         "})()");
-//
-//                  webView.loadUrl("javascript:(function(){" +
-//                          "" +"var phone = document.getElementById(" +
-//                                  //TODO需要传入的标签id
-//                                  "" +
-//                                  "); "+
-//                                "phone.onclick=function()  "+
-//                              "  {" +
-//                                 "    window.JavaScriptCall.callPhone()"+
-//
-//                          "})");
-//               }
     public void clear() {
 //        WebStorage webStorage = WebStorage.getInstance();
 //        webStorage.deleteAllData();

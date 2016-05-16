@@ -115,7 +115,6 @@ public class RegistUmengService {
         mPushAgent.enable();
         MainActivity.instance.device_token = UmengRegistrar.getRegistrationId(context);
         ((MainActivity)context).isFirstSendMessage();
-
     }
 
     //当通知来临时，点亮图标

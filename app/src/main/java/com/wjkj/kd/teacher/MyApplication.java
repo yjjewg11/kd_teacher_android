@@ -1,11 +1,13 @@
 package com.wjkj.kd.teacher;
 import android.app.Activity;
 import android.app.Application;
+import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.squareup.leakcanary.LeakCanary;
 import com.wjkj.kd.teacher.utils.GloableUtils;
 import com.wjkj.kd.teacher.utils.ImageLoaderUtils;
 
@@ -14,7 +16,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-public class MyApplication extends Application{
+public class MyApplication extends MultiDexApplication {
     public static MyApplication instance;
     //此集合用于存储activity对象
     public static ArrayList<Activity> list = new ArrayList();
@@ -26,6 +28,7 @@ public class MyApplication extends Application{
         super.onCreate();
         instance = this;
         list.clear();
+        LeakCanary.install(this);
         configImagerLoader();
         //获取最新网页地址
         new AsyncHttpClient().get(this, GloableUtils.newUrl, new AsyncHttpResponseHandler() {
