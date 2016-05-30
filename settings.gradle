@@ -1,4 +1,4 @@
-include ':app', ':multi-image-selector', ':image_choose'
+include ':app', ':multi-image-selector', ':image_choose', ':PushSDK'
 //include ':slidingMenuLibrary'
 include ':meimidmovablecheckboxMovableCheckboxActivity'
 

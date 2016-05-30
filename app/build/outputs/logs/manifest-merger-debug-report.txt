@@ -28,6 +28,7 @@ MERGED from [com.android.support:support-v4:22.1.1] D:\work-wenjie-project\kd_te
 MERGED from [se.emilsjolander:stickylistheaders:2.7.0] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\se.emilsjolander\stickylistheaders\2.7.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.3] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.squareup.leakcanary\leakcanary-android-no-op\1.3\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.support:multidex:1.0.1] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:6:42-71
 		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
@@ -50,22 +51,27 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:7:23-48
 uses-permission#android.permission.INTERNET
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:8:5-66
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:13:5-67
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:8:22-64
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:9:5-75
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:15:5-76
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:9:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:10:5-78
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:14:5-79
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.CHANGE_WIFI_STATE
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:11:5-75
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:20:5-76
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:11:22-73
 uses-permission#android.permission.CHANGE_NETWORK_STATE
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:12:5-78
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:19:5-79
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:12:22-76
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
@@ -82,6 +88,7 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:15:22-82
 uses-permission#android.permission.READ_PHONE_STATE
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:16:5-74
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:18:5-75
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:16:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
@@ -91,19 +98,23 @@ MERGED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:17:22-77
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:18:5-80
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:22:5-81
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:18:22-78
 uses-permission#android.permission.WRITE_SETTINGS
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:19:5-72
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:12:5-73
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:19:22-70
 uses-permission#android.permission.VIBRATE
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:20:5-65
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:31:5-66
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:20:22-63
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:21:5-80
 MERGED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:10:5-81
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:16:5-81
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:21:22-78
 uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
@@ -124,34 +135,42 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:25:22-78
 uses-permission#android.permission.GET_TASKS
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:32:5-67
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:21:5-68
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:32:22-65
 uses-permission#android.permission.WAKE_LOCK
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:44:5-67
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:17:5-68
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:44:22-65
 uses-permission#android.permission.BROADCAST_PACKAGE_ADDED
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:49:5-81
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:25:5-82
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:49:22-79
 uses-permission#android.permission.BROADCAST_PACKAGE_CHANGED
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:50:5-83
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:26:5-84
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:50:22-81
 uses-permission#android.permission.BROADCAST_PACKAGE_INSTALL
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:51:5-83
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:27:5-84
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:51:22-81
 uses-permission#android.permission.BROADCAST_PACKAGE_REPLACED
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:52:5-84
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:28:5-85
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:52:22-82
 uses-permission#android.permission.RESTART_PACKAGES
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:53:5-74
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:29:5-75
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:53:22-72
 uses-permission#android.permission.GET_ACCOUNTS
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:54:5-70
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:30:5-71
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:54:22-68
 uses-permission#WRITE_APN_SETTINGS
@@ -175,6 +194,7 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 MERGED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:12:5-41:19
 MERGED from [kd_teacher_android-master:multi-image-selector:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\multi-image-selector\unspecified\AndroidManifest.xml:11:5-12:19
 MERGED from [com.android.support:support-v4:22.1.1] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\AndroidManifest.xml:22:5-20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:36:5-141:19
 	android:label
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:87:80-102
 		REJECTED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:16:9-41
@@ -286,12 +306,14 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:185:51-82
 receiver#com.umeng.message.NotificationProxyBroadcastReceiver
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:188:9-189:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:37:9-40:20
 	android:exported
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:188:19-43
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:188:44-111
 receiver#com.umeng.message.SystemReceiver
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:192:9-204:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:41:9-55:20
 	android:process
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:192:67-90
 	android:name
@@ -320,8 +342,11 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:202:23-47
 receiver#com.umeng.message.MessageReceiver
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:207:9-211:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:56:9-63:20
 	android:process
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:207:68-91
+	android:exported
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:58:13-37
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:207:19-67
 intent-filter#org.agoo.android.intent.action.RECEIVE
@@ -332,6 +357,7 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:209:25-78
 receiver#com.umeng.message.ElectionReceiver
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:214:9-220:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:64:9-72:20
 	android:process
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:214:69-92
 	android:name
@@ -348,6 +374,7 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:218:27-47
 receiver#com.umeng.message.RegistrationReceiver
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:224:9-228:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:73:9-79:20
 	android:exported
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:224:19-43
 	android:name
@@ -360,10 +387,12 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:226:25-81
 receiver#com.umeng.message.UmengMessageBootReceiver
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:229:9-233:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:80:9-84:20
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:229:19-76
 service#com.umeng.message.UmengService
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:237:9-249:19
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:86:9-102:19
 	android:process
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:237:116-139
 	android:label
@@ -392,12 +421,14 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:245:25-78
 service#com.umeng.message.UmengIntentService
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:252:9-95
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:103:9-105:39
 	android:process
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:252:70-93
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:252:18-69
 service#com.umeng.message.UmengMessageIntentReceiverService
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:255:9-262:19
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:106:9-116:19
 	android:process
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:255:109-132
 	android:exported
@@ -418,6 +449,7 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:260:25-87
 service#com.umeng.message.UmengMessageCallbackHandlerService
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:265:9-278:19
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:117:9-132:19
 	android:exported
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:265:18-42
 	android:name
@@ -448,6 +480,9 @@ ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\Android
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:276:25-83
 service#com.umeng.message.UmengDownloadResourceService
 ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:281:9-81
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:135:9-137:40
+	android:exported
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:137:13-37
 	android:name
 		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:281:18-79
 service#com.umeng.update.net.DownloadingService
@@ -618,3 +653,21 @@ ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-p
 		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:39:13-45
 	android:name
 		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:38:13-61
+uses-permission#android.permission.SEND_SMS
+ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:32:5-67
+	android:name
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:32:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:33:5-70
+	android:name
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:33:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:34:5-67
+	android:name
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:34:22-64
+service#com.umeng.message.local.UmengLocalNotificationService
+ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:138:9-140:40
+	android:exported
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:140:13-37
+	android:name
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:139:13-81

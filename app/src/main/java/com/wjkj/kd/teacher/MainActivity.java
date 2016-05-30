@@ -212,8 +212,7 @@ public class MainActivity extends BaseActivity {
         webView.loadUrl(webUrl);
 
 //        //调试地址
-//        webView.loadUrl(GloableUtils.HTTPURL);
-
+//        webView.loadUrl(GloableUtils.TestServerURL);
     }
 
 
