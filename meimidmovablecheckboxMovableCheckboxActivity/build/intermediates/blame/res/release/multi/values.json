@@ -1,0 +1,121 @@
+[
+    {
+        "outputFile": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 905,
+                    "endColumn": 50,
+                    "endOffset": 951
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\values\\dimen.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 231,
+                        "endColumn": 50,
+                        "endOffset": 277
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 956,
+                    "endColumn": 55,
+                    "endOffset": 1007
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\values\\dimen.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 55,
+                        "endOffset": 108
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 1012,
+                    "endColumn": 51,
+                    "endOffset": 1059
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\values\\dimen.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 114,
+                        "endColumn": 51,
+                        "endOffset": 161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 1064,
+                    "endColumn": 62,
+                    "endOffset": 1122
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\values\\dimen.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 167,
+                        "endColumn": 62,
+                        "endOffset": 225
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 1127,
+                    "endColumn": 49,
+                    "endOffset": 1172
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 132,
+                        "endColumn": 49,
+                        "endOffset": 177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 1177,
+                    "endColumn": 71,
+                    "endOffset": 1244
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 71,
+                        "endOffset": 126
+                    }
+                }
+            }
+        ]
+    }
+]

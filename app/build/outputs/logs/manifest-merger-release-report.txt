@@ -1,0 +1,673 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:2:1-344:12
+	package
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:5:5-34
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:3:6-52
+	xmlns:android
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:6:5-73
+MERGED from [com.android.support:multidex:1.0.1] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [kd_teacher_android-master:meimidmovablecheckboxMovableCheckboxActivity:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\meimidmovablecheckboxMovableCheckboxActivity\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.1] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:multidex:1.0.1] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [kd_teacher_android-master:multi-image-selector:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\multi-image-selector\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.1] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:22.1.1] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\AndroidManifest.xml:20:5-43
+MERGED from [se.emilsjolander:stickylistheaders:2.7.0] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\se.emilsjolander\stickylistheaders\2.7.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.3] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.squareup.leakcanary\leakcanary-android-no-op\1.3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:multidex:1.0.1] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:6:42-71
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:6:15-41
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:7:5-161
+	android:largeScreens
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:7:49-76
+	android:smallScreens
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:7:132-159
+	android:normalScreens
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:7:77-105
+	android:resizeable
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:7:106-131
+	android:anyDensity
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:7:23-48
+uses-permission#android.permission.INTERNET
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:8:5-66
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:8:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:9:5-75
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:9:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:10:5-78
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:11:5-75
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:20:5-76
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:11:22-73
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:12:5-78
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:13:22-75
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:14:5-78
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.INTERACT_ACROSS_USERS_FULL
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:15:5-84
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:15:22-82
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:16:5-74
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:18:5-75
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:16:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:17:5-79
+MERGED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:17:22-77
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:18:5-80
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:18:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:19:5-72
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:19:22-70
+uses-permission#android.permission.VIBRATE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:20:5-65
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:31:5-66
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:20:22-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:21:5-80
+MERGED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:10:5-81
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:21:22-78
+uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:22:22-79
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:23:5-87
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:23:22-85
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:24:5-74
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:24:22-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:25:5-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:25:22-78
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:32:5-67
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:32:22-65
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:44:5-67
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:44:22-65
+uses-permission#android.permission.BROADCAST_PACKAGE_ADDED
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:49:5-81
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:25:5-82
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:49:22-79
+uses-permission#android.permission.BROADCAST_PACKAGE_CHANGED
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:50:5-83
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:26:5-84
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:50:22-81
+uses-permission#android.permission.BROADCAST_PACKAGE_INSTALL
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:51:5-83
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:27:5-84
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:51:22-81
+uses-permission#android.permission.BROADCAST_PACKAGE_REPLACED
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:52:5-84
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:28:5-85
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:52:22-82
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:53:5-74
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:29:5-75
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:53:22-72
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:54:5-70
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:30:5-71
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:54:22-68
+uses-permission#WRITE_APN_SETTINGS
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:63:5-57
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:63:22-55
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:64:5-68
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:64:22-66
+uses-permission#ANDROID.PERMISSION.CALL_PRIVILEGED
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:65:5-73
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:65:22-71
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:85:5-71
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:85:22-69
+application
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:87:5-342:19
+MERGED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:12:5-41:19
+MERGED from [kd_teacher_android-master:multi-image-selector:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\multi-image-selector\unspecified\AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:support-v4:22.1.1] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\AndroidManifest.xml:22:5-20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:36:5-141:19
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:87:80-102
+		REJECTED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:16:9-41
+	android:allowBackup
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:87:18-44
+	android:icon
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:87:45-79
+		REJECTED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:15:9-43
+	android:theme
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:17:9-40
+	tools:replace
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:87:133-164
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:87:103-132
+		REJECTED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:13:9-45
+meta-data#BaiduMobAd_STAT_ID
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:90:9-82
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:90:54-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:90:20-53
+meta-data#BaiduMobAd_CHANNEL
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:92:9-82
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:92:54-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:92:20-53
+meta-data#BaiduMobAd_EXCEPTION_LOG
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:94:9-82
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:94:60-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:94:20-59
+meta-data#BaiduMobAd_SEND_STRATEGY
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:96:9-87
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:96:60-85
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:96:20-59
+meta-data#BaiduMobAd_ONLY_WIFI
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:98:9-78
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:98:56-76
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:98:20-55
+meta-data#BaiduMobAd_CELL_LOCATION
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:100:9-82
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:100:60-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:100:20-59
+meta-data#BaiduMobAd_GPS_LOCATION
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:102:9-81
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:102:59-79
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:102:20-58
+meta-data#BaiduMobAd_WIFI_LOCATION
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:104:9-82
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:104:60-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:104:20-59
+meta-data#api_key
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:105:9-85
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:105:43-83
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:105:20-42
+activity#com.umeng.fb.ConversationActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:107:9-69
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:107:19-67
+activity#com.wjkj.kd.teacher.MainActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:108:9-109:20
+	android:screenOrientation
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:108:165-201
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:108:81-103
+	android:launchMode
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:108:104-135
+	android:windowSoftInputMode
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:108:202-256
+	android:configChanges
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:108:19-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:108:136-164
+activity#com.wjkj.kd.teacher.BaseActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:119:9-86
+	android:screenOrientation
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:119:48-84
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:119:19-47
+activity#com.wjkj.kd.teacher.VersionActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:183:9-184:20
+	android:screenOrientation
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:183:83-119
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:183:19-50
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:183:51-82
+activity#com.wjkj.kd.teacher.SettingActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:185:9-186:20
+	android:screenOrientation
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:185:83-119
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:185:19-50
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:185:51-82
+receiver#com.umeng.message.NotificationProxyBroadcastReceiver
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:188:9-189:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:37:9-40:20
+	android:exported
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:188:19-43
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:188:44-111
+receiver#com.umeng.message.SystemReceiver
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:192:9-204:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:41:9-55:20
+	android:process
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:192:67-90
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:192:19-66
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:193:13-195:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:194:17-78
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:194:25-76
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:196:13-198:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:197:17-78
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:197:25-76
+intent-filter#android.intent.action.PACKAGE_REMOVED
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:199:13-203:29
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:200:17-79
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:200:25-77
+data
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:202:17-49
+	android:scheme
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:202:23-47
+receiver#com.umeng.message.MessageReceiver
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:207:9-211:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:56:9-63:20
+	android:process
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:207:68-91
+	android:exported
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:58:13-37
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:207:19-67
+intent-filter#org.agoo.android.intent.action.RECEIVE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:208:13-210:29
+action#org.agoo.android.intent.action.RECEIVE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:209:17-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:209:25-78
+receiver#com.umeng.message.ElectionReceiver
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:214:9-220:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:64:9-72:20
+	android:process
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:214:69-92
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:214:19-68
+intent-filter#org.agoo.android.intent.action.ELECTION_RESULT_V4+umeng
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:215:13-219:29
+action#org.agoo.android.intent.action.ELECTION_RESULT_V4
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:216:17-91
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:216:25-89
+category#umeng
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:218:17-49
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:218:27-47
+receiver#com.umeng.message.RegistrationReceiver
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:224:9-228:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:73:9-79:20
+	android:exported
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:224:19-43
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:224:44-97
+intent-filter#com.wjkj.kd.teacher.intent.action.COMMAND
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:225:13-227:29
+action#com.wjkj.kd.teacher.intent.action.COMMAND
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:226:17-83
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:226:25-81
+receiver#com.umeng.message.UmengMessageBootReceiver
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:229:9-233:20
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:80:9-84:20
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:229:19-76
+service#com.umeng.message.UmengService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:237:9-249:19
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:86:9-102:19
+	android:process
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:237:116-139
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:237:42-69
+	android:exported
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:237:18-41
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:237:70-115
+intent-filter#com.wjkj.kd.teacher.intent.action.START
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:238:13-240:29
+action#com.wjkj.kd.teacher.intent.action.START
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:239:17-81
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:239:25-79
+intent-filter#com.wjkj.kd.teacher.intent.action.COCKROACH
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:241:13-243:29
+action#com.wjkj.kd.teacher.intent.action.COCKROACH
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:242:17-85
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:242:25-83
+intent-filter#org.agoo.android.intent.action.PING_V4+umeng
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:244:13-248:29
+action#org.agoo.android.intent.action.PING_V4
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:245:17-80
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:245:25-78
+service#com.umeng.message.UmengIntentService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:252:9-95
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:103:9-105:39
+	android:process
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:252:70-93
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:252:18-69
+service#com.umeng.message.UmengMessageIntentReceiverService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:255:9-262:19
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:106:9-116:19
+	android:process
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:255:109-132
+	android:exported
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:255:18-41
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:255:42-108
+intent-filter#org.android.agoo.client.MessageReceiverService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:256:13-258:29
+action#org.android.agoo.client.MessageReceiverService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:257:17-88
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:257:25-86
+intent-filter#org.android.agoo.client.ElectionReceiverService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:259:13-261:29
+action#org.android.agoo.client.ElectionReceiverService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:260:17-89
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:260:25-87
+service#com.umeng.message.UmengMessageCallbackHandlerService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:265:9-278:19
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:117:9-132:19
+	android:exported
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:265:18-42
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:265:43-110
+intent-filter#com.umeng.messge.registercallback.action
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:266:13-268:29
+action#com.umeng.messge.registercallback.action
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:267:17-82
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:267:25-80
+intent-filter#com.umeng.message.unregistercallback.action
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:269:13-271:29
+action#com.umeng.message.unregistercallback.action
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:270:17-85
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:270:25-83
+intent-filter#com.umeng.message.message.handler.action
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:272:13-274:29
+action#com.umeng.message.message.handler.action
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:273:17-82
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:273:25-80
+intent-filter#com.umeng.message.autoupdate.handler.action
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:275:13-277:29
+action#com.umeng.message.autoupdate.handler.action
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:276:17-85
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:276:25-83
+service#com.umeng.message.UmengDownloadResourceService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:281:9-81
+MERGED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:135:9-137:40
+	android:exported
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:137:13-37
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:281:18-79
+service#com.umeng.update.net.DownloadingService
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:285:9-286:19
+	android:process
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:285:73-110
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:285:18-72
+activity#com.umeng.update.UpdateDialogActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:288:9-289:20
+	android:theme
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:288:72-131
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:288:19-71
+meta-data#UMENG_APPKEY
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:291:9-90
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:291:48-88
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:291:20-47
+meta-data#UMENG_CHANNEL
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:292:9-95
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:292:49-93
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:292:20-48
+meta-data#UMENG_MESSAGE_SECRET
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:293:9-294:21
+	android:value
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:293:56-104
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:293:20-55
+activity#com.wjkj.kd.teacher.FirstPageActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:296:9-302:20
+	android:screenOrientation
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:296:76-112
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:296:19-41
+	android:theme
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:296:113-177
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:296:42-75
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:297:13-301:29
+action#android.intent.action.MAIN
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:298:17-68
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:298:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:300:17-76
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:300:27-74
+activity#com.wjkj.kd.teacher.AboutUsActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:303:9-304:20
+	android:screenOrientation
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:303:99-135
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:303:19-66
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:303:67-98
+activity#com.wjkj.kd.teacher.LoadUrlActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:305:9-137
+	android:screenOrientation
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:305:99-135
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:305:19-66
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:305:67-98
+activity#com.wjkj.kd.teacher.views.PushStateActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:306:9-307:20
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:306:19-68
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:306:69-108
+activity#com.wjkj.kd.teacher.views.CustomFankuiActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:308:9-309:20
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:308:19-71
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:308:72-114
+activity#com.wjkj.kd.teacher.views.ConntectErrorActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:310:9-311:20
+	android:label
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:310:19-72
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:310:73-116
+activity#com.umeng.socialize.view.ShareActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:312:9-317:80
+	android:launchMode
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:315:13-44
+	android:noHistory
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:316:13-37
+	android:windowSoftInputMode
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:317:13-68
+	android:configChanges
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:314:13-57
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:313:13-66
+activity#com.wjkj.kd.teacher.wxapi.WXEntryActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:319:9-324:74
+	android:screenOrientation
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:323:13-49
+	android:exported
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:321:13-36
+	android:configChanges
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:320:13-74
+	android:theme
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:324:13-72
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:322:13-50
+activity#com.tencent.tauth.AuthActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:326:9-337:20
+	android:launchMode
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:328:13-44
+	android:noHistory
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:329:13-37
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:327:13-58
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:330:13-336:29
+action#android.intent.action.VIEW
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:331:17-69
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:331:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:332:17-76
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:332:27-73
+category#android.intent.category.BROWSABLE
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:333:17-78
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:333:27-75
+activity#com.tencent.connect.common.AssistActivity
+ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:338:9-341:84
+	android:screenOrientation
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:340:13-49
+	android:theme
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:341:13-72
+	android:name
+		ADDED from D:\work-wenjie-project\kd_teacher_android-master\app\src\main\AndroidManifest.xml:339:13-69
+activity#me.nereo.multiimageselector.MainActivity
+ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:18:9-28:20
+	android:label
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:20:13-45
+	android:name
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:19:13-68
+activity#me.nereo.imagechoose.MultiImageSelectorActivity
+ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:29:9-32:52
+	android:screenOrientation
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:32:13-49
+	android:configChanges
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:31:13-59
+	android:name
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:30:13-75
+activity#song.image.crop.CropImageActivity
+ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:33:9-36:52
+	android:screenOrientation
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:36:13-49
+	android:label
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:35:13-45
+	android:name
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:34:13-61
+activity#me.nereo.imagechoose.ShowActivity
+ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:37:9-40:52
+	android:screenOrientation
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:40:13-49
+	android:label
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:39:13-45
+	android:name
+		ADDED from [kd_teacher_android-master:image_choose:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\image_choose\unspecified\AndroidManifest.xml:38:13-61
+uses-permission#android.permission.SEND_SMS
+ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:32:5-67
+	android:name
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:32:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:33:5-70
+	android:name
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:33:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:34:5-67
+	android:name
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:34:22-64
+service#com.umeng.message.local.UmengLocalNotificationService
+ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:138:9-140:40
+	android:exported
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:140:13-37
+	android:name
+		ADDED from [kd_teacher_android-master:PushSDK:unspecified] D:\work-wenjie-project\kd_teacher_android-master\app\build\intermediates\exploded-aar\kd_teacher_android-master\PushSDK\unspecified\AndroidManifest.xml:139:13-81

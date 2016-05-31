@@ -1,0 +1,47 @@
+-keep class com.wjkj.kd.teacher.MyApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.umeng.fb.ConversationActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.MainActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.BaseActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.VersionActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.SettingActivity { <init>(); }
+-keep class com.umeng.message.NotificationProxyBroadcastReceiver { <init>(); }
+-keep class com.umeng.message.SystemReceiver { <init>(); }
+-keep class com.umeng.message.MessageReceiver { <init>(); }
+-keep class com.umeng.message.ElectionReceiver { <init>(); }
+-keep class com.umeng.message.RegistrationReceiver { <init>(); }
+-keep class com.umeng.message.UmengMessageBootReceiver { <init>(); }
+-keep class com.umeng.message.UmengService { <init>(); }
+-keep class com.umeng.message.UmengIntentService { <init>(); }
+-keep class com.umeng.message.UmengMessageIntentReceiverService { <init>(); }
+-keep class com.umeng.message.UmengMessageCallbackHandlerService { <init>(); }
+-keep class com.umeng.message.UmengDownloadResourceService { <init>(); }
+-keep class com.umeng.update.net.DownloadingService { <init>(); }
+-keep class com.umeng.update.UpdateDialogActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.FirstPageActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.AboutUsActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.LoadUrlActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.views.PushStateActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.views.CustomFankuiActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.views.ConntectErrorActivity { <init>(); }
+-keep class com.umeng.socialize.view.ShareActivity { <init>(); }
+-keep class com.wjkj.kd.teacher.wxapi.WXEntryActivity { <init>(); }
+-keep class com.tencent.tauth.AuthActivity { <init>(); }
+-keep class com.tencent.connect.common.AssistActivity { <init>(); }
+-keep class me.nereo.multiimageselector.MainActivity { <init>(); }
+-keep class me.nereo.imagechoose.MultiImageSelectorActivity { <init>(); }
+-keep class song.image.crop.CropImageActivity { <init>(); }
+-keep class me.nereo.imagechoose.ShowActivity { <init>(); }
+-keep class com.umeng.message.local.UmengLocalNotificationService { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}
+-keep class com.android.tools.fd.** {
+    *;
+}
+-dontnote com.android.tools.fd.**,android.support.multidex.MultiDexExtractor

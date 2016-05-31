@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mask.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\drawable-xhdpi\\mask.png"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btn_unpressed.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\drawable-xhdpi\\btn_unpressed.png"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\btn_pressed.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\drawable-xhdpi\\btn_pressed.png"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\frame.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\drawable-xhdpi\\frame.png"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bottom.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\src\\main\\res\\drawable-xhdpi\\bottom.png"
+    }
+]
