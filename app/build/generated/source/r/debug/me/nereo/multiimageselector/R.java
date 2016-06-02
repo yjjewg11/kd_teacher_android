@@ -104,7 +104,7 @@ public final class R {
 	public static final class string {
 		public static final int action_settings = 0x7f090000;
 		public static final int app_name = 0x7f090001;
-		public static final int choose_all = 0x7f090026;
+		public static final int choose_all = 0x7f09002e;
 		public static final int disable = 0x7f090002;
 		public static final int enable = 0x7f090003;
 		public static final int enable_camera = 0x7f090004;

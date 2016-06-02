@@ -81,7 +81,7 @@ public final class R {
 	}
 	public static final class string {
 		public static final int app_name = 0x7f090001;
-		public static final int choose_all = 0x7f090026;
+		public static final int choose_all = 0x7f09002e;
 		public static final int folder_all = 0x7f090005;
 		public static final int msg_amount_limit = 0x7f09000b;
 		public static final int msg_no_camera = 0x7f09000c;

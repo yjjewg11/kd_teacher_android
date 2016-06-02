@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <color name="bg_gray">#e2e2e2</color>
     <color name="black">#000000</color>
     <color name="blue">#191970</color>
@@ -303,6 +303,14 @@
     <string name="whatsapp_no_client">未安装有WhatsApp客户端</string>
     <string name="whatsapp_no_content">请设置分享内容</string>
     <string name="whatsapp_showword">WhatsApp</string>
+    <string name="xiaomi_bytes_unit"><ns1:g id="size">%1$s</ns1:g>B</string>
+    <string name="xiaomi_connect_download_manager_fail">Connect Download Manager failed, please check the Download Manager state in the Application Management.</string>
+    <string name="xiaomi_external_storage_unavailable">Storage unavailable, please check the SD card.</string>
+    <string name="xiaomi_kilobytes_unit"><ns1:g id="size">%1$s</ns1:g>KB</string>
+    <string name="xiaomi_megabytes_unit"><ns1:g id="size">%1$s</ns1:g>MB</string>
+    <string name="xiaomi_update_dialog_message">Introducing version <ns1:g id="version_name">%1$s</ns1:g>\nSize: <ns1:g id="app_size">%2$s</ns1:g></string>
+    <string name="xiaomi_update_dialog_message_diff">Introducing version <ns1:g id="version_name">%1$s</ns1:g>\nDelta update size: <ns1:g id="app_size">%2$s</ns1:g></string>
+    <string name="xiaomi_update_dialog_title"><ns1:g id="app_name">%1$s</ns1:g> update!</string>
     <string name="ynote_content">有道云笔记只支持文本，图片，图文分享</string>
     <string name="ynote_no_client">未安装有道云笔记客户端</string>
     <string name="ynote_no_content">请设置分享内容</string>

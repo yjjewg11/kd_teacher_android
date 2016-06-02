@@ -20,12 +20,12 @@
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable-nodpi\\loading.png"
     },
     {
-        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\baidu_fb_timeline_bg.png",
-        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable-nodpi\\baidu_fb_timeline_bg.png"
-    },
-    {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\xiaoxi1noname2x.png",
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable-nodpi\\xiaoxi1noname2x.png"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\baidu_fb_timeline_bg.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable-nodpi\\baidu_fb_timeline_bg.png"
     },
     {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\baidu_fb_user_avatar.png",

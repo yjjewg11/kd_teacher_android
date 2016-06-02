@@ -30,6 +30,7 @@
 -keep class com.wjkj.kd.teacher.wxapi.WXEntryActivity { <init>(); }
 -keep class com.tencent.tauth.AuthActivity { <init>(); }
 -keep class com.tencent.connect.common.AssistActivity { <init>(); }
+-keep class com.xiaomi.market.sdk.DownloadCompleteReceiver { <init>(); }
 -keep class me.nereo.multiimageselector.MainActivity { <init>(); }
 -keep class me.nereo.imagechoose.MultiImageSelectorActivity { <init>(); }
 -keep class song.image.crop.CropImageActivity { <init>(); }

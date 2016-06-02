@@ -16,6 +16,7 @@ import com.wjkj.kd.teacher.utils.ToastUtils;
 import com.wjkj.kd.teacher.utils.Util;
 import com.wjkj.kd.teacher.views.CustomFankuiActivity;
 import com.wjkj.kd.teacher.views.PushStateActivity;
+import com.xiaomi.market.sdk.XiaomiUpdateAgent;
 
 import org.json.JSONException;
 
@@ -154,6 +155,7 @@ public class SettingActivity extends BaseActivity {
                         }
                     }
                 });
+                XiaomiUpdateAgent.update(this);
                 break;
             //结束此页面
             case R.id.r2_gaiming: MainActivity.instance.webView.loadUrl("javascript:G_jsCallBack.user_info_update()");  finish(); break;

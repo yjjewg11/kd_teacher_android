@@ -130,6 +130,10 @@
     <init>();
 }
 
+-keep class com.xiaomi.market.sdk.DownloadCompleteReceiver {
+    <init>();
+}
+
 -keep class me.nereo.multiimageselector.MainActivity {
     <init>();
 }

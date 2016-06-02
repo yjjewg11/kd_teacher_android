@@ -135,6 +135,7 @@ com/umeng/message/UmengMessageIntentReceiverService.class
 org/android/agoo/proxy/ProxyFactroy.class
 com/umeng/socialize/view/ShareActivity$a.class
 com/umeng/socialize/bean/SocializeConfig.class
+com/xiaomi/market/sdk/XiaomiUpdateAgent.class
 com/umeng/socialize/controller/impl/b.class
 org/android/agoo/service/ElectionReceiverService$Stub$a.class
 me/nereo/imagechoose/MultiImageSelectorActivity.class
@@ -251,6 +252,7 @@ com/umeng/message/proguard/r.class
 com/umeng/update/UpdateDialogActivity.class
 com/umeng/message/UmengIntentService.class
 com/umeng/socialize/utils/StatisticsDataUtils.class
+com/xiaomi/market/sdk/m.class
 com/squareup/wire/Message$Label.class
 com/squareup/wire/Wire.class
 com/squareup/leakcanary/LeakCanary.class
@@ -476,6 +478,7 @@ com/umeng/socialize/view/ShareActivity$8.class
 com/tencent/open/a/d$c.class
 com/umeng/message/local/UmengLocalNotification.class
 org/android/agoo/net/channel/chunked/a.class
+com/xiaomi/market/sdk/DownloadCompleteReceiver.class
 me/nereo/multiimageselector/MainActivity.class
 android/support/annotation/AnyRes.class
 com/umeng/socialize/controller/ShareService.class

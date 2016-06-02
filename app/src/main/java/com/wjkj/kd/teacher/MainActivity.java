@@ -51,6 +51,7 @@ import com.wjkj.kd.teacher.utils.ParseUtils;
 import com.wjkj.kd.teacher.utils.ShareUtils;
 import com.wjkj.kd.teacher.utils.Util;
 import com.wjkj.kd.teacher.views.MyRadioButton;
+import com.xiaomi.market.sdk.XiaomiUpdateAgent;
 
 import org.json.JSONException;
 
@@ -107,6 +108,7 @@ public class MainActivity extends BaseActivity {
         //获得屏幕的尺寸
 //        long max =  Runtime.getRuntime().maxMemory()/1024;
 //        map = new LruCache<>((int)(max/4));
+        XiaomiUpdateAgent.update(this);
         getWidthSize();
         setContentView(R.layout.activity_mymain);
         instance = this;

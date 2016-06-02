@@ -32,12 +32,12 @@
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\guanyuwomen.png"
     },
     {
-        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_tx_on.png",
-        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_tx_on.png"
-    },
-    {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_sidebar_selected.xml",
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_sidebar_selected.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_tx_on.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_tx_on.png"
     },
     {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_yixin.png",
@@ -60,12 +60,12 @@
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_line.png"
     },
     {
-        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_tx_off.png",
-        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_tx_off.png"
-    },
-    {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_ok_bg_focused.xml",
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_update_button_ok_bg_focused.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_tx_off.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_tx_off.png"
     },
     {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_commnet_header_bg.xml",
@@ -140,12 +140,12 @@
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_wechat_gray.png"
     },
     {
-        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
-        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_close_bg_selector.xml",
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_update_button_close_bg_selector.xml"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\ic_launcher.png"
     },
     {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_title_right_bt.xml",
@@ -280,16 +280,16 @@
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\guanyu.png"
     },
     {
-        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\normal_click_shape_unselect.xml",
-        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\normal_click_shape_unselect.xml"
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_refersh.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_refersh.png"
     },
     {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_at_normal.png",
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_at_normal.png"
     },
     {
-        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_refersh.png",
-        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_refersh.png"
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\normal_click_shape_unselect.xml",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\normal_click_shape_unselect.xml"
     },
     {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_update_button_cancel_bg_normal.xml",
@@ -312,12 +312,12 @@
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_douban_off.png"
     },
     {
-        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_pv.png",
-        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_pv.png"
-    },
-    {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\guanyuwomenblank.png",
         "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\guanyuwomenblank.png"
+    },
+    {
+        "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_pv.png",
+        "source": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\drawable\\umeng_socialize_pv.png"
     },
     {
         "merged": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_common_gradient_red.xml",

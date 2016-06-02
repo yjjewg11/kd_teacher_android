@@ -6,9 +6,9 @@
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 55,
+                    "startOffset": 105,
                     "endColumn": 41,
-                    "endOffset": 92
+                    "endOffset": 142
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\colors.xml",
@@ -25,9 +25,9 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 97,
+                    "startOffset": 147,
                     "endColumn": 39,
-                    "endOffset": 132
+                    "endOffset": 182
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -44,9 +44,9 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 137,
+                    "startOffset": 187,
                     "endColumn": 38,
-                    "endOffset": 171
+                    "endOffset": 221
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -63,9 +63,9 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 176,
+                    "startOffset": 226,
                     "endColumn": 46,
-                    "endOffset": 218
+                    "endOffset": 268
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\colors.xml",
@@ -82,9 +82,9 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 223,
+                    "startOffset": 273,
                     "endColumn": 46,
-                    "endOffset": 265
+                    "endOffset": 315
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\colors.xml",
@@ -101,9 +101,9 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 270,
+                    "startOffset": 320,
                     "endColumn": 46,
-                    "endOffset": 312
+                    "endOffset": 362
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -120,9 +120,9 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 317,
+                    "startOffset": 367,
                     "endColumn": 46,
-                    "endOffset": 359
+                    "endOffset": 409
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -139,9 +139,9 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 364,
+                    "startOffset": 414,
                     "endColumn": 46,
-                    "endOffset": 406
+                    "endOffset": 456
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\colors.xml",
@@ -158,9 +158,9 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 411,
+                    "startOffset": 461,
                     "endColumn": 46,
-                    "endOffset": 453
+                    "endOffset": 503
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -177,9 +177,9 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 458,
+                    "startOffset": 508,
                     "endColumn": 51,
-                    "endOffset": 505
+                    "endOffset": 555
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -196,9 +196,9 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 510,
+                    "startOffset": 560,
                     "endColumn": 70,
-                    "endOffset": 576
+                    "endOffset": 626
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -215,9 +215,9 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 581,
+                    "startOffset": 631,
                     "endColumn": 79,
-                    "endOffset": 656
+                    "endOffset": 706
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -234,9 +234,9 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 661,
+                    "startOffset": 711,
                     "endColumn": 78,
-                    "endOffset": 735
+                    "endOffset": 785
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -253,9 +253,9 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 740,
+                    "startOffset": 790,
                     "endColumn": 84,
-                    "endOffset": 820
+                    "endOffset": 870
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -272,9 +272,9 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 825,
+                    "startOffset": 875,
                     "endColumn": 83,
-                    "endOffset": 904
+                    "endOffset": 954
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -291,9 +291,9 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 909,
+                    "startOffset": 959,
                     "endColumn": 91,
-                    "endOffset": 996
+                    "endOffset": 1046
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -310,9 +310,9 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1001,
+                    "startOffset": 1051,
                     "endColumn": 75,
-                    "endOffset": 1072
+                    "endOffset": 1122
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -329,9 +329,9 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1077,
+                    "startOffset": 1127,
                     "endColumn": 83,
-                    "endOffset": 1156
+                    "endOffset": 1206
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -348,9 +348,9 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1161,
+                    "startOffset": 1211,
                     "endColumn": 76,
-                    "endOffset": 1233
+                    "endOffset": 1283
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -367,9 +367,9 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1238,
+                    "startOffset": 1288,
                     "endColumn": 74,
-                    "endOffset": 1308
+                    "endOffset": 1358
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -386,9 +386,9 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1313,
+                    "startOffset": 1363,
                     "endColumn": 66,
-                    "endOffset": 1375
+                    "endOffset": 1425
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -405,9 +405,9 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1380,
+                    "startOffset": 1430,
                     "endColumn": 70,
-                    "endOffset": 1446
+                    "endOffset": 1496
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -424,9 +424,9 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1451,
+                    "startOffset": 1501,
                     "endColumn": 39,
-                    "endOffset": 1486
+                    "endOffset": 1536
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\colors.xml",
@@ -443,9 +443,9 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1491,
+                    "startOffset": 1541,
                     "endColumn": 43,
-                    "endOffset": 1530
+                    "endOffset": 1580
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -462,9 +462,9 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1535,
+                    "startOffset": 1585,
                     "endColumn": 38,
-                    "endOffset": 1569
+                    "endOffset": 1619
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -481,9 +481,9 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1574,
+                    "startOffset": 1624,
                     "endColumn": 41,
-                    "endOffset": 1611
+                    "endOffset": 1661
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -500,9 +500,9 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1616,
+                    "startOffset": 1666,
                     "endColumn": 45,
-                    "endOffset": 1657
+                    "endOffset": 1707
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -519,9 +519,9 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 1662,
+                    "startOffset": 1712,
                     "endColumn": 43,
-                    "endOffset": 1701
+                    "endOffset": 1751
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -538,9 +538,9 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 1706,
+                    "startOffset": 1756,
                     "endColumn": 50,
-                    "endOffset": 1752
+                    "endOffset": 1802
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -557,9 +557,9 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1757,
+                    "startOffset": 1807,
                     "endColumn": 43,
-                    "endOffset": 1796
+                    "endOffset": 1846
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -576,9 +576,9 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 1801,
+                    "startOffset": 1851,
                     "endColumn": 50,
-                    "endOffset": 1847
+                    "endOffset": 1897
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -595,9 +595,9 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 1852,
+                    "startOffset": 1902,
                     "endColumn": 37,
-                    "endOffset": 1885
+                    "endOffset": 1935
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\colors.xml",
@@ -614,9 +614,9 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1890,
+                    "startOffset": 1940,
                     "endColumn": 40,
-                    "endOffset": 1926
+                    "endOffset": 1976
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -633,9 +633,9 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1931,
+                    "startOffset": 1981,
                     "endColumn": 54,
-                    "endOffset": 1981
+                    "endOffset": 2031
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\tb_munion_strings.xml",
@@ -652,9 +652,9 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 1986,
+                    "startOffset": 2036,
                     "endColumn": 42,
-                    "endOffset": 2024
+                    "endOffset": 2074
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -671,9 +671,9 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 2029,
+                    "startOffset": 2079,
                     "endColumn": 46,
-                    "endOffset": 2071
+                    "endOffset": 2121
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -690,9 +690,9 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2076,
+                    "startOffset": 2126,
                     "endColumn": 45,
-                    "endOffset": 2117
+                    "endOffset": 2167
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -709,9 +709,9 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2122,
+                    "startOffset": 2172,
                     "endColumn": 45,
-                    "endOffset": 2163
+                    "endOffset": 2213
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -728,9 +728,9 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2168,
+                    "startOffset": 2218,
                     "endColumn": 45,
-                    "endOffset": 2209
+                    "endOffset": 2259
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\colors.xml",
@@ -747,9 +747,9 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2214,
+                    "startOffset": 2264,
                     "endColumn": 46,
-                    "endOffset": 2256
+                    "endOffset": 2306
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\colors.xml",
@@ -766,9 +766,9 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2261,
+                    "startOffset": 2311,
                     "endColumn": 61,
-                    "endOffset": 2318
+                    "endOffset": 2368
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -785,9 +785,9 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2323,
+                    "startOffset": 2373,
                     "endColumn": 61,
-                    "endOffset": 2380
+                    "endOffset": 2430
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -804,9 +804,9 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 2385,
+                    "startOffset": 2435,
                     "endColumn": 57,
-                    "endOffset": 2438
+                    "endOffset": 2488
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -823,9 +823,9 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 2443,
+                    "startOffset": 2493,
                     "endColumn": 57,
-                    "endOffset": 2496
+                    "endOffset": 2546
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -842,9 +842,9 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 2501,
+                    "startOffset": 2551,
                     "endColumn": 67,
-                    "endOffset": 2564
+                    "endOffset": 2614
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -861,9 +861,9 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 2569,
+                    "startOffset": 2619,
                     "endColumn": 67,
-                    "endOffset": 2632
+                    "endOffset": 2682
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -880,9 +880,9 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 2637,
+                    "startOffset": 2687,
                     "endColumn": 69,
-                    "endOffset": 2702
+                    "endOffset": 2752
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -899,9 +899,9 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 2707,
+                    "startOffset": 2757,
                     "endColumn": 67,
-                    "endOffset": 2770
+                    "endOffset": 2820
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -918,9 +918,9 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 2775,
+                    "startOffset": 2825,
                     "endColumn": 68,
-                    "endOffset": 2839
+                    "endOffset": 2889
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -937,9 +937,9 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 2844,
+                    "startOffset": 2894,
                     "endColumn": 59,
-                    "endOffset": 2899
+                    "endOffset": 2949
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -956,9 +956,9 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2904,
+                    "startOffset": 2954,
                     "endColumn": 60,
-                    "endOffset": 2960
+                    "endOffset": 3010
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -975,9 +975,9 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2965,
+                    "startOffset": 3015,
                     "endColumn": 62,
-                    "endOffset": 3023
+                    "endOffset": 3073
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -994,9 +994,9 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 3028,
+                    "startOffset": 3078,
                     "endColumn": 60,
-                    "endOffset": 3084
+                    "endOffset": 3134
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_colors.xml",
@@ -1013,9 +1013,9 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 3089,
+                    "startOffset": 3139,
                     "endColumn": 39,
-                    "endOffset": 3124
+                    "endOffset": 3174
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\color.xml",
@@ -1032,9 +1032,9 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 6464,
+                    "startOffset": 6514,
                     "endColumn": 57,
-                    "endOffset": 6517
+                    "endOffset": 6567
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_dimens.xml",
@@ -1051,9 +1051,9 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 6522,
+                    "startOffset": 6572,
                     "endColumn": 55,
-                    "endOffset": 6573
+                    "endOffset": 6623
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_dimens.xml",
@@ -1070,9 +1070,9 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 6578,
+                    "startOffset": 6628,
                     "endColumn": 45,
-                    "endOffset": 6619
+                    "endOffset": 6669
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -1089,9 +1089,9 @@
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 6624,
+                    "startOffset": 6674,
                     "endColumn": 42,
-                    "endOffset": 6662
+                    "endOffset": 6712
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1108,9 +1108,9 @@
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 6667,
+                    "startOffset": 6717,
                     "endColumn": 39,
-                    "endOffset": 6702
+                    "endOffset": 6752
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1127,9 +1127,9 @@
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 6707,
+                    "startOffset": 6757,
                     "endColumn": 43,
-                    "endOffset": 6746
+                    "endOffset": 6796
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1146,9 +1146,9 @@
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 6751,
+                    "startOffset": 6801,
                     "endColumn": 73,
-                    "endOffset": 6820
+                    "endOffset": 6870
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1165,9 +1165,9 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 6825,
+                    "startOffset": 6875,
                     "endColumn": 72,
-                    "endOffset": 6893
+                    "endOffset": 6943
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1184,9 +1184,9 @@
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 6898,
+                    "startOffset": 6948,
                     "endColumn": 72,
-                    "endOffset": 6966
+                    "endOffset": 7016
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1203,9 +1203,9 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 6971,
+                    "startOffset": 7021,
                     "endColumn": 71,
-                    "endOffset": 7038
+                    "endOffset": 7088
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1222,9 +1222,9 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 7043,
+                    "startOffset": 7093,
                     "endColumn": 72,
-                    "endOffset": 7111
+                    "endOffset": 7161
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1241,9 +1241,9 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 7116,
+                    "startOffset": 7166,
                     "endColumn": 72,
-                    "endOffset": 7184
+                    "endOffset": 7234
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1260,9 +1260,9 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 7189,
+                    "startOffset": 7239,
                     "endColumn": 64,
-                    "endOffset": 7249
+                    "endOffset": 7299
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1279,9 +1279,9 @@
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 7254,
+                    "startOffset": 7304,
                     "endColumn": 68,
-                    "endOffset": 7318
+                    "endOffset": 7368
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1298,9 +1298,9 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 7323,
+                    "startOffset": 7373,
                     "endColumn": 64,
-                    "endOffset": 7383
+                    "endOffset": 7433
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1317,9 +1317,9 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 7388,
+                    "startOffset": 7438,
                     "endColumn": 81,
-                    "endOffset": 7465
+                    "endOffset": 7515
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1336,9 +1336,9 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 7470,
+                    "startOffset": 7520,
                     "endColumn": 82,
-                    "endOffset": 7548
+                    "endOffset": 7598
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1355,9 +1355,9 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 7553,
+                    "startOffset": 7603,
                     "endColumn": 80,
-                    "endOffset": 7629
+                    "endOffset": 7679
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1374,9 +1374,9 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 7634,
+                    "startOffset": 7684,
                     "endColumn": 82,
-                    "endOffset": 7712
+                    "endOffset": 7762
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1393,9 +1393,9 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 7717,
+                    "startOffset": 7767,
                     "endColumn": 71,
-                    "endOffset": 7784
+                    "endOffset": 7834
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1412,9 +1412,9 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 7789,
+                    "startOffset": 7839,
                     "endColumn": 69,
-                    "endOffset": 7854
+                    "endOffset": 7904
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1431,9 +1431,9 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 7859,
+                    "startOffset": 7909,
                     "endColumn": 70,
-                    "endOffset": 7925
+                    "endOffset": 7975
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1450,9 +1450,9 @@
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 7930,
+                    "startOffset": 7980,
                     "endColumn": 68,
-                    "endOffset": 7994
+                    "endOffset": 8044
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1469,9 +1469,9 @@
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 7999,
+                    "startOffset": 8049,
                     "endColumn": 68,
-                    "endOffset": 8063
+                    "endOffset": 8113
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1488,9 +1488,9 @@
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 8068,
+                    "startOffset": 8118,
                     "endColumn": 70,
-                    "endOffset": 8134
+                    "endOffset": 8184
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -1507,9 +1507,9 @@
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 8139,
+                    "startOffset": 8189,
                     "endColumn": 47,
-                    "endOffset": 8182
+                    "endOffset": 8232
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1526,9 +1526,9 @@
                 "to": {
                     "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 8187,
+                    "startOffset": 8237,
                     "endColumn": 48,
-                    "endOffset": 8231
+                    "endOffset": 8281
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1545,9 +1545,9 @@
                 "to": {
                     "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 8236,
+                    "startOffset": 8286,
                     "endColumn": 44,
-                    "endOffset": 8276
+                    "endOffset": 8326
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1564,9 +1564,9 @@
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 8281,
+                    "startOffset": 8331,
                     "endColumn": 54,
-                    "endOffset": 8331
+                    "endOffset": 8381
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1583,9 +1583,9 @@
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 8336,
+                    "startOffset": 8386,
                     "endColumn": 48,
-                    "endOffset": 8380
+                    "endOffset": 8430
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\values\\values.xml",
@@ -1602,9 +1602,9 @@
                 "to": {
                     "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 8385,
+                    "startOffset": 8435,
                     "endColumn": 42,
-                    "endOffset": 8423
+                    "endOffset": 8473
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1621,9 +1621,9 @@
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 8428,
+                    "startOffset": 8478,
                     "endColumn": 49,
-                    "endOffset": 8473
+                    "endOffset": 8523
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1640,9 +1640,9 @@
                 "to": {
                     "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 8478,
+                    "startOffset": 8528,
                     "endColumn": 41,
-                    "endOffset": 8515
+                    "endOffset": 8565
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1659,9 +1659,9 @@
                 "to": {
                     "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 8520,
+                    "startOffset": 8570,
                     "endColumn": 45,
-                    "endOffset": 8561
+                    "endOffset": 8611
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1678,9 +1678,9 @@
                 "to": {
                     "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 8566,
+                    "startOffset": 8616,
                     "endColumn": 50,
-                    "endOffset": 8612
+                    "endOffset": 8662
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_dimens.xml",
@@ -1697,9 +1697,9 @@
                 "to": {
                     "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 8617,
+                    "startOffset": 8667,
                     "endColumn": 39,
-                    "endOffset": 8652
+                    "endOffset": 8702
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\values\\values.xml",
@@ -1716,9 +1716,9 @@
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 8657,
+                    "startOffset": 8707,
                     "endColumn": 42,
-                    "endOffset": 8695
+                    "endOffset": 8745
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\values\\values.xml",
@@ -1735,9 +1735,9 @@
                 "to": {
                     "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 8700,
+                    "startOffset": 8750,
                     "endColumn": 47,
-                    "endOffset": 8743
+                    "endOffset": 8793
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1754,9 +1754,9 @@
                 "to": {
                     "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 8748,
+                    "startOffset": 8798,
                     "endColumn": 47,
-                    "endOffset": 8791
+                    "endOffset": 8841
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1773,9 +1773,9 @@
                 "to": {
                     "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 8796,
+                    "startOffset": 8846,
                     "endColumn": 40,
-                    "endOffset": 8832
+                    "endOffset": 8882
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1792,9 +1792,9 @@
                 "to": {
                     "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 8837,
+                    "startOffset": 8887,
                     "endColumn": 50,
-                    "endOffset": 8883
+                    "endOffset": 8933
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\unspecified\\res\\values\\values.xml",
@@ -1811,9 +1811,9 @@
                 "to": {
                     "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 8888,
+                    "startOffset": 8938,
                     "endColumn": 40,
-                    "endOffset": 8924
+                    "endOffset": 8974
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1830,9 +1830,9 @@
                 "to": {
                     "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 8929,
+                    "startOffset": 8979,
                     "endColumn": 40,
-                    "endOffset": 8965
+                    "endOffset": 9015
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1849,9 +1849,9 @@
                 "to": {
                     "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 8970,
+                    "startOffset": 9020,
                     "endColumn": 38,
-                    "endOffset": 9004
+                    "endOffset": 9054
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1868,9 +1868,9 @@
                 "to": {
                     "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 9009,
+                    "startOffset": 9059,
                     "endColumn": 38,
-                    "endOffset": 9043
+                    "endOffset": 9093
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1887,9 +1887,9 @@
                 "to": {
                     "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 9048,
+                    "startOffset": 9098,
                     "endColumn": 52,
-                    "endOffset": 9096
+                    "endOffset": 9146
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1906,9 +1906,9 @@
                 "to": {
                     "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 9101,
+                    "startOffset": 9151,
                     "endColumn": 45,
-                    "endOffset": 9142
+                    "endOffset": 9192
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1925,9 +1925,9 @@
                 "to": {
                     "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 9147,
+                    "startOffset": 9197,
                     "endColumn": 42,
-                    "endOffset": 9185
+                    "endOffset": 9235
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1944,9 +1944,9 @@
                 "to": {
                     "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 9190,
+                    "startOffset": 9240,
                     "endColumn": 45,
-                    "endOffset": 9231
+                    "endOffset": 9281
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1963,9 +1963,9 @@
                 "to": {
                     "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 9236,
+                    "startOffset": 9286,
                     "endColumn": 51,
-                    "endOffset": 9283
+                    "endOffset": 9333
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -1982,9 +1982,9 @@
                 "to": {
                     "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 9288,
+                    "startOffset": 9338,
                     "endColumn": 55,
-                    "endOffset": 9339
+                    "endOffset": 9389
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\unspecified\\res\\values\\values.xml",
@@ -2001,9 +2001,9 @@
                 "to": {
                     "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 9344,
+                    "startOffset": 9394,
                     "endColumn": 51,
-                    "endOffset": 9391
+                    "endOffset": 9441
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\unspecified\\res\\values\\values.xml",
@@ -2020,9 +2020,9 @@
                 "to": {
                     "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 9396,
+                    "startOffset": 9446,
                     "endColumn": 62,
-                    "endOffset": 9454
+                    "endOffset": 9504
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\unspecified\\res\\values\\values.xml",
@@ -2039,9 +2039,9 @@
                 "to": {
                     "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 9459,
+                    "startOffset": 9509,
                     "endColumn": 43,
-                    "endOffset": 9498
+                    "endOffset": 9548
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -2058,9 +2058,9 @@
                 "to": {
                     "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 9503,
+                    "startOffset": 9553,
                     "endColumn": 41,
-                    "endOffset": 9540
+                    "endOffset": 9590
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -2077,9 +2077,9 @@
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 9545,
+                    "startOffset": 9595,
                     "endColumn": 40,
-                    "endOffset": 9581
+                    "endOffset": 9631
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\values\\values.xml",
@@ -2096,9 +2096,9 @@
                 "to": {
                     "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 9586,
+                    "startOffset": 9636,
                     "endColumn": 43,
-                    "endOffset": 9625
+                    "endOffset": 9675
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -2115,9 +2115,9 @@
                 "to": {
                     "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 9630,
+                    "startOffset": 9680,
                     "endColumn": 43,
-                    "endOffset": 9669
+                    "endOffset": 9719
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -2134,9 +2134,9 @@
                 "to": {
                     "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 9674,
+                    "startOffset": 9724,
                     "endColumn": 42,
-                    "endOffset": 9712
+                    "endOffset": 9762
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -2153,9 +2153,9 @@
                 "to": {
                     "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 9717,
+                    "startOffset": 9767,
                     "endColumn": 42,
-                    "endOffset": 9755
+                    "endOffset": 9805
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -2172,9 +2172,9 @@
                 "to": {
                     "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 9760,
+                    "startOffset": 9810,
                     "endColumn": 44,
-                    "endOffset": 9800
+                    "endOffset": 9850
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\dimens.xml",
@@ -2191,9 +2191,9 @@
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 9805,
+                    "startOffset": 9855,
                     "endColumn": 66,
-                    "endOffset": 9867
+                    "endOffset": 9917
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -2210,9 +2210,9 @@
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 9872,
+                    "startOffset": 9922,
                     "endColumn": 65,
-                    "endOffset": 9933
+                    "endOffset": 9983
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -2229,9 +2229,9 @@
                 "to": {
                     "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 9938,
+                    "startOffset": 9988,
                     "endColumn": 44,
-                    "endOffset": 9978
+                    "endOffset": 10028
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2248,9 +2248,9 @@
                 "to": {
                     "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 9983,
+                    "startOffset": 10033,
                     "endColumn": 47,
-                    "endOffset": 10026
+                    "endOffset": 10076
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2267,9 +2267,9 @@
                 "to": {
                     "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 10031,
+                    "startOffset": 10081,
                     "endColumn": 61,
-                    "endOffset": 10088
+                    "endOffset": 10138
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2286,9 +2286,9 @@
                 "to": {
                     "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 10093,
+                    "startOffset": 10143,
                     "endColumn": 56,
-                    "endOffset": 10145
+                    "endOffset": 10195
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2305,9 +2305,9 @@
                 "to": {
                     "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 10150,
+                    "startOffset": 10200,
                     "endColumn": 41,
-                    "endOffset": 10187
+                    "endOffset": 10237
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2324,9 +2324,9 @@
                 "to": {
                     "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 10192,
+                    "startOffset": 10242,
                     "endColumn": 47,
-                    "endOffset": 10235
+                    "endOffset": 10285
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2343,9 +2343,9 @@
                 "to": {
                     "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 10240,
+                    "startOffset": 10290,
                     "endColumn": 41,
-                    "endOffset": 10277
+                    "endOffset": 10327
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2362,9 +2362,9 @@
                 "to": {
                     "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 10282,
+                    "startOffset": 10332,
                     "endColumn": 47,
-                    "endOffset": 10325
+                    "endOffset": 10375
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2381,9 +2381,9 @@
                 "to": {
                     "startLine": 132,
                     "startColumn": 4,
-                    "startOffset": 10330,
+                    "startOffset": 10380,
                     "endColumn": 56,
-                    "endOffset": 10382
+                    "endOffset": 10432
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2400,9 +2400,9 @@
                 "to": {
                     "startLine": 133,
                     "startColumn": 4,
-                    "startOffset": 10387,
+                    "startOffset": 10437,
                     "endColumn": 48,
-                    "endOffset": 10431
+                    "endOffset": 10481
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2419,9 +2419,9 @@
                 "to": {
                     "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 10436,
+                    "startOffset": 10486,
                     "endColumn": 44,
-                    "endOffset": 10476
+                    "endOffset": 10526
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2438,9 +2438,9 @@
                 "to": {
                     "startLine": 135,
                     "startColumn": 4,
-                    "startOffset": 10481,
+                    "startOffset": 10531,
                     "endColumn": 47,
-                    "endOffset": 10524
+                    "endOffset": 10574
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2457,9 +2457,9 @@
                 "to": {
                     "startLine": 136,
                     "startColumn": 4,
-                    "startOffset": 10529,
+                    "startOffset": 10579,
                     "endColumn": 47,
-                    "endOffset": 10572
+                    "endOffset": 10622
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_update_string.xml",
@@ -2476,9 +2476,9 @@
                 "to": {
                     "startLine": 137,
                     "startColumn": 4,
-                    "startOffset": 10577,
+                    "startOffset": 10627,
                     "endColumn": 52,
-                    "endOffset": 10625
+                    "endOffset": 10675
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -2495,9 +2495,9 @@
                 "to": {
                     "startLine": 138,
                     "startColumn": 4,
-                    "startOffset": 10630,
+                    "startOffset": 10680,
                     "endColumn": 34,
-                    "endOffset": 10660
+                    "endOffset": 10710
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -2514,9 +2514,9 @@
                 "to": {
                     "startLine": 139,
                     "startColumn": 4,
-                    "startOffset": 10665,
+                    "startOffset": 10715,
                     "endColumn": 41,
-                    "endOffset": 10702
+                    "endOffset": 10752
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -2533,9 +2533,9 @@
                 "to": {
                     "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 10707,
+                    "startOffset": 10757,
                     "endColumn": 47,
-                    "endOffset": 10750
+                    "endOffset": 10800
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_strings.xml",
@@ -2552,9 +2552,9 @@
                 "to": {
                     "startLine": 141,
                     "startColumn": 4,
-                    "startOffset": 10755,
+                    "startOffset": 10805,
                     "endColumn": 62,
-                    "endOffset": 10813
+                    "endOffset": 10863
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_strings.xml",
@@ -2571,9 +2571,9 @@
                 "to": {
                     "startLine": 142,
                     "startColumn": 4,
-                    "startOffset": 10818,
+                    "startOffset": 10868,
                     "endColumn": 58,
-                    "endOffset": 10872
+                    "endOffset": 10922
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_strings.xml",
@@ -2590,9 +2590,9 @@
                 "to": {
                     "startLine": 143,
                     "startColumn": 4,
-                    "startOffset": 10877,
+                    "startOffset": 10927,
                     "endColumn": 52,
-                    "endOffset": 10925
+                    "endOffset": 10975
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_strings.xml",
@@ -2609,9 +2609,9 @@
                 "to": {
                     "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 10930,
+                    "startOffset": 10980,
                     "endColumn": 54,
-                    "endOffset": 10980
+                    "endOffset": 11030
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_strings.xml",
@@ -2628,9 +2628,9 @@
                 "to": {
                     "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 10985,
+                    "startOffset": 11035,
                     "endColumn": 41,
-                    "endOffset": 11022
+                    "endOffset": 11072
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_strings.xml",
@@ -2647,9 +2647,9 @@
                 "to": {
                     "startLine": 146,
                     "startColumn": 4,
-                    "startOffset": 11027,
+                    "startOffset": 11077,
                     "endColumn": 36,
-                    "endOffset": 11059
+                    "endOffset": 11109
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -2666,9 +2666,9 @@
                 "to": {
                     "startLine": 147,
                     "startColumn": 4,
-                    "startOffset": 11064,
+                    "startOffset": 11114,
                     "endColumn": 42,
-                    "endOffset": 11102
+                    "endOffset": 11152
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -2685,9 +2685,9 @@
                 "to": {
                     "startLine": 148,
                     "startColumn": 4,
-                    "startOffset": 11107,
+                    "startOffset": 11157,
                     "endColumn": 52,
-                    "endOffset": 11155
+                    "endOffset": 11205
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -2704,9 +2704,9 @@
                 "to": {
                     "startLine": 149,
                     "startColumn": 4,
-                    "startOffset": 11160,
+                    "startOffset": 11210,
                     "endColumn": 41,
-                    "endOffset": 11197
+                    "endOffset": 11247
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\values\\values.xml",
@@ -2723,9 +2723,9 @@
                 "to": {
                     "startLine": 150,
                     "startColumn": 4,
-                    "startOffset": 11202,
+                    "startOffset": 11252,
                     "endColumn": 73,
-                    "endOffset": 11271
+                    "endOffset": 11321
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_facebook_strings.xml",
@@ -2742,9 +2742,9 @@
                 "to": {
                     "startLine": 151,
                     "startColumn": 4,
-                    "startOffset": 11276,
+                    "startOffset": 11326,
                     "endColumn": 114,
-                    "endOffset": 11386
+                    "endOffset": 11436
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2761,9 +2761,9 @@
                 "to": {
                     "startLine": 152,
                     "startColumn": 4,
-                    "startOffset": 11391,
+                    "startOffset": 11441,
                     "endColumn": 117,
-                    "endOffset": 11504
+                    "endOffset": 11554
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2780,9 +2780,9 @@
                 "to": {
                     "startLine": 153,
                     "startColumn": 4,
-                    "startOffset": 11509,
+                    "startOffset": 11559,
                     "endColumn": 94,
-                    "endOffset": 11599
+                    "endOffset": 11649
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2799,9 +2799,9 @@
                 "to": {
                     "startLine": 154,
                     "startColumn": 4,
-                    "startOffset": 11604,
+                    "startOffset": 11654,
                     "endColumn": 64,
-                    "endOffset": 11664
+                    "endOffset": 11714
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2818,9 +2818,9 @@
                 "to": {
                     "startLine": 155,
                     "startColumn": 4,
-                    "startOffset": 11669,
+                    "startOffset": 11719,
                     "endColumn": 67,
-                    "endOffset": 11732
+                    "endOffset": 11782
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2837,9 +2837,9 @@
                 "to": {
                     "startLine": 156,
                     "startColumn": 4,
-                    "startOffset": 11737,
+                    "startOffset": 11787,
                     "endColumn": 59,
-                    "endOffset": 11792
+                    "endOffset": 11842
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2856,9 +2856,9 @@
                 "to": {
                     "startLine": 157,
                     "startColumn": 4,
-                    "startOffset": 11797,
+                    "startOffset": 11847,
                     "endColumn": 71,
-                    "endOffset": 11864
+                    "endOffset": 11914
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2875,9 +2875,9 @@
                 "to": {
                     "startLine": 158,
                     "startColumn": 4,
-                    "startOffset": 11869,
+                    "startOffset": 11919,
                     "endColumn": 71,
-                    "endOffset": 11936
+                    "endOffset": 11986
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2894,9 +2894,9 @@
                 "to": {
                     "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 11941,
+                    "startOffset": 11991,
                     "endColumn": 90,
-                    "endOffset": 12027
+                    "endOffset": 12077
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2913,9 +2913,9 @@
                 "to": {
                     "startLine": 160,
                     "startColumn": 4,
-                    "startOffset": 12032,
+                    "startOffset": 12082,
                     "endColumn": 73,
-                    "endOffset": 12101
+                    "endOffset": 12151
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2932,9 +2932,9 @@
                 "to": {
                     "startLine": 161,
                     "startColumn": 4,
-                    "startOffset": 12106,
+                    "startOffset": 12156,
                     "endColumn": 73,
-                    "endOffset": 12175
+                    "endOffset": 12225
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2951,9 +2951,9 @@
                 "to": {
                     "startLine": 162,
                     "startColumn": 4,
-                    "startOffset": 12180,
+                    "startOffset": 12230,
                     "endColumn": 82,
-                    "endOffset": 12258
+                    "endOffset": 12308
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2970,9 +2970,9 @@
                 "to": {
                     "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 12263,
+                    "startOffset": 12313,
                     "endColumn": 100,
-                    "endOffset": 12359
+                    "endOffset": 12409
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -2989,9 +2989,9 @@
                 "to": {
                     "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 12364,
+                    "startOffset": 12414,
                     "endColumn": 173,
-                    "endOffset": 12533
+                    "endOffset": 12583
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_facebook_strings.xml",
@@ -3008,9 +3008,9 @@
                 "to": {
                     "startLine": 165,
                     "startColumn": 4,
-                    "startOffset": 12538,
+                    "startOffset": 12588,
                     "endColumn": 165,
-                    "endOffset": 12699
+                    "endOffset": 12749
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_facebook_strings.xml",
@@ -3027,9 +3027,9 @@
                 "to": {
                     "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 12704,
+                    "startOffset": 12754,
                     "endColumn": 130,
-                    "endOffset": 12830
+                    "endOffset": 12880
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_facebook_strings.xml",
@@ -3046,9 +3046,9 @@
                 "to": {
                     "startLine": 167,
                     "startColumn": 4,
-                    "startOffset": 12835,
+                    "startOffset": 12885,
                     "endColumn": 62,
-                    "endOffset": 12893
+                    "endOffset": 12943
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -3065,9 +3065,9 @@
                 "to": {
                     "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 12898,
+                    "startOffset": 12948,
                     "endColumn": 64,
-                    "endOffset": 12958
+                    "endOffset": 13008
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -3084,9 +3084,9 @@
                 "to": {
                     "startLine": 169,
                     "startColumn": 4,
-                    "startOffset": 12963,
+                    "startOffset": 13013,
                     "endColumn": 128,
-                    "endOffset": 13087
+                    "endOffset": 13137
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_strings.xml",
@@ -3103,9 +3103,9 @@
                 "to": {
                     "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 13092,
+                    "startOffset": 13142,
                     "endColumn": 54,
-                    "endOffset": 13142
+                    "endOffset": 13192
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -3122,9 +3122,9 @@
                 "to": {
                     "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 13147,
+                    "startOffset": 13197,
                     "endColumn": 43,
-                    "endOffset": 13186
+                    "endOffset": 13236
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\image_choose\\unspecified\\res\\values\\values.xml",
@@ -3141,9 +3141,9 @@
                 "to": {
                     "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 13191,
+                    "startOffset": 13241,
                     "endColumn": 41,
-                    "endOffset": 13228
+                    "endOffset": 13278
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\image_choose\\unspecified\\res\\values\\values.xml",
@@ -3160,9 +3160,9 @@
                 "to": {
                     "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 13233,
+                    "startOffset": 13283,
                     "endColumn": 55,
-                    "endOffset": 13284
+                    "endOffset": 13334
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\image_choose\\unspecified\\res\\values\\values.xml",
@@ -3179,9 +3179,9 @@
                 "to": {
                     "startLine": 174,
                     "startColumn": 4,
-                    "startOffset": 13289,
+                    "startOffset": 13339,
                     "endColumn": 56,
-                    "endOffset": 13341
+                    "endOffset": 13391
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_flickr_strings.xml",
@@ -3198,9 +3198,9 @@
                 "to": {
                     "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 13346,
+                    "startOffset": 13396,
                     "endColumn": 57,
-                    "endOffset": 13399
+                    "endOffset": 13449
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_flickr_strings.xml",
@@ -3217,9 +3217,9 @@
                 "to": {
                     "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 13404,
+                    "startOffset": 13454,
                     "endColumn": 53,
-                    "endOffset": 13453
+                    "endOffset": 13503
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_flickr_strings.xml",
@@ -3236,9 +3236,9 @@
                 "to": {
                     "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 13458,
+                    "startOffset": 13508,
                     "endColumn": 50,
-                    "endOffset": 13504
+                    "endOffset": 13554
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_flickr_strings.xml",
@@ -3255,9 +3255,9 @@
                 "to": {
                     "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 13509,
+                    "startOffset": 13559,
                     "endColumn": 49,
-                    "endOffset": 13554
+                    "endOffset": 13604
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\values\\values.xml",
@@ -3274,9 +3274,9 @@
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 13559,
+                    "startOffset": 13609,
                     "endColumn": 65,
-                    "endOffset": 13620
+                    "endOffset": 13670
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_foursquare_strings.xml",
@@ -3293,9 +3293,9 @@
                 "to": {
                     "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 13625,
+                    "startOffset": 13675,
                     "endColumn": 65,
-                    "endOffset": 13686
+                    "endOffset": 13736
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_foursquare_strings.xml",
@@ -3312,9 +3312,9 @@
                 "to": {
                     "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 13691,
+                    "startOffset": 13741,
                     "endColumn": 58,
-                    "endOffset": 13745
+                    "endOffset": 13795
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_foursquare_strings.xml",
@@ -3331,9 +3331,9 @@
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 13750,
+                    "startOffset": 13800,
                     "endColumn": 44,
-                    "endOffset": 13790
+                    "endOffset": 13840
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\image_choose\\unspecified\\res\\values\\values.xml",
@@ -3350,9 +3350,9 @@
                 "to": {
                     "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 13795,
+                    "startOffset": 13845,
                     "endColumn": 71,
-                    "endOffset": 13862
+                    "endOffset": 13912
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\meimidmovablecheckboxMovableCheckboxActivity\\unspecified\\res\\values\\values.xml",
@@ -3369,9 +3369,9 @@
                 "to": {
                     "startLine": 184,
                     "startColumn": 4,
-                    "startOffset": 13867,
+                    "startOffset": 13917,
                     "endColumn": 52,
-                    "endOffset": 13915
+                    "endOffset": 13965
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -3388,9 +3388,9 @@
                 "to": {
                     "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 13920,
+                    "startOffset": 13970,
                     "endColumn": 67,
-                    "endOffset": 13983
+                    "endOffset": 14033
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\image_choose\\unspecified\\res\\values\\values.xml",
@@ -3407,9 +3407,9 @@
                 "to": {
                     "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 13988,
+                    "startOffset": 14038,
                     "endColumn": 62,
-                    "endOffset": 14046
+                    "endOffset": 14096
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_kakao_strings.xml",
@@ -3426,9 +3426,9 @@
                 "to": {
                     "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 14051,
+                    "startOffset": 14101,
                     "endColumn": 60,
-                    "endOffset": 14107
+                    "endOffset": 14157
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_kakao_strings.xml",
@@ -3445,9 +3445,9 @@
                 "to": {
                     "startLine": 188,
                     "startColumn": 4,
-                    "startOffset": 14112,
+                    "startOffset": 14162,
                     "endColumn": 52,
-                    "endOffset": 14160
+                    "endOffset": 14210
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_kakao_strings.xml",
@@ -3464,9 +3464,9 @@
                 "to": {
                     "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 14165,
+                    "startOffset": 14215,
                     "endColumn": 53,
-                    "endOffset": 14214
+                    "endOffset": 14264
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_kakao_strings.xml",
@@ -3483,9 +3483,9 @@
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 14219,
+                    "startOffset": 14269,
                     "endColumn": 53,
-                    "endOffset": 14268
+                    "endOffset": 14318
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_line_strings.xml",
@@ -3502,9 +3502,9 @@
                 "to": {
                     "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 14273,
+                    "startOffset": 14323,
                     "endColumn": 53,
-                    "endOffset": 14322
+                    "endOffset": 14372
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_line_strings.xml",
@@ -3521,9 +3521,9 @@
                 "to": {
                     "startLine": 192,
                     "startColumn": 4,
-                    "startOffset": 14327,
+                    "startOffset": 14377,
                     "endColumn": 51,
-                    "endOffset": 14374
+                    "endOffset": 14424
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_line_strings.xml",
@@ -3540,9 +3540,9 @@
                 "to": {
                     "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 14379,
+                    "startOffset": 14429,
                     "endColumn": 46,
-                    "endOffset": 14421
+                    "endOffset": 14471
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_line_strings.xml",
@@ -3559,9 +3559,9 @@
                 "to": {
                     "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 14426,
+                    "startOffset": 14476,
                     "endColumn": 59,
-                    "endOffset": 14481
+                    "endOffset": 14531
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_linkedin_strings.xml",
@@ -3578,9 +3578,9 @@
                 "to": {
                     "startLine": 195,
                     "startColumn": 4,
-                    "startOffset": 14486,
+                    "startOffset": 14536,
                     "endColumn": 61,
-                    "endOffset": 14543
+                    "endOffset": 14593
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_linkedin_strings.xml",
@@ -3597,9 +3597,9 @@
                 "to": {
                     "startLine": 196,
                     "startColumn": 4,
-                    "startOffset": 14548,
+                    "startOffset": 14598,
                     "endColumn": 54,
-                    "endOffset": 14598
+                    "endOffset": 14648
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_linkedin_strings.xml",
@@ -3616,9 +3616,9 @@
                 "to": {
                     "startLine": 197,
                     "startColumn": 4,
-                    "startOffset": 14603,
+                    "startOffset": 14653,
                     "endColumn": 65,
-                    "endOffset": 14664
+                    "endOffset": 14714
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\image_choose\\unspecified\\res\\values\\values.xml",
@@ -3635,9 +3635,9 @@
                 "to": {
                     "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 14669,
+                    "startOffset": 14719,
                     "endColumn": 59,
-                    "endOffset": 14724
+                    "endOffset": 14774
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_strings.xml",
@@ -3654,9 +3654,9 @@
                 "to": {
                     "startLine": 199,
                     "startColumn": 4,
-                    "startOffset": 14729,
+                    "startOffset": 14779,
                     "endColumn": 51,
-                    "endOffset": 14776
+                    "endOffset": 14826
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\image_choose\\unspecified\\res\\values\\values.xml",
@@ -3673,9 +3673,9 @@
                 "to": {
                     "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 14781,
+                    "startOffset": 14831,
                     "endColumn": 53,
-                    "endOffset": 14830
+                    "endOffset": 14880
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\image_choose\\unspecified\\res\\values\\values.xml",
@@ -3692,9 +3692,9 @@
                 "to": {
                     "startLine": 201,
                     "startColumn": 4,
-                    "startOffset": 14835,
+                    "startOffset": 14885,
                     "endColumn": 74,
-                    "endOffset": 14905
+                    "endOffset": 14955
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\values\\values.xml",
@@ -3711,9 +3711,9 @@
                 "to": {
                     "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 14910,
+                    "startOffset": 14960,
                     "endColumn": 64,
-                    "endOffset": 14970
+                    "endOffset": 15020
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\multi-image-selector\\unspecified\\res\\values\\values.xml",
@@ -3730,9 +3730,9 @@
                 "to": {
                     "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 14975,
+                    "startOffset": 15025,
                     "endColumn": 54,
-                    "endOffset": 15025
+                    "endOffset": 15075
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -3749,9 +3749,9 @@
                 "to": {
                     "startLine": 204,
                     "startColumn": 4,
-                    "startOffset": 15030,
+                    "startOffset": 15080,
                     "endColumn": 58,
-                    "endOffset": 15084
+                    "endOffset": 15134
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_pocket_strings.xml",
@@ -3768,9 +3768,9 @@
                 "to": {
                     "startLine": 205,
                     "startColumn": 4,
-                    "startOffset": 15089,
+                    "startOffset": 15139,
                     "endColumn": 57,
-                    "endOffset": 15142
+                    "endOffset": 15192
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_pocket_strings.xml",
@@ -3787,9 +3787,9 @@
                 "to": {
                     "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15147,
+                    "startOffset": 15197,
                     "endColumn": 50,
-                    "endOffset": 15193
+                    "endOffset": 15243
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_pocket_strings.xml",
@@ -3806,9 +3806,9 @@
                 "to": {
                     "startLine": 207,
                     "startColumn": 4,
-                    "startOffset": 15198,
+                    "startOffset": 15248,
                     "endColumn": 38,
-                    "endOffset": 15232
+                    "endOffset": 15282
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -3825,9 +3825,9 @@
                 "to": {
                     "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 15237,
+                    "startOffset": 15287,
                     "endColumn": 84,
-                    "endOffset": 15317
+                    "endOffset": 15367
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -3844,9 +3844,9 @@
                 "to": {
                     "startLine": 209,
                     "startColumn": 4,
-                    "startOffset": 15322,
+                    "startOffset": 15372,
                     "endColumn": 86,
-                    "endOffset": 15404
+                    "endOffset": 15454
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -3863,9 +3863,9 @@
                 "to": {
                     "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 15409,
+                    "startOffset": 15459,
                     "endColumn": 85,
-                    "endOffset": 15490
+                    "endOffset": 15540
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -3882,9 +3882,9 @@
                 "to": {
                     "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 15495,
+                    "startOffset": 15545,
                     "endColumn": 79,
-                    "endOffset": 15570
+                    "endOffset": 15620
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -3901,9 +3901,9 @@
                 "to": {
                     "startLine": 212,
                     "startColumn": 4,
-                    "startOffset": 15575,
+                    "startOffset": 15625,
                     "endColumn": 51,
-                    "endOffset": 15622
+                    "endOffset": 15672
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\build\\intermediates\\exploded-aar\\kd_teacher_android-master\\image_choose\\unspecified\\res\\values\\values.xml",
@@ -3920,9 +3920,9 @@
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 15627,
+                    "startOffset": 15677,
                     "endColumn": 63,
-                    "endOffset": 15686
+                    "endOffset": 15736
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\tb_munion_strings.xml",
@@ -3939,9 +3939,9 @@
                 "to": {
                     "startLine": 214,
                     "startColumn": 4,
-                    "startOffset": 15691,
+                    "startOffset": 15741,
                     "endColumn": 54,
-                    "endOffset": 15741
+                    "endOffset": 15791
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -3958,9 +3958,9 @@
                 "to": {
                     "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 15746,
+                    "startOffset": 15796,
                     "endColumn": 67,
-                    "endOffset": 15809
+                    "endOffset": 15859
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -3977,9 +3977,9 @@
                 "to": {
                     "startLine": 216,
                     "startColumn": 4,
-                    "startOffset": 15814,
+                    "startOffset": 15864,
                     "endColumn": 79,
-                    "endOffset": 15889
+                    "endOffset": 15939
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -3996,9 +3996,9 @@
                 "to": {
                     "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 15894,
+                    "startOffset": 15944,
                     "endColumn": 77,
-                    "endOffset": 15967
+                    "endOffset": 16017
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -4015,9 +4015,9 @@
                 "to": {
                     "startLine": 218,
                     "startColumn": 4,
-                    "startOffset": 15972,
+                    "startOffset": 16022,
                     "endColumn": 71,
-                    "endOffset": 16039
+                    "endOffset": 16089
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -4034,9 +4034,9 @@
                 "to": {
                     "startLine": 219,
                     "startColumn": 4,
-                    "startOffset": 16044,
+                    "startOffset": 16094,
                     "endColumn": 71,
-                    "endOffset": 16111
+                    "endOffset": 16161
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -4053,9 +4053,9 @@
                 "to": {
                     "startLine": 220,
                     "startColumn": 4,
-                    "startOffset": 16116,
+                    "startOffset": 16166,
                     "endColumn": 71,
-                    "endOffset": 16183
+                    "endOffset": 16233
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -4072,9 +4072,9 @@
                 "to": {
                     "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 16188,
+                    "startOffset": 16238,
                     "endColumn": 62,
-                    "endOffset": 16246
+                    "endOffset": 16296
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_tumblr_strings.xml",
@@ -4091,9 +4091,9 @@
                 "to": {
                     "startLine": 222,
                     "startColumn": 4,
-                    "startOffset": 16251,
+                    "startOffset": 16301,
                     "endColumn": 57,
-                    "endOffset": 16304
+                    "endOffset": 16354
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_tumblr_strings.xml",
@@ -4110,9 +4110,9 @@
                 "to": {
                     "startLine": 223,
                     "startColumn": 4,
-                    "startOffset": 16309,
+                    "startOffset": 16359,
                     "endColumn": 53,
-                    "endOffset": 16358
+                    "endOffset": 16408
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_tumblr_strings.xml",
@@ -4129,9 +4129,9 @@
                 "to": {
                     "startLine": 224,
                     "startColumn": 4,
-                    "startOffset": 16363,
+                    "startOffset": 16413,
                     "endColumn": 50,
-                    "endOffset": 16409
+                    "endOffset": 16459
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_tumblr_strings.xml",
@@ -4148,9 +4148,9 @@
                 "to": {
                     "startLine": 225,
                     "startColumn": 4,
-                    "startOffset": 16414,
+                    "startOffset": 16464,
                     "endColumn": 57,
-                    "endOffset": 16467
+                    "endOffset": 16517
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4167,9 +4167,9 @@
                 "to": {
                     "startLine": 226,
                     "startColumn": 4,
-                    "startOffset": 16472,
+                    "startOffset": 16522,
                     "endColumn": 59,
-                    "endOffset": 16527
+                    "endOffset": 16577
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4186,9 +4186,9 @@
                 "to": {
                     "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 16532,
+                    "startOffset": 16582,
                     "endColumn": 65,
-                    "endOffset": 16593
+                    "endOffset": 16643
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4205,9 +4205,9 @@
                 "to": {
                     "startLine": 228,
                     "startColumn": 4,
-                    "startOffset": 16598,
+                    "startOffset": 16648,
                     "endColumn": 56,
-                    "endOffset": 16650
+                    "endOffset": 16700
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4224,9 +4224,9 @@
                 "to": {
                     "startLine": 229,
                     "startColumn": 4,
-                    "startOffset": 16655,
+                    "startOffset": 16705,
                     "endColumn": 61,
-                    "endOffset": 16712
+                    "endOffset": 16762
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4243,9 +4243,9 @@
                 "to": {
                     "startLine": 230,
                     "startColumn": 4,
-                    "startOffset": 16717,
+                    "startOffset": 16767,
                     "endColumn": 67,
-                    "endOffset": 16780
+                    "endOffset": 16830
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4262,9 +4262,9 @@
                 "to": {
                     "startLine": 231,
                     "startColumn": 4,
-                    "startOffset": 16785,
+                    "startOffset": 16835,
                     "endColumn": 76,
-                    "endOffset": 16857
+                    "endOffset": 16907
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4281,9 +4281,9 @@
                 "to": {
                     "startLine": 232,
                     "startColumn": 4,
-                    "startOffset": 16862,
+                    "startOffset": 16912,
                     "endColumn": 50,
-                    "endOffset": 16908
+                    "endOffset": 16958
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -4300,9 +4300,9 @@
                 "to": {
                     "startLine": 233,
                     "startColumn": 4,
-                    "startOffset": 16913,
+                    "startOffset": 16963,
                     "endColumn": 71,
-                    "endOffset": 16980
+                    "endOffset": 17030
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4319,9 +4319,9 @@
                 "to": {
                     "startLine": 234,
                     "startColumn": 4,
-                    "startOffset": 16985,
+                    "startOffset": 17035,
                     "endColumn": 71,
-                    "endOffset": 17052
+                    "endOffset": 17102
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4338,9 +4338,9 @@
                 "to": {
                     "startLine": 235,
                     "startColumn": 4,
-                    "startOffset": 17057,
+                    "startOffset": 17107,
                     "endColumn": 64,
-                    "endOffset": 17117
+                    "endOffset": 17167
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4357,9 +4357,9 @@
                 "to": {
                     "startLine": 236,
                     "startColumn": 4,
-                    "startOffset": 17122,
+                    "startOffset": 17172,
                     "endColumn": 71,
-                    "endOffset": 17189
+                    "endOffset": 17239
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4376,9 +4376,9 @@
                 "to": {
                     "startLine": 237,
                     "startColumn": 4,
-                    "startOffset": 17194,
+                    "startOffset": 17244,
                     "endColumn": 78,
-                    "endOffset": 17268
+                    "endOffset": 17318
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4395,9 +4395,9 @@
                 "to": {
                     "startLine": 238,
                     "startColumn": 4,
-                    "startOffset": 17273,
+                    "startOffset": 17323,
                     "endColumn": 75,
-                    "endOffset": 17344
+                    "endOffset": 17394
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4414,9 +4414,9 @@
                 "to": {
                     "startLine": 239,
                     "startColumn": 4,
-                    "startOffset": 17349,
+                    "startOffset": 17399,
                     "endColumn": 73,
-                    "endOffset": 17418
+                    "endOffset": 17468
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_common_strings.xml",
@@ -4433,9 +4433,9 @@
                 "to": {
                     "startLine": 240,
                     "startColumn": 4,
-                    "startOffset": 17423,
+                    "startOffset": 17473,
                     "endColumn": 60,
-                    "endOffset": 17479
+                    "endOffset": 17529
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4452,9 +4452,9 @@
                 "to": {
                     "startLine": 241,
                     "startColumn": 4,
-                    "startOffset": 17484,
+                    "startOffset": 17534,
                     "endColumn": 72,
-                    "endOffset": 17552
+                    "endOffset": 17602
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4471,9 +4471,9 @@
                 "to": {
                     "startLine": 242,
                     "startColumn": 4,
-                    "startOffset": 17557,
+                    "startOffset": 17607,
                     "endColumn": 61,
-                    "endOffset": 17614
+                    "endOffset": 17664
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4490,9 +4490,9 @@
                 "to": {
                     "startLine": 243,
                     "startColumn": 4,
-                    "startOffset": 17619,
+                    "startOffset": 17669,
                     "endColumn": 75,
-                    "endOffset": 17690
+                    "endOffset": 17740
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4509,9 +4509,9 @@
                 "to": {
                     "startLine": 244,
                     "startColumn": 4,
-                    "startOffset": 17695,
+                    "startOffset": 17745,
                     "endColumn": 84,
-                    "endOffset": 17775
+                    "endOffset": 17825
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4528,9 +4528,9 @@
                 "to": {
                     "startLine": 245,
                     "startColumn": 4,
-                    "startOffset": 17780,
+                    "startOffset": 17830,
                     "endColumn": 61,
-                    "endOffset": 17837
+                    "endOffset": 17887
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4547,9 +4547,9 @@
                 "to": {
                     "startLine": 246,
                     "startColumn": 4,
-                    "startOffset": 17842,
+                    "startOffset": 17892,
                     "endColumn": 78,
-                    "endOffset": 17916
+                    "endOffset": 17966
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4566,9 +4566,9 @@
                 "to": {
                     "startLine": 247,
                     "startColumn": 4,
-                    "startOffset": 17921,
+                    "startOffset": 17971,
                     "endColumn": 44,
-                    "endOffset": 17961
+                    "endOffset": 18011
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4585,9 +4585,9 @@
                 "to": {
                     "startLine": 248,
                     "startColumn": 4,
-                    "startOffset": 17966,
+                    "startOffset": 18016,
                     "endColumn": 95,
-                    "endOffset": 18057
+                    "endOffset": 18107
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_laiwang_strings.xml",
@@ -4604,9 +4604,9 @@
                 "to": {
                     "startLine": 249,
                     "startColumn": 4,
-                    "startOffset": 18062,
+                    "startOffset": 18112,
                     "endColumn": 52,
-                    "endOffset": 18110
+                    "endOffset": 18160
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4623,9 +4623,9 @@
                 "to": {
                     "startLine": 250,
                     "startColumn": 4,
-                    "startOffset": 18115,
+                    "startOffset": 18165,
                     "endColumn": 57,
-                    "endOffset": 18168
+                    "endOffset": 18218
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4642,9 +4642,9 @@
                 "to": {
                     "startLine": 251,
                     "startColumn": 4,
-                    "startOffset": 18173,
+                    "startOffset": 18223,
                     "endColumn": 76,
-                    "endOffset": 18245
+                    "endOffset": 18295
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4661,9 +4661,9 @@
                 "to": {
                     "startLine": 252,
                     "startColumn": 4,
-                    "startOffset": 18250,
+                    "startOffset": 18300,
                     "endColumn": 76,
-                    "endOffset": 18322
+                    "endOffset": 18372
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4680,9 +4680,9 @@
                 "to": {
                     "startLine": 253,
                     "startColumn": 4,
-                    "startOffset": 18327,
+                    "startOffset": 18377,
                     "endColumn": 75,
-                    "endOffset": 18398
+                    "endOffset": 18448
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4699,9 +4699,9 @@
                 "to": {
                     "startLine": 254,
                     "startColumn": 4,
-                    "startOffset": 18403,
+                    "startOffset": 18453,
                     "endColumn": 80,
-                    "endOffset": 18479
+                    "endOffset": 18529
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4718,9 +4718,9 @@
                 "to": {
                     "startLine": 255,
                     "startColumn": 4,
-                    "startOffset": 18484,
+                    "startOffset": 18534,
                     "endColumn": 95,
-                    "endOffset": 18575
+                    "endOffset": 18625
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4737,9 +4737,9 @@
                 "to": {
                     "startLine": 256,
                     "startColumn": 4,
-                    "startOffset": 18580,
+                    "startOffset": 18630,
                     "endColumn": 72,
-                    "endOffset": 18648
+                    "endOffset": 18698
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4756,9 +4756,9 @@
                 "to": {
                     "startLine": 257,
                     "startColumn": 4,
-                    "startOffset": 18653,
+                    "startOffset": 18703,
                     "endColumn": 59,
-                    "endOffset": 18708
+                    "endOffset": 18758
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4775,9 +4775,9 @@
                 "to": {
                     "startLine": 258,
                     "startColumn": 4,
-                    "startOffset": 18713,
+                    "startOffset": 18763,
                     "endColumn": 52,
-                    "endOffset": 18761
+                    "endOffset": 18811
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4794,10 +4794,10 @@
                 "to": {
                     "startLine": 259,
                     "startColumn": 4,
-                    "startOffset": 18766,
+                    "startOffset": 18816,
                     "endLine": 261,
                     "endColumn": 60,
-                    "endOffset": 18992
+                    "endOffset": 19042
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4815,9 +4815,9 @@
                 "to": {
                     "startLine": 262,
                     "startColumn": 4,
-                    "startOffset": 18997,
+                    "startOffset": 19047,
                     "endColumn": 76,
-                    "endOffset": 19069
+                    "endOffset": 19119
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4834,9 +4834,9 @@
                 "to": {
                     "startLine": 263,
                     "startColumn": 4,
-                    "startOffset": 19074,
+                    "startOffset": 19124,
                     "endColumn": 61,
-                    "endOffset": 19131
+                    "endOffset": 19181
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4853,9 +4853,9 @@
                 "to": {
                     "startLine": 264,
                     "startColumn": 4,
-                    "startOffset": 19136,
+                    "startOffset": 19186,
                     "endColumn": 72,
-                    "endOffset": 19204
+                    "endOffset": 19254
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4872,9 +4872,9 @@
                 "to": {
                     "startLine": 265,
                     "startColumn": 4,
-                    "startOffset": 19209,
+                    "startOffset": 19259,
                     "endColumn": 68,
-                    "endOffset": 19273
+                    "endOffset": 19323
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4891,9 +4891,9 @@
                 "to": {
                     "startLine": 266,
                     "startColumn": 4,
-                    "startOffset": 19278,
+                    "startOffset": 19328,
                     "endColumn": 63,
-                    "endOffset": 19337
+                    "endOffset": 19387
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4910,9 +4910,9 @@
                 "to": {
                     "startLine": 267,
                     "startColumn": 4,
-                    "startOffset": 19342,
+                    "startOffset": 19392,
                     "endColumn": 65,
-                    "endOffset": 19403
+                    "endOffset": 19453
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4929,9 +4929,9 @@
                 "to": {
                     "startLine": 268,
                     "startColumn": 4,
-                    "startOffset": 19408,
+                    "startOffset": 19458,
                     "endColumn": 73,
-                    "endOffset": 19477
+                    "endOffset": 19527
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_laiwang_strings.xml",
@@ -4948,9 +4948,9 @@
                 "to": {
                     "startLine": 269,
                     "startColumn": 4,
-                    "startOffset": 19482,
+                    "startOffset": 19532,
                     "endColumn": 63,
-                    "endOffset": 19541
+                    "endOffset": 19591
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_laiwang_strings.xml",
@@ -4967,9 +4967,9 @@
                 "to": {
                     "startLine": 270,
                     "startColumn": 4,
-                    "startOffset": 19546,
+                    "startOffset": 19596,
                     "endColumn": 75,
-                    "endOffset": 19617
+                    "endOffset": 19667
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -4986,9 +4986,9 @@
                 "to": {
                     "startLine": 271,
                     "startColumn": 4,
-                    "startOffset": 19622,
+                    "startOffset": 19672,
                     "endColumn": 69,
-                    "endOffset": 19687
+                    "endOffset": 19737
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5005,9 +5005,9 @@
                 "to": {
                     "startLine": 272,
                     "startColumn": 4,
-                    "startOffset": 19692,
+                    "startOffset": 19742,
                     "endColumn": 58,
-                    "endOffset": 19746
+                    "endOffset": 19796
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5024,9 +5024,9 @@
                 "to": {
                     "startLine": 273,
                     "startColumn": 4,
-                    "startOffset": 19751,
+                    "startOffset": 19801,
                     "endColumn": 65,
-                    "endOffset": 19812
+                    "endOffset": 19862
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5043,9 +5043,9 @@
                 "to": {
                     "startLine": 274,
                     "startColumn": 4,
-                    "startOffset": 19817,
+                    "startOffset": 19867,
                     "endColumn": 63,
-                    "endOffset": 19876
+                    "endOffset": 19926
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5062,9 +5062,9 @@
                 "to": {
                     "startLine": 275,
                     "startColumn": 4,
-                    "startOffset": 19881,
+                    "startOffset": 19931,
                     "endColumn": 60,
-                    "endOffset": 19937
+                    "endOffset": 19987
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5081,9 +5081,9 @@
                 "to": {
                     "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 19942,
+                    "startOffset": 19992,
                     "endColumn": 65,
-                    "endOffset": 20003
+                    "endOffset": 20053
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5100,9 +5100,9 @@
                 "to": {
                     "startLine": 277,
                     "startColumn": 4,
-                    "startOffset": 20008,
+                    "startOffset": 20058,
                     "endColumn": 83,
-                    "endOffset": 20087
+                    "endOffset": 20137
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5119,9 +5119,9 @@
                 "to": {
                     "startLine": 278,
                     "startColumn": 4,
-                    "startOffset": 20092,
+                    "startOffset": 20142,
                     "endColumn": 78,
-                    "endOffset": 20166
+                    "endOffset": 20216
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5138,9 +5138,9 @@
                 "to": {
                     "startLine": 279,
                     "startColumn": 4,
-                    "startOffset": 20171,
+                    "startOffset": 20221,
                     "endColumn": 80,
-                    "endOffset": 20247
+                    "endOffset": 20297
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5157,9 +5157,9 @@
                 "to": {
                     "startLine": 280,
                     "startColumn": 4,
-                    "startOffset": 20252,
+                    "startOffset": 20302,
                     "endColumn": 106,
-                    "endOffset": 20354
+                    "endOffset": 20404
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5176,9 +5176,9 @@
                 "to": {
                     "startLine": 281,
                     "startColumn": 4,
-                    "startOffset": 20359,
+                    "startOffset": 20409,
                     "endColumn": 61,
-                    "endOffset": 20416
+                    "endOffset": 20466
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5195,9 +5195,9 @@
                 "to": {
                     "startLine": 282,
                     "startColumn": 4,
-                    "startOffset": 20421,
+                    "startOffset": 20471,
                     "endColumn": 64,
-                    "endOffset": 20481
+                    "endOffset": 20531
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5214,9 +5214,9 @@
                 "to": {
                     "startLine": 283,
                     "startColumn": 4,
-                    "startOffset": 20486,
+                    "startOffset": 20536,
                     "endColumn": 59,
-                    "endOffset": 20541
+                    "endOffset": 20591
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5233,9 +5233,9 @@
                 "to": {
                     "startLine": 284,
                     "startColumn": 4,
-                    "startOffset": 20546,
+                    "startOffset": 20596,
                     "endColumn": 64,
-                    "endOffset": 20606
+                    "endOffset": 20656
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5252,9 +5252,9 @@
                 "to": {
                     "startLine": 285,
                     "startColumn": 4,
-                    "startOffset": 20611,
+                    "startOffset": 20661,
                     "endColumn": 73,
-                    "endOffset": 20680
+                    "endOffset": 20730
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5271,9 +5271,9 @@
                 "to": {
                     "startLine": 286,
                     "startColumn": 4,
-                    "startOffset": 20685,
+                    "startOffset": 20735,
                     "endColumn": 73,
-                    "endOffset": 20754
+                    "endOffset": 20804
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5290,9 +5290,9 @@
                 "to": {
                     "startLine": 287,
                     "startColumn": 4,
-                    "startOffset": 20759,
+                    "startOffset": 20809,
                     "endColumn": 79,
-                    "endOffset": 20834
+                    "endOffset": 20884
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5309,9 +5309,9 @@
                 "to": {
                     "startLine": 288,
                     "startColumn": 4,
-                    "startOffset": 20839,
+                    "startOffset": 20889,
                     "endColumn": 69,
-                    "endOffset": 20904
+                    "endOffset": 20954
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5328,9 +5328,9 @@
                 "to": {
                     "startLine": 289,
                     "startColumn": 4,
-                    "startOffset": 20909,
+                    "startOffset": 20959,
                     "endColumn": 68,
-                    "endOffset": 20973
+                    "endOffset": 21023
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5347,9 +5347,9 @@
                 "to": {
                     "startLine": 290,
                     "startColumn": 4,
-                    "startOffset": 20978,
+                    "startOffset": 21028,
                     "endColumn": 77,
-                    "endOffset": 21051
+                    "endOffset": 21101
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5366,9 +5366,9 @@
                 "to": {
                     "startLine": 291,
                     "startColumn": 4,
-                    "startOffset": 21056,
+                    "startOffset": 21106,
                     "endColumn": 85,
-                    "endOffset": 21137
+                    "endOffset": 21187
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5385,9 +5385,9 @@
                 "to": {
                     "startLine": 292,
                     "startColumn": 4,
-                    "startOffset": 21142,
+                    "startOffset": 21192,
                     "endColumn": 76,
-                    "endOffset": 21214
+                    "endOffset": 21264
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5404,9 +5404,9 @@
                 "to": {
                     "startLine": 293,
                     "startColumn": 4,
-                    "startOffset": 21219,
+                    "startOffset": 21269,
                     "endColumn": 86,
-                    "endOffset": 21301
+                    "endOffset": 21351
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5423,9 +5423,9 @@
                 "to": {
                     "startLine": 294,
                     "startColumn": 4,
-                    "startOffset": 21306,
+                    "startOffset": 21356,
                     "endColumn": 72,
-                    "endOffset": 21374
+                    "endOffset": 21424
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5442,9 +5442,9 @@
                 "to": {
                     "startLine": 295,
                     "startColumn": 4,
-                    "startOffset": 21379,
+                    "startOffset": 21429,
                     "endColumn": 62,
-                    "endOffset": 21437
+                    "endOffset": 21487
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5461,9 +5461,9 @@
                 "to": {
                     "startLine": 296,
                     "startColumn": 4,
-                    "startOffset": 21442,
+                    "startOffset": 21492,
                     "endColumn": 98,
-                    "endOffset": 21536
+                    "endOffset": 21586
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5480,9 +5480,9 @@
                 "to": {
                     "startLine": 297,
                     "startColumn": 4,
-                    "startOffset": 21541,
+                    "startOffset": 21591,
                     "endColumn": 86,
-                    "endOffset": 21623
+                    "endOffset": 21673
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5499,9 +5499,9 @@
                 "to": {
                     "startLine": 298,
                     "startColumn": 4,
-                    "startOffset": 21628,
+                    "startOffset": 21678,
                     "endColumn": 95,
-                    "endOffset": 21719
+                    "endOffset": 21769
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5518,9 +5518,9 @@
                 "to": {
                     "startLine": 299,
                     "startColumn": 4,
-                    "startOffset": 21724,
+                    "startOffset": 21774,
                     "endColumn": 98,
-                    "endOffset": 21818
+                    "endOffset": 21868
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_strings.xml",
@@ -5537,9 +5537,9 @@
                 "to": {
                     "startLine": 300,
                     "startColumn": 4,
-                    "startOffset": 21823,
+                    "startOffset": 21873,
                     "endColumn": 40,
-                    "endOffset": 21859
+                    "endOffset": 21909
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\strings.xml",
@@ -5556,9 +5556,9 @@
                 "to": {
                     "startLine": 301,
                     "startColumn": 4,
-                    "startOffset": 21864,
+                    "startOffset": 21914,
                     "endColumn": 58,
-                    "endOffset": 21918
+                    "endOffset": 21968
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_whatsapp_strings.xml",
@@ -5575,9 +5575,9 @@
                 "to": {
                     "startLine": 302,
                     "startColumn": 4,
-                    "startOffset": 21923,
+                    "startOffset": 21973,
                     "endColumn": 62,
-                    "endOffset": 21981
+                    "endOffset": 22031
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_whatsapp_strings.xml",
@@ -5594,9 +5594,9 @@
                 "to": {
                     "startLine": 303,
                     "startColumn": 4,
-                    "startOffset": 21986,
+                    "startOffset": 22036,
                     "endColumn": 55,
-                    "endOffset": 22037
+                    "endOffset": 22087
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_whatsapp_strings.xml",
@@ -5613,9 +5613,9 @@
                 "to": {
                     "startLine": 304,
                     "startColumn": 4,
-                    "startOffset": 22042,
+                    "startOffset": 22092,
                     "endColumn": 54,
-                    "endOffset": 22092
+                    "endOffset": 22142
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_whatsapp_strings.xml",
@@ -5632,9 +5632,161 @@
                 "to": {
                     "startLine": 305,
                     "startColumn": 4,
-                    "startOffset": 22097,
+                    "startOffset": 22147,
+                    "endColumn": 76,
+                    "endOffset": 22219
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\xiaomi_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 725,
+                        "endColumn": 80,
+                        "endOffset": 801
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 306,
+                    "startColumn": 4,
+                    "startOffset": 22224,
+                    "endColumn": 168,
+                    "endOffset": 22388
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\xiaomi_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 978,
+                        "endColumn": 168,
+                        "endOffset": 1142
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 307,
+                    "startColumn": 4,
+                    "startOffset": 22393,
+                    "endColumn": 110,
+                    "endOffset": 22499
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\xiaomi_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 614,
+                        "endColumn": 110,
+                        "endOffset": 720
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 308,
+                    "startColumn": 4,
+                    "startOffset": 22504,
+                    "endColumn": 81,
+                    "endOffset": 22581
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\xiaomi_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 806,
+                        "endColumn": 85,
+                        "endOffset": 887
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 309,
+                    "startColumn": 4,
+                    "startOffset": 22586,
+                    "endColumn": 81,
+                    "endOffset": 22663
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\xiaomi_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 892,
+                        "endColumn": 85,
+                        "endOffset": 973
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 310,
+                    "startColumn": 4,
+                    "startOffset": 22668,
+                    "endColumn": 155,
+                    "endOffset": 22819
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\xiaomi_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 268,
+                        "endColumn": 163,
+                        "endOffset": 427
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 311,
+                    "startColumn": 4,
+                    "startOffset": 22824,
+                    "endColumn": 173,
+                    "endOffset": 22993
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\xiaomi_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 432,
+                        "endColumn": 181,
+                        "endOffset": 609
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 312,
+                    "startColumn": 4,
+                    "startOffset": 22998,
+                    "endColumn": 96,
+                    "endOffset": 23090
+                },
+                "from": {
+                    "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\xiaomi_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 167,
+                        "endColumn": 100,
+                        "endOffset": 263
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 313,
+                    "startColumn": 4,
+                    "startOffset": 23095,
                     "endColumn": 60,
-                    "endOffset": 22153
+                    "endOffset": 23151
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_ynote_strings.xml",
@@ -5649,11 +5801,11 @@
             },
             {
                 "to": {
-                    "startLine": 306,
+                    "startLine": 314,
                     "startColumn": 4,
-                    "startOffset": 22158,
+                    "startOffset": 23156,
                     "endColumn": 55,
-                    "endOffset": 22209
+                    "endOffset": 23207
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_ynote_strings.xml",
@@ -5668,11 +5820,11 @@
             },
             {
                 "to": {
-                    "startLine": 307,
+                    "startLine": 315,
                     "startColumn": 4,
-                    "startOffset": 22214,
+                    "startOffset": 23212,
                     "endColumn": 52,
-                    "endOffset": 22262
+                    "endOffset": 23260
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_ynote_strings.xml",
@@ -5687,11 +5839,11 @@
             },
             {
                 "to": {
-                    "startLine": 308,
+                    "startLine": 316,
                     "startColumn": 4,
-                    "startOffset": 22267,
+                    "startOffset": 23265,
                     "endColumn": 48,
-                    "endOffset": 22311
+                    "endOffset": 23309
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_ynote_strings.xml",
@@ -5706,12 +5858,12 @@
             },
             {
                 "to": {
-                    "startLine": 309,
+                    "startLine": 317,
                     "startColumn": 4,
-                    "startOffset": 22316,
-                    "endLine": 315,
+                    "startOffset": 23314,
+                    "endLine": 323,
                     "endColumn": 12,
-                    "endOffset": 22602
+                    "endOffset": 23600
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_styles.xml",
@@ -5727,12 +5879,12 @@
             },
             {
                 "to": {
-                    "startLine": 316,
+                    "startLine": 324,
                     "startColumn": 4,
-                    "startOffset": 22607,
-                    "endLine": 318,
+                    "startOffset": 23605,
+                    "endLine": 326,
                     "endColumn": 12,
-                    "endOffset": 22762
+                    "endOffset": 23760
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_styles.xml",
@@ -5748,11 +5900,11 @@
             },
             {
                 "to": {
-                    "startLine": 319,
+                    "startLine": 327,
                     "startColumn": 4,
-                    "startOffset": 22767,
+                    "startOffset": 23765,
                     "endColumn": 91,
-                    "endOffset": 22854
+                    "endOffset": 23852
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -5767,12 +5919,12 @@
             },
             {
                 "to": {
-                    "startLine": 320,
+                    "startLine": 328,
                     "startColumn": 4,
-                    "startOffset": 22859,
-                    "endLine": 322,
+                    "startOffset": 23857,
+                    "endLine": 330,
                     "endColumn": 12,
-                    "endOffset": 22988
+                    "endOffset": 23986
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -5788,12 +5940,12 @@
             },
             {
                 "to": {
-                    "startLine": 323,
+                    "startLine": 331,
                     "startColumn": 4,
-                    "startOffset": 22993,
-                    "endLine": 329,
+                    "startOffset": 23991,
+                    "endLine": 337,
                     "endColumn": 12,
-                    "endOffset": 23373
+                    "endOffset": 24371
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -5809,12 +5961,12 @@
             },
             {
                 "to": {
-                    "startLine": 330,
+                    "startLine": 338,
                     "startColumn": 4,
-                    "startOffset": 23378,
-                    "endLine": 336,
+                    "startOffset": 24376,
+                    "endLine": 344,
                     "endColumn": 12,
-                    "endOffset": 23763
+                    "endOffset": 24761
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -5830,12 +5982,12 @@
             },
             {
                 "to": {
-                    "startLine": 337,
+                    "startLine": 345,
                     "startColumn": 4,
-                    "startOffset": 23768,
-                    "endLine": 349,
+                    "startOffset": 24766,
+                    "endLine": 357,
                     "endColumn": 12,
-                    "endOffset": 24307
+                    "endOffset": 25305
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\shake_umeng_socialize_style.xml",
@@ -5851,12 +6003,12 @@
             },
             {
                 "to": {
-                    "startLine": 350,
+                    "startLine": 358,
                     "startColumn": 4,
-                    "startOffset": 24312,
-                    "endLine": 352,
+                    "startOffset": 25310,
+                    "endLine": 360,
                     "endColumn": 10,
-                    "endOffset": 24400
+                    "endOffset": 25398
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -5872,12 +6024,12 @@
             },
             {
                 "to": {
-                    "startLine": 353,
+                    "startLine": 361,
                     "startColumn": 4,
-                    "startOffset": 24405,
-                    "endLine": 355,
+                    "startOffset": 25403,
+                    "endLine": 363,
                     "endColumn": 10,
-                    "endOffset": 24538
+                    "endOffset": 25536
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -5893,12 +6045,12 @@
             },
             {
                 "to": {
-                    "startLine": 356,
+                    "startLine": 364,
                     "startColumn": 4,
-                    "startOffset": 24543,
-                    "endLine": 361,
+                    "startOffset": 25541,
+                    "endLine": 369,
                     "endColumn": 10,
-                    "endOffset": 24815
+                    "endOffset": 25813
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -5914,12 +6066,12 @@
             },
             {
                 "to": {
-                    "startLine": 362,
+                    "startLine": 370,
                     "startColumn": 4,
-                    "startOffset": 24820,
-                    "endLine": 365,
+                    "startOffset": 25818,
+                    "endLine": 373,
                     "endColumn": 10,
-                    "endOffset": 24974
+                    "endOffset": 25972
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -5935,12 +6087,12 @@
             },
             {
                 "to": {
-                    "startLine": 366,
+                    "startLine": 374,
                     "startColumn": 4,
-                    "startOffset": 24979,
-                    "endLine": 368,
+                    "startOffset": 25977,
+                    "endLine": 376,
                     "endColumn": 10,
-                    "endOffset": 25114
+                    "endOffset": 26112
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -5956,12 +6108,12 @@
             },
             {
                 "to": {
-                    "startLine": 369,
+                    "startLine": 377,
                     "startColumn": 4,
-                    "startOffset": 25119,
-                    "endLine": 374,
+                    "startOffset": 26117,
+                    "endLine": 382,
                     "endColumn": 10,
-                    "endOffset": 25392
+                    "endOffset": 26390
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -5977,12 +6129,12 @@
             },
             {
                 "to": {
-                    "startLine": 375,
+                    "startLine": 383,
                     "startColumn": 4,
-                    "startOffset": 25397,
-                    "endLine": 378,
+                    "startOffset": 26395,
+                    "endLine": 386,
                     "endColumn": 10,
-                    "endOffset": 25552
+                    "endOffset": 26550
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -5998,12 +6150,12 @@
             },
             {
                 "to": {
-                    "startLine": 379,
+                    "startLine": 387,
                     "startColumn": 4,
-                    "startOffset": 25557,
-                    "endLine": 389,
+                    "startOffset": 26555,
+                    "endLine": 397,
                     "endColumn": 10,
-                    "endOffset": 26051
+                    "endOffset": 27049
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -6019,12 +6171,12 @@
             },
             {
                 "to": {
-                    "startLine": 390,
+                    "startLine": 398,
                     "startColumn": 4,
-                    "startOffset": 26056,
-                    "endLine": 392,
+                    "startOffset": 27054,
+                    "endLine": 400,
                     "endColumn": 10,
-                    "endOffset": 26156
+                    "endOffset": 27154
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -6040,12 +6192,12 @@
             },
             {
                 "to": {
-                    "startLine": 393,
+                    "startLine": 401,
                     "startColumn": 4,
-                    "startOffset": 26161,
-                    "endLine": 395,
+                    "startOffset": 27159,
+                    "endLine": 403,
                     "endColumn": 10,
-                    "endOffset": 26301
+                    "endOffset": 27299
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -6061,12 +6213,12 @@
             },
             {
                 "to": {
-                    "startLine": 396,
+                    "startLine": 404,
                     "startColumn": 4,
-                    "startOffset": 26306,
-                    "endLine": 398,
+                    "startOffset": 27304,
+                    "endLine": 406,
                     "endColumn": 10,
-                    "endOffset": 26446
+                    "endOffset": 27444
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -6082,12 +6234,12 @@
             },
             {
                 "to": {
-                    "startLine": 399,
+                    "startLine": 407,
                     "startColumn": 4,
-                    "startOffset": 26451,
-                    "endLine": 401,
+                    "startOffset": 27449,
+                    "endLine": 409,
                     "endColumn": 10,
-                    "endOffset": 26552
+                    "endOffset": 27550
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -6103,12 +6255,12 @@
             },
             {
                 "to": {
-                    "startLine": 402,
+                    "startLine": 410,
                     "startColumn": 4,
-                    "startOffset": 26557,
-                    "endLine": 404,
+                    "startOffset": 27555,
+                    "endLine": 412,
                     "endColumn": 10,
-                    "endOffset": 26697
+                    "endOffset": 27695
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -6124,12 +6276,12 @@
             },
             {
                 "to": {
-                    "startLine": 405,
+                    "startLine": 413,
                     "startColumn": 4,
-                    "startOffset": 26702,
-                    "endLine": 407,
+                    "startOffset": 27700,
+                    "endLine": 415,
                     "endColumn": 10,
-                    "endOffset": 26842
+                    "endOffset": 27840
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\messenger_button_styles.xml",
@@ -6145,12 +6297,12 @@
             },
             {
                 "to": {
-                    "startLine": 408,
+                    "startLine": 416,
                     "startColumn": 4,
-                    "startOffset": 26847,
-                    "endLine": 410,
+                    "startOffset": 27845,
+                    "endLine": 418,
                     "endColumn": 12,
-                    "endOffset": 26959
+                    "endOffset": 27957
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6166,12 +6318,12 @@
             },
             {
                 "to": {
-                    "startLine": 411,
+                    "startLine": 419,
                     "startColumn": 4,
-                    "startOffset": 26964,
-                    "endLine": 415,
+                    "startOffset": 27962,
+                    "endLine": 423,
                     "endColumn": 12,
-                    "endOffset": 27130
+                    "endOffset": 28128
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6187,12 +6339,12 @@
             },
             {
                 "to": {
-                    "startLine": 416,
+                    "startLine": 424,
                     "startColumn": 4,
-                    "startOffset": 27135,
-                    "endLine": 419,
+                    "startOffset": 28133,
+                    "endLine": 427,
                     "endColumn": 12,
-                    "endOffset": 27294
+                    "endOffset": 28292
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\shake_umeng_socialize_style.xml",
@@ -6208,12 +6360,12 @@
             },
             {
                 "to": {
-                    "startLine": 420,
+                    "startLine": 428,
                     "startColumn": 4,
-                    "startOffset": 27299,
-                    "endLine": 423,
+                    "startOffset": 28297,
+                    "endLine": 431,
                     "endColumn": 12,
-                    "endOffset": 27498
+                    "endOffset": 28496
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6229,12 +6381,12 @@
             },
             {
                 "to": {
-                    "startLine": 424,
+                    "startLine": 432,
                     "startColumn": 4,
-                    "startOffset": 27503,
-                    "endLine": 427,
+                    "startOffset": 28501,
+                    "endLine": 435,
                     "endColumn": 12,
-                    "endOffset": 27702
+                    "endOffset": 28700
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6250,12 +6402,12 @@
             },
             {
                 "to": {
-                    "startLine": 428,
+                    "startLine": 436,
                     "startColumn": 4,
-                    "startOffset": 27707,
-                    "endLine": 435,
+                    "startOffset": 28705,
+                    "endLine": 443,
                     "endColumn": 12,
-                    "endOffset": 28182
+                    "endOffset": 29180
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6271,11 +6423,11 @@
             },
             {
                 "to": {
-                    "startLine": 436,
+                    "startLine": 444,
                     "startColumn": 4,
-                    "startOffset": 28187,
+                    "startOffset": 29185,
                     "endColumn": 75,
-                    "endOffset": 28258
+                    "endOffset": 29256
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6290,12 +6442,12 @@
             },
             {
                 "to": {
-                    "startLine": 437,
+                    "startLine": 445,
                     "startColumn": 4,
-                    "startOffset": 28263,
-                    "endLine": 440,
+                    "startOffset": 29261,
+                    "endLine": 448,
                     "endColumn": 12,
-                    "endOffset": 28476
+                    "endOffset": 29474
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6311,12 +6463,12 @@
             },
             {
                 "to": {
-                    "startLine": 441,
+                    "startLine": 449,
                     "startColumn": 4,
-                    "startOffset": 28481,
-                    "endLine": 450,
+                    "startOffset": 29479,
+                    "endLine": 458,
                     "endColumn": 12,
-                    "endOffset": 28957
+                    "endOffset": 29955
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\baidu_fb_styles.xml",
@@ -6332,12 +6484,12 @@
             },
             {
                 "to": {
-                    "startLine": 451,
+                    "startLine": 459,
                     "startColumn": 4,
-                    "startOffset": 28962,
-                    "endLine": 461,
+                    "startOffset": 29960,
+                    "endLine": 469,
                     "endColumn": 12,
-                    "endOffset": 29558
+                    "endOffset": 30556
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -6353,12 +6505,12 @@
             },
             {
                 "to": {
-                    "startLine": 462,
+                    "startLine": 470,
                     "startColumn": 4,
-                    "startOffset": 29563,
-                    "endLine": 464,
+                    "startOffset": 30561,
+                    "endLine": 472,
                     "endColumn": 12,
-                    "endOffset": 29737
+                    "endOffset": 30735
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -6374,12 +6526,12 @@
             },
             {
                 "to": {
-                    "startLine": 465,
+                    "startLine": 473,
                     "startColumn": 4,
-                    "startOffset": 29742,
-                    "endLine": 469,
+                    "startOffset": 30740,
+                    "endLine": 477,
                     "endColumn": 12,
-                    "endOffset": 30084
+                    "endOffset": 31082
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -6395,12 +6547,12 @@
             },
             {
                 "to": {
-                    "startLine": 470,
+                    "startLine": 478,
                     "startColumn": 4,
-                    "startOffset": 30089,
-                    "endLine": 473,
+                    "startOffset": 31087,
+                    "endLine": 481,
                     "endColumn": 12,
-                    "endOffset": 30335
+                    "endOffset": 31333
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -6416,12 +6568,12 @@
             },
             {
                 "to": {
-                    "startLine": 474,
+                    "startLine": 482,
                     "startColumn": 4,
-                    "startOffset": 30340,
-                    "endLine": 476,
+                    "startOffset": 31338,
+                    "endLine": 484,
                     "endColumn": 12,
-                    "endOffset": 30517
+                    "endOffset": 31515
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -6437,12 +6589,12 @@
             },
             {
                 "to": {
-                    "startLine": 477,
+                    "startLine": 485,
                     "startColumn": 4,
-                    "startOffset": 30522,
-                    "endLine": 481,
+                    "startOffset": 31520,
+                    "endLine": 489,
                     "endColumn": 12,
-                    "endOffset": 30841
+                    "endOffset": 31839
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -6458,12 +6610,12 @@
             },
             {
                 "to": {
-                    "startLine": 482,
+                    "startLine": 490,
                     "startColumn": 4,
-                    "startOffset": 30846,
-                    "endLine": 490,
+                    "startOffset": 31844,
+                    "endLine": 498,
                     "endColumn": 12,
-                    "endOffset": 31311
+                    "endOffset": 32309
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6479,12 +6631,12 @@
             },
             {
                 "to": {
-                    "startLine": 491,
+                    "startLine": 499,
                     "startColumn": 4,
-                    "startOffset": 31316,
-                    "endLine": 494,
+                    "startOffset": 32314,
+                    "endLine": 502,
                     "endColumn": 12,
-                    "endOffset": 31490
+                    "endOffset": 32488
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6500,12 +6652,12 @@
             },
             {
                 "to": {
-                    "startLine": 495,
+                    "startLine": 503,
                     "startColumn": 4,
-                    "startOffset": 31495,
-                    "endLine": 500,
+                    "startOffset": 32493,
+                    "endLine": 508,
                     "endColumn": 12,
-                    "endOffset": 31814
+                    "endOffset": 32812
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6521,12 +6673,12 @@
             },
             {
                 "to": {
-                    "startLine": 501,
+                    "startLine": 509,
                     "startColumn": 4,
-                    "startOffset": 31819,
-                    "endLine": 503,
+                    "startOffset": 32817,
+                    "endLine": 511,
                     "endColumn": 12,
-                    "endOffset": 32002
+                    "endOffset": 33000
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\shake_umeng_socialize_style.xml",
@@ -6542,12 +6694,12 @@
             },
             {
                 "to": {
-                    "startLine": 504,
+                    "startLine": 512,
                     "startColumn": 4,
-                    "startOffset": 32007,
-                    "endLine": 507,
+                    "startOffset": 33005,
+                    "endLine": 515,
                     "endColumn": 12,
-                    "endOffset": 32125
+                    "endOffset": 33123
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6563,12 +6715,12 @@
             },
             {
                 "to": {
-                    "startLine": 508,
+                    "startLine": 516,
                     "startColumn": 4,
-                    "startOffset": 32130,
-                    "endLine": 516,
+                    "startOffset": 33128,
+                    "endLine": 524,
                     "endColumn": 12,
-                    "endOffset": 32613
+                    "endOffset": 33611
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6584,12 +6736,12 @@
             },
             {
                 "to": {
-                    "startLine": 517,
+                    "startLine": 525,
                     "startColumn": 4,
-                    "startOffset": 32618,
-                    "endLine": 522,
+                    "startOffset": 33616,
+                    "endLine": 530,
                     "endColumn": 12,
-                    "endOffset": 32886
+                    "endOffset": 33884
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\styles.xml",
@@ -6605,12 +6757,12 @@
             },
             {
                 "to": {
-                    "startLine": 523,
+                    "startLine": 531,
                     "startColumn": 4,
-                    "startOffset": 32891,
-                    "endLine": 535,
+                    "startOffset": 33889,
+                    "endLine": 543,
                     "endColumn": 12,
-                    "endOffset": 33350
+                    "endOffset": 34348
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\shake_umeng_socialize_style.xml",
@@ -6626,12 +6778,12 @@
             },
             {
                 "to": {
-                    "startLine": 536,
+                    "startLine": 544,
                     "startColumn": 4,
-                    "startOffset": 33355,
-                    "endLine": 545,
+                    "startOffset": 34353,
+                    "endLine": 553,
                     "endColumn": 12,
-                    "endOffset": 33941
+                    "endOffset": 34939
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\shake_umeng_socialize_style.xml",
@@ -6647,12 +6799,12 @@
             },
             {
                 "to": {
-                    "startLine": 546,
+                    "startLine": 554,
                     "startColumn": 4,
-                    "startOffset": 33946,
-                    "endLine": 549,
+                    "startOffset": 34944,
+                    "endLine": 557,
                     "endColumn": 12,
-                    "endOffset": 34230
+                    "endOffset": 35228
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\shake_umeng_socialize_style.xml",
@@ -6668,12 +6820,12 @@
             },
             {
                 "to": {
-                    "startLine": 550,
+                    "startLine": 558,
                     "startColumn": 4,
-                    "startOffset": 34235,
-                    "endLine": 557,
+                    "startOffset": 35233,
+                    "endLine": 565,
                     "endColumn": 12,
-                    "endOffset": 34590
+                    "endOffset": 35588
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\facebook_styles.xml",
@@ -6689,12 +6841,12 @@
             },
             {
                 "to": {
-                    "startLine": 558,
+                    "startLine": 566,
                     "startColumn": 4,
-                    "startOffset": 34595,
-                    "endLine": 563,
+                    "startOffset": 35593,
+                    "endLine": 571,
                     "endColumn": 12,
-                    "endOffset": 34885
+                    "endOffset": 35883
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6710,12 +6862,12 @@
             },
             {
                 "to": {
-                    "startLine": 564,
+                    "startLine": 572,
                     "startColumn": 4,
-                    "startOffset": 34890,
-                    "endLine": 573,
+                    "startOffset": 35888,
+                    "endLine": 581,
                     "endColumn": 12,
-                    "endOffset": 35385
+                    "endOffset": 36383
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6731,12 +6883,12 @@
             },
             {
                 "to": {
-                    "startLine": 574,
+                    "startLine": 582,
                     "startColumn": 4,
-                    "startOffset": 35390,
-                    "endLine": 582,
+                    "startOffset": 36388,
+                    "endLine": 590,
                     "endColumn": 12,
-                    "endOffset": 35846
+                    "endOffset": 36844
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6752,12 +6904,12 @@
             },
             {
                 "to": {
-                    "startLine": 583,
+                    "startLine": 591,
                     "startColumn": 4,
-                    "startOffset": 35851,
-                    "endLine": 586,
+                    "startOffset": 36849,
+                    "endLine": 594,
                     "endColumn": 12,
-                    "endOffset": 36085
+                    "endOffset": 37083
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6773,12 +6925,12 @@
             },
             {
                 "to": {
-                    "startLine": 587,
+                    "startLine": 595,
                     "startColumn": 4,
-                    "startOffset": 36090,
-                    "endLine": 590,
+                    "startOffset": 37088,
+                    "endLine": 598,
                     "endColumn": 12,
-                    "endOffset": 36351
+                    "endOffset": 37349
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6794,12 +6946,12 @@
             },
             {
                 "to": {
-                    "startLine": 591,
+                    "startLine": 599,
                     "startColumn": 4,
-                    "startOffset": 36356,
-                    "endLine": 595,
+                    "startOffset": 37354,
+                    "endLine": 603,
                     "endColumn": 12,
-                    "endOffset": 36600
+                    "endOffset": 37598
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6815,12 +6967,12 @@
             },
             {
                 "to": {
-                    "startLine": 596,
+                    "startLine": 604,
                     "startColumn": 4,
-                    "startOffset": 36605,
-                    "endLine": 604,
+                    "startOffset": 37603,
+                    "endLine": 612,
                     "endColumn": 12,
-                    "endOffset": 37106
+                    "endOffset": 38104
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6836,12 +6988,12 @@
             },
             {
                 "to": {
-                    "startLine": 605,
+                    "startLine": 613,
                     "startColumn": 4,
-                    "startOffset": 37111,
-                    "endLine": 611,
+                    "startOffset": 38109,
+                    "endLine": 619,
                     "endColumn": 12,
-                    "endOffset": 37473
+                    "endOffset": 38471
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6857,12 +7009,12 @@
             },
             {
                 "to": {
-                    "startLine": 612,
+                    "startLine": 620,
                     "startColumn": 4,
-                    "startOffset": 37478,
-                    "endLine": 621,
+                    "startOffset": 38476,
+                    "endLine": 629,
                     "endColumn": 12,
-                    "endOffset": 38075
+                    "endOffset": 39073
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6878,12 +7030,12 @@
             },
             {
                 "to": {
-                    "startLine": 622,
+                    "startLine": 630,
                     "startColumn": 4,
-                    "startOffset": 38080,
-                    "endLine": 624,
+                    "startOffset": 39078,
+                    "endLine": 632,
                     "endColumn": 12,
-                    "endOffset": 38284
+                    "endOffset": 39282
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6899,12 +7051,12 @@
             },
             {
                 "to": {
-                    "startLine": 625,
+                    "startLine": 633,
                     "startColumn": 4,
-                    "startOffset": 38289,
-                    "endLine": 628,
+                    "startOffset": 39287,
+                    "endLine": 636,
                     "endColumn": 12,
-                    "endOffset": 38559
+                    "endOffset": 39557
                 },
                 "from": {
                     "file": "D:\\work-wenjie-project\\kd_teacher_android-master\\app\\src\\main\\res\\values\\umeng_socialize_style.xml",
